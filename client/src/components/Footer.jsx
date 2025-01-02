@@ -8,7 +8,7 @@ import FooterBackground from "../assets/images/FooterBackground.png";
 
 function Footer() {
   return (
-    <div className="relative">
+    <div className="relative bg-black">
       <div
         className="relative mx-auto"
         style={{
