@@ -13,9 +13,8 @@ const Legacy = () => {
       style={{
         backgroundImage: `url(${Legacybackground})`,
         backgroundSize: "cover",
-        maxWidth: "128rem",
         margin: "0 auto",
-        aspectRatio: "1280 / 868",
+        backgroundRepeat: "no-repeat",
       }}
     >
       
