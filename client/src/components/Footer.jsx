@@ -5,14 +5,18 @@ import FacebookIcon from "../assets/images/facebookLogo.png";
 import InstagramIcon from "../assets/images/instagramLogo.png";
 import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/FooterBackground.png";
+import TestBackground from "../assets/images/Testbg.png";
 
 function Footer() {
   return (
-    <div className="relative bg-black">
+    <div className="relative"
+    style={{backgroundImage: `url(${TestBackground})`
+      
+    }}>
       <div
         className="relative mx-auto"
         style={{
-          maxWidth: "128rem", 
+          
           margin: "0 auto",
           aspectRatio: "1280 / 543", 
           padding: "7.5rem 0", 
