@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Legacybackground from "../../assets/images/LegacyBg.png";
-import TextBg from "../../assets/images/TitleText.png";
-//import BottomImage from "../../assets/images/LegacyBottom.png"; 
-import VideoGrid from "./Videogrid";
+//import TextBg from "../../assets/images/TitleText.png";
+
+import VideoGrid from "./Test";
 
 
 
@@ -19,18 +19,13 @@ const Legacy = () => {
     >
       
       <div
-        className="w-full max-w-4xl text-center bg-cover bg-center py-8 mb-12 rounded-lg"
-        style={{
-          backgroundImage: `url(${TextBg})`,
-          maxWidth: "32.81rem",
-          margin: "2rem auto 4rem", 
-          aspectRatio: "525 / 94",
-        }}
-      >
-        <h1 className="text-4xl font-bold text-white">The Legacy</h1>
+        className="w-full max-w-4xl text-center bg-cover bg-center absolute top-[4%] py-8 mb-12 rounded-lg"
+        >
+          {/* legacy text component goes here */}
       </div>
       <VideoGrid />
     </div>
+    // Bottom image goes here
   );
 };
 
