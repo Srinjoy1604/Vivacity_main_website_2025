@@ -6,23 +6,26 @@ import Portal from './components/Home/Portal';
 import Events from './components/Home/Events';
 import Legacy from './components/Home/Legacy';
 import PastArtists from './components/Home/PastArtists';
-import Footer from './components/Footer';
+import Footer from './components/Test_footer';
 function App() {
 
   return (
-    <Router>
-      <div>
-        <Routes>
-          <Route path='/about' element={<About />} />
-          <Route path='/portal' element={<Portal />} />
-          <Route path='/events' element={<Events />} />
-          <Route path='/legacy' element={<Legacy />} />
-          <Route path='/pastartists' element={<PastArtists />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-    
+    // <Router>
+    //   <div>
+    //     <Routes>
+    //       <Route path='/about' element={<About />} />
+    //       <Route path='/portal' element={<Portal />} />
+    //       <Route path='/events' element={<Events />} />
+    //       <Route path='/legacy' element={<Legacy />} />
+    //       <Route path='/pastartists' element={<PastArtists />} />
+    //     </Routes>
+    //     <Footer />
+    //   </div>
+    // </Router>
+    <>
+     <Legacy/>
+     <Footer/></>
+   
 
   )
 }

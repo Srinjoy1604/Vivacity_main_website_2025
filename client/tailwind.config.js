@@ -13,6 +13,7 @@ export default {
         '1600': '1600px',
         '1980': '1980px',
         '2100': '2100px',
+        
       },
       fontSize: {
         'font-legacy': '24px', 
