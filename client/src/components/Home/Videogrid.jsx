@@ -58,11 +58,11 @@ const VideoGrid = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen top-[19.6%]">
-      <div className="grid gap-6  grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 w-full ">
+      <div className="grid gap-4 w-full  grid-cols-1 sm:grid-cols-2 xl:grid-cols-2  ">
         {videos.map((video) => (
           <div
             key={video.id}
-            className="relative 1280:w-[485px] 1280:h-[273px] max-w-full bg-white border-2 border-black overflow-hidden  1400:w-[520px] 1400:h-[290px] 1500:w-[550px] 1500:h-[300px] 1600:w-[650px] 1600:h-[350px] 1980:w-[800px] 1980:h-[450px] 2100:w-[900px] 2100:h-[500px]"  
+            className="relative 1280:w-[485px] 1280:h-[273px] max-w-full bg-white border-2 border-black overflow-hidden  1400:w-[550px] 1400:h-[300px] 1500:w-[590px] 1500:h-[340px] 1600:w-[650px] 1600:h-[370px] 1980:w-[800px] 1980:h-[450px] 2100:w-[900px] 2100:h-[500px]"  
           >
             {activeVideo === video.id ? (
               <iframe
@@ -80,9 +80,10 @@ const VideoGrid = () => {
                 alt={video.title}
               />
             )}
-
+      
+                 
             <button
-              className={`absolute border-0 transition-transform transform hover:scale-105 ${
+              className={`absolute border-0  transition-transform transform hover:scale-105 ${
                 buttonPositionStyles[video.buttonPosition] || buttonPositionStyles["bottom-left"]
               }` }
               style={{
@@ -96,14 +97,15 @@ const VideoGrid = () => {
               
               onClick={() => handlePlayVideo(video.id)} 
             >
-              <div className="text-font-legacy font-bold" >{video.title}</div>
+              <div className=" text-[1rem]   2xl:text-[1.5rem] font-rfabb" >{video.title}</div>
             </button>
-            
-            
-            
-            
-          </div>
+                  </div>
+          
+          
         ))}
+        <div className="bottom-[0%] left-0">
+                <h2 className=" text-[1.25rem]  2xl:text-[1.75rem] font-rfabb">NOTE-CLICK TO KNOW MORE</h2>
+                </div>
       </div>
     </div>
   );

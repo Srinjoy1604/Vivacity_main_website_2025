@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <div
-      className="relative w-full"
+      className="relative "
       style={{
         backgroundColor: "black",
         height: `calc(100vw * ${aspectRatio})`, 
@@ -34,73 +34,62 @@ function Footer() {
             backgroundPosition:"top"
           }}
         />
-<div className="relative w-[80%] h-[72.48%] flex flex-col items-center justify-center top-[28.29%] ">
-  {/* Parent Div */}
+<div className="relative w-[80%] h-[72.48%] flex flex-col items-center justify-center top-[10.5%] ">
+  
     
-    {/* Top Part */}
-    <div className="flex flex-col items-center h-[56.58%] ">
-      {/* Logo Section */}
+    
+    <div className="flex flex-col items-center top-[0%] h-[56.55%] ">
+      
       <img
         src={vivacityLogo}
         alt="Vivacity Logo"
-        className="w-[25vw] top-[] transform scale-[1.75] mb-[1.5vw]  "
+        className="h-[73.80%]   "
       />
-      <p className="text-center text-black text-sm sm:text-base">
+       <div style={{ height: "1.43%" }}/>
+      <p className="text-center  font-vetosans text-[1rem] text-black sm:text-[0.875rem] xs:text-[0.65rem] xxs:text-[0.60rem] xxxs:text-[0.55rem]"
+     >
         Developed by GDG on Campus, LNMIIT
       </p>
-      <p className="text-center text-black text-sm sm:text-base mt-1">
+      <p className="text-center font-vetosans text-[1rem] text-black sm:text-[0.875rem] xs:text-[0.65rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] ">
         Designed by Vivacity. All rights reserved.
       </p>
     </div>
     
-    {/* Bottom Part */}
-    <div className="flex flex-col items-center  h-[35.81%] ">
-      {/* Social Media Icons */}
-      <div className="flex justify-center space-x-4 mb-2">
+    <div style={{ height: "7.58%" }} />
+    
+    <div className="flex flex-col gap-[18%] items-center bottom-[0%] h-[35.87%] ">
+      
+      <div className="flex justify-center gap-[25%]  h-[17.34%] w-[36.27%]  ">
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src={FacebookIcon}
             alt="Facebook"
-            className="w-6 h-6 sm:w-8 sm:h-8"
+            className="h-[100%]"
           />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src={TwitterIcon}
             alt="Twitter"
-            className="w-6 h-6 sm:w-8 sm:h-8"
+            className="h-[100%]"
           />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src={InstagramIcon}
             alt="Instagram"
-            className="w-6 h-6 sm:w-8 sm:h-8"
+            className="h-[100%]"
           />
         </a>
       </div>
 
-      {/* Navigation Links */}
-      <div className="flex flex-wrap justify-center space-x-6 text-sm sm:text-base ">
-        <a href="#" className="text-black hover:underline">
-          Home
-        </a>
-        <a href="#" className="text-black hover:underline">
-          Sponsors
-        </a>
-        <a href="#" className="text-black hover:underline">
-          Events
-        </a>
-        <a href="#" className="text-black hover:underline">
-          The Team
-        </a>
-      </div>
+    
 
-      {/* Contact Information */}
-      <div className="text-center text-black text-sm sm:text-base h-[63.09%]">
-        <p>For further queries:</p>
-        <p>Ayush Dhanesha: +91 9998523792</p>
-        <p>Shubhanshu Singhal: +91 8949024851</p>
+      
+      <div className="text-center text-black  h-[63.09%] bottom-[0%]">
+        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] font-vetosans">For further queries:</p>
+        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] font-vetosans">Ayush Dhanesha: +91 9998523792</p>
+        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] font-vetosans">Shubhanshu Singhal: +91 8949024851</p>
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Legacybackground from "../../assets/images/LegacyBg.png";
-//import TextBg from "../../assets/images/TitleText.png";
+
 
 import VideoGrid from "./Videogrid";
 

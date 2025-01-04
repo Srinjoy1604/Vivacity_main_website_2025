@@ -6,7 +6,8 @@ import Portal from './components/Home/Portal';
 import Events from './components/Home/Events';
 import Legacy from './components/Home/Legacy';
 import PastArtists from './components/Home/PastArtists';
-import Footer from './components/Test_footer';
+import Footer from './components/Mobile_footer';
+import Footer from './components/Footer';
 function App() {
 
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path='/legacy' element={<Legacy />} />
           <Route path='/pastartists' element={<PastArtists />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer /> 
       </div>
     </Router>
 

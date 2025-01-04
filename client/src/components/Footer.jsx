@@ -50,10 +50,10 @@ function Footer() {
               alt="Vivacity Logo"
               className="w-[20vw] mb-[1.5vw] transform scale-150 "
             />
-            <p className="text-black text-[1.5vw] font-medium">
+            <p className="text-black text-[1.5vw] font-vetosans">
               Developed by GDG on Campus, LNMIIT
             </p>
-            <p className="text-black text-[1.5vw] font-medium">
+            <p className="text-black text-[1.5vw] font-vetosans">
               Designed by Vivacity. All rights reserved.
             </p>
           </div>
@@ -87,38 +87,38 @@ function Footer() {
             <div className="flex flex-wrap space-x-[1.5vw] mb-[1vw]">
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-medium  fontsize: hover:underline"
+                className="text-black text-[1.5vw] font-vetosans  fontsize: hover:underline"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-medium hover:underline"
+                className="text-black text-[1.5vw] font-vetosans hover:underline"
               >
                 Sponsors
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-medium hover:underline"
+                className="text-black text-[1.5vw] font-vetosans hover:underline"
               >
                 Events
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-medium hover:underline"
+                className="text-black text-[1.5vw] font-vetosans hover:underline"
               >
                 The Team
               </a>
             </div>
 
             <div className="flex flex-col items-end space-y-[0.5vw]">
-              <p className="text-black text-[1.5vw] font-medium">
+              <p className="text-black text-[1.5vw] font-vetosans">
                 For further queries,
               </p>
-              <p className="text-black text-[1.5vw] font-medium">
+              <p className="text-black text-[1.5vw] font-vetosans">
                 Ayush Dhanesha: +91 9998523792
               </p>
-              <p className="text-black text-[1.5vw] font-medium">
+              <p className="text-black text-[1.5vw] font-vetosans">
                 Shubhanshu Singhal: +91 8949024851
               </p>
             </div>
