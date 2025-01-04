@@ -8,7 +8,6 @@ function Sec() {
 
   return (
     <div
-      className="p-1"
       style={{
         backgroundImage: `url(${BackGround})`,
         backgroundSize: "cover",

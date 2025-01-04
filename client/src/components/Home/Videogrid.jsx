@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import thumbnail1 from "../../assets/images/Top_left.png"; 
+import thumbnail2 from "../../assets/images/Top_right.png"; 
+import thumbnail3 from "../../assets/images/Bottom_left.png"; 
+import thumbnail4 from "../../assets/images/Bottom_right.png"; 
+import button1 from "../../assets/images/Legacy_btn.png"; 
+import button2 from "../../assets/images/Legacybtn_topright.png"; 
 
 const VideoGrid = () => {
   const [activeVideo, setActiveVideo] = useState(null);
@@ -7,30 +13,34 @@ const VideoGrid = () => {
     {
       id: 1,
       title: "A Whimsical Odyssey",
-      thumbnail: `https://img.youtube.com/vi/E64TKUqgi_4/hqdefault.jpg`,
+      thumbnail: thumbnail1,
       videoUrl: "https://www.youtube.com/embed/E64TKUqgi_4",
-      buttonPosition: "bottom-left", 
+      buttonImage: button1,
+      buttonPosition: "top-left",
     },
     {
       id: 2,
       title: "Wabi-Sabi",
-      thumbnail: `https://img.youtube.com/vi/E64TKUqgi_4/hqdefault.jpg`,
+      thumbnail: thumbnail2,
       videoUrl: "https://www.youtube.com/embed/E64TKUqgi_4",
-      buttonPosition: "bottom-left", 
+      buttonImage: button2,
+      buttonPosition: "top-right",
     },
     {
       id: 3,
       title: "Chromatic Chimera",
-      thumbnail: `https://img.youtube.com/vi/E64TKUqgi_4/hqdefault.jpg`,
+      thumbnail: thumbnail3,
       videoUrl: "https://www.youtube.com/embed/E64TKUqgi_4",
-      buttonPosition: "bottom-right", 
+      buttonImage: button1,
+      buttonPosition: "bottom-left",
     },
     {
       id: 4,
       title: "Sinister Spectacle",
-      thumbnail: `https://img.youtube.com/vi/E64TKUqgi_4/hqdefault.jpg`,
+      thumbnail: thumbnail4,
       videoUrl: "https://www.youtube.com/embed/E64TKUqgi_4",
-      buttonPosition: "bottom-right", 
+      buttonImage: button1,
+      buttonPosition: "bottom-right",
     },
   ];
 
@@ -38,54 +48,65 @@ const VideoGrid = () => {
     setActiveVideo(videoId);
   };
 
-  
   const buttonPositionStyles = {
-    "bottom-left": "absolute bottom-4 left-4",
-    "bottom-right": "absolute bottom-4 right-4",
-    "top-left": "absolute top-4 left-4",
-    "top-right": "absolute top-4 right-4",
+    "bottom-left": "absolute top-[73.6%] left-[37.2%]",
+    "bottom-right": "absolute top-[73.6%] left-[37.2%]",
+    "top-left": "absolute top-[73.2%] left-[3.9%]",
+    "top-right": "absolute   top-[73.2%] left-[3.9%]",
     "center": "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2",
   };
 
   return (
-    <div className="grid grid-cols-2 gap-8 w-full max-w-4xl mx-auto">
-      {videos.map((video) => (
-        <div
-          key={video.id}
-          className="relative bg-white border-4 border-black overflow-hidden transition-transform transform hover:scale-105 hover:shadow-3xl hover:opacity-90 rounded-lg"
-          style={{
-            boxShadow:
-              "0px 4px 6px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.1)",
-            gap: "2rem",
-          }}
-        >
-          {activeVideo === video.id ? (
-            <iframe
-              className="w-full h-full"
-              src={`${video.videoUrl}?autoplay=1`}
-              allow="autoplay; encrypted-media"
-              title={video.title}
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          ) : (
-            <img
-              className="w-full h-full object-cover"
-              src={video.thumbnail}
-              alt={video.title}
-            />
-          )}
-
-          <button
-            className={`px-3 py-1 bg-yellow-400 border-2 border-black text-black font-bold uppercase transform transition-transform hover:scale-105 ${
-              buttonPositionStyles[video.buttonPosition] || buttonPositionStyles["bottom-left"]
-            }`}
-            onClick={() => handlePlayVideo(video.id)}
+    <div className="flex justify-center items-center min-h-screen top-[19.6%]">
+      <div className="grid gap-4 w-full  grid-cols-1 sm:grid-cols-2 xl:grid-cols-2  ">
+        {videos.map((video) => (
+          <div
+            key={video.id}
+            className="relative 1280:w-[485px] 1280:h-[273px] max-w-full bg-white border-2 border-black overflow-hidden  1400:w-[550px] 1400:h-[300px] 1500:w-[590px] 1500:h-[340px] 1600:w-[650px] 1600:h-[370px] 1980:w-[800px] 1980:h-[450px] 2100:w-[900px] 2100:h-[500px]"  
           >
-            {video.title}
-          </button>
-        </div>
-      ))}
+            {activeVideo === video.id ? (
+              <iframe
+                className="w-full h-full"
+                src={`${video.videoUrl}?autoplay=1`}
+                allow="autoplay; encrypted-media"
+                title={video.title}
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img
+                className="w-full h-full object-cover"
+                src={video.thumbnail}
+                alt={video.title}
+              />
+            )}
+      
+                 
+            <button
+              className={`absolute border-0  transition-transform transform hover:scale-105 ${
+                buttonPositionStyles[video.buttonPosition] || buttonPositionStyles["bottom-left"]
+              }` }
+              style={{
+                width: video.buttonPosition === "top-right" ? "35.8%" : "59.8%",
+                height:"21.6%",
+                backgroundImage: `url(${video.buttonImage})`,
+                backgroundSize: "cover", 
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+              }}
+              
+              onClick={() => handlePlayVideo(video.id)} 
+            >
+              <div className=" text-[1rem]   2xl:text-[1.5rem] font-rfabb" >{video.title}</div>
+            </button>
+                  </div>
+          
+          
+        ))}
+        <div className="bottom-[0%] left-0">
+                <h2 className=" text-[1.25rem]  2xl:text-[1.75rem] font-rfabb">NOTE-CLICK TO KNOW MORE</h2>
+                </div>
+      </div>
     </div>
   );
 };
