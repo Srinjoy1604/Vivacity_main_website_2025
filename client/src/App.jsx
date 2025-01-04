@@ -6,7 +6,7 @@ import Portal from './components/Home/Portal';
 import Events from './components/Home/Events';
 import Legacy from './components/Home/Legacy';
 import PastArtists from './components/Home/PastArtists';
-import Footer from './components/Mobile_footer';
+import Footer1 from './components/Mobile_footer';
 import Footer from './components/Footer';
 function App() {
 

@@ -5,7 +5,7 @@ import InstagramIcon from "../assets/images/instagramLogo.png";
 import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/Footer_mobile.png";
 
-function Footer() {
+function Footer1() {
     const aspectRatio = 396 / 512; 
 
   return (
@@ -101,4 +101,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer1;
