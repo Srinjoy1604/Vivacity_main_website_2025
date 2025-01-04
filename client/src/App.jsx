@@ -6,6 +6,7 @@ import Portal from './components/Home/Portal';
 import Events from './components/Home/Events';
 import Legacy from './components/Home/Legacy';
 import PastArtists from './components/Home/PastArtists';
+import Footer1 from './components/Mobile_footer';
 import Footer from './components/Footer';
 import Mascot from './components/Home/Mascot';
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/mascot' element={<Mascot />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer /> 
       </div>
     </Router>
 
