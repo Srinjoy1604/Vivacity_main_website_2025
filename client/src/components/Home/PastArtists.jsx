@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../Home/PastArtists/Layout"
+import Layout from "./pastArtists/Layout"
 
 function PastArtists() {
 
