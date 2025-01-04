@@ -8,7 +8,9 @@ import Legacy from './components/Home/Legacy';
 import PastArtists from './components/Home/PastArtists';
 import Footer1 from './components/Mobile_footer';
 import Footer from './components/Footer';
-import Mascot from './components/Home/Mascot';
+import Hero from './components/Home/Hero';
+import Navbar from './components/Navbar';
+
 function App() {
 
   return (
@@ -16,6 +18,8 @@ function App() {
       <div>
         <Routes>
           <Route path='/about' element={<About />} />
+          <Route path='/hero' element={<Hero/>} />
+          <Route path='/navbar' element={<Navbar/>} />
           <Route path='/portal' element={<Portal />} />
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
