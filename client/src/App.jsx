@@ -10,22 +10,18 @@ import Footer from './components/Test_footer';
 function App() {
 
   return (
-    // <Router>
-    //   <div>
-    //     <Routes>
-    //       <Route path='/about' element={<About />} />
-    //       <Route path='/portal' element={<Portal />} />
-    //       <Route path='/events' element={<Events />} />
-    //       <Route path='/legacy' element={<Legacy />} />
-    //       <Route path='/pastartists' element={<PastArtists />} />
-    //     </Routes>
-    //     <Footer />
-    //   </div>
-    // </Router>
-    <>
-     <Legacy/>
-     <Footer/></>
-   
+    <Router>
+      <div>
+        <Routes>
+          <Route path='/about' element={<About />} />
+          <Route path='/portal' element={<Portal />} />
+          <Route path='/events' element={<Events />} />
+          <Route path='/legacy' element={<Legacy />} />
+          <Route path='/pastartists' element={<PastArtists />} />
+        </Routes>
+        {/* <Footer /> */}
+      </div>
+    </Router>
 
   )
 }
