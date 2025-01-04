@@ -11,10 +11,9 @@ import LeftButton from "../../../assets/images/LeftButton.png";
 import RightButton from "../../../assets/images/RightButton.png";
 
 function Artist() {
-  const swiperRef = useRef(null); 
-  const [Slide, setSlide] = useState(5); 
+  const swiperRef = useRef(null);
+  const [Slide, setSlide] = useState(5);
 
-  
   const SlideNum = [
     [640, 1],
     [1024, 2],
@@ -22,32 +21,25 @@ function Artist() {
     [1536, 4],
   ];
 
-  
   const setSlideNum = () => {
     const size = window.innerWidth;
-    
-   
+
     for (let i = 0; i < SlideNum.length; i++) {
       if (size < SlideNum[i][0]) {
         setSlide(SlideNum[i][1]);
-        return;  
+        return;
       }
     }
-  
   };
-  
 
- 
   useEffect(() => {
-    setSlideNum(); 
+    setSlideNum();
     const handleResize = () => {
-      setSlideNum(); 
+      setSlideNum();
     };
-    
-    
+
     window.addEventListener("resize", handleResize);
 
-    
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -109,12 +101,15 @@ function Artist() {
       >
         {Artists.map((item, index) => (
           <SwiperSlide
-          key={index}
-          style={{display:"flex",alignItems:"center",justifyContent:"center"}}
-        >
-          <ArtistCard artist={item} />
-        </SwiperSlide>
-        
+            key={index}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <ArtistCard artist={item} />
+          </SwiperSlide>
         ))}
       </Swiper>
 
