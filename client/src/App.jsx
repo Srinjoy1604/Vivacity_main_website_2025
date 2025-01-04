@@ -22,7 +22,14 @@ function App() {
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/mascot' element={<Mascot />} />
         </Routes>
-        <Footer /> 
+        {/* Mobile footer */}
+        <div className="block sm:hidden">
+          <Footer1 />
+        </div>
+        {/* Desktop footer visible on screens larger than mobile */}
+        <div className="hidden sm:block">
+          <Footer />
+        </div>
       </div>
     </Router>
 
