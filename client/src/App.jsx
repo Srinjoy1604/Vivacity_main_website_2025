@@ -7,6 +7,7 @@ import Events from './components/Home/Events';
 import Legacy from './components/Home/Legacy';
 import PastArtists from './components/Home/PastArtists';
 import Footer from './components/Footer';
+import Mascot from './components/Home/Mascot';
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
           <Route path='/pastartists' element={<PastArtists />} />
+          <Route path='/mascot' element={<Mascot />} />
         </Routes>
         {/* <Footer /> */}
       </div>
