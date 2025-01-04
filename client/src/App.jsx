@@ -6,9 +6,11 @@ import Portal from './components/Home/Portal';
 import Events from './components/Home/Events';
 import Legacy from './components/Home/Legacy';
 import PastArtists from './components/Home/PastArtists';
+import Footer1 from './components/Mobile_footer';
 import Footer from './components/Footer';
 import Hero from './components/Home/Hero';
 import Navbar from './components/Navbar';
+
 function App() {
 
   return (
@@ -22,8 +24,16 @@ function App() {
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
           <Route path='/pastartists' element={<PastArtists />} />
+          <Route path='/mascot' element={<Mascot />} />
         </Routes>
-        {/* <Footer /> */}
+        {/* Mobile footer */}
+        <div className="block sm:hidden">
+          <Footer1 />
+        </div>
+        {/* Desktop footer visible on screens larger than mobile */}
+        <div className="hidden sm:block">
+          <Footer />
+        </div>
       </div>
     </Router>
 

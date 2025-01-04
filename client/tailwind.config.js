@@ -12,8 +12,21 @@ export default {
         'ralltez': ['Ralltez', 'sans-serif'],
         'vetosans': ['Veto Sans', 'sans-serif'],
       },
+      screens:{
+        '1280': '1280px',
+        '1300': '1300px',
+        '1400': '1400px',
+        '1500': '1500px',
+        '1600': '1600px',
+        '1980':'1980px',
+        '2100':'2100px',
+        'xs': '500px',
+        'xxs':'400px',
+        'xxxs':'300px'
+      }
     },
   },
   plugins: [],
 }
+
 
