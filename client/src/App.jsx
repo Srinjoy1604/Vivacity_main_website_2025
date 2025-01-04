@@ -10,6 +10,7 @@ import Footer1 from './components/Mobile_footer';
 import Footer from './components/Footer';
 import Hero from './components/Home/Hero';
 import Navbar from './components/Navbar';
+import Mascot from './components/Home/Mascot';
 
 function App() {
 
