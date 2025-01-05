@@ -1,10 +1,11 @@
 import React from "react";
+import Layout from "./pastArtists/Layout"
 
 function PastArtists() {
 
   return (
     <div>
-        <h1>Past Artists</h1>
+      <Layout />
     </div>
   )
 }
