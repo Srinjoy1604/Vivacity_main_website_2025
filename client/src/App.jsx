@@ -10,6 +10,7 @@ import Footer1 from './components/Mobile_footer';
 import Footer from './components/Footer';
 import Hero from './components/Home/Hero';
 import Navbar from './components/Navbar';
+import Mascot from './components/Home/Mascot';
 
 function App() {
 
@@ -23,8 +24,8 @@ function App() {
           <Route path='/portal' element={<Portal />} />
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
+          <Route path='/mascot' element={<Mascot/>} />
           <Route path='/pastartists' element={<PastArtists />} />
-          <Route path='/mascot' element={<Mascot />} />
         </Routes>
         {/* Mobile footer */}
         <div className="block sm:hidden">
