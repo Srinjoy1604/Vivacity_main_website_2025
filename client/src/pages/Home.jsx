@@ -8,21 +8,21 @@ import Events from "../components/Home/Events";
 import Legacy from "../components/Home/Legacy";
 import Strip from "../components/Home/strip";
 import Mascot from "../components/Home/Mascot";
-function Home()
-{
-    return(
-        <div>
-            <Hero />
-            <About />
-            <Portal />
-            <Infinite text="YOU'RE ON THE OTHER SIDE OF PORTAL... WELCOME TO THE MULTIVERSE!!!"/>
-            <PastArtists />
-            <Events />
-            <Legacy />
-            <Strip />
-            <Mascot />
-        </div>
-    )
+function Home() {
+  return (
+    <div>
+      <Hero />
+      <About />
+      <Portal />
+      <Infinite text="YOU'RE ON THE OTHER SIDE OF PORTAL... WELCOME TO THE MULTIVERSE!!!" />
+      <PastArtists />
+      <Events />
+      <Strip />
+      <Legacy />
+      <Strip />
+      <Mascot />
+    </div>
+  );
 }
 
 export default Home;
