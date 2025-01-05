@@ -3,7 +3,7 @@ import page_footer from "../../assets/images/strip.png";
 
 function Strip() {
   return (
-    <div className=" fixed bottom-0  left-0 w-full z-50">
+    <div className="w-full z-50">
       <div className="w-full h-auto">
         <img
           src={page_footer}

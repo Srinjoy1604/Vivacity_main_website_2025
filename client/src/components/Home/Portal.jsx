@@ -86,7 +86,7 @@ function Portal() {
 
   return (
     <div className="relative">
-      <section className="w-screen h-[100vh] bg-green-500"></section>
+       {/*<section className="w-screen h-[100vh] bg-green-500"></section>*/}
 
       <section
         ref={containerRef}
@@ -138,7 +138,7 @@ function Portal() {
         </div>
       </section>
 
-      <section className="w-screen h-[100vh] bg-red-500"></section>
+      {/*<section className="w-screen h-[100vh] bg-red-500"></section>*/}
     </div>
   );
 }

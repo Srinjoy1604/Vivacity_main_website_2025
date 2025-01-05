@@ -3,14 +3,14 @@ import React from 'react';
 
 const Infinite = (props) => {
   const { text } = props;
-  const repeatedText = `${text} \u00A0`.repeat(500); 
+  const repeatedText = `${text} \u00A0`.repeat(200); 
 
   return (
     <div
       className="relative w-full h-16 overflow-hidden py-4"
       style={{ background: 'rgba(33, 173, 243, 1)' }}
     >
-      <div className="flex whitespace-nowrap animate-scroll">
+      <div className="flex whitespace-nowrap animate-scroll font-rfabb text-[2.75rem]">
         <span className="text-2xl font-bold">{repeatedText}</span>
         <span className="text-2xl font-bold">{repeatedText}</span>
       </div>
