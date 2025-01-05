@@ -23,7 +23,7 @@ function App() {
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/mob' element={<Footer1 />} />
         </Routes>
-        {/* <Footer />  */}
+        <Footer /> 
       </div>
     </Router>
 
