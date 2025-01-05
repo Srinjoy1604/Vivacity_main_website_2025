@@ -18,37 +18,55 @@ bottom: -70% !Important;
         line-height: 20px;
     }
 }
-@media(max-width:450px){
-    .smImg4{
-        top: 98% !Important;
-        left: 32% !Important;
-    }
-}
-@media(max-width:768px){
+@media (max-width:449px){
     .smImg3{
-        left: 23% !Important;
-    }
-}
-@media(max-width:555px){
-    .smImg3{
-        left: 21% !Important;
-        height: 50vh;
-        width: 40vw;
-    }
-}
-@media(max-width:462px){
-    .smImg3{
+        width: 55vw !Important;
+        top: -14% !Important ;
+        height: 40vh !Important;
         left: 14% !Important;
-        top: -10% !Important;
-        height: 55vh;
-        width: 47vw;
     }
 }
-@media(max-width:400px){
+
+
+@media screen and (min-width:450px) and (max-width:520px){
     .smImg3{
-        left: 11% !Important;
+        left:21% !Important;
+        height: 50vh;
+        width: 50vw;
+        height: 50vh;
     }
 }
+
+@media(max-width:766px){
+    .smImg3{
+        left: 14% !Important;   
+        height: 55vh;
+    }
+}
+
+@media(max-width:640px){
+    .smImg3{
+        left: 11% !Important; 
+        /* this is the issue */
+    } 
+    .smImg4{
+            top: 96% !Important;
+            left: 23% !Important   ;
+    }  
+}
+
+@media(max-width:510px){
+.smImg4{
+      top:97%!Important;
+      left: 22% !Important;
+      width: 40vw;
+}
+}
+@media screen and (min-width:750px) and (max-width:821px){
+    .smImg3{
+        left: 15% !Important;
+    }
+} 
 
 
 @media screen and (min-width: 1320px) and (max-width:1457px){

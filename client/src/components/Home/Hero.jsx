@@ -6,11 +6,16 @@ import Image4 from "../../assets/images/right1.png";
 import Image5 from "../../assets/images/bottom1.png";
 import Image6 from "../../assets/images/bottom2.png";
 import Image7 from "../../assets/images/viva_logo_hero.png";
+import Image8 from "../../assets/images/halftone.png";
 import "./forHero.css";
 
 const Hero = () => {
   return (
-      <div className="relative h-[100vh] w-full bg-yellow-200 overflow-hidden">
+    <>
+
+
+
+      <div className="hidden sm:flex relative h-[100vh] w-full bg-yellow-200 overflow-hidden">
         <div
           className="absolute image-container"
           style={{
@@ -81,6 +86,7 @@ const Hero = () => {
           <img className="w-[33vw] aspect-[2]" src={Image7} alt="" />
         </div>
       </div>
+      </>
   );
 };
 
