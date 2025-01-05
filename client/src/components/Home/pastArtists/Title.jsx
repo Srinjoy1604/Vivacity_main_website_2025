@@ -1,6 +1,5 @@
 import React from "react";
 import Glitch from "../../../assets/images/Glitch.png";
-
 function Title({ text }) {
   return (
     <div>
@@ -20,5 +19,4 @@ function Title({ text }) {
     </div>
   );
 }
-
 export default Title;
