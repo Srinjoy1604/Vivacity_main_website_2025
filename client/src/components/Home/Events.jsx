@@ -158,7 +158,7 @@ const Events = () => {
                     {currentEvent.items.map((item, index) => (
                       <li
                         key={index}
-                        className="flex items-center justify-start xl:text-[1.7vw] lg:text-[2vw] md:text-[2.2vw] sm:text-[2.5vw]"
+                        className="flex items-center justify-start xl:text-[1.4vw] lg:text-[1.9vw] md:text-[2.2vw] sm:text-[2.5vw]"
                       >
                         <span className="w-2 h-2 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
                         <span className="line-clamp-2 sm:line-clamp-1">
