@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import Mascot from './components/Home/Mascot';
 import Home from './pages/Home';
 import Team from './components/Home/Team';
+
 function App() {
 
   return (
@@ -27,8 +28,8 @@ function App() {
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
           <Route path='/team' element={<Team />} />
+          <Route path='/mascot' element={<Mascot/>} />
           <Route path='/pastartists' element={<PastArtists />} />
-          <Route path='/mascot' element={<Mascot />} />
           <Route path='/' element={<Home />} />
         </Routes>
         {/* Mobile footer */}
