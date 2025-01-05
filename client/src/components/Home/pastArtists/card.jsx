@@ -2,7 +2,7 @@ import React from "react";
 import BackGround from "../../../assets/images/Group 60.png"
 function ArtistCard({ artist }) {
   return (
-    <div className="p-6  text-pink-500 min-h-[40vh] w-[50vw] sm:w-[30vw] md:w-[25vw] lg:w-[20vw] xl:w-[15vw] flex justify-center items-center flex-col" 
+    <div className="p-6 text-pink-500 min-h-[40vh] w-[50vw] sm:w-[30vw] md:w-[25vw] lg:w-[20vw] xl:w-[15vw] flex justify-center items-center flex-col" 
     
     style={{
       backgroundImage: `url(${BackGround})`,

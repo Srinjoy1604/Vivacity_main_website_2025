@@ -6,7 +6,7 @@ import NetraMobile from "../../assets/images/NetraMobile.png";
 function Mascot()
 {
     return(
-        <div className={`w-[100%] h-[100vh] flex items-center align-middle justify-center ${styles.MascotBackground} max-[800px]:h-fit p-[2%]`}>
+        <div className={`w-[100%] h-[100%] flex items-center align-middle justify-center ${styles.MascotBackground} max-[800px]:h-fit p-[2%]`}>
             <div className="w-[100%] grid grid-cols-2 place-items-center max-[800px]:grid-cols-1">
                 <div className="w-[100%] ">
                     <div className={`${styles.NetraDiv} p-[10%] w-[100%] `}>

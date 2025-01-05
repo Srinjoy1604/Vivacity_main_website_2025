@@ -6,6 +6,8 @@ import {
 import Event_logo from "../../assets/images/Event_logo.png";
 import Event_button from "../../assets/images/Event_know_button.png";
 import Halftone from "../../assets/images/Halftone.png";
+import BackGround from "../../assets/images/YellowBg.png";
+import DanceEvents from "../../assets/images/Razzmatazz.png";
 
 const Events = () => {
   const eventData = [
@@ -21,7 +23,7 @@ const Events = () => {
         "Individual western dance",
       ],
       prizeWorth: "2.5 Lakh+",
-      image: "src/assets/images/Razzmatazz.png",
+      image: DanceEvents,
       link: "/dance-events",
     },
     {
@@ -36,7 +38,7 @@ const Events = () => {
         "Instrumental Solo",
       ],
       prizeWorth: "1.8 Lakh+",
-      image: "/api/placeholder/800/500",
+      image: "https://picsum.photos/200/300",
       link: "/music-events",
     },
     {
@@ -51,7 +53,7 @@ const Events = () => {
         "Stand-up Comedy",
       ],
       prizeWorth: "1.5 Lakh+",
-      image: "/api/placeholder/800/500",
+      image: "https://picsum.photos/200/300",
       link: "/drama-events",
     },
   ];
@@ -72,7 +74,7 @@ const Events = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
-    }, 4000);
+    }, 6000);
     return () => clearInterval(timer);
   }, [handleNext]);
 
@@ -83,7 +85,7 @@ const Events = () => {
     <div
       className="min-h-screen flex flex-col justify-center items-center "
       style={{
-        backgroundImage: "url('src/assets/images/Event_background.png')",
+        backgroundImage: `url(${BackGround})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -99,9 +101,9 @@ const Events = () => {
       </div>
 
       {/* Main content container */}
-      <div className="sm:w-[70%] w-[80%] sm:h-[71.65vh] h-[70%] relative mx-auto ">
+      <div className="sm:w-[70%] w-[80%] sm:h-[71.65vh] h-[70%] relative mx-auto">
         {/* Black shadow */}
-        <div className="absolute -left-2 -bottom-2 w-full h-full  bg-black "></div>
+        <div className="absolute -left-2 -bottom-2 w-full h-full bg-black "></div>
 
         {/* Desktop Layout - Hidden on mobile */}
         <div className="relative w-full h-full bg-black hidden sm:block p-2">
@@ -154,11 +156,11 @@ const Events = () => {
                 </div>
 
                 <div className="w-[90%] md:h-[48.61%] sm:h-[56%] mt-[3%] px-[2%] py-[2%] ml-[2%]">
-                  <ul className="lg:space-y-[2%] md:space-y-[4%] sm:space-y-[5%] text-white font-vetosans font-bold">
+                  <ul className="lg:space-y-[2%] md:space-y-[4%] sm:space-y-[5%] text-white font-vetosans font-medium">
                     {currentEvent.items.map((item, index) => (
                       <li
                         key={index}
-                        className="flex items-center justify-start xl:text-[1.4vw] lg:text-[1.9vw] md:text-[2.2vw] sm:text-[2.5vw]"
+                        className="flex items-center justify-start text-[1.25rem] md:text-[1.8rem] leading-none"
                       >
                         <span className="w-2 h-2 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
                         <span className="line-clamp-2 sm:line-clamp-1">
@@ -279,7 +281,7 @@ const Events = () => {
                 {currentEvent.items.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center text-black font-vetosans font-bold text-sm"
+                    className="flex items-center text-black font-vetosans font-bold max-[350px]:text-[1rem] text-[1.25rem] leading-none"
                   >
                     <span className="w-1.5 h-1.5 bg-black rounded-full mr-2"></span>
                     {item}

@@ -15,7 +15,7 @@ function Artist() {
   const [Slide, setSlide] = useState(5);
 
   const SlideNum = [
-    [640, 1],
+    [768, 1],
     [1024, 2],
     [1280, 3],
     [1536, 4],
