@@ -83,7 +83,7 @@ const VideoGrid = () => {
       
                  
             <button
-              className={`absolute border-0  transition-transform transform hover:scale-105 ${
+              className={`absolute border-0 max-h-[3.5rem] transition-transform transform hover:scale-105 ${
                 buttonPositionStyles[video.buttonPosition] || buttonPositionStyles["bottom-left"]
               }` }
               style={{

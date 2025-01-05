@@ -22,7 +22,8 @@ export default {
         '2100':'2100px',
         'xs': '500px',
         'xxs':'400px',
-        'xxxs':'300px'
+        'xxxs':'300px',
+        '270':'270px'
       }
     },
   },

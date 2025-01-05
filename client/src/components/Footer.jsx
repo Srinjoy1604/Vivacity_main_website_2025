@@ -4,7 +4,7 @@ import FacebookIcon from "../assets/images/facebookLogo.png";
 import InstagramIcon from "../assets/images/instagramLogo.png";
 import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/FooterBackground.png";
-
+import Backbg from "../assets/images/Team.png"
 function Footer() {
   const aspectRatio = 415 / 1280; 
 
@@ -12,9 +12,9 @@ function Footer() {
     <div
       className="relative w-full"
       style={{
-        backgroundColor: "black",
+        backgroundImage:`url(${Backbg})`,
         height: `calc(100vw * ${aspectRatio})`, 
-        backgroundPosition: "top",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}

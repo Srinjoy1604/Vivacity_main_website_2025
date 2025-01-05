@@ -12,6 +12,7 @@ import Hero from './components/Home/Hero';
 import Navbar from './components/Navbar';
 import Mascot from './components/Home/Mascot';
 import Home from './pages/Home';
+import Team from './components/Home/Team';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/portal' element={<Portal />} />
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
+          <Route path='/team' element={<Team />} />
           <Route path='/mascot' element={<Mascot/>} />
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/' element={<Home />} />

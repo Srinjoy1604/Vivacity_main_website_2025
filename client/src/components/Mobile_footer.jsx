@@ -46,11 +46,11 @@ function Footer1() {
         className="h-[73.80%]   "
       />
        <div style={{ height: "1.43%" }}/>
-      <p className="text-center  font-vetosans text-[1rem] text-black sm:text-[0.875rem] xs:text-[0.65rem] xxs:text-[0.60rem] xxxs:text-[0.55rem]"
+      <p className="text-center  font-vetosans text-[1rem] text-black sm:text-[0.875rem] xs:text-[0.65rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] 270:text-[0.45rem]"
      >
         Developed by GDG on Campus, LNMIIT
       </p>
-      <p className="text-center font-vetosans text-[1rem] text-black sm:text-[0.875rem] xs:text-[0.65rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] ">
+      <p className="text-center font-vetosans text-[1rem] text-black sm:text-[0.875rem] xs:text-[0.65rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] 270:text-[0.45rem] ">
         Designed by Vivacity. All rights reserved.
       </p>
     </div>
@@ -64,21 +64,21 @@ function Footer1() {
           <img
             src={FacebookIcon}
             alt="Facebook"
-            className="h-[100%]"
+            className="h-[100%] w-auto "
           />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src={TwitterIcon}
             alt="Twitter"
-            className="h-[100%]"
+            className="h-[100%] w-auto "
           />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img
             src={InstagramIcon}
             alt="Instagram"
-            className="h-[100%]"
+            className="h-[100%]  w-auto"
           />
         </a>
       </div>
@@ -87,9 +87,9 @@ function Footer1() {
 
       
       <div className="text-center text-black  h-[63.09%] bottom-[0%]">
-        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] font-vetosans">For further queries:</p>
-        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] font-vetosans">Ayush Dhanesha: +91 9998523792</p>
-        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] font-vetosans">Shubhanshu Singhal: +91 8949024851</p>
+        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] 270:text-[0.45rem] font-vetosans">For further queries:</p>
+        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] 270:text-[0.45rem] font-vetosans">Ayush Dhanesha: +91 9998523792</p>
+        <p className="text-[0.875rem] sm:text-[1rem] md:text-[1.0625rem] xxs:text-[0.60rem] xxxs:text-[0.55rem] 270:text-[0.45rem] font-vetosans">Shubhanshu Singhal: +91 8949024851</p>
       </div>
     </div>
   </div>
