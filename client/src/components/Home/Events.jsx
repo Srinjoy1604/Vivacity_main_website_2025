@@ -6,7 +6,6 @@ import {
 import Event_logo from "../../assets/images/Event_logo.png";
 import Event_button from "../../assets/images/Event_know_button.png";
 import Halftone from "../../assets/images/Halftone.png";
-import Strip from "./strip";
 
 const Events = () => {
   const eventData = [
@@ -82,7 +81,7 @@ const Events = () => {
   }, [currentEvent.link]);
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center"
+      className="min-h-screen flex flex-col justify-center items-center "
       style={{
         backgroundImage: "url('src/assets/images/Event_background.png')",
         backgroundSize: "cover",
@@ -91,7 +90,7 @@ const Events = () => {
       }}
     >
       {/* Logo section */}
-      <div className="sm:w-[18%] sm:h-[6%] w-[36%] h-[18%] mt-1 sm:mb-6 mb-4">
+      <div className="w-[60%] md:w-[28%] mt-1 sm:mb-6 mb-4">
         <img
           src={Event_logo}
           alt="Event Logo"
@@ -100,9 +99,9 @@ const Events = () => {
       </div>
 
       {/* Main content container */}
-      <div className="sm:w-[70%] w-[80%] sm:h-[71.65vh] h-[70%] relative mx-auto">
+      <div className="sm:w-[70%] w-[80%] sm:h-[71.65vh] h-[70%] relative mx-auto ">
         {/* Black shadow */}
-        <div className="absolute -left-3 -bottom-3 w-full h-full bg-black"></div>
+        <div className="absolute -left-2 -bottom-2 w-full h-full  bg-black "></div>
 
         {/* Desktop Layout - Hidden on mobile */}
         <div className="relative w-full h-full bg-black hidden sm:block p-2">
@@ -154,12 +153,12 @@ const Events = () => {
                   </h2>
                 </div>
 
-                <div className="w-[90%] h-[38.61%] mt-[3%] px-[2%] py-[2%] ml-[2%]">
-                  <ul className="space-y-[2%] text-white font-vetosans font-bold">
+                <div className="w-[90%] md:h-[48.61%] sm:h-[56%] mt-[3%] px-[2%] py-[2%] ml-[2%]">
+                  <ul className="lg:space-y-[2%] md:space-y-[4%] sm:space-y-[5%] text-white font-vetosans font-bold">
                     {currentEvent.items.map((item, index) => (
                       <li
                         key={index}
-                        className="flex items-center justify-start text-[1.4vw]"
+                        className="flex items-center justify-start xl:text-[1.4vw] lg:text-[1.9vw] md:text-[2.2vw] sm:text-[2.5vw]"
                       >
                         <span className="w-2 h-2 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
                         <span className="line-clamp-2 sm:line-clamp-1">
@@ -170,7 +169,7 @@ const Events = () => {
                   </ul>
                 </div>
 
-                <div className="absolute bottom-[4%] left-[4.5%] w-[50%] h-[13.52%]">
+                <div className="absolute bottom-[4%] left-[4.5%] md:w-[60%] md:h-[14.52%] sm:w-[73%] sm:h-[20.52%]">
                   <button
                     onClick={handleKnowMore}
                     className="w-full h-full transition-transform hover:scale-105 focus:outline-none"
@@ -204,11 +203,11 @@ const Events = () => {
                       clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
                     }}
                   >
-                    <div className="h-full flex flex-col justify-center items-center px-5">
-                      <p className="text-white w-[82%] 2xl:text-[2.1vw] lg:text-[2vw] font-rfabb text-center tracking-wide mt-2 ml-4">
+                    <div className="h-full flex flex-col justify-center items-center px-1">
+                      <p className="text-white w-[88%] 2xl:text-[2.1vw] lg:text-[2.6vw] sm:text-[2.5vw] font-rfabb text-center  lg:mt-2 lg:ml-4 sm:ml-2">
                         PRIZES WORTH
                       </p>
-                      <p className="text-[#E5FF00] w-[80%] text-[5vw] lg:text-[4.6vw] font-semibold font-ttr text-center leading-tight">
+                      <p className="text-[#E5FF00] w-[88%] text-[5vw] lg:text-[4.5vw] sm:text-[4.5vw] font-semibold font-ttr text-center leading-tight sm:ml-2">
                         {currentEvent.prizeWorth}
                       </p>
                     </div>
@@ -218,7 +217,6 @@ const Events = () => {
             </div>
           </div>
         </div>
-
         {/* Mobile Layout - Hidden on desktop */}
         <div className="relative w-full h-full bg-black sm:hidden p-1">
           <div
@@ -231,7 +229,7 @@ const Events = () => {
             }}
           ></div>
 
-          <div className="relative w-full h-full aspect-[9/16] bg-[#53B08E] overflow-hidden">
+          <div className="relative w-full h-full aspect-[8/16] max-h-[80vh] bg-[#53B08E] overflow-hidden">
             <div
               className="w-full h-[60%] bg-green-400 relative"
               style={{
@@ -283,13 +281,13 @@ const Events = () => {
                     key={index}
                     className="flex items-center text-black font-vetosans font-bold text-sm"
                   >
-                    <span className="w-1.5 h-1.5 bg-white rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-black rounded-full mr-2"></span>
                     {item}
                   </li>
                 ))}
               </ul>
 
-              <div className="flex items-center justify-between mt-1 relative z-50">
+              <div className="flex items-center justify-between mt-1  relative z-50">
                 <button
                   onClick={handleKnowMore}
                   className="w-[56%] transition-transform hover:scale-105 focus:outline-none"
@@ -319,9 +317,6 @@ const Events = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="md:mt-28">
-        <Strip />
       </div>
     </div>
   );
