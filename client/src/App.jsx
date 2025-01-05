@@ -12,6 +12,7 @@ import Hero from './components/Home/Hero';
 import Navbar from './components/Navbar';
 import Mascot from './components/Home/Mascot';
 import Home from './pages/Home';
+import Team from './components/Home/Team';
 function App() {
 
   return (

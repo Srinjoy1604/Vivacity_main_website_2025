@@ -66,13 +66,12 @@ function Team(){
         }}
       >
         {/* Thread */}
-      <div
+      <div className='top-[24.5885%] left-[24.7%]'
         style={{
           position: 'absolute',
           width: `${(292 / 583) * 100}%`,
           height: `${(221 / 520) * 100}%`,
-          top: `${(122.66 / 520) * 100}%`,
-          left: `${(137.08 / 583) * 100}%`,
+          
           backgroundImage: `url(${Thread})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -89,13 +88,11 @@ function Team(){
 
 
       {/* Pin A */}
-      <div
+      <div className='top-[15.4%] left-[16.6%]'
         style={{
           position: 'absolute',
           width: `${(93.14 / 583) * 100}%`,
           height: `${(93.14 / 520) * 100}%`,
-          top: `${(63.86 / 520) * 100}%`,
-          left: `${(88.75 / 583) * 100}%`,
           backgroundImage: `url(${Pin})`,
           backgroundSize: 'cover',
           transform: 'rotate(1.38deg)',
@@ -109,13 +106,11 @@ function Team(){
       />
 
       {/* Pin B */}
-      <div
+      <div className='top-[11.9%] left-[54.7%]'
         style={{
           position: 'absolute',
           width: `${(79.76 / 583) * 100}%`,
           height: `${(79.76 / 520) * 100}%`,
-          top: `${(50.92 / 520) * 100}%`,
-          left: `${(317 / 583) * 100}%`,
           backgroundImage: `url(${Pin})`,
           backgroundSize: 'cover',
           transform: 'rotate(1.38deg)',
@@ -385,7 +380,7 @@ function Team(){
               position: "absolute",
             }}
           >
-            Meet the dreamers, doers, and masterminds behind <span className='text-[1.325rem] 2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] font-rfabb' style={{color: 'rgba(4, 9, 29, 1)',}}>VIVACITY'25</span> From envisioning the cosmic threads of our theme to weaving it into reality, this team makes it all happen. Tap to discover the faces and stories of those who bring the multiverse to life!
+            Meet the dreamers, doers, and masterminds behind <span className='text-[1.325rem] 2xl-text-[1.5rem] sm-text-[0.6rem] 1500:text-[1.65rem] 1980:text-[1.85rem] font-rfabb' style={{color: 'rgba(4, 9, 29, 1)',}}>VIVACITY'25</span> From envisioning the cosmic threads of our theme to weaving it into reality, this team makes it all happen. Tap to discover the faces and stories of those who bring the multiverse to life!
           </div>
           
           <div
