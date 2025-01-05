@@ -11,12 +11,14 @@ import Footer from './components/Footer';
 import Hero from './components/Home/Hero';
 import Navbar from './components/Navbar';
 import Mascot from './components/Home/Mascot';
+import Home from './pages/Home';
 
 function App() {
 
   return (
     <Router>
       <div>
+        <Navbar />
         <Routes>
           <Route path='/about' element={<About />} />
           <Route path='/hero' element={<Hero/>} />
@@ -26,6 +28,7 @@ function App() {
           <Route path='/legacy' element={<Legacy />} />
           <Route path='/mascot' element={<Mascot/>} />
           <Route path='/pastartists' element={<PastArtists />} />
+          <Route path='/' element={<Home />} />
         </Routes>
         {/* Mobile footer */}
         <div className="block sm:hidden">

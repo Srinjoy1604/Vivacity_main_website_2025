@@ -37,7 +37,7 @@ function Concert() {
 
   return (
     <div
-      className="flex justify-center items-center w-screen overflow-hidden my-10"
+      className="flex justify-center items-center w-screen overflow-hidden "
       style={{
         backgroundImage: `url(${BackGround})`,
         backgroundSize: backgroundSize,
