@@ -13,19 +13,27 @@ import Dimg from '../../assets/images/TeamD_img.png';
 import Pin from '../../assets/images/pin.png';
 import Thread from '../../assets/images/threads.png'
 import React, { useState,useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
 function Team(){
 
   const [showPins, setShowPins] = useState(false);
   const [showThread, setShowThread] = useState(false);
-
+  const location = useLocation();
+  
   useEffect(() => {
-    const pinTimer = setTimeout(() => setShowPins(true), 500); 
-    const threadTimer = setTimeout(() => setShowThread(true), 800); 
-    return () => {
-      clearTimeout(pinTimer);
-      clearTimeout(threadTimer);
-    };
-  }, []);
+    
+    if (location.pathname === "/team") { 
+      const pinTimer = setTimeout(() => setShowPins(true), 500);
+      const threadTimer = setTimeout(() => setShowThread(true), 800);
+      
+      return () => {
+        clearTimeout(pinTimer);
+        clearTimeout(threadTimer);
+      };
+    }
+  }, [location.pathname]);
 
     return (
         //main div
