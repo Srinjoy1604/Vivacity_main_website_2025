@@ -146,10 +146,12 @@ const Navbar = () => {
     };
 
     return (
+        <>
+        
         <nav className={`
-            fixed w-full top-0 z-50
+            fixed w-full top-0 z-50 
             transition-all duration-300 ease-in-out
-            ${scrolled ? 'bg-black/90 backdrop-blur-sm shadow-lg' : 'bg-[#17153a]'}
+            ${scrolled ? 'bg-black/90 backdrop-blur-sm shadow-lg' : 'bg-[#04091D]'}
         `}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex items-center justify-between md:justify-around h-16 sm:h-18 md:h-20">
@@ -163,7 +165,7 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
+                    <div className="hidden lg:flex items-center font-rfabb space-x-2 xl:space-x-4">
                         {['HOME', 'EVENTS', 'SPONSORS', 'OUR\u00A0TEAM'].map((item) => (
                             <NavLink
                                 key={item}
@@ -180,11 +182,10 @@ const Navbar = () => {
                             </NavLink>
                         ))}
                     </div>
-                    <div className='hidden lg:flex'>
+                    <div className='hidden font-rfabb lg:flex'>
                         <Link to="/">
-                            <span className='bg-transparent w-fit text-white border-2 h-10 p-[9px] px-3 rounded-[25px] text-center flex items-center gap-2 hover:bg-white/10 transition-all duration-300'>
-                               Register Now 
-                               <ArrowRight className="w-4 h-4" />
+                            <span className='bg-transparent w-fit text-white border-2 border-blue-500 h-9 p-[2px] px-3 rounded-[25px] text-center flex items-center gap-2 hover:bg-white/10 transition-all duration-300'>
+                               Register Now -&gt;
                             </span>
                         </Link>
                     </div>
@@ -228,6 +229,8 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+        <div className="h-14 sm:h-16 md:h-18"></div>
+        </>
     );
 };
 

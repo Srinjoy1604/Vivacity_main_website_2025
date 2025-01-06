@@ -15,6 +15,7 @@ function About() {
 
   return (
     <>
+    
       <div
         className="relative w-full h-[100vh] bg-gray-900 p-8 flex items-center justify-center overflow-hidden"
         style={{
@@ -24,14 +25,14 @@ function About() {
         }}
       >
         
-        <div className="block lg:hidden relative">
+        <div className=" lg:hidden relative flex ">
 
         <div
-            className="smImg4 absolute h-[35vh] w-[25vw] sm:h-[30vh] sm:w-[20vw]  md:h-[25vh] md:w-[15vw] z-50"
+            className="smImg4 absolute h-[45vh] w-[30vw] sm:h-[30vh] sm:w-[28vw]  md:h-[25vh] md:w-[25vw] z-40"
             style={{
-              top: "97%",
-              left: "34%", 
-              transform: "rotate(8deg)" ,
+              top: "95%",
+              left: "25%", 
+              transform: "rotate(7.6deg)" ,
             }}
           >
             <NavLink to="/">
@@ -44,10 +45,10 @@ function About() {
           </div>
 
           <div
-            className="smImg3 imagee3 absolute h-[42vh] w-[34vw] sm:h-[37vh] sm:w-[32vw]  md:h-[32vh] md:w-[22vw] z-50"
+            className="smImg3 imagee3 absolute h-[42vh] w-[40vw] sm:h-[37vh] sm:w-[32vw]  md:h-[32vh] md:w-[30vw] z-40"
             style={{
-              top: "-13%",
-              left: "26%",
+              top: "-16%",
+              left: "18%",
               transform: "rotate(15deg)" ,
             }}
           >
@@ -60,15 +61,38 @@ function About() {
             </NavLink>
           </div>
 
-          <div className="bg-yellow-400 p-3 sm:p-6 md:p-8 rounded-2xl max-w-md h-[83vh] sm:max-w-[60vw] md:max-w-[50vw] md:h-[80vh]">
+          <div className="absolute h-52 w-52 z-40 "
+            style={{
+              top: "-27%",
+              right: "-30%",
+            }}
+          >
+            <img src={Image5} alt="" />
+          </div>
+          <div className="absolute h-52 w-52 z-40 "
+            style={{
+              bottom: "-47%",
+              left: "-30%",
+            }}
+          >
+            <img src={Image6} alt="" />
+          </div>
+
+
+          <div className=" p-3 sm:p-6 md:p-8 max-w-[26rem] max-h-fit sm:max-w-[60vw] md:max-w-[50vw]"
+          style={{
+            backgroundColor:"rgba(248, 185, 49, 1)",
+          }}
+          >
             <div className="flex justify-center">
-              <div className="bg-gray-300 border-black border-2 mt-5 sm:mt-2 w-64 sm:w-3/4 md:w-2/3 aspect-square mb-4 rounded-md">
+              <div className="relative bg-gray-300 border-black border-2 mt-5 sm:mt-2 w-64 sm:w-3/4 md:w-2/3 aspect-square mb-4 rounded-md">
+              
                 <img src="" alt="" />
               </div>
             </div>
 
-            <h2 className="font-bold text-2xl text-center mb-4">ABOUT VIVACITY</h2>
-            <p className="text-center text-base">
+            <h2 className="font-bold text-2xl text-center mb-4 font-rfabb">ABOUT VIVACITY</h2>
+            <p className="text-center text-base md:text-lg px-6 sm:px-4 md:px-8 font-vetosans">
               Vivacity, the annual cultural fest of LNMIIT, embodies the vibrant spirit of
               Gen Z and Millennials, presenting an enticing mix of music, dance, art, and
               numerous engaging activities. With exhilarating performances and
@@ -85,7 +109,7 @@ function About() {
           }}
         >
 
-          <div className="blueArr absolute h-52 w-52 z-50 "
+          <div className="blueArr absolute h-52 w-52 z-40 "
             style={{
               top: "-30%",
               right: "-10%",
@@ -94,7 +118,7 @@ function About() {
             <img src={Image5} alt="" />
           </div>
 
-          <div className="redArr imagee6 absolute h-52 w-52 z-50 "
+          <div className="redArr imagee6 absolute h-52 w-52 z-40 "
             style={{
               bottom: "-55%",
               left: "-10%",
@@ -104,7 +128,7 @@ function About() {
           </div>
 
           <div
-            className="imagee3 absolute h-[25vh] w-[18vw] z-50"
+            className="imagee3 absolute h-[25vh] w-[18vw] z-40"
             style={{
               top: "-14%",
               left: "-8%",
@@ -120,7 +144,7 @@ function About() {
           </div>
 
           <div
-            className="imagee4 absolute h-[25vh] w-[15vw] z-50"
+            className="imagee4 absolute h-[25vh] w-[15vw] z-40"
             style={{
               top: "90%",
               left: "86%",
@@ -151,8 +175,8 @@ function About() {
 
             <div className="relative flex-1 transform -skew-x-6 p-[2vw] mr-[4vw]">
               <div className="transform skew-x-6">
-                <h1 className="head lg:pt-4 xl:pt-0 text-3xl font-extrabold mb-[3vh]">ABOUT VIVACITY</h1>
-                <p className="para text-base">
+                <h1 className="head lg:pt-4 xl:pt-0 text-3xl font-extrabold mb-[3vh] font-rfabb">ABOUT VIVACITY</h1>
+                <p className="para text-base font-vetosans">
                   Vivacity, the annual cultural fest of LNMIIT, embodies the vibrant spirit of Gen Z and
                   Millennials, presenting an enticing mix of music, dance, and numerous engaging
                   activities. With exhilarating performances and insightful exhibitions, Vivacity captures
@@ -169,7 +193,6 @@ function About() {
 }
 
 export default About;
-
 
 
 

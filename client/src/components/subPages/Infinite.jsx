@@ -10,9 +10,9 @@ const Infinite = (props) => {
       className="relative w-full h-16 overflow-hidden py-4"
       style={{ background: 'rgba(33, 173, 243, 1)' }}
     >
-      <div className="flex whitespace-nowrap animate-scroll font-rfabb text-[2.75rem]">
-        <span className="text-2xl font-bold">{repeatedText}</span>
-        <span className="text-2xl font-bold">{repeatedText}</span>
+      <div className="flex whitespace-nowrap animate-scroll">
+        <span className=" font-rfabb text-2xl ">{repeatedText}</span>
+        <span className=" font-rfabb text-2xl">{repeatedText}</span>
       </div>
 
       <style jsx>{`
