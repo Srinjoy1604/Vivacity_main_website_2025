@@ -75,11 +75,8 @@ function Team(){
           backgroundImage: `url(${Thread})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          transform: 'rotate(1.38deg)',
-          zIndex: '3', 
-          transform: showThread
-          ? "translateY(0)"
-          : "translateY(-100%)", 
+          transform: `rotate(1.38deg) ${showPins ? "translateY(0)" : "translateY(-100%)"}`,
+          zIndex: '3',
         opacity: showThread ? 1 : 0,
         transition: "all 0.6s ease-out",
         }}
@@ -95,11 +92,8 @@ function Team(){
           height: `${(93.14 / 520) * 100}%`,
           backgroundImage: `url(${Pin})`,
           backgroundSize: 'cover',
-          transform: 'rotate(1.38deg)',
-          zIndex: '3', 
-          transform: showPins
-          ? "translateY(0)"
-          : "translateY(-50%)", 
+          transform: `rotate(1.38deg) ${showPins ? "translateY(0)" : "translateY(-50%)"}`,
+          zIndex: '3',
         opacity: showPins ? 1 : 0,
         transition: "all 0.5s ease-out",
         }}
@@ -113,11 +107,8 @@ function Team(){
           height: `${(79.76 / 520) * 100}%`,
           backgroundImage: `url(${Pin})`,
           backgroundSize: 'cover',
-          transform: 'rotate(1.38deg)',
+          transform: `rotate(1.38deg) ${showPins ? "translateY(0)" : "translateY(-50%)"}`,
           zIndex: '3', 
-          transform: showPins
-          ? "translateY(0)"
-          : "translateY(-50%)", 
         opacity: showPins ? 1 : 0,
         transition: "all 0.5s ease-out",
         }}
@@ -133,11 +124,8 @@ function Team(){
             left: `${(207.21 / 583) * 100}%`,
             backgroundImage: `url(${Pin})`,
             backgroundSize: 'cover',
-            transform: 'rotate(1.38deg)',
-            zIndex: '3', 
-            transform: showPins
-            ? "translateY(0)"
-            : "translateY(-50%)", 
+            transform: `rotate(1.38deg) ${showPins ? "translateY(0)" : "translateY(-50%)"}`,
+            zIndex: '3',
           opacity: showPins ? 1 : 0,
           transition: "all 0.5s ease-out",
           }}
@@ -153,11 +141,8 @@ function Team(){
             left: `${(378.9 / 583) * 100}%`,
             backgroundImage: `url(${Pin})`,
             backgroundSize: 'cover',
-            transform: 'rotate(1.38deg)',
+            transform: `rotate(1.38deg) ${showPins ? "translateY(0)" : "translateY(-50%)"}`,
             zIndex: '3', 
-            transform: showPins
-            ? "translateY(0)"
-            : "translateY(-50%)", 
           opacity: showPins ? 1 : 0,
           transition: "all 0.5s ease-out",
           }}

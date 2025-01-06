@@ -10,7 +10,7 @@ function Strip() {
           alt="Page Footer Strip"
           className="w-full h-full object-cover min-h-[40px]"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-20 mix-blend-overlay" />
+        {/* <div className="absolute inset-0 bg-black bg-opacity-20 mix-blend-overlay" /> */}
       </div>
     </div>
   );
