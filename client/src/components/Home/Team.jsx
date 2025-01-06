@@ -188,8 +188,8 @@ function Team(){
                       position: 'absolute',
                       color: 'green',
                       fontWeight: 'bold',
-                      top: '65.92%',
-                      left: '28.29%',
+                      top: '69.92%',
+                      left: '30.29%',
                       gap: '0px',
                       transform: 'rotate(4.79deg)',
                     }}
@@ -231,12 +231,12 @@ function Team(){
                 }}
               />
             <span
-              className="font-rfabb"
+              className=" text-[] font-rfabb"
               style={{
                 position: 'absolute',
                 color: 'green',
                 fontWeight: 'bold',
-                top: '68.67%',
+                top: '72.67%',
               left: '34.04%',
                 gap: '0px',
                 transform: 'rotate(-6.57deg)',
@@ -283,8 +283,8 @@ function Team(){
                 position: 'absolute',
                 color: 'green',
                 fontWeight: 'bold',
-                top: '67.58%',
-              left: '23.95%',
+                top: '70.58%',
+              left: '30.95%',
                 gap: '0px',
                 transform: 'rotate(5.46deg)',
               }}
@@ -316,21 +316,21 @@ function Team(){
               src={Dimg}
               alt="Team D Member"
               style={{
-                width: '60.24%',
-                height: '65.12%',
+                width: '65.24%',
+                height: '67.12%',
                 position: 'relative',
                 bottom: '10.10%',
-                left: '5.37%',
+                left: '4.37%',
               
               }}
             /><span
-            className="font-rfabb"
+            className="font-rfabb 1280:text-[1.2rem] text-[1.15rem] 2xl-text-[1.73rem] sm-text-[1rem]  1980:text-[1.85rem] 1600:text-[1.35rem] 2100:text-[2rem]"
             style={{
               position: 'absolute',
               color: 'green',
               fontWeight: 'bold',
-              top: '67.49%',
-              left: '33.35%',
+              top: '68.49%',
+              left: '35.35%',
               gap: '0px',
               transform: 'rotate(-10.77deg)',
             }}
@@ -343,7 +343,7 @@ function Team(){
 
         {/* Yellow Div */}
     <div
-      className="absolute border flex flex-col justify-between items-center box-border"
+      className="absolute border flex flex-col justify-center items-center box-border"
       style={{
         width: `${(387 / 1280) * 100}%`,
         height: `${(505 / 780) * 100}%`,
@@ -356,7 +356,7 @@ function Team(){
     >
           {/* Text Div */}
           <div
-            className="p-2 box-border text-center  2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] text-[1.5rem] font-vetosans"
+            className="p-2 box-border text-center 1280:text-[1.325rem] text-[1.15rem] 2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[2rem] font-vetosans"
             style={{
               width: `${(325 / 387) * 100}%`, 
               height: `${(297 / 505) * 100}%`, 
@@ -365,7 +365,7 @@ function Team(){
               position: "absolute",
             }}
           >
-            Meet the dreamers, doers, and masterminds behind <span className='text-[1.325rem] 2xl-text-[1.5rem] sm-text-[0.6rem] 1500:text-[1.65rem] 1980:text-[1.85rem] font-rfabb' style={{color: 'rgba(4, 9, 29, 1)',}}>VIVACITY'25</span> From envisioning the cosmic threads of our theme to weaving it into reality, this team makes it all happen. Tap to discover the faces and stories of those who bring the multiverse to life!
+            Meet the dreamers, doers, and masterminds behind <span className='1280:text-[1.325rem] text-[0.85rem] 2xl-text-[1.5rem] sm-text-[0.6rem] 1500:text-[1.65rem] 1700:text-[1.8rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[2rem]  font-rfabb' style={{color: 'rgba(4, 9, 29, 1)',}}>VIVACITY'25</span> From envisioning the cosmic threads of our theme to weaving it into reality, this team makes it all happen. Tap to discover the faces and stories of those who bring the multiverse to life!
           </div>
           
           <div
@@ -387,7 +387,7 @@ function Team(){
               position: "absolute",
             }}
           >
-          <p className='text-[1.875rem] xl-text-[1.5rem] 2xl-[1.8rem] 1980:text-[1.95rem] font-rfabb'> Meet Them!</p>
+          <p className='text-[1.875rem] xl-text-[1.5rem] 2xl-[1.8rem] 1980:text-[1.95rem] 1600:text-[1.75rem] 1700:text-[1.8rem] 2100:text-[2rem] font-rfabb'> Meet Them!</p>
           </button>
       </div>
  </div>

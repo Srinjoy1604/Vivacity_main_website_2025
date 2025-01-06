@@ -38,7 +38,7 @@ function Footer1() {
   
     
     
-    <div className="flex flex-col items-center top-[0%] h-[56.55%] ">
+    <div className="flex flex-col items-center top-[0%] h-[55.55%] ">
       
       <img
         src={vivacityLogo}
