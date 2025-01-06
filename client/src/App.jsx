@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import Mascot from './components/Home/Mascot';
 import Home from './pages/Home';
 import Team from './components/Home/Team';
+import TeamMob from './components/Home/TeamMob';
 function App() {
 
   return (
@@ -26,7 +27,8 @@ function App() {
           <Route path='/portal' element={<Portal />} />
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
-          <Route path='/team' element={<Team />} />
+          <Route path='/team' element={<Team />} />{/* Desktop*/ }
+          <Route path='/teammob' element={<TeamMob />} />{/* Mobile and tablet*/ }
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/mascot' element={<Mascot />} />
           <Route path='/' element={<Home />} />
