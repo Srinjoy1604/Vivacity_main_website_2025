@@ -34,11 +34,11 @@ function Footer1() {
             backgroundPosition:"top"
           }}
         />
-<div className="relative w-[80%] h-[72.48%] flex flex-col items-center justify-center top-[8.5%] ">
+<div className="relative w-[80%] h-[72.48%] flex flex-col items-center justify-center top-[10.5%] ">
   
     
     
-    <div className="flex flex-col items-center top-[0%] h-[56.55%] ">
+    <div className="flex flex-col items-center top-[0%] h-[55.55%] ">
       
       <img
         src={vivacityLogo}
