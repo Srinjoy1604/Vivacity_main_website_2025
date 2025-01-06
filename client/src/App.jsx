@@ -30,7 +30,6 @@ function App() {
           <Route path='/team' element={<Team />} />{/* Desktop*/ }
           <Route path='/teammob' element={<TeamMob />} />{/* Mobile and tablet*/ }
           <Route path='/pastartists' element={<PastArtists />} />
-          <Route path='/mascot' element={<Mascot />} />
           <Route path='/' element={<Home />} />
         </Routes>
         {/* Mobile footer */}
