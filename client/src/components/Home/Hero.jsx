@@ -6,7 +6,6 @@ import Image4 from "../../assets/images/right1.png";
 import Image5 from "../../assets/images/bottom1.png";
 import Image6 from "../../assets/images/bottom2.png";
 import Image7 from "../../assets/images/viva_logo_hero.png";
-import Image8 from "../../assets/images/halftone.png";
 import "./forHero.css";
 
 const Hero = () => {
