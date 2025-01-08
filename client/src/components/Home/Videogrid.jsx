@@ -90,7 +90,6 @@ const VideoGrid = () => {
                 width: video.buttonPosition === "top-right" ? "35.8%" : "59.8%",
                 height:"21.6%",
                 backgroundImage: `url(${video.buttonImage})`,
-                backgroundSize: "cover", 
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
               }}
