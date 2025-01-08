@@ -20,7 +20,7 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
       end: "+=100%",
       pin: true,
       pinSpacing: true,
-      scrub: 2,
+      scrub: 1,
     },
   });
 
