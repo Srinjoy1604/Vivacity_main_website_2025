@@ -14,6 +14,7 @@ import Mascot from './components/Home/Mascot';
 import Home from './pages/Home';
 import Team from './components/Home/Team';
 import TeamMob from './components/Home/TeamMob';
+import Herox from './components/Home/Herox';
 function App() {
 
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/teammob' element={<TeamMob />} />{/* Mobile and tablet*/ }
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/' element={<Home />} />
+          <Route path='/HeroX' element={<Herox />} />
         </Routes>
         {/* Mobile footer */}
         <div className="block sm:hidden">

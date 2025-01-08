@@ -1,0 +1,35 @@
+.HeroMobile
+{
+    background-image: url("../../assets/images/HeroMobileBackgroundParts.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.HeroTop
+{
+    background-image: url("../../assets/images/HeroMobileBackgroundParts.png"),url("../../assets/images/HeroMobileBackground.png");
+    background-size: 110% 110%;
+    background-repeat: no-repeat;
+    background-position-x: 59%;
+    background-position-y: 20%;
+}
+.RegisterStrip
+{
+    background-image: url("../../assets/images/HeroMobileBackgroundStrip.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.StripButton
+{
+    background-image: url("../../assets/images/HeroMobileRegisterButton.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.ImageParts
+{
+    transition: 0.7s ease-in-out all;
+}
+.ImageParts:hover
+{
+    scale: 1.1;
+}
