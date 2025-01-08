@@ -9,7 +9,7 @@ import VideoGrid from "./Videogrid";
 const Legacy = () => {
   return (
     <div
-      className="min-h-screen bg-cover bg-center flex flex-col items-center px-4 py-8"
+      className="bg-cover bg-center flex flex-col items-center px-4 py-8"
       style={{
         backgroundImage: `url(${Legacybackground})`,
         backgroundSize: "cover",
