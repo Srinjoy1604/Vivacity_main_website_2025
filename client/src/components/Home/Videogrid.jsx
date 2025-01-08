@@ -57,7 +57,7 @@ const VideoGrid = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen top-[19.6%]">
+    <div className="flex justify-center items-center top-[19.6%]">
       <div className="grid gap-4 w-full  grid-cols-1 sm:grid-cols-2 xl:grid-cols-2  ">
         {videos.map((video) => (
           <div
