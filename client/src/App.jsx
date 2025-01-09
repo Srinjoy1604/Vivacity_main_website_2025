@@ -28,8 +28,7 @@ function App() {
           <Route path='/portal' element={<Portal />} />
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
-          <Route path='/team' element={<Team />} />{/* Desktop*/ }
-          <Route path='/teammob' element={<TeamMob />} />{/* Mobile and tablet*/ }
+          <Route path='/team' element={<Team />} />
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/' element={<Home />} />
           <Route path='/HeroX' element={<Herox />} />
