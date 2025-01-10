@@ -92,7 +92,7 @@ const Events = () => {
       }}
     >
       {/* Logo section */}
-      <div className="w-[60%] md:w-[28%] mt-1 sm:mb-6 mb-4">
+      <div className="w-[55%] md:w-[24%] mt-1 sm:mb-6 mb-4">
         <img
           src={Event_logo}
           alt="Event Logo"
@@ -120,7 +120,7 @@ const Events = () => {
           <div className="relative w-full h-full bg-black">
             {/* Desktop Navigation */}
             <div
-              className="absolute top-0 right-0 z-50 w-[18.49%] h-[12.91%]"
+              className="absolute top-0 right-0 z-20 w-[18.49%] h-[12.91%]"
               style={{
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 16% 100%)",
               }}
@@ -128,13 +128,13 @@ const Events = () => {
               <div className="bg-[#53B08E] flex h-full p-1">
                 <button
                   onClick={handlePrevious}
-                  className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-50"
+                  className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-20"
                 >
                   <FaRegArrowAltCircleLeft className="w-[85%] h-[85%]" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-50"
+                  className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-20"
                 >
                   <FaRegArrowAltCircleRight className="w-[85%] h-[85%]" />
                 </button>
@@ -289,7 +289,7 @@ const Events = () => {
                 ))}
               </ul>
 
-              <div className="flex items-center justify-between mt-1  relative z-50">
+              <div className="flex items-center justify-between mt-1  relative z-20">
                 <button
                   onClick={handleKnowMore}
                   className="w-[56%] transition-transform hover:scale-105 focus:outline-none"
@@ -304,13 +304,13 @@ const Events = () => {
                 <div className="flex gap-2 mr-2">
                   <button
                     onClick={handlePrevious}
-                    className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-50"
+                    className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20"
                   >
                     <FaRegArrowAltCircleLeft className="w-8 h-8" />
                   </button>
                   <button
                     onClick={handleNext}
-                    className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-50"
+                    className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20"
                   >
                     <FaRegArrowAltCircleRight className="w-8 h-8" />
                   </button>

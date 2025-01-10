@@ -1,6 +1,6 @@
 import React from "react";
 import BackGround from "../../../assets/images/Group 60.png";
-
+import Amit from "../../../assets/images/Amit.png";
 const ArtistCard = ({ artist }) => {
   // Calculate base dimensions for 1320x1320 viewport
   // Card size should be 302x451 at 1320px viewport width
@@ -8,7 +8,7 @@ const ArtistCard = ({ artist }) => {
 
   return (
     <div
-      className="relative w-[22.87%] min-w-[250px] aspect-[310/451] m-2"
+      className="relative w-[22.87%] min-w-[350px] aspect-[312/451] m-2"
       style={{
         backgroundImage: `url(${BackGround})`,
         backgroundSize: "contain",
@@ -26,18 +26,8 @@ const ArtistCard = ({ artist }) => {
       </div>
 
       {/* Name Container */}
-      <div className="w-full h-[25%] flex items-center justify-center">
-        <h3
-          className="font-bold text-center"
-          style={{
-            // Responsive font size using clamp
-            fontSize: "clamp(1rem, 1.5vw, 1.5rem)",
-            color: "#FF1493", // Pink color
-            textShadow: "2px 0px 1px blue, -2px 0px 1px green",
-          }}
-        >
-          {artist.Name}
-        </h3>
+      <div className="w-full h-[14%] flex items-center justify-center">
+        <img src={Amit} />
       </div>
     </div>
   );

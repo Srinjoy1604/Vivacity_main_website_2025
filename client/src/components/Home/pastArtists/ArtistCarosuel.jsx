@@ -79,7 +79,7 @@ function Artist() {
   };
 
   return (
-    <div className="relative w-full px-[6%]">
+    <div className="relative w-full min-h-[600px] px-[6%]">
       <div className="relative w-full flex items-center justify-center">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
@@ -87,7 +87,7 @@ function Artist() {
           slidesPerView={slidesPerView}
           onSlideChange={() => console.log("Slide change")}
           onSwiper={(swiper) => console.log(swiper)}
-          className="w-[85%] py-[3%] [&_.swiper-slide]:flex [&_.swiper-slide]:items-center [&_.swiper-slide]:justify-center"
+          className="w-[95%] py-[3%] [&_.swiper-slide]:flex [&_.swiper-slide]:items-center [&_.swiper-slide]:justify-center"
           ref={swiperRef}
           initialSlide={0}
           loop={true}
@@ -108,7 +108,7 @@ function Artist() {
           className="absolute top-1/2 left-0 transform -translate-y-1/2 text-black p-[2%] rounded-full cursor-pointer hover:scale-110 transition-transform z-10"
           aria-label="Previous Slide"
         >
-          <FaRegArrowAltCircleLeft className="w-[3vw] h-[3vw] min-w-[24px] min-h-[24px]" />
+          <FaRegArrowAltCircleLeft className="md:w-[3vw] md:h-[3vw] min-w-[45px] min-h-[45px]" />
         </button>
 
         <button
@@ -116,7 +116,7 @@ function Artist() {
           className="absolute top-1/2 right-0 transform -translate-y-1/2 text-black p-[2%] rounded-full cursor-pointer hover:scale-110 transition-transform z-10"
           aria-label="Next Slide"
         >
-          <FaRegArrowAltCircleRight className="w-[3vw] h-[3vw] min-w-[24px] min-h-[24px]" />
+          <FaRegArrowAltCircleRight className="w-[3vw] h-[3vw] min-w-[45px] min-h-[45px]" />
         </button>
       </div>
     </div>
