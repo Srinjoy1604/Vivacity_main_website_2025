@@ -15,6 +15,7 @@ import Home from './pages/Home';
 import Team from './components/Home/Team';
 import TeamMob from './components/Home/TeamMob';
 import Herox from './components/Home/Herox';
+import Page from './components/Events/DanceEvents';
 function App() {
 
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/team' element={<Team />} />
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/' element={<Home />} />
+          <Route path='/page' element={<Page />} />
           <Route path='/HeroX' element={<Herox />} />
         </Routes>
         {/* Mobile footer */}

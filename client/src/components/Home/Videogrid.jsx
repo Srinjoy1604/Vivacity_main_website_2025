@@ -71,13 +71,10 @@ const VideoGrid = () => {
 
 
   return (
-<<<<<<< Updated upstream
-    <div className="flex justify-center items-center top-[19.6%]">
-      <div className="grid gap-4 w-full  grid-cols-1 sm:grid-cols-2 xl:grid-cols-2  ">
-=======
+
+
     <div className="flex justify-center items-center min-h-screen top-[19.6%]  ">
       <div className="grid gap-x-[1.5%] gap-y-[2.2%] w-full  grid-cols-1 sm:grid-cols-2 xl:grid-cols-2  ">
->>>>>>> Stashed changes
         {videos.map((video) => (
           <div
             key={video.id}
