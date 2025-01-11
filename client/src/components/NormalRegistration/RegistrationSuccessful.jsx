@@ -1,25 +1,25 @@
 import { useNavigate } from 'react-router-dom';
 import NormalButton from './NormalButton';
-
+import "../../pages/normalregistration.css";
 const RegistrationSuccessful = () => {
     const navigate = useNavigate();
     return (
-        <div className='normal-form lg:w-3/5 w-[90%] rounded-md mx-auto mb-8 border border-solid border-[#45C7FF]'>
-            <h1 className="w-5/6 mx-auto mt-8 mb-4 text-center font-grobold text-white text-2xl tracking-wider leading-none md:text-2xl">
+        <div className='reg_suc m-[2%]  p-[2%] w-[40%] rounded-md mx-auto mb-8 border border-solid border-[#45C7FF]'>
+            <h1 className="w-full px-[8%] mt-8 mb-4 text-center font-grobold text-white  tracking-wider leading-none  font-rfabb text-[2.25rem] font-[700]">
                 Congratulations !
                 <br />
                 You have successfully registered for
-                <br />
                 Vivacity 2025
             </h1>
-            <p className="text-white w-2/3 mx-auto md:text-xl">
-                You will shortly be contacted by our team for payment
-                instructions.
+            <p className="w-[45%] text-white mx-auto text-center font-vetosans font-[400] text-[1.25rem]">
+            You will shortly receive the payment details on your registered email address
             </p>
-            <NormalButton text="Home" 
-            handler={ (e) => {
-                navigate("/");
-            }}/>
+            <div className='w-[100%] grid place-items-center'>
+                <NormalButton text="Home"
+                handler={ (e) => {
+                    navigate("/");
+                }}/>
+            </div>
         </div>
     );
 };
