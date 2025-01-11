@@ -13,11 +13,9 @@ import Navbar from './components/Navbar';
 import Mascot from './components/Home/Mascot';
 import Home from './pages/Home';
 import Team from './components/Home/Team';
-import TeamMob from './components/Home/TeamMob';
 import Herox from './components/Home/Herox';
 import Page from './components/Events/DanceEvents';
 import NormalRegistration from './pages/NormalRegistration';
-
 function App() {
 
   return (
