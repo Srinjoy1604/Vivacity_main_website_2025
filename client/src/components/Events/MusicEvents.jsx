@@ -5,7 +5,7 @@ import BattleOfBandsText from "../../assets/images/BattleOfBandsText.png";
 import BobTextMobile from "../../assets/images/BobTextMobile.png";
 import BandishText from "../../assets/images/BandishText.png";
 import BandishTextMobile from "../../assets/images/BandishTextMobile.png";
-import AarohText from "../../assets/images/AarohText.png";
+import AarohText from "../../assets/images/AArohText.png";
 import AarohTextMobile from "../../assets/images/AarohTextMobile.png";
 import MalhaarText from "../../assets/images/MalhaarText.png";
 import MalhaarTextMobile from "../../assets/images/MalhaarTextMobile.png";
