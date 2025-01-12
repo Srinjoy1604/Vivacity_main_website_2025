@@ -16,6 +16,10 @@ import Team from './components/Home/Team';
 import Herox from './components/Home/Herox';
 import Page from './components/Events/DanceEvents';
 import NormalRegistration from './pages/NormalRegistration';
+import DramaEvents from "./components/Events/DramaEvents";
+import MusicEvents from "./components/Events/MusicEvents";
+import QuizzingaEvents from "./components/Events/QuizzingaEvents";
+import FashionEvents from "./components/Events/FashionEvents";
 function App() {
 
   return (
@@ -23,18 +27,22 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path='/about' element={<About />} />
-          <Route path='/hero' element={<Hero/>} />
-          <Route path='/navbar' element={<Navbar/>} />
-          <Route path='/portal' element={<Portal />} />
-          <Route path='/events' element={<Events />} />
-          <Route path='/legacy' element={<Legacy />} />
-          <Route path='/team' element={<Team />} />
-          <Route path='/pastartists' element={<PastArtists />} />
-          <Route path='/' element={<Home />} />
-          <Route path='/page' element={<Page />} />
-          <Route path='/HeroX' element={<Herox />} />
-          <Route path='/NormalRegistration' element={<NormalRegistration />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/hero" element={<Hero />} />
+          <Route path="/navbar" element={<Navbar />} />
+          <Route path="/portal" element={<Portal />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/legacy" element={<Legacy />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/pastartists" element={<PastArtists />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/page" element={<Page />} />
+          <Route path="/HeroX" element={<Herox />} />
+          <Route path="/NormalRegistration" element={<NormalRegistration />} />
+          <Route path="/DramaEvents" element={<DramaEvents />} />
+          <Route path="/MusicEvents" element={<MusicEvents />} />
+          <Route path="/QuizzingaEvents" element={<QuizzingaEvents />} />
+          <Route path="/FashionEvents" element={<FashionEvents />} />
         </Routes>
         {/* Mobile footer */}
         <div className="block sm:hidden">
@@ -46,8 +54,7 @@ function App() {
         </div>
       </div>
     </Router>
-
-  )
+  );
 }
 
 export default App

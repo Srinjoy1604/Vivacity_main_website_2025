@@ -1,0 +1,55 @@
+.DramaTitle
+{
+    background-image: url("../../assets/images/DramaTitle.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.FashionBg
+{
+   background-image: url("../../assets/images/FashionBg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.QuizzingaBg
+{
+   background-image: url("../../assets/images/QuizzingaBg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.MusicBg
+{
+   background-image: url("../../assets/images/MusicBg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.DramaBg
+{
+   background-image: url("../../assets/images/DramaBg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.DramaTextBox
+{
+     background-image: url("../../assets/images/DramaTextBox.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.textbox {
+  font-size: 0.5rem; /* Default size for screens below 955px */
+}
+
+@media (min-width: 1000px) {
+  .textbox {
+    font-size: 0.64rem; /* Size for screens between 955px and 1199px */
+  }
+}
+
+@media (min-width: 1279px) {
+  .textbox {
+    font-size: 0.8rem; /* Size for screens 1200px and above */
+  }
+}
