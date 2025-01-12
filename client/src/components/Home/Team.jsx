@@ -186,7 +186,6 @@ function Team(){
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: '1',
-    position: 'relative' 
   }}
 >
   <img
@@ -205,12 +204,8 @@ function Team(){
   />
 
   <span
-    className="text-[1.15rem] 2xl-text-[1.73rem] sm-text-[1rem]  1980:text-[1.85rem] 1600:text-[1.35rem] 2100:text-[2rem]   lg:text-[1.02rem] font-rfabb md:text-[0.8rem] md:left-[19%] "
+    className="absolute text-green-700 font-bold top-[70%] text-[1.15rem] 2xl-text-[1.73rem] sm-text-[1rem]  1980:text-[1.85rem] 1600:text-[1.35rem] 2100:text-[2rem]   lg:text-[1.02rem] font-rfabb md:text-[0.8rem] md:left-[19%] "
     style={{
-      position: 'absolute', 
-      color: 'green',
-      fontWeight: 'bold',
-      top: '70%', 
       transform: 'translateX(-50%)', 
       transform: 'rotate(4.79deg)', 
     }}
@@ -248,8 +243,8 @@ function Team(){
                   top: '10%', 
                   left: '15%',
                   transform: showImg ? "translateY(0)" : "translateY(-100%)",
-                        opacity: showImg ? 1 : 0,
-                        transition: "all 0.2s ease-out",
+                  opacity: showImg ? 1 : 0,
+                  transition: "all 0.2s ease-out",
                   
                 }}
               />
@@ -308,9 +303,7 @@ function Team(){
                 position: 'absolute', 
                 color: 'green',
                 fontWeight: 'bold',
-                transform: 'rotate(5.46deg)',
-                
-                
+                transform: 'rotate(5.46deg)',                
               }}
             >
               TEAM C
@@ -503,9 +496,8 @@ function Team(){
       backgroundImage: `url(${Thread1})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      transform: 'rotate(1.38deg)',
+      transform: `rotate(1.38deg) ${showThread ? 'translateY(0)' : 'translateY(-100%)'}`,
       zIndex: '3',
-      transform: showThread ? "translateY(0)" : "translateY(-100%)",
       opacity: showThread ? 1 : 0,
       transition: "all 0.6s ease-out",
     }}
@@ -521,9 +513,7 @@ function Team(){
       left: `${(35.04 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
-      transform: 'rotate(0.88deg)',
-      zIndex: '3',
-      transform: showPins ? "translateY(0)" : "translateY(-50%)",
+      transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,      zIndex: '3',
       opacity: showPins ? 1 : 0,
       transition: "all 0.5s ease-out",
     }}
@@ -539,9 +529,8 @@ function Team(){
       left: `${(170.87 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
-      transform: 'rotate(0.88deg)',
+      transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,
       zIndex: '3',
-      transform: showPins ? "translateY(0)" : "translateY(-50%)",
       opacity: showPins ? 1 : 0,
       transition: "all 0.5s ease-out",
     }}
@@ -557,9 +546,8 @@ function Team(){
       left: `${(83.82 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
-      transform: 'rotate(0.88deg)',
+      transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,
       zIndex: '3',
-      transform: showPins ? "translateY(0)" : "translateY(-50%)",
       opacity: showPins ? 1 : 0,
       transition: "all 0.5s ease-out",
     }}
@@ -575,9 +563,8 @@ function Team(){
       left: `${(203.17 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
-      transform: 'rotate(0.88deg)',
+      transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,
       zIndex: '3',
-      transform: showPins ? "translateY(0)" : "translateY(-50%)",
       opacity: showPins ? 1 : 0,
       transition: "all 0.5s ease-out",
       
