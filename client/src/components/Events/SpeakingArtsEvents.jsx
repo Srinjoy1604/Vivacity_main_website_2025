@@ -1,5 +1,6 @@
 import Background from "../../assets/images/Danceevents2bg.png";
-import Title2 from '../../assets/images/Title2.png'
+import Title2 from '../../assets/images/Title2.png';
+import SpeakingTitle from '../../assets/images/SpeakingArtsTitle.png';
 import subtitle2 from '../../assets/images/Subheading.png'
 import Topleft from '../../assets/images/Group 96-2.png'
 import Topright from '../../assets/images/Subtext.png'
@@ -48,7 +49,7 @@ function SpeakingArts(){
 
         <>
             <div className="md:block hidden">
-        <div className="min-h-screen bg-cover bg-center flex flex-col items-center"
+        <div className="min-h-screen bg-cover bg-center flex flex-col items-center "
         style={{
           backgroundImage: `url(${Background})`,
           backgroundSize: "cover",
@@ -63,29 +64,15 @@ function SpeakingArts(){
                             aspectRatio: "653/140",
                             left: "22.63%", 
                             top:'4.42%',
-                            backgroundImage: `url(${Title2})`,
-                            backgroundSize: "cover",
+                            backgroundImage: `url(${SpeakingTitle})`,
+                            backgroundSize: "100% 100%",
                             backgroundRepeat: "no-repeat",
                             zIndex:'1'
         
                      }}>
                         
                          {/* SubTitle*/}
-                         <div  style={{
                         
-                        position: "relative",
-                        width: "82.73%", 
-                        aspectRatio: "513.91 /51.16",
-                        left: "8.53%",
-                        top:'90.71%' ,
-                        backgroundImage: `url(${subtitle2})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        zIndex:'2'
-    
-                 }}>
-                    <p className="font-rfabb text-[1.5rem] lg:text-[1.3rem] md:text-[1rem] w-[850px]:text-[1rem] 1400:text-[1.6rem] 1600:text-[1.7rem] min-h-[1700px]:text-[1.8rem] 1980:text-[2rem] 2100:text-[2.4rem] text-center"> 1 lakh cash prize + 1.5 lakh worth prizes</p>
-                    </div>
                 </div>
                 <div className=" items-center"
                         style={{
@@ -412,8 +399,8 @@ function SpeakingArts(){
                             aspectRatio: "305/ 68.68",
                             left: "11.23%", 
                             top:'2.35%',
-                            backgroundImage: `url(${Title1})`,
-                            backgroundSize: "cover",
+                            backgroundImage: `url(${SpeakingTitle})`,
+                            backgroundSize: "100% 100%",
                             backgroundRepeat: "no-repeat",
                             zIndex:'1'
         
@@ -422,21 +409,7 @@ function SpeakingArts(){
             </div>  
             {/* SubTitle */}
                        
-                        <div  style={{
                         
-                        position: "absolute",
-                        width: "69.73%", 
-                        aspectRatio: "261.98 /25",
-                        left: "13.53%",
-                        top:'5.71%' ,
-                        backgroundImage: `url(${subtitle1})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        zIndex:'2'
-    
-                 }}>
-                    <p className="font-rfabb text-[1.5rem] sm:text-[1.4rem] xs:text-[1.0rem] xxs:text-[0.85rem] xxxs:text-[0.65rem] 270:text-[0.50rem] text-center overflow-hidden"> 1 lakh cash prize + 1.5 lakh worth prizes</p>
-                    </div>
                 
                  
 
