@@ -295,7 +295,7 @@ const NormalRegistration = () => {
     };
 
     return (
-        <div className="w-full min-h-[100vh] h-[100%] bg-cover flex flex-col bg-no-repeat normal-page justify-center items-center">
+        <div className="w-full p-[2%] min-h-[100vh] h-[100%] bg-cover flex flex-col bg-no-repeat normal-page justify-center items-center">
             <NormNav />
             {/*Pre Registration Form*/}
             <div ref={personalDetailsForm} className={`w-[100%] NormalFormDiv outline-none border-none m-[3%]`}>
@@ -341,7 +341,7 @@ const NormalRegistration = () => {
                 className=" w-[90vw] mx-auto bg-transparent"
             >
                 <Form>
-                    <p className="mt-4 text-red-500">{warning}</p>
+                    <p className="mt-4 text-red-500 text-center font-rfabb">{warning}</p>
                     <div className={`flex justify-center gap-6`}>
                         <NormalButton
                             text="close"
