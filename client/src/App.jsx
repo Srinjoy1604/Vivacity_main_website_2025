@@ -20,6 +20,7 @@ import DramaEvents from "./components/Events/DramaEvents";
 import MusicEvents from "./components/Events/MusicEvents";
 import QuizzingaEvents from "./components/Events/QuizzingaEvents";
 import FashionEvents from "./components/Events/FashionEvents";
+import EventsPage from './pages/EventsPage';
 function App() {
 
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route path="/hero" element={<Hero />} />
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/portal" element={<Portal />} />
-          <Route path="/events" element={<Events />} />
+          <Route path="/events" element={<EventsPage />} />
           <Route path="/legacy" element={<Legacy />} />
           <Route path="/team" element={<Team />} />
           <Route path="/pastartists" element={<PastArtists />} />
