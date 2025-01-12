@@ -6,7 +6,7 @@ import "../../pages/normalregistration.css";
 const NormalForm = ({ change, submit }) => {
     return (
         <Form submit={submit} className={`w-[100%] `}>
-            <h1 className=" mt-4 mb-4 text-center font-grobold text-[#04FFB4] font-rfabb text-[700] text-[2.5rem] tracking-wider leading-none md:text-4xl">
+            <h1 className=" mt-4 mb-4 text-center  text-[#04FFB4] font-rfabb font-[700] text-[2.5rem] tracking-wider leading-none max-[1010px]:text-[2rem] max-[784px]:text-[1.7rem]  max-[618px]:text-[1.2rem]">
                 PRE REGISTER HERE
             </h1>
             <div className="flex justify-center flex-col gap-4 font-rfabb m-[3%]">

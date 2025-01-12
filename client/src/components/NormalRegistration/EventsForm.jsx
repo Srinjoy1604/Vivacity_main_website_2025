@@ -5,7 +5,7 @@ import InputSelect from './InputSelect';
 import NormalButton from './NormalButton';
 import RadioGroup from './RadioGroup';
 
-const EventsForm = ({ change, add, event, isReset, reset }) => {
+const  EventsForm = ({ change, add, event, isReset, reset }) => {
     const [selectedCategory, setSelectedCategory] = useState('Select Event Category');
     const categoryOptions = {
         'Select Event Category':[],
@@ -84,8 +84,8 @@ const EventsForm = ({ change, add, event, isReset, reset }) => {
     };
 
     return (
-        <form className={`${ChangeBg?'RegisterforEvent1':'RegisterforEvent2 mb-[3%]'} w-[55%] rounded-md mx-auto p-[2%]`}>
-            <h1 className=" my-8 text-center font-grobold text-[#57E8E8] text-2xl tracking-wider leading-none md:text-4xl font-rfabb font-[400] text-[2.5rem]">
+        <form className={`${ChangeBg?'RegisterforEvent1':'RegisterforEvent2 mb-[3%]'} w-[55%] max-[880px]:w-[88%] rounded-md mx-auto p-[2%] m-[4%]`}>
+            <h1 className=" my-8 text-center font-grobold text-[#57E8E8]  tracking-wider leading-none p-[5%]  font-rfabb font-[400] text-[2.5rem] max-[880px]:text-[2rem] ">
                 Register for an Event
             </h1>
             <div className="flex flex-col gap-6 mb-6 ">
