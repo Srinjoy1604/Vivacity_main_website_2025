@@ -85,7 +85,7 @@ function Portal() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
        {/*<section className="w-screen h-[100vh] bg-green-500"></section>*/}
 
       <section
