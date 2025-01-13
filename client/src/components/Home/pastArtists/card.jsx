@@ -1,28 +1,33 @@
 import React from "react";
-import BackGround from "../../../assets/images/Group 60.png"
-function ArtistCard({ artist }) {
+import BackGround from "../../../assets/images/Group 60.png";
+import Amit from "../../../assets/images/Amit.png";
+
+const ArtistCard = ({ artist }) => {
   return (
-    <div className="p-6 text-pink-500 min-h-[40vh] w-[50vw] sm:w-[30vw] md:w-[25vw] lg:w-[20vw] xl:w-[15vw] flex justify-center items-center flex-col" 
-    
-    style={{
-      backgroundImage: `url(${BackGround})`,
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-               }}
+    <div
+      className="relative w-[200px] md:w-[300px] lg:w-[350px] aspect-[312/451]"
+      style={{
+        backgroundImage: `url(${BackGround})`,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="p-6 sm:p-2">
-      <img src={artist.Src} alt={artist.Name} className="" style={{minWidth:"12vw"}}/>
+      {/* Image Container */}
+      <div className="relative w-full h-[75%] overflow-hidden p-[8%]">
+        <img
+          src={artist.Src}
+          alt={artist.Name}
+          className="w-full h-full object-cover rounded-md"
+        />
       </div>
-      <h3
-        className=" text-xs font-bold font-ricks p-1 sm:text-base lg:text-xl xl:text-2xl"
-        style={{
-          textShadow: "2px 0px 1px blue, -2px 0px 1px 1px green",
-        }}
-      >
-        {artist.Name}
-      </h3>
+
+      {/* Name Container */}
+      <div className="w-full h-[14%] flex items-center justify-center">
+        <img src={Amit} className="w-auto h-full" />
+      </div>
     </div>
   );
-}
+};
+
 export default ArtistCard;

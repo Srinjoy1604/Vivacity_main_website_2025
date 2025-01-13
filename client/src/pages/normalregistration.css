@@ -1,0 +1,72 @@
+.normal-page {
+    background-image: url('../assets/images/NormalRegistration.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+.RegisterforEvent1
+{
+    background-image: url("../assets/images/RegisterForEvent.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.RegisterforEvent2
+{
+    background-image: url("../assets/images/FinalRegistrationBg.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Isparticipants
+{
+    background-image: url("../assets/images/IsParticipantBackground.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.normal-form {
+    background-image: url("../assets/images/PreRegisterBackground.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+.reg_suc
+{
+    background-image: url("../assets/images/RegisterSuccessful.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.NormalFormDiv
+{
+    
+}
+
+.text-box,
+.normal-select select {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1)
+    );
+}
+.normal-select option {
+    background: rgb(22, 19, 52);
+    color: #fff;
+}
+.normal-select option:hover {
+    background: rgba(39, 69, 104, 1);
+}
+
+@media screen and (max-width: 912px) {
+    .normal-page {
+        background: url("../assets/images/NormalRegistration.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+}

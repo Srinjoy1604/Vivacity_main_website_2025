@@ -1,5 +1,6 @@
 import Background from "../../assets/images/MacBook Air - 1.png";
 import Title1 from '../../assets/images/DanceTitle.png'
+import Title2 from '../../assets/images/DanceTitle2.png';
 import subtitle1 from '../../assets/images/Subheading.png'
 import Topleft from '../../assets/images/TopLeftimg.png'
 import Topright from '../../assets/images/TopRightimg.png'
@@ -7,7 +8,7 @@ import MiddleLeft from '../../assets/images/MiddleLeftimg.png'
 import MiddleRight from '../../assets/images/MiddleRightimg.png'
 import BottomLeft from '../../assets/images/BottomLeftimg.png'
 import BottomRight from '../../assets/images/BottomRightimg.png'
-import Topleftdiv from '../../assets/images/TopLeftdiv.png'
+import Topleftdiv from '../../assets/images/Topleftdiv.png'
 import TopRightdiv from '../../assets/images/TopRight.png'
 import Streetdance from '../../assets/images/Streetdance.png'
 import TalNarang from '../../assets/images/TalTarang.png'
@@ -47,7 +48,7 @@ function Page() {
        <>
        <div className="md:block hidden">
     <div
-      className="min-h-screen bg-cover bg-center flex flex-col items-center"
+      className="min-h-screen bg-cover bg-center flex flex-col items-center pt-[6rem] max-[802px]:pt-[10rem]"
       style={{
         backgroundImage: `url(${Background})`,
         backgroundSize: "cover",
@@ -76,28 +77,14 @@ function Page() {
                             width: "51.71%", 
                             aspectRatio: "621 / 140",
                             left: "24.23%", 
-                            backgroundImage: `url(${Title1})`,
-                            backgroundSize: "cover",
+                            backgroundImage: `url(${Title2})`,
+                            backgroundSize: "100% 100%",
                             backgroundRepeat: "no-repeat",
                             zIndex:'1'
         
-                     }}
+                     }} 
                     >   {/* SubTitle */}
-                        <div  style={{
-                        
-                        position: "relative",
-                        width: "82.73%", 
-                        aspectRatio: "513.91 /51.16",
-                        left: "8.53%",
-                        top:'90.71%' ,
-                        backgroundImage: `url(${subtitle1})`,
-                        backgroundSize: "cover",
-                        backgroundRepeat: "no-repeat",
-                        zIndex:'2'
-    
-                 }}>
-                    <p className="font-rfabb text-[1.5rem] lg:text-[1.2rem] md:text-[0.88rem] w-[850px]:text-[1rem] 1400:text-[1.6rem] 1600:text-[1.7rem] 1980:text-[1.83rem] text-center"> 1 lakh cash prize + 1.5 lakh worth prizes</p>
-                    </div>
+                       
                 </div>
                     {/* Row1 left */}
                 <div  style={{
