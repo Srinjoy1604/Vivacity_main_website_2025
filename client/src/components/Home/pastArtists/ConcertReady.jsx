@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BackGround from "../../../assets/images/Section6Background2.png";
 import mdbackground from "../../../assets/images/mdbackground.png";
-import Gif from "../../../assets/images/gif (2).png";
+import Gif from "../../../assets/images/cd_glitch.gif";
 import AppleMusic from "../../../assets/images/AppleMusicLogo.png";
 import Spotify from "../../../assets/images/SpotifyLogo.png";
 

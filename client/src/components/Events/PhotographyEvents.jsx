@@ -7,8 +7,7 @@ import image4 from "../../assets/images/photography_event_4.png";
 import image5 from "../../assets/images/photography_event_5.png";
 import image6 from "../../assets/images/photography_event_6.png";
 import title from "../../assets/images/photography_title.png";
-import rulebook from "../../assets/images/Rulebook.png";
-import register from "../../assets/images/register.png";
+
 import text1 from "../../assets/images/textbox1.png";
 import imageHunt from "../../assets/images/imageHunt.png";
 import kalakriti from "../../assets/images/kalakriti.png";
@@ -31,16 +30,9 @@ import flimmaking from "../../assets/images/Event Name_3.png";
 import hunt from "../../assets/images/Event Name_4.png";
 import kala from "../../assets/images/Event Name_5.png";
 import perspective from "../../assets/images/Event Name_6.png";
+import Button_component from "./Button_component";
 
 function PhotographyEvents() {
-  const handleRulebookClick = () => {
-    navigate("/rulebook");
-  };
-
-  const handleRegisterClick = () => {
-    navigate("/register");
-  };
-
   return (
     <div
       className="min-h-[70vh] w-full bg-center bg-cover p-4"
@@ -421,28 +413,7 @@ function PhotographyEvents() {
         </div>
       </div>
       {/* Buttons Section */}
-      <div className="flex justify-center items-center gap-8 md:gap-20 mt-8">
-        <button
-          onClick={handleRulebookClick}
-          className="transform hover:scale-105 transition-transform md:mr-40"
-        >
-          <img
-            src={rulebook}
-            alt="Download Rulebook"
-            className="w-[213px] h-[43px] md:w-[22vw] md:h-[8vw] object-contain"
-          />
-        </button>
-        <button
-          onClick={handleRegisterClick}
-          className="transform hover:scale-105 transition-transform"
-        >
-          <img
-            src={register}
-            alt="Register"
-            className="w-[213px] h-[43px] md:w-[22vw] md:h-[8vw] object-contain"
-          />
-        </button>
-      </div>
+      <Button_component showRulebook={true} showRegister={true} />
     </div>
   );
 }
