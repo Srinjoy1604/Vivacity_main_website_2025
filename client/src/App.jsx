@@ -13,9 +13,11 @@ import Navbar from './components/Navbar';
 import Mascot from './components/Home/Mascot';
 import Home from './pages/Home';
 import Team from './components/Home/Team';
-import TeamMob from './components/Home/TeamMob';
+import Sahyog from './components/Events/SocialEvents';
+import SpeakingArts from './components/Events/SpeakingArtsEvents';
 import Herox from './components/Home/Herox';
 import Page from './components/Events/DanceEvents';
+import Page1 from './components/Events/Dancemob';
 function App() {
 
   return (
@@ -33,6 +35,9 @@ function App() {
           <Route path='/pastartists' element={<PastArtists />} />
           <Route path='/' element={<Home />} />
           <Route path='/page' element={<Page />} />
+          <Route path='/page1' element={<Page1 />} />
+          <Route path='/sahyog' element={<Sahyog />} />
+          <Route path='/speak' element={<SpeakingArts />} />
           <Route path='/HeroX' element={<Herox />} />
         </Routes>
         {/* Mobile footer */}
