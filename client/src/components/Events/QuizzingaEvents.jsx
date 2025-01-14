@@ -5,19 +5,19 @@ import BamboozledText from "../../assets/images/BamboozledText.png";
 import MovieAuctionText from "../../assets/images/MovieAuctionText.png";
 import BamboozledBg from "../../assets/images/BamboozledBg.png";
 import MovieAuctionBg from "../../assets/images/MovieAuctionBg.png";
-
+import Button_Component from "./Button_component";
 function QuizzingaEvents() {
   return (
     <div
-      className={`${Styles.QuizzingaBg} w-screen h-[100%] min-h-[100vh]  flex flex-col`}
+      className={`${Styles.QuizzingaBg} w-screen h-[100%] p-[2%] flex flex-col`}
     >
       <div
-        className={` pt-[3%] w-[60%] h-[10%] mx-auto max-w-[755px] grid place-items-center`}
+        className={`grid place-items-center`}
       >
-        <img src={QuizzingaTitle} alt="" />
+        <img src={QuizzingaTitle} className="w-[40%]" alt="" />
       </div>
 
-      <div className="space-y-[2%] flex flex-col justify-center  max-w-[1280px] mx-auto w-full h-full px-[0.5%] pt-[8%] md:pt-[6%] ">
+      <div className="space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[8%] md:pt-[6%] ">
         <div className="flex flex-col items-center  md:flex-row   justify-center  h-[100%] w-[100%] space-y-[5%] md:space-y-[0%] space-x-[2%] ">
           <div className="relative  w-[91.11%] h-[29%]  md:w-[49.2%] md:h-[42.5%] ">
             <img className="w-[100%] h-[100%]" src={BamboozledBg} alt="" />
@@ -57,8 +57,14 @@ function QuizzingaEvents() {
                 chance to shine in the cinematic spotlight.
               </p>
             </div>
+
           </div>
+          
         </div>
+        <div className="w-[100%]">
+            <Button_Component showRegister={true} showRulebook={false} />
+          </div>
+
       </div>
     </div>
   );

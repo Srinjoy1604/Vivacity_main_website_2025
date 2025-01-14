@@ -21,7 +21,7 @@ import Streetdance1 from '../../assets/images/Event Name.png'
 import TalNarang1 from '../../assets/images/Event Name-3.png'
 import Razzmataaz1 from '../../assets/images/Event Name-5.png'
 
-
+import Button_Component from "./Button_component";
 function Page1() {
     return (
       <div
@@ -349,6 +349,7 @@ function Page1() {
                  }}>
                     <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Explore the allure of the classical arts! Let light <br/>descend onto the stage as you enamor yourself in<br/> elegant styles and witness the roots of dance itself!</p>
             </div>
+            <Button_Component showRegister={true} showRulebook={true} />
         </div>
 
             </div>
