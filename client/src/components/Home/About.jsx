@@ -15,13 +15,12 @@ function About() {
 
   return (
     <>
-    <div className={`absolute bottom-[0%] left-[0%] w-[100%]`}><img src={Oval} className="w-full"></img></div>
+    <div className={`absolute bottom-[0%] left-[0%] w-[100%] block max-[830px]:hidden`}><img src={Oval} className="w-full"></img></div>
       <div
         className="relative w-full h-[100%] px-[2rem] py-52 flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: `url(${Image1})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
       >
         <div className="lg:hidden relative flex">
@@ -72,7 +71,7 @@ function About() {
             <h2 className="font-bold text-[1.5rem] px-4 sm:px-8 font-rfabb">
               ABOUT VIVACITY
             </h2>
-            <p className="text-base text-[1rem] leading-5 px-4 sm:px-8 font-vetosans mb-6">
+            <p className="text-base text-[1rem] leading-5 px-4 sm:px-8 font-vetosans mb-6 font-light">
               Vivacity, the annual cultural fest of LNMIIT, embodies the vibrant
               spirit of Gen Z and Millennials, presenting an enticing mix of
               music, dance, art, and numerous engaging activities. With
@@ -137,12 +136,12 @@ function About() {
               <img src="" alt="" />
             </div>
 
-            <div className="relative flex-1 transform -skew-x-6 p-12 mr-20">
+            <div className="relative flex-1 transform -skew-x-6 p-12 mr-4 min-[1100px]:mr-12 1300:mr-20">
               <div className="transform skew-x-6">
-                <h1 className="text-[1.625rem] font-extrabold mb-2 font-rfabb">
+                <h1 className="text-[1.5rem] 1300:text-[2rem] 1600:text-[2.75rem] font-extrabold mb-2 font-rfabb">
                   ABOUT VIVACITY
                 </h1>
-                <p className="text-base font-vetosans">
+                <p className="text-[1rem] 1300:text-[1.25rem] 1600:text-[1.625rem] font-vetosans font-light">
                   Vivacity, the annual cultural fest of LNMIIT, embodies the
                   vibrant spirit of Gen Z and Millennials, presenting an
                   enticing mix of music, dance, and numerous engaging

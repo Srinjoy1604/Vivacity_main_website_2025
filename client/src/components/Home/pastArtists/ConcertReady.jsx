@@ -94,11 +94,11 @@ const Concert = () => {
         <div className="w-[90%] md:w-[88%] lg:w-[68%] h-full">
           <div className="flex flex-col items-center">
             <div className="flex flex-row w-full gap-[5%] items-center">
-              <div className="w-[35%] flex justify-center items-center">
+              <div className="w-[30%] flex justify-center items-center">
                 <img
                   src={Gif}
                   alt="Concert animation"
-                  className="w-full max-h-[400px] h-auto object-contain"
+                  className="w-full h-auto max-h-[50vh] object-contain"
                 />
               </div>
               <div className="w-[63%] flex flex-col">

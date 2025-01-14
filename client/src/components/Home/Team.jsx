@@ -30,8 +30,9 @@ import Cimg1 from '../../assets/images/TeamCImg.png';
 import Dimg1 from '../../assets/images/TeamDImg.png';
 import Pin1 from '../../assets/images/PinMob.png';
 import YellowBack1 from '../../assets/images/YellowbkMob.png';
-import Thread1 from '../../assets/images/ThreadsMob.png'
-import buttonback1 from '../../assets/images/Pinkbtn_back1.png'
+import Thread1 from '../../assets/images/ThreadsMob.png';
+import buttonback1 from '../../assets/images/Pinkbtn_back1.png';
+import Title from '../../assets/images/TeamTitle.png';
 
 function Team(){
 
@@ -57,7 +58,6 @@ function Team(){
 
     return (
       <>
-        //desktop screen main div
  <div className='md:block hidden  '
       style={{
         position: 'relative',
@@ -71,6 +71,7 @@ function Team(){
         zIndex:'3'
       }}
     >
+      <div className='absolute top-[6.54%] left-[29.5%]'><img src={Title}></img></div>
 
       {/* Purple Div */}
       <div
