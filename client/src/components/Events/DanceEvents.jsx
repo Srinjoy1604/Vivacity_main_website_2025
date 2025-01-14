@@ -22,7 +22,7 @@ import Letstangle from '../../assets/images/LetsTangle.png'
 import mudra from '../../assets/images/Mudra.png'
 
 import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 2.png";
-import Title2 from '../../assets/images/Name.png'
+import Title21 from '../../assets/images/Name.png'
 import subtitle2 from '../../assets/images/Cash Prize.png'
 import Topleft1 from '../../assets/images/TopLeftimg.png'
 import Topright1 from '../../assets/images/Mobdancediv.png'
@@ -404,7 +404,7 @@ function Page() {
                             aspectRatio: "305/ 68.68",
                             left: "11.23%", 
                             top:'2.35%',
-                            backgroundImage: `url(${Title2})`,
+                            backgroundImage: `url(${Title21})`,
                             backgroundSize: "cover",
                             backgroundRepeat: "no-repeat",
                             zIndex:'1'
