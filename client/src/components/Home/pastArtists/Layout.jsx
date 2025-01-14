@@ -1,6 +1,6 @@
 import React from "react";
 import BackGround from "../../../assets/images/YellowBg.png";
-import Title from "./Title";
+import Title from "../../../assets/images/PastArtistsTitle.png";
 import Artist from "./ArtistCarosuel";
 import Concert from "./ConcertReady";
 
@@ -15,7 +15,7 @@ function Sec() {
       }}
     >
       <div className="flex justify-center items-center py-6">
-        <Title text="PAST ARTIST"/>
+        <img src={Title} alt="Past Artists" className="w-[40%] h-auto my-10"></img>
       </div>
 
      <div>

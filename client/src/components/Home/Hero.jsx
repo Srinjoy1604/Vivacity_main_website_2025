@@ -28,7 +28,7 @@ function Hero() {
                     
                 </div>
             </div>
-            <div className={`text-center flex items-center align-center justify-center w-[100vw]  ${styles.HeroMobile} aspect-[131/284] hidden max-[830px]:block`}>
+            <div className={`text-center flex items-center align-center justify-center w-[100vw] ${styles.HeroMobile} aspect-[131/284] hidden max-[830px]:block`}>
                 <div className={`text-center w-[100%] h-[100%] ${styles.HeroTop} flex items-center align-center justify-center relative`}>
                     <div className="w-[100%] grid place-items-center relative"><img src={VivaMobile} className="w-[74%] h-auto translate-y-[-25%] "></img></div>
                     <div className={`absolute bottom-[28.5%]  w-[100%] h-[12.5%] ${styles.RegisterStrip} flex items-center align-center justify-center font-rfabb text-[1.25rem]`}><button className={`${styles.StripButton} pt-[2.5%] pb-[2.5%] pr-[1.5%] pl-[1.5%] text-center w-[60%] h-auto max-w-[200px]`}>{`Register Now ->`}</button></div>

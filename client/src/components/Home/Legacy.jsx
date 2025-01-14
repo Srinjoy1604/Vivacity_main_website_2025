@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Legacybackground from "../../assets/images/LegacyBg.png";
-import Title from "./pastArtists/Title";
-
 import VideoGrid from "./Videogrid";
-
+import Title from "../../assets/images/LegacyTitle.png";
 
 
 const Legacy = () => {
@@ -19,10 +17,10 @@ const Legacy = () => {
     >
       
       <div
-        className="w-full text-center m-[1%]"
+        className="w-full flex justify-center items-center"
         >
           {/* legacy text component goes here */}
-          <Title text="THE LEGACY" />
+        <img src={Title} alt="Legacy" className="w-[40%] h-auto my-10"></img>
       </div>
       <VideoGrid />
     </div>

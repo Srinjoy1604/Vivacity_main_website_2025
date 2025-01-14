@@ -8,6 +8,7 @@ import Events from "../components/Home/Events";
 import Legacy from "../components/Home/Legacy";
 import Strip from "../components/Home/strip";
 import Mascot from "../components/Home/Mascot";
+import Team from "../components/Home/Team";
 function Home() {
   return (
     <div>
@@ -21,6 +22,7 @@ function Home() {
       <Legacy />
       <Strip />
       <Mascot />
+      <Team />
     </div>
   );
 }
