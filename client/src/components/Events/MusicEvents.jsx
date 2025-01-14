@@ -21,19 +21,19 @@ import BandishBgMobile from "../../assets/images/BandishBgMobile.png";
 import GullyWarBgMobile from "../../assets/images/GullyWarBgMobile.png";
 import MalhaarBgMobile from "../../assets/images/MalhaarBgMobile.png";
 import AarohBgMobile from "../../assets/images/AarohBgMobile.png";
-
+import Button_Component from "./Button_component";
 function MusicEvents() {
   return (
     <div
-      className={`${Styles.MusicBg} w-screen h-[100%] min-h-[100vh]  flex flex-col`}
+      className={`${Styles.MusicBg} w-screen h-[100%] p-[2%] flex flex-col`}
     >
       <div
-        className={` pt-[3%] w-[60%] h-[10%] mx-auto max-w-[755px] grid place-items-center`}
+        className={`w-[100%] grid place-items-center `}
       >
-        <img src={DramaTitle} alt="" />
+        <img src={DramaTitle} className="w-[40%]" alt="" />
       </div>
 
-      <div className="md:space-y-[2%] flex flex-col justify-center  max-w-[1280px] mx-auto w-full h-full px-[0.5%] pt-[3%] ">
+      <div className="md:space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[3%] ">
         <div className="space-y-[4%] mb-[4%] md:mb-[0%] md:space-y-[0%] flex flex-col md:flex-row items-center justify-center  h-[100%] w-[100%] space-x-[2%] ">
           <div className="relative w-[91%] md:w-[44.1%] md:h-[24.3%] ">
             <img
@@ -102,7 +102,9 @@ function MusicEvents() {
                 voices that are vying to be heard?
               </p>
             </div>
+           
           </div>
+
         </div>
         <div className="space-y-[4%]  md:space-y-[0%]  flex md:flex-row flex-col items-center justify-center  h-[100%] w-[100%] space-x-[2%] ">
           <div className="relative w-[91%] h-[14.61%] md:w-[29.8%] md:h-[36.9%] ">
@@ -205,7 +207,11 @@ function MusicEvents() {
             </div>
           </div>
         </div>
+        <div >
+        <Button_Component showRegister={true} showRulebook={true} />
       </div>
+      </div>
+
     </div>
   );
 }
