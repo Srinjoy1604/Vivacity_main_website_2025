@@ -11,7 +11,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
   const rings = [ring1Ref, ring2Ref, ring3Ref];
-
+  // Enable GPU acceleration for the rings
+  rings.forEach((ringRef) => {
+    if (ringRef.current) {
+      ringRef.current.style.willChange = "transform, opacity";
+    }
+  });
   // Create a timeline for the animation
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -20,7 +25,8 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
       end: "+=100%",
       pin: true,
       pinSpacing: true,
-      scrub: 1,
+      scrub: 0.5,
+      anticipatePin: 1,
     },
   });
 
@@ -34,6 +40,7 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
         transformOrigin: "50% 50%",
         rotation: 0,
         scale: 2.6,
+        force3D: true,
       });
 
       tl.to(
@@ -42,6 +49,7 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
           rotation: rotationAngle, // Rotate
           scale: 4, // Scale up
           duration: 1,
+          ease: "power2.inOut",
         },
         0 // Start all at the same time
       ).to(
