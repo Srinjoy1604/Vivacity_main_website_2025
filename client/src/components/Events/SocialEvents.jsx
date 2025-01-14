@@ -15,7 +15,7 @@ function Sahyog(){
       <>
       <div className='md:block hidden'>
         <div
-            className="min-h-screen bg-cover bg-center flex flex-col items-center "
+            className="bg-cover bg-center flex flex-col items-center "
       style={{
         backgroundImage: `url(${Background})`,
         backgroundSize: "cover",

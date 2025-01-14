@@ -5,12 +5,12 @@ import VivaText from "../../assets/images/vivaText.png";
 import VougeText from "../../assets/images/VougeText.png";
 import VivaBg from "../../assets/images/VivaBg.png";
 import VogueBg from "../../assets/images/VogueBg.png";
- 
+import Button_Component from "./Button_component";
 
 function FashionEvents() {
   return (
     <div
-      className={`${Styles.FashionBg} w-screen h-[100%] min-h-[100vh]  flex flex-col`}
+      className={`${Styles.FashionBg} w-screen h-[100%] p-[2%] flex flex-col`}
     >
       <div
         className={` pt-[3%] w-[60%] h-[10%] mx-auto max-w-[755px] grid place-items-center`}
@@ -64,6 +64,9 @@ function FashionEvents() {
           </div>
         </div>
       </div>
+      <div className="w-[100%]">
+            <Button_Component showRegister={true} showRulebook={false} />
+          </div>
     </div>
   );
 }

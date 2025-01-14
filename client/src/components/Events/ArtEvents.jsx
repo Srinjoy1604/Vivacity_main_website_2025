@@ -26,7 +26,7 @@ import Tatoo from "../../assets/images/art_mobile_2.png";
 import Eclitc from "../../assets/images/art_mobile_3.png";
 import Contrasto from "../../assets/images/art_mobile_4.png";
 import Splash from "../../assets/images/art_mobile_5.png";
-
+import Button_Component from "./Button_component";
 function ArtEvents() {
   const handleRegisterClick = () => {
     navigate("/register");
@@ -42,11 +42,11 @@ function ArtEvents() {
     >
       {/* Title Section */}
       <div className="w-full flex justify-center mb-6">
-        <img src={title} alt="Art Events" className="w-[50%] max-w-2xl" />
+        <img src={title} alt="Art Events" className="w-[40%]" />
       </div>
 
       {/* Desktop Layout */}
-      <div className="max-w-[1880px] mx-auto hidden md:block">
+      <div className=" mx-auto hidden md:block">
         {/* Top Row */}
         <div className="flex flex-wrap gap-7 mb-4">
           {/* Tattoo Tales */}
@@ -355,18 +355,9 @@ function ArtEvents() {
       </div>
 
       {/* Buttons Section */}
-      <div className="flex justify-center gap-20 mt-8">
-        <button
-          onClick={handleRegisterClick}
-          className="transform hover:scale-105 transition-transform"
-        >
-          <img
-            src={register}
-            alt="Register"
-            className="w-[213px] h-[43px] md:w-[22vw] md:h-[8vw] object-contain"
-          />
-        </button>
-      </div>
+      <div className="w-[100%]">
+            <Button_Component showRegister={true} showRulebook={false} />
+          </div>
     </div>
   );
 }

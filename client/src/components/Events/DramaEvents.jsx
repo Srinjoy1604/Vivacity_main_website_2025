@@ -18,16 +18,17 @@ import PaddhatiBgMobile from "../../assets/images/PaddhatiBgMobile.png";
 import MukhautaBgMobile from "../../assets/images/MukhautaBgMobile.png";
 import RangshalaBgMobile from "../../assets/images/RangshalaBgMobile.png";
 import HunkaarBgMobile from "../../assets/images/HunkaarBgMobile.png";
+import Button_Component from "./Button_component";
 function DramaEvents() {
   return (
     <div
-      className={`${Styles.DramaBg} w-screen h-[100%] min-h-[100vh]   flex flex-col`}
+      className={`${Styles.DramaBg} w-screen h-[100%]  p-[2%] flex flex-col`}
     >
-      <div className={` pt-[3%] w-[60%] h-[10%] mx-auto max-w-[755px]  grid place-items-center`}>
-        <img src={DramaTitle} alt="" />
+      <div className={`grid place-items-center`}>
+        <img src={DramaTitle} className="w-[40%]" alt="" />
       </div>
 
-      <div className="space-y-[2%] flex flex-col justify-center  max-w-[1280px] mx-auto w-full h-full px-[0.5%] pt-[5%] md:pt-[3%] ">
+      <div className="space-y-[2%] flex flex-col justify-center  mx-auto w-full h-full px-[0.5%] pt-[5%] md:pt-[3%] ">
         <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] w-[100%] space-y-[2%]  md:space-y-[0%] md:space-x-[2%] ">
           <div className="relative w-[91%] md:w-[54.1%] h-[76.9%] ">
             <img
@@ -56,7 +57,7 @@ function DramaEvents() {
                 className={`${Styles.DramaTextBox} w-[80%] md:w-[70%] aspect-[329/45] md:aspect-[446/59] overflow-hidden h-auto pl-[2%] pb-[9%] p-[1%] absolute bottom-[5%] left-[3%] md:left-[5%]`}
               >
                 <p
-                  className={`${Styles.textbox} text-start font-rfabb  text-black `}
+                  className={`${Styles.textbox} text-start font-rfabb  text-black text-[2rem]`}
                 >
                   You and your character against the world! Let your theatrics
                   run wild in this solo-act-only competition where the only one
@@ -186,6 +187,7 @@ function DramaEvents() {
           </div>
         </div>
       </div>
+      <Button_Component showRegister={true} showRulebook={true}/>
     </div>
   );
 }

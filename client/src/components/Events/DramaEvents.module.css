@@ -39,7 +39,7 @@
     background-repeat: no-repeat;
 }
 .textbox {
-  font-size: 0.5rem; /* Default size for screens below 955px */
+  font-size: 1rem; /* Default size for screens below 955px */
 }
 
 @media (min-width: 1000px) {
@@ -50,6 +50,13 @@
 
 @media (min-width: 1279px) {
   .textbox {
-    font-size: 0.8rem; /* Size for screens 1200px and above */
+    font-size: 1rem;
+    padding: 1%; /* Size for screens 1200px and above */
+  }
+}
+@media (max-width: 1874px) {
+  .textbox {
+    font-size: 0.8rem;
+    padding: 1%; /* Size for screens 1200px and above */
   }
 }
