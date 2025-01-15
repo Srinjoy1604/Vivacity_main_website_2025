@@ -1,18 +1,21 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import vivacityLogo from "../assets/images/VivacityLogo.png";
 import FacebookIcon from "../assets/images/facebookLogo.png";
 import InstagramIcon from "../assets/images/instagramLogo.png";
 import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/FooterBackground.png";
 import Backbg from "../assets/images/Team.png"
+import Backbg1 from "../assets/images/ExcitingBg.png"
 function Footer() {
-  const aspectRatio = 415 / 1280; 
-
+  const aspectRatio = 415 / 1480; 
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <div
       className="relative w-full"
       style={{
-        backgroundImage:`url(${Backbg})`,
+        backgroundImage:`url(${location.pathname==="/"?Backbg:Backbg1})`,
         height: `calc(100vw * ${aspectRatio})`, 
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
