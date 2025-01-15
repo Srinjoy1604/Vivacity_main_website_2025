@@ -40,9 +40,11 @@ function Team(){
   const [showThread, setShowThread] = useState(false);
   const [showImg, setShowImg] = useState(false);
   const elementRef = useRef(null);
+  const elementRef1 = useRef(null)
   
   useEffect(() => {
     const element = elementRef.current;
+    const element1 = elementRef1.current;
     let pinTimer, threadTimer, imageTimer;
 
     const observer = new IntersectionObserver(
@@ -59,6 +61,9 @@ function Team(){
 
     if (element) {
       observer.observe(element);
+    }
+    if (element1) {
+      observer.observe(element1);
     }
 
     return () => {
@@ -480,7 +485,8 @@ function Team(){
     zIndex: '3',
   }}
 >
-    {/* Purple Div */}
+<div className='w-[100%] absolute top-[2%] p-[5%] grid place-items-center'><img src={Title} className='w-[80%]'></img></div>    
+{/* Purple Div */}
     <div
   style={{
     position: 'absolute',
@@ -591,6 +597,7 @@ function Team(){
 
   {/* Team A */}
   <div 
+  ref={elementRef1}
   style={{
     position: 'absolute',
     width: `${(72.38 / 306.63) * 100}%`,

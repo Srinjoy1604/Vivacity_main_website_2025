@@ -387,7 +387,7 @@ function Page() {
             </div>
             <div className="md:hidden block">
                 <div
-                    className="min-h-screen bg-cover bg-center flex flex-col items-center mt-24"
+                    className="min-h-screen bg-cover bg-center flex flex-col items-center"
                     style={{
                         backgroundImage: `url(${Background1})`,
                         backgroundSize: "cover",
