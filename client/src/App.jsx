@@ -21,6 +21,7 @@ import MusicEvents from "./components/Events/MusicEvents";
 import QuizzingaEvents from "./components/Events/QuizzingaEvents";
 import FashionEvents from "./components/Events/FashionEvents";
 import EventsPage from './pages/EventsPage';
+import IndexEvents from './components/Events/EventsIndex'
 function App() {
 
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/pastartists" element={<PastArtists />} />
           <Route path="/" element={<Home />} />
+          <Route path="eve" element={<IndexEvents />} />
           <Route path="/page" element={<Page />} />
           <Route path="/HeroX" element={<Herox />} />
           <Route path="/NormalRegistration" element={<NormalRegistration />} />
