@@ -8,6 +8,7 @@ import Event_button from "../../assets/images/Event_know_button.png";
 import Halftone from "../../assets/images/Halftone.png";
 import BackGround from "../../assets/images/YellowBg.png";
 import DanceEvents from "../../assets/images/Razzmatazz.png";
+
 const Events = () => {
   const eventData = [
     {
@@ -56,22 +57,27 @@ const Events = () => {
       link: "/drama-events",
     },
   ];
+
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
   const currentEvent = eventData[currentEventIndex];
+
   const handleNext = useCallback(() => {
     setCurrentEventIndex((prev) => (prev + 1) % eventData.length);
   }, [eventData.length]);
+
   const handlePrevious = useCallback(() => {
     setCurrentEventIndex((prev) =>
       prev === 0 ? eventData.length - 1 : prev - 1
     );
   }, [eventData.length]);
+
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
     }, 6000);
     return () => clearInterval(timer);
   }, [handleNext]);
+
   const handleKnowMore = useCallback(() => {
     window.location.href = currentEvent.link;
   }, [currentEvent.link]);
@@ -89,21 +95,11 @@ const Events = () => {
       <div className="w-[55%] md:w-[24%] mt-1 sm:mb-6 mb-4">
         <img
           src={Event_logo}
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -103,7 +103,7 @@ const Events = () => {
-  
           alt="Event Logo"
           className="w-full h-full object-contain"
         />
       </div>
+
       {/* Main content container */}
       <div className="sm:w-[70%] w-[80%] sm:h-[71.65vh] h-[70%] relative mx-auto">
         {/* Black shadow */}
@@ -111,17 +107,6 @@ const Events = () => {
 
         {/* Desktop Layout - Hidden on mobile */}
         <div className="relative w-full h-full bg-black hidden sm:block p-2">
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -118,7 +118,6 @@ const Events = () => {
-  
           <div
             className="absolute inset-0 z-10 mix-blend-soft-light opacity-20"
             style={{
@@ -136,17 +121,6 @@ const Events = () => {
             <div
               className="absolute top-0 right-0 z-20 w-[18.49%] h-[12.91%]"
               style={{
-
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -144,47 +143,52 @@ const Events = () => {
-  
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 16% 100%)",
               }}
             >
@@ -165,6 +139,7 @@ const Events = () => {
                 </button>
               </div>
             </div>
+
             <div className="relative h-full">
               {/* Desktop Left panel */}
               <div
@@ -217,17 +192,6 @@ const Events = () => {
               {/* Desktop Right panel */}
               <div
                 className="absolute top-0 right-0 h-full w-[60%]"
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
                 style={{
                   clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
                 }}
@@ -237,6 +201,7 @@ const Events = () => {
                   alt={currentEvent.title}
                   className="w-full h-full object-cover"
                 />
+
                 <div className="absolute bottom-0 right-0 w-[50%] h-[28%]">
                   <div
                     className="bg-[#53B08E] h-full"
@@ -269,6 +234,7 @@ const Events = () => {
               backgroundRepeat: "no-repeat",
             }}
           ></div>
+
           <div className="relative w-full h-full aspect-[8/16] max-h-[80vh] bg-[#53B08E] overflow-hidden">
             <div
               className="w-full h-[60%] bg-green-400 relative"
@@ -286,6 +252,7 @@ const Events = () => {
                   {currentEvent.title}
                 </h2>
               </div>
+
               <div className="w-full h-[87%] overflow-hidden -mt-4">
                 <img
                   src={currentEvent.image}
@@ -294,6 +261,7 @@ const Events = () => {
                 />
               </div>
             </div>
+
             <div className="absolute top-[45%] right-0 w-[45%] h-[20%]">
               <div
                 className="bg-[#003E68] h-full"
@@ -311,6 +279,7 @@ const Events = () => {
                 </div>
               </div>
             </div>
+
             <div className="relative w-full bg-[#53B08E] p-2 -mt-2 ml-2">
               <ul className="space-y-1 mb-4">
                 {currentEvent.items.map((item, index) => (
@@ -323,6 +292,7 @@ const Events = () => {
                   </li>
                 ))}
               </ul>
+
               <div className="flex items-center justify-between mt-1  relative z-20">
                 <button
                   onClick={handleKnowMore}
@@ -334,6 +304,7 @@ const Events = () => {
                     className="w-full h-full object-contain"
                   />
                 </button>
+
                 <div className="flex gap-2 mr-2">
                   <button
                     onClick={handlePrevious}
@@ -356,4 +327,5 @@ const Events = () => {
     </div>
   );
 };
+
 export default Events;
