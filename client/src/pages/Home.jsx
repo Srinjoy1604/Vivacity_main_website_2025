@@ -10,12 +10,14 @@ import Strip from "../components/Home/strip";
 import Mascot from "../components/Home/Mascot";
 import Team from "../components/Home/Team";
 function Home() {
+  const textContent =
+    "\u00A0\u00A0\u00A0\u00A0\u00A0YOU'RE ON THE OTHER SIDE OF PORTAL...\u00A0\u00A0WELCOME TO THE MULTIVERSE!!!\u00A0\u00A0\u00A0\u00A0\u00A0";
   return (
     <div>
       <Hero />
       <About />
       <Portal />
-      <Infinite text="YOU'RE ON THE OTHER SIDE OF PORTAL... WELCOME TO THE MULTIVERSE!!!" />
+      <Infinite text={textContent} />
       <PastArtists />
       <Events />
       <Strip />
