@@ -48,19 +48,19 @@ const VideoGrid = () => {
   };
 
   const buttonPositionStyles = {
-    "bottom-left": "absolute top-[67%] xs:top-[80%] sm:top-[73.6%] left-[33%] xxxs:left-[45%] xxs:left-[55%] sm:left-[41%] md:left-[49.2%] lg:left-[39%]",
-    "bottom-right": "absolute top-[67%] xs:top-[80%] sm:top-[73.6%] left-[33%] xxxs:left-[45%] xxs:left-[55%] sm:left-[41%] md:left-[49.2%] lg:left-[39%]",
-    "top-left": "absolute top-[67%] xs:top-[80%] sm:top-[73.2%] left-[4.5%]",
-    "top-right": "absolute top-[67%] xs:top-[80%] sm:top-[73.2%] left-[4.9%]",
+    "bottom-left": "absolute bottom-[4%] right-[5%]",
+    "bottom-right": "absolute bottom-[4%] right-[5%]",
+    "top-left": "absolute bottom-[4%] left-[4.5%]",
+    "top-right": "absolute bottom-[4%] left-[4.9%]",
     "center": "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2",
   };
 
 
   return (
-
+    <div>
 
     <div className="flex justify-center items-center  top-[19.6%]">
-      <div className="grid gap-x-[1.5%] gap-y-[2.2%] w-full  grid-cols-1 sm:grid-cols-2 xl:grid-cols-2  ">
+      <div className="grid gap-x-[1.5%] gap-y-[2.2%] w-[78vw] max-w-[1850px] grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 place-items-center">
         {videos.map((video) => (
           <div
             key={video.id}
@@ -103,9 +103,11 @@ const VideoGrid = () => {
           
           
         ))}
-        <div className="bottom-[0%] left-0">
-                <h2 className=" text-[1.25rem]  2xl:text-[1.75rem] font-rfabb">NOTE-CLICK TO KNOW MORE</h2>
-                </div>
+        
+      </div>
+    </div>
+    <div className="bottom-[0%] left-0">
+      <h2 className=" text-[1.25rem]  2xl:text-[1.75rem] font-rfabb">NOTE-CLICK TO KNOW MORE</h2>
       </div>
     </div>
   );

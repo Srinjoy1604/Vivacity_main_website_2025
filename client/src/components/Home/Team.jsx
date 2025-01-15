@@ -13,7 +13,7 @@ import Cimg from '../../assets/images/TeamC_img.png';
 import Dimg from '../../assets/images/TeamD_img.png';
 import Pin from '../../assets/images/pin.png';
 import Thread from '../../assets/images/threads.png'
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import { useLocation } from "react-router-dom";
 import buttonback from '../../assets/images/Pinkbtn_black.png'
 import Background1 from '../../assets/images/TeampageMob.png';
@@ -39,22 +39,38 @@ function Team(){
   const [showPins, setShowPins] = useState(false);
   const [showThread, setShowThread] = useState(false);
   const [showImg, setShowImg] = useState(false);
-  const location = useLocation();
+  const elementRef = useRef(null);
   
   useEffect(() => {
-    
-    if (location.pathname === "/team") { 
-      const pinTimer = setTimeout(() => setShowPins(true), 800);
-      const threadTimer = setTimeout(() => setShowThread(true), 1100);
-      const ImageTimer = setTimeout(() => setShowImg(true), 500);
-      
-      return () => {
-        clearTimeout(ImageTimer);
-        clearTimeout(pinTimer);
-        clearTimeout(threadTimer);
-      };
+    const element = elementRef.current;
+    let pinTimer, threadTimer, imageTimer;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Start timers when the element enters the viewport
+          pinTimer = setTimeout(() => setShowPins(true), 800);
+          threadTimer = setTimeout(() => setShowThread(true), 1100);
+          imageTimer = setTimeout(() => setShowImg(true), 500);
+        }
+      },
+      { threshold: 0.1 } // Adjust threshold for when the element is considered "in view"
+    );
+
+    if (element) {
+      observer.observe(element);
     }
-  }, [location.pathname]);
+
+    return () => {
+      // Cleanup timers and observer
+      clearTimeout(pinTimer);
+      clearTimeout(threadTimer);
+      clearTimeout(imageTimer);
+      if (element) {
+        observer.unobserve(element);
+      }
+    };
+  }, []);
 
     return (
       <>
@@ -71,7 +87,7 @@ function Team(){
         zIndex:'3'
       }}
     >
-      <div className='absolute top-[6.54%] left-[29.5%]'><img src={Title}></img></div>
+      <div className='w-[100%] absolute top-0 p-[5%] grid place-items-center'><img src={Title} className='w-[40%]'></img></div>
 
       {/* Purple Div */}
       <div
@@ -88,7 +104,7 @@ function Team(){
         }}
       >
         {/* Thread */}
-      <div className='top-[24.5885%] left-[24.7%]'
+      <div className='top-[24.5885%] left-[24.7%] '
         style={{
           position: 'absolute',
           width: `${(292 / 583) * 100}%`,
@@ -173,6 +189,7 @@ function Team(){
 
       
 <div
+  ref={elementRef}
   style={{
     position: 'absolute',
     width: '20.89%',
@@ -394,7 +411,7 @@ function Team(){
 >
           {/* Text Div */}
           <div
-            className="p-2 box-border text-start 1280:text-[1.325rem] text-[1.15rem] 2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[2rem] lg:text-[1.13rem] md:text-[0.83rem] font-vetosans"
+            className="p-2 box-border text-start 1280:text-[1.325rem] text-[1.15rem] 2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[2.5rem] lg:text-[1.13rem] md:text-[0.83rem] font-vetosans"
             style={{
               width: `${(325 / 387) * 100}%`, 
               height: `${(297 / 505) * 100}%`, 
