@@ -48,7 +48,7 @@ function ArtEvents() {
       {/* Desktop Layout */}
       <div className=" mx-auto hidden md:block">
         {/* Top Row */}
-        <div className="flex flex-wrap gap-7 mb-4">
+        <div className="flex flex-wrap gap-7 mb-4 justify-center">
           {/* Tattoo Tales */}
           <div className="w-[54.14%]">
             <div className="relative aspect-[693/537]">
@@ -110,7 +110,7 @@ function ArtEvents() {
         </div>
 
         {/* Middle Row */}
-        <div className="flex flex-wrap gap-7 mb-4">
+        <div className="flex flex-wrap gap-7 mb-4 justify-center">
           {/* Splash */}
           <div className="w-[43.9%]">
             <div className="relative aspect-[562/354]">

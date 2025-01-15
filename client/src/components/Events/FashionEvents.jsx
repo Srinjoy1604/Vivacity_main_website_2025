@@ -13,12 +13,12 @@ function FashionEvents() {
       className={`${Styles.FashionBg} w-screen h-[100%] p-[2%] flex flex-col`}
     >
       <div
-        className={` pt-[3%] w-[60%] h-[10%] mx-auto max-w-[755px] grid place-items-center`}
+        className={` pt-[3%] w-[100%] h-[10%] mx-auto  grid place-items-center`}
       >
-        <img src={FashionTitle} alt="" />
+        <img className="w-[40%]" src={FashionTitle} alt="" />
       </div>
 
-      <div className=" space-y-[2%]  flex flex-row md:flex-col justify-center  max-w-[1280px] mx-auto w-full h-full px-[0.5%] pt-[10%] md:pt-[6%] ">
+      <div className=" space-y-[2%]  flex flex-row md:flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[10%] md:pt-[6%] ">
         <div className="flex items-center flex-col md:flex-row   justify-center  h-[100%] w-[100%] space-y-[4%] md:space-y-[0%]  md:space-x-[2%] ">
           <div className="relative w-[91.11%] h-[29%] md:w-[43.5%] md:h-[42.5%] ">
             <img className="w-[100%] h-[100%]" src={VivaBg} alt="" />
