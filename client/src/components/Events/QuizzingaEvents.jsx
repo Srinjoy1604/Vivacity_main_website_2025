@@ -29,10 +29,10 @@ function QuizzingaEvents() {
               />
 
               <div
-                className={`${Styles.DramaTextBox} w-[62.3%] aspect-[384/58] overflow-hidden h-auto p-[1%] absolute bottom-[6%] left-[5%]`}
+                className={`${Styles.DramaTextBox} w-[62%] aspect-[384/58] overflow-hidden  h-auto p-[1%] absolute bottom-[6%] left-[5%]`}
               >
                 <p
-                  className={`${Styles.textbox} text-start font-rfabb  text-black `}
+                  className={`${Styles.textbox} text-start lg:text-[0.2rem] font-rfabb  text-black `}
                 >
                   Form trios and compete for a spot in the movie auction! Become
                   a conqueror in this elusive quiz of cinematography.
