@@ -622,7 +622,7 @@ function SpeakingArts() {
             </div>
 
             <div
-              className="px-4 py-1"
+              className="px-2 py-1"
               style={{
                 position: "absolute",
                 width: "81.39%",
@@ -636,7 +636,7 @@ function SpeakingArts() {
                 overflow: "hidden",
               }}
             >
-              <p className=" font-rfabb leading-tight text-[2.4vw] font-bold">
+              <p className=" font-rfabb leading-tight text-[2.3vw] font-bold">
                 Let the beats flow and your body move! Engage yourself in solo
                 western performances where rhythm is everything.
               </p>
@@ -674,10 +674,10 @@ function SpeakingArts() {
             </div>
 
             <div
-              className="px-4 py-1"
+              className="px-2 py-1"
               style={{
                 position: "absolute",
-                width: "91.39%",
+                width: "92.39%",
                 aspectRatio: "329/28",
                 left: "3.53%",
                 top: "76.5%",
@@ -688,7 +688,7 @@ function SpeakingArts() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.5vw] font-bold ">
+              <p className="font-rfabb leading-tight text-[2.3vw] font-bold ">
                 Set the stage on fire as you unleash the rhythm and
                 <br /> showcase your choreography in this dance battle.
               </p>
