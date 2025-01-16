@@ -74,7 +74,7 @@ const Events = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
-    }, 6000);
+    }, 4000);
     return () => clearInterval(timer);
   }, [handleNext]);
 
