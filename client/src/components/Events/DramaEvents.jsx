@@ -43,21 +43,21 @@ function DramaEvents() {
             />
             <div className="">
               <img
-                className="hidden md:block absolute w-[26%] bottom-[16%] left-[2%]"
+                className="hidden md:block absolute w-[26%] bottom-[18%] left-[3%]"
                 src={PadhatiText}
                 alt=""
               />
               <img
-                className="block md:hidden absolute w-[26%] bottom-[22%] left-[2%]"
+                className="block md:hidden absolute w-[26%] bottom-[20.5%] left-[2%]"
                 src={PaddhatiTextMobile}
                 alt=""
               />
 
               <div
-                className={`${Styles.DramaTextBox} w-[80%] md:w-[70%] aspect-[329/45] md:aspect-[446/59] overflow-hidden h-auto pl-[2%] pb-[9%] p-[1%] absolute bottom-[5%] left-[3%] md:left-[5%]`}
+                className={`${Styles.DramaTextBox} w-[87%] md:w-[75%] aspect-[329/45] md:aspect-[446/59] overflow-hidden h-[15%] pl-[2%] pb-[9%] p-[1%] absolute bottom-[5%] left-[3%] md:left-[4%]`}
               >
                 <p
-                  className={`${Styles.textbox} text-start font-rfabb  text-black text-[2rem]`}
+                  className={`font-medium text-start font-rfabb text-black leading-tight text-[1.95vw] md:text-[1.1vw]`}
                 >
                   You and your character against the world! Let your theatrics
                   run wild in this solo-act-only competition where the only one
@@ -78,20 +78,20 @@ function DramaEvents() {
               alt=""
             />
             <img
-              className="hidden md:block absolute bottom-[14%] left-[1%] w-[32.5%] "
+              className="hidden md:block absolute bottom-[14%] left-[3%] w-[32.5%] "
               src={MukhautaText}
               alt=""
             />
             <img
-              className="block md:hidden absolute bottom-[18%] left-[1%] w-[30.5%] "
+              className="block md:hidden absolute bottom-[19%] left-[1%] w-[30.5%] "
               src={MukhautaTextMobile}
               alt=""
             />
             <div
-              className={`absolute ${Styles.DramaTextBox} left-[0%] md:left-[1%] bottom-[4%] aspect-[329/38] md:aspect-[387/55] overflow-hidden   w-[80%]  ml-[6%] h-auto p-[1%] pl-[2%]`}
+              className={`absolute ${Styles.DramaTextBox} left-[0%] md:left-[1%] bottom-[5.5%] aspect-[329/38] md:aspect-[387/55] overflow-hidden  w-[80%]  ml-[3.5%] h-auto p-[1%] pl-[2%]`}
             >
               <p
-                className={`text-left font-rfabb  text-black ${Styles.textbox} `}
+                className={`text-start font-medium font-rfabb text-black leading-tight text-[1.9vw] md:text-[1vw] pt-1`}
               >
                 A show devoid of words! Let the expressions speak louder than
                 words in Mukhauta: the show of mimes.
@@ -112,31 +112,31 @@ function DramaEvents() {
               alt=""
             />
             <img
-              className="hidden md:block absolute w-[27.7%] top-[18%] right-[1%]"
+              className="hidden md:block absolute w-[27.7%] top-[18%] right-[2%]"
               src={RangshalaText}
               alt=""
             />
             <img
-              className="block md:hidden absolute w-[27.7%] bottom-[18%] left-[1%]"
+              className="block md:hidden absolute w-[27.7%] bottom-[19%] left-[1%]"
               src={RangshalaTextMobile}
               alt=""
             />
 
             <div
-              className={`${Styles.DramaTextBox} hidden md:block w-[70%]  aspect-[465/60] overflow-hidden  h-auto p-[.8%] absolute  md:top-[5%] md:right-[3%]`}
+              className={`${Styles.DramaTextBox} hidden md:block w-[75%]  aspect-[465/60] overflow-hidden  h-[14.5%] p-[.8%] absolute  md:top-[5%] md:right-[3%]`}
             >
               <p
-                className={`text-start font-rfabb  text-black ${Styles.textbox} `}
+                className={`text-start font-rfabb text-black font-medium leading-tight text-[1.9vw] md:text-[1vw] pl-2 `}
               >
                 Write, perform, and present acts that captivate the audience in
                 this showcase of talent and cinematography.
               </p>
             </div>
             <div
-              className={`${Styles.DramaTextBox} block md:hidden w-[70%] aspect-[329/45]  overflow-hidden  h-auto pl-[1%] p-[0.5%] absolute  bottom-[4%] left-[5%]`}
+              className={`${Styles.DramaTextBox} block md:hidden w-[75%] aspect-[329/45]  overflow-hidden  h-[17%] pl-[9px] absolute  bottom-[4%] left-[4%]`}
             >
               <p
-                className={`text-start font-rfabb  text-black ${Styles.textbox} `}
+                className={`text-start font-rfabb font-medium leading-tight text-[2vw] text-black pt-1 `}
               >
                 Write, perform, and present acts that captivate the audience in
                 this showcase of talent and cinematography.
@@ -155,7 +155,7 @@ function DramaEvents() {
               alt=""
             />
             <img
-              className="hidden md:block  absolute bottom-[18%] right-[1%] w-[30.5%]  "
+              className="hidden md:block  absolute bottom-[18%] right-[2%] w-[30.5%]  "
               src={HunkaarText}
               alt=""
             />
@@ -165,20 +165,20 @@ function DramaEvents() {
               alt=""
             />
             <div
-              className={`hidden md:block absolute ${Styles.DramaTextBox} right-[2%] bottom-[6%] aspect-[465/42] overflown-hidden  w-[82%]  ml-[6%] h-auto p-[1%] `}
+              className={`hidden md:block absolute ${Styles.DramaTextBox} right-[2.5n%] bottom-[6.5%] aspect-[465/42] overflown-hidden  w-[82%]  ml-[6%] h-[15%] p-[1%] `}
             >
               <p
-                className={`text-left font-rfabb text-[0.9rem] text-black ${Styles.textbox}`}
+                className={`text-start leading-tight font-rfabb text-black text-[1.9vw] md:text-[1vw] pl-2 `}
               >
                 From daily struggles to global issues, this is your stage. Shine
                 in our official street play competition: Hunkaar!
               </p>
             </div>
             <div
-              className={`block md:hidden  absolute ${Styles.DramaTextBox} left-[0%] bottom-[6%] aspect-[292/34] overflown-hidden  w-[76%]  ml-[6%] h-auto pl-[2%] p-[1%] `}
+              className={`block md:hidden  absolute ${Styles.DramaTextBox} left-[-2%] bottom-[6%] aspect-[292/34] overflown-hidden w-[76%]  ml-[6%] h-[16%] pl-[2%] p-[1%] `}
             >
               <p
-                className={`text-left font-rfabb text-[0.9rem] text-black ${Styles.textbox}`}
+                className={`text-left font-rfabb text-black font-medium leading-tight text-[2vw]`}
               >
                 From daily struggles to global issues, this is your stage. Shine
                 in our official street play competition: Hunkaar!
