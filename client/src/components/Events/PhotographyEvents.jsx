@@ -74,7 +74,7 @@ function PhotographyEvents() {
                     className="w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                    <p className="text-black text-[1vw] font-rfabb font-medium leading-tight">
+                    <p className="text-black text-[1vw] font-rfabb font-bold leading-tight">
                       Solve clues, recreate frames, and immortalize moments in
                       this campus-wide photography adventure.
                     </p>
@@ -102,9 +102,10 @@ function PhotographyEvents() {
                     className="w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                    <p className="text-black  text-[0.9vw] font-rfabb font-medium leading-tight">
-                      A PHOTOBOOTH TO MAKE THESE DAYS MORE MEMORABLE. CAUTION: THE
-                      NOSTALGIA INDUCED BY THESE PICTURES IS BOUND TO BE PAINFUL.
+                    <p className="text-black  text-[0.9vw] font-rfabb font-bold leading-tight">
+                      A PHOTOBOOTH TO MAKE THESE DAYS MORE MEMORABLE. CAUTION:
+                      THE NOSTALGIA INDUCED BY THESE PICTURES IS BOUND TO BE
+                      PAINFUL.
                     </p>
                   </div>
                 </div>
@@ -133,9 +134,9 @@ function PhotographyEvents() {
                     className="w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                    <p className="text-black text-[0.9vw] font-rfabb  font-medium leading-tight">
-                      FLIM MAKING COMPETITION: SRIPT ,SHOOT, AND EDIT YOUR WAY TO
-                      MAKE YOUR STORY THE MOST MEMORABLE OF ALL!
+                    <p className="text-black text-[0.9vw] font-rfabb  font-bold leading-tight">
+                      FLIM MAKING COMPETITION: SRIPT ,SHOOT, AND EDIT YOUR WAY
+                      TO MAKE YOUR STORY THE MOST MEMORABLE OF ALL!
                     </p>
                   </div>
                 </div>
@@ -161,7 +162,7 @@ function PhotographyEvents() {
                     className="w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                    <p className="text-black text-[0.9vw] font-rfabb font-medium leading-tight">
+                    <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight">
                       A SUMMIT OF POPULAR CONTENT CREATORS THAT PROVIDE US WITH
                       OUR FAVOURITE CONTENT. THAT ,AND A PLETHORA OF DIFFERENT
                       PERSPECTIVES IN PERSPECTIVE!
@@ -190,9 +191,9 @@ function PhotographyEvents() {
                     className="w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                    <p className="text-black text-[0.9vw] font-rfabb font-medium leading-tight">
-                      THE BEST CLICKS FROM THE BEST! A SHOWCASE OF IMAGINATION BY
-                      OUR PHOTOGRAPHY CLUB: IMAGINATION.
+                    <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight">
+                      THE BEST CLICKS FROM THE BEST! A SHOWCASE OF IMAGINATION
+                      BY OUR PHOTOGRAPHY CLUB: IMAGINATION.
                     </p>
                   </div>
                 </div>
@@ -218,10 +219,10 @@ function PhotographyEvents() {
                     className="w-full object-contain"
                   />
                   <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                    <p className="text-black font-rfabb text-[0.9vw]  font-medium leading-tight">
+                    <p className="text-black font-rfabb text-[0.9vw]  font-bold leading-tight">
                       PRE-DEFINED THEMES AND YOUR LENSES AGAINST THE BEAUTIFUL
-                      CANVAS OF THE WORLD. LET YOUR CREATIVITY SHOW IN THIS BATTLE
-                      OF PICTURES!
+                      CANVAS OF THE WORLD. LET YOUR CREATIVITY SHOW IN THIS
+                      BATTLE OF PICTURES!
                     </p>
                   </div>
                 </div>
@@ -253,7 +254,7 @@ function PhotographyEvents() {
                 className="w-full object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight">
+                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
                   Solve clues, recreate frames, and immortalize moments in this
                   campus-wide photography adventure.
                 </p>
@@ -282,7 +283,7 @@ function PhotographyEvents() {
                 className="w-full object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black font-rfabb text-[2.5vw] font-medium leading-tight">
+                <p className="text-black font-rfabb text-[2.5vw] font-bold leading-tight">
                   A PHOTOBOOTH TO MAKE THESE DAYS MORE MEMORABLE. CAUTION: THE
                   NOSTALGIA INDUCED BY THESE PICTURES IS BOUND TO BE PAINFUL.
                 </p>
@@ -311,7 +312,7 @@ function PhotographyEvents() {
                 className="w-full object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.2vw] font-rfabb font-medium leading-tight">
+                <p className="text-black text-[2.2vw] font-rfabb font-bold leading-tight">
                   FLIM MAKING COMPETITION: SRIPT ,SHOOT, AND EDIT YOUR WAY TO
                   MAKE YOUR STORY THE MOST MEMORABLE OF ALL!
                 </p>
@@ -340,7 +341,7 @@ function PhotographyEvents() {
                 className="w-full object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.5vw] font-rfabb font-medium leading-tight">
+                <p className="text-black text-[2.5vw] font-rfabb font-bold leading-tight">
                   A SUMMIT OF POPULAR CONTENT CREATORS THAT PROVIDE US WITH OUR
                   FAVOURITE CONTENT. THAT ,AND A PLETHORA OF DIFFERENT
                   PERSPECTIVES IN PERSPECTIVE!
@@ -370,7 +371,7 @@ function PhotographyEvents() {
                 className="w-full object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.4vw] font-rfabb font-medium leading-tight">
+                <p className="text-black text-[2.4vw] font-rfabb font-bold leading-tight">
                   THE BEST CLICKS FROM THE BEST! A SHOWCASE OF IMAGINATION BY
                   OUR PHOTOGRAPHY CLUB: IMAGINATION.
                 </p>
@@ -399,7 +400,7 @@ function PhotographyEvents() {
                 className="w-full object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight">
+                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
                   PRE-DEFINED THEMES AND YOUR LENSES AGAINST THE BEAUTIFUL
                   CANVAS OF THE WORLD. LET YOUR CREATIVITY SHOW IN THIS BATTLE
                   OF PICTURES!

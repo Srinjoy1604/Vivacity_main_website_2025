@@ -3,7 +3,7 @@ import React from 'react';
 
 const Infinite = (props) => {
   const { text } = props;
-  const repeatedText = `${text} \u00A0`.repeat(200); 
+  const repeatedText = `${text}`.repeat(200); 
 
   return (
     <div

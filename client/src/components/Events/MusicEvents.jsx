@@ -59,10 +59,10 @@ function MusicEvents() {
               />
 
               <div
-                className={`${Styles.DramaTextBox} w-[82.3%] aspect-[469/50] overflow-hidden h-auto p-[1%] pl-[2%] pb-[2%] absolute bottom-[6%] left-[6%]`}
+                className={`${Styles.DramaTextBox} w-[83.3%] aspect-[469/50] overflow-hidden h-[14%] p-[1%] pl-[2%] pb-[2%] absolute bottom-[7%] left-[4%]`}
               >
                 <p
-                  className={`${Styles.textbox} text-start font-rfabb  text-black `}
+                  className={` text-start font-rfabb text-black leading-tight font-medium  text-[2vw] md:text-[1vw] `}
                 >
                   Energized beats and flowing verses: bands stand apart and
                   battle for the crown; need we say more?
@@ -92,17 +92,16 @@ function MusicEvents() {
               alt=""
             />
             <div
-              className={`absolute ${Styles.DramaTextBox} left-[0%] md:right-[4%] bottom-[6%] aspect-[387/55] overflow-hidden   w-[80%]  ml-[6%]  h-auto pl-[2%] pt-[0.5%]`}
+              className={`absolute ${Styles.DramaTextBox} left-[-1%] md:left-[9.3%] md:right-[4%] bottom-[6%] aspect-[387/55] overflow-hidden   w-[80%]  ml-[6%]  h-[19%] pl-[2%] pt-[0.5%]`}
             >
               <p
-                className={`text-left font-rfabb  text-black ${Styles.textbox} `}
+                className={`text-left font-rfabb  text-black font-medium leading-tight  text-[1.9vw] md:text-[.95vw] pt-[2px]`}
               >
                 Let your harmonies roar through the halls in this solo singing
                 contest. Will you stand out, or crumble underneath the sea of
                 voices that are vying to be heard?
               </p>
             </div>
-           
           </div>
 
         </div>
@@ -119,21 +118,21 @@ function MusicEvents() {
               alt=""
             />
             <img
-              className="hidden md:block absolute w-[35.2%] bottom-[14%] left-[2%]"
+              className="hidden md:block absolute w-[35.2%] bottom-[14%] left-[3%]"
               src={MalhaarText}
               alt=""
             />
             <img
-              className="block md:hidden absolute w-[30%] md:w-[35.2%] bottom-[14%] left-[2%]"
+              className="block md:hidden absolute w-[30%] md:w-[35.2%] bottom-[17%] left-[2%]"
               src={MalhaarTextMobile}
               alt=""
             />
 
             <div
-              className={`${Styles.DramaTextBox} w-[85.6%] aspect-[329/30]  md:aspect-[328.78/65] overflow-hidden  h-auto pl-[2%] pt-[0.5%] absolute bottom-[3%] left-[5%]`}
+              className={`${Styles.DramaTextBox} w-[86.6%] aspect-[329/30]  md:aspect-[328.78/65] overflow-hidden h-[16%] md:h-[13%] pl-[2%] pt-[0.5%] absolute bottom-[4%] md:bottom-[2.8%] left-[4%]`}
             >
               <p
-                className={`text-start font-rfabb  text-black ${Styles.textbox} `}
+                className={`text-start font-rfabb text-black font-medium text-[2vw] md:text-[1vw] leading-tight pt-1 `}
               >
                 Duet with a partner as your symphonies collide against each
                 other in this competition of melodies
@@ -152,20 +151,21 @@ function MusicEvents() {
               alt=""
             />
             <img
-              className="hidden md:block absolute bottom-[15%] left-[5%] w-[31.8%]  "
+              className="hidden md:block absolute bottom-[13%] left-[5%] w-[31.8%]  "
               src={AarohText}
               alt=""
             />{" "}
             <img
-              className="block md:hidden  absolute bottom-[15%] left-[5%] w-[20%]  "
+              className="block md:hidden  absolute bottom-[17%] left-[5%] w-[20%]  "
               src={AarohTextMobile}
               alt=""
             />
             <div
-              className={`absolute ${Styles.DramaTextBox} left-[1%] bottom-[3%] aspect-[329/31] md:aspect-[308.56/60] overflown-hidden  w-[82.6%]  ml-[6%] h-auto p-[1%] pl-[2%] pb-[2%]`}
+              className={`absolute ${Styles.DramaTextBox} left-[1%] bottom-[5%] md:bottom-[3%] aspect-[329/31] md:aspect-[308.56/60] overflown-hidden  w-[85.6%]  ml-[6%] h-[14%] md:h-[11.6%] p-[1%] pl-[2%] pb-[2%]`}
             >
               <p
-                className={`text-left font-rfabb text-[0.9rem] text-black ${Styles.textbox}`}
+                className={`text-start font-medium font-rfabb text-black leading-tight 
+                  text-[2vw] md:text-[1vw]`}
               >
                 Let the voices be deafened and the instruments roar! A
                 competition only for the beats and the tunes!
@@ -195,14 +195,16 @@ function MusicEvents() {
             />
 
             <div
-              className={`${Styles.DramaTextBox} w-[86%] aspect-[329/40] md:aspect-[321.73/71] overflow-hidden  h-auto p-[.8%] absolute bottom-[3%] left-[3%] md:right-[5%]`}
+              className={`${Styles.DramaTextBox} w-[89%] aspect-[329/40] md:aspect-[321.73/71] overflow-hidden h-[17%] md:h-[13.5%] p-[.8%] absolute bottom-[4%] left-[3%] md:left-[8%] md:right-[5%]`}
             >
               <p
-                className={`text-center font-rfabb  text-black ${Styles.textbox} `}
+                className={`text-start font-rfabb  text-black font-medium leading-tight
+                  text-[2vw] md:text-[1vw] pl-1 md:pl-2 pt-1 `}
               >
                 Let the beats drop and the voices soar. Be a witness to the
                 battlefield as rappers try to out-rap each other in this all out
                 war!
+                
               </p>
             </div>
           </div>

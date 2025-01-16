@@ -24,16 +24,16 @@ function FashionEvents() {
             <img className="w-[100%] h-[100%]" src={VivaBg} alt="" />
             <div className="">
               <img
-                className="absolute w-[37.4%] bottom-[18%] left-[2%]"
+                className="absolute w-[37.4%] bottom-[19%] left-[3%]"
                 src={VivaText}
                 alt=""
               />
 
               <div
-                className={`${Styles.DramaTextBox} w-[62.3%] aspect-[437/55] overflow-hidden h-auto pl-[1%] absolute bottom-[8%] left-[5%]`}
+                className={`${Styles.DramaTextBox} w-[69%] aspect-[437/55] overflow-hidden h-[17%] p-[1%] absolute bottom-[5%] left-[5%]`}
               >
                 <p
-                  className={`${Styles.textbox} text-start font-rfabb  text-black `}
+                  className={` text-start font-medium text-[1.9vw] md:text-[1vw]  leading-tight  font-rfabb pl-[5px] pt-1  text-black `}
                 >
                   a thrilling personality and talent competition celebrating
                   confidence, charisma, and creativity!
@@ -49,10 +49,10 @@ function FashionEvents() {
               alt=""
             />
             <div
-              className={`absolute ${Styles.DramaTextBox} left-[0%] md:right-[5%] bottom-[6%] aspect-[527/77] overflow-hidden   w-[80%]  ml-[6%] h-auto pt-[2%] md:pt-[1.0%] p-[1.%] pl-[2%]`}
+              className={`absolute ${Styles.DramaTextBox} left-[0%] md:right-[5%] bottom-[5%] aspect-[527/77] overflow-hidden  w-[90%]  ml-[4%] h-[23.5%] `}
             >
               <p
-                className={`text-left font-rfabb  text-black ${Styles.textbox} `}
+                className={`text-start font-rfabb text-black font-medium leading-tight  text-[1.9vw] md:text-[1vw] pt-[1%] pl-[2%]`}
               >
                 Strut your style and steal the runway in this show of fashion
                 and glamour. Dazzle the audience in elegant outfits, or show

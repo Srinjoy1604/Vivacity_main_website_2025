@@ -20,7 +20,7 @@ const Legacy = () => {
         className="w-full flex justify-center items-center"
         >
           {/* legacy text component goes here */}
-        <img src={Title} alt="Legacy" className="w-[40%] h-auto my-10"></img>
+        <img src={Title} alt="Legacy" className="w-[80%] sm:w-[40%] h-auto my-10"></img>
       </div>
       <VideoGrid />
     </div>
