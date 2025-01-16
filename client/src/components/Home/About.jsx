@@ -16,13 +16,13 @@ function About() {
   return (
     <>
       <div
-        className="relative w-full h-[100vh] min-[830px]:h-[100%] px-[2rem] flex items-center justify-center overflow-hidden min-[830px]:aspect-[20/17] mt-[-17%]"
+        className="relative w-full h-[1000px] min-[830px]:h-[100%] px-[2rem] flex items-center justify-center overflow-hidden min-[830px]:aspect-[20/17] mt-[-17%]"
       >
         <div className="hidden min-[830px]:block absolute bottom-0 w-full">
-          <img src={Image1} className="w-[100vw] sm:h-[100%]" />
+          <img src={Image1} className="w-[100vw] min-[830px]:h-[100%]" />
         </div>
         <div className="min-[830px]:hidden absolute bottom-0 w-full">
-          <img src={Oval} className="w-[100vw] h-[100vh] min-[830px]:h-[100%]" />
+          <img src={Oval} className="w-[100vw] h-[1000px] min-[830px]:h-[100%]" />
         </div>
         <div className="min-[830px]:hidden relative flex">
           <div className="absolute z-10 top-[97%] w-full">
