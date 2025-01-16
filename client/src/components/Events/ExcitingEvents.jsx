@@ -235,16 +235,16 @@ function Exciting() {
             <img
               src={StageSpectrum_text_mobile}
               alt="Stage Spectrum Title"
-              className="absolute bottom-[25%] left-[5%] w-[35%] object-contain z-10"
+              className="absolute bottom-[19%] left-[3%] w-[37%] object-contain z-10"
             />
-            <div className="absolute bottom-[4%] left-[8%] w-[85%] z-10">
+            <div className="absolute bottom-[4%] left-[6%] w-[88%] z-10">
               <img
                 src={text1}
                 alt="Stage Spectrum Description Box"
                 className="w-full object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
+                <p className="text-black text-[2.5vw] font-rfabb font-bold leading-tight">
                   A KALEIDOSCOPE OF INFINITE POSSIBILITIES SHOW THE WORLD WHAT
                   YOU CAN DO AT OUR OPEN MIC!
                 </p>
@@ -264,16 +264,16 @@ function Exciting() {
             <img
               src={JammingNight_text_mobile}
               alt="Jamming Night Title"
-              className="absolute bottom-[25%] left-[5%] w-[35%] object-contain z-10"
+              className="absolute bottom-[19%] left-[3%] w-[35%] object-contain z-10"
             />
-            <div className="absolute bottom-[4%] left-[8%] w-[85%] z-10">
+            <div className="absolute bottom-[4%] left-[6%] w-[90%] z-10">
               <img
                 src={text1}
                 alt="Jamming Night Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
+              <div className="absolute inset-0 flex items-center justify-center px-4">
+                <p className="text-black text-[2vw] font-rfabb font-bold leading-tight">
                   A NIGHT OF MUSIC AND CAMARADERIE! JOIN US, AS WE SING OUR
                   HEARTS OUT, MAKE NEW FRIENDS, HAVE FUN, AND CREATE MEMORIES
                   THAT WILL REMAIN ETCHED IN OUR HEARTS!
