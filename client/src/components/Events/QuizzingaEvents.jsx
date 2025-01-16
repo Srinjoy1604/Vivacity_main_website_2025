@@ -23,16 +23,16 @@ function QuizzingaEvents() {
             <img className="w-[100%] h-[100%]" src={BamboozledBg} alt="" />
             <div className="">
               <img
-                className="absolute w-[32.1%] bottom-[20%] left-[2%]"
+                className="absolute w-[32.1%] bottom-[21%] left-[2%] "
                 src={BamboozledText}
                 alt=""
               />
 
               <div
-                className={`${Styles.DramaTextBox} w-[62%] aspect-[384/58] overflow-hidden  h-auto p-[1%] absolute bottom-[6%] left-[5%]`}
+                className={`${Styles.DramaTextBox} w-[62%] aspect-[384/58] overflow-hidden  h-[19%] p-[1%] absolute bottom-[6%] left-[5%]`}
               >
                 <p
-                  className={`${Styles.textbox} text-start lg:text-[0.2rem] font-rfabb  text-black `}
+                  className={` text-start text-[1.9vw] md:text-[1vw] pl-[3px] font-medium leading-tight font-rfabb  text-black `}
                 >
                   Form trios and compete for a spot in the movie auction! Become
                   a conqueror in this elusive quiz of cinematography.
@@ -43,15 +43,15 @@ function QuizzingaEvents() {
           <div className="relative  w-[91.11%] h-[29%]  md:w-[42.3%]  md:h-[42.5%] ">
             <img className=" h-[100%] w-[100%]" src={MovieAuctionBg} alt="" />
             <img
-              className="absolute bottom-[16%] left-[1%] w-[39.1%] "
+              className="absolute bottom-[20.5%] left-[4%] w-[39.1%] "
               src={MovieAuctionText}
               alt=""
             />
             <div
-              className={`absolute ${Styles.DramaTextBox} left-[0%] bottom-[6%] aspect-[446/47] overflow-hidden   w-[80%]  ml-[6%] h-auto p-[1.%] pl-[2%]`}
+              className={`absolute ${Styles.DramaTextBox} left-[0%] bottom-[6%] aspect-[446/47] overflow-hidden w-[80%] ml-[6%] h-[18%] p-[1%] pl-[2%]`}
             >
               <p
-                className={`text-left font-rfabb  text-black ${Styles.textbox} `}
+                className={`text-start font-medium leading-tight text-[1.9vw] md:text-[1vw]  font-rfabb text-black pt-1 `}
               >
                 The TOP 8 teams of BAMBOOZLED engage in a bidding war for their
                 chance to shine in the cinematic spotlight.
