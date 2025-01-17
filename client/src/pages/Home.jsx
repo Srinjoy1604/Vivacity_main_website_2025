@@ -71,7 +71,7 @@ function Home() {
   };
 
   const onAnimationComplete = () => {
-    smoothScrollTo(section2.current, 200); // Fast smooth scroll to the next section
+    smoothScrollTo(section2.current, 1); // Fast smooth scroll to the next section
   };
 
 
