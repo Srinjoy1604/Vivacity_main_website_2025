@@ -253,7 +253,7 @@ function PhotographyEvents() {
                 alt="Image Hunt Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
                 <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
                   Solve clues, recreate frames, and immortalize moments in this
                   campus-wide photography adventure.
@@ -282,7 +282,7 @@ function PhotographyEvents() {
                 alt="Photobooth Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
                 <p className="text-black font-rfabb text-[2.5vw] font-bold leading-tight">
                   A PHOTOBOOTH TO MAKE THESE DAYS MORE MEMORABLE. CAUTION: THE
                   NOSTALGIA INDUCED BY THESE PICTURES IS BOUND TO BE PAINFUL.
@@ -311,7 +311,7 @@ function PhotographyEvents() {
                 alt="Film Making Competition Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
                 <p className="text-black text-[2.2vw] font-rfabb font-bold leading-tight">
                   FLIM MAKING COMPETITION: SRIPT ,SHOOT, AND EDIT YOUR WAY TO
                   MAKE YOUR STORY THE MOST MEMORABLE OF ALL!
@@ -340,7 +340,7 @@ function PhotographyEvents() {
                 alt="Perspective Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
                 <p className="text-black text-[2.5vw] font-rfabb font-bold leading-tight">
                   A SUMMIT OF POPULAR CONTENT CREATORS THAT PROVIDE US WITH OUR
                   FAVOURITE CONTENT. THAT ,AND A PLETHORA OF DIFFERENT
@@ -370,7 +370,7 @@ function PhotographyEvents() {
                 alt="Kalakriti Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
                 <p className="text-black text-[2.4vw] font-rfabb font-bold leading-tight">
                   THE BEST CLICKS FROM THE BEST! A SHOWCASE OF IMAGINATION BY
                   OUR PHOTOGRAPHY CLUB: IMAGINATION.
@@ -399,7 +399,7 @@ function PhotographyEvents() {
                 alt="Pixels Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
                 <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
                   PRE-DEFINED THEMES AND YOUR LENSES AGAINST THE BEAUTIFUL
                   CANVAS OF THE WORLD. LET YOUR CREATIVITY SHOW IN THIS BATTLE

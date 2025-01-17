@@ -30,7 +30,7 @@ function Exciting() {
       }}
     >
       {/* Title Section */}
-      <div className="w-full flex justify-center mb-6">
+      <div className="w-full flex justify-start mb-6">
         <img
           src={title}
           alt="Exciting Pursuits"
@@ -41,7 +41,7 @@ function Exciting() {
       {/* Desktop Layout */}
       <div className="w-full mx-auto hidden md:block">
         {/* Top Row */}
-        <div className="flex flex-wrap gap-7 mb-4 justify-center">
+        <div className="flex flex-wrap gap-7 mb-4 justify-start">
           {/* Prom Night */}
           <div className="w-[49.375%]">
             <div className="relative" style={{ aspectRatio: "632/354" }}>
@@ -61,7 +61,7 @@ function Exciting() {
                   alt="Prom Night Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                <div className="absolute inset-0 flex items-center justify-start px-4 md:px-6 lg:px-8">
                   <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight">
                     STEP ON TO YOUR OWN DANCE FLOOR AND SWAY AS YOU SWAY TO
                     MUSIC WITH YOUR SPECIAL SOMEONE AT OUR MAGICAL PROM NIGHT!
@@ -90,7 +90,7 @@ function Exciting() {
                   alt="Silent Disco Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                <div className="absolute inset-0 flex items-center justify-start px-4 md:px-6 lg:px-8">
                   <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight">
                     LET THE BEATS FLOW DIRECTLY INTO YOUR YEARS AND VIBE TO THE
                     SYNCHRONOUSLY ASYNCHRONOUS EXPERIENCE OF A SILENT DISCO!
@@ -102,7 +102,7 @@ function Exciting() {
         </div>
 
         {/* Bottom Row */}
-        <div className="flex flex-wrap gap-7 justify-center">
+        <div className="flex flex-wrap gap-7 justify-start">
           {/* Stage Spectrum */}
           <div className="w-[43.906%]">
             <div className="relative" style={{ aspectRatio: "562/354" }}>
@@ -122,7 +122,7 @@ function Exciting() {
                   alt="Stage Spectrum Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                <div className="absolute inset-0 flex items-center justify-start px-4 md:px-6 lg:px-8">
                   <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight">
                     A KALEIDOSCOPE OF INFINITE POSSIBILITIES SHOW THE WORLD WHAT
                     YOU CAN DO AT OUR OPEN MIC!
@@ -151,7 +151,7 @@ function Exciting() {
                   alt="Jamming Night Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                <div className="absolute inset-0 flex items-center justify-start px-4 md:px-6 lg:px-8">
                   <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight">
                     A NIGHT OF MUSIC AND CAMARADERIE! JOIN US, AS WE SING OUR
                     HEARTS OUT, MAKE NEW FRIENDS, HAVE FUN, AND CREATE MEMORIES
@@ -185,7 +185,7 @@ function Exciting() {
                 alt="Prom Night Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-2">
                 <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
                   STEP ON TO YOUR OWN DANCE FLOOR AND SWAY AS YOU SWAY TO MUSIC
                   WITH YOUR SPECIAL SOMEONE AT OUR MAGICAL PROM NIGHT!
@@ -214,7 +214,7 @@ function Exciting() {
                 alt="Silent Disco Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-2">
                 <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
                   LET THE BEATS FLOW DIRECTLY INTO YOUR YEARS AND VIBE TO THE
                   SYNCHRONOUSLY ASYNCHRONOUS EXPERIENCE OF A SILENT DISCO!
@@ -243,7 +243,7 @@ function Exciting() {
                 alt="Stage Spectrum Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
+              <div className="absolute inset-0 flex items-center justify-start px-2">
                 <p className="text-black text-[2.5vw] font-rfabb font-bold leading-tight">
                   A KALEIDOSCOPE OF INFINITE POSSIBILITIES SHOW THE WORLD WHAT
                   YOU CAN DO AT OUR OPEN MIC!
@@ -272,8 +272,8 @@ function Exciting() {
                 alt="Jamming Night Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-4">
-                <p className="text-black text-[2vw] font-rfabb font-bold leading-tight">
+              <div className="absolute inset-0 flex items-center justify-start px-2">
+                <p className="text-black text-[1.9vw]  font-rfabb font-bold leading-tight">
                   A NIGHT OF MUSIC AND CAMARADERIE! JOIN US, AS WE SING OUR
                   HEARTS OUT, MAKE NEW FRIENDS, HAVE FUN, AND CREATE MEMORIES
                   THAT WILL REMAIN ETCHED IN OUR HEARTS!

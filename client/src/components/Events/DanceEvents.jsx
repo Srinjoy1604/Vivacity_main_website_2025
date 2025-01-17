@@ -485,7 +485,7 @@ function Page() {
             </div>
 
             <div
-              className="px-4 py-1"
+              className="px-2 py-1"
               style={{
                 position: "absolute",
                 width: "90.39%",
@@ -499,7 +499,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.3vw] font-bold  ">
+              <p className="font-rfabb leading-tight text-[2.2vw] font-bold  ">
                 Let the streets bear witness to electrifying performances and
                 exhilarating beats. Let your spirits soar with street dance!
               </p>
@@ -537,7 +537,7 @@ function Page() {
             </div>
 
             <div
-              className="px-4 py-1"
+              className="px-2 py-1"
               style={{
                 position: "absolute",
                 width: "91.39%",
@@ -551,7 +551,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.4vw] font-bold ">
+              <p className="font-rfabb leading-tight text-[2.3vw] font-bold ">
                 The classic Steve Harvey show! Come and be a witness to the
                 recreation of one of the most popular reality shows of all time,
                 at Family Feud: the game show!
@@ -590,7 +590,7 @@ function Page() {
             </div>
 
             <div
-              className="px-4 py-1"
+              className="px-2 py-1"
               style={{
                 position: "absolute",
                 width: "91.39%",
@@ -642,7 +642,7 @@ function Page() {
             </div>
 
             <div
-              className="px-4 py-1"
+              className="px-2 py-1"
               style={{
                 position: "absolute",
                 width: "81.39%",
@@ -656,7 +656,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className=" font-rfabb leading-tight text-[2.4vw] font-bold  ">
+              <p className=" font-rfabb leading-tight text-[2.3vw] font-bold  ">
                 Let the beats flow and your body move! Engage yourself in solo
                 western performances where rhythm is everything.
               </p>
@@ -694,7 +694,7 @@ function Page() {
             </div>
 
             <div
-              className="px-4 py-1"
+              className="px-2 py-1"
               style={{
                 position: "absolute",
                 width: "91.39%",
@@ -708,7 +708,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.4vw] font-bold ">
+              <p className="font-rfabb leading-tight text-[2.3vw] font-bold ">
                 Set the stage on fire as you unleash the rhythm and showcase
                 your choreography in this dance battle.
               </p>
@@ -760,7 +760,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.3vw] font-bold  ">
+              <p className="font-rfabb leading-tight text-[2.2vw] font-bold  ">
                 Explore the allure of the classical arts! Let light <br />
                 descend onto the stage as you enamor yourself in
                 <br /> elegant styles and witness the roots of dance itself!
