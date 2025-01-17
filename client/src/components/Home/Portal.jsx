@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
+const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAnimationComplete) => {
   const rings = [ring1Ref, ring2Ref, ring3Ref];
   // Enable GPU acceleration for the rings
   rings.forEach((ringRef) => {
@@ -17,8 +17,10 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
       ringRef.current.style.willChange = "transform, opacity";
     }
   });
+
   // Create a timeline for the animation
   const tl = gsap.timeline({
+    defaults: { duration: 1, ease: "none" },
     scrollTrigger: {
       trigger: containerRef.current,
       start: "top top",
@@ -27,13 +29,16 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
       pinSpacing: true,
       scrub: 0.5,
       anticipatePin: 1,
+      fastScrollEnd:true,
+      smooth:true,
+      onLeave: () => onAnimationComplete(), // Callback for triggering scroll
     },
   });
 
   // Ring rotation and exit animation
   rings.forEach((ringRef, index) => {
     if (ringRef.current) {
-      const rotationAngle = 360 + index * 90; // Adjust rotation angle for each ring
+      const rotationAngle = (index % 2 === 0 ? (360 + index * 90) : (-360 + (-index) * 90)); // Adjust rotation angle for each ring
       const exitDistance = 300 + index * 100; // Distance to move out of the screen
 
       gsap.set(ringRef.current, {
@@ -59,7 +64,6 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
           opacity: 0, // Fade out
           ease: "power2.out",
           duration: 1,
-          clipPath: "inset(0% 0% 0% 0%)",
         },
         0.5 // Start slightly after the rotation begins
       );
@@ -70,14 +74,14 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef) => {
   if (textRef.current) {
     tl.fromTo(
       textRef.current,
-      { scale: 0.6},
-      { scale: 1,ease: "power2.out", duration: 1 },
+      { scale: 0.6 },
+      { scale: 1, ease: "power2.out", duration: 1 },
       0 // Sync with the start of ring animations
     );
   }
 };
 
-function Portal() {
+function Portal({ onAnimationComplete }) {
   const ring1Ref = useRef(null);
   const ring2Ref = useRef(null);
   const ring3Ref = useRef(null);
@@ -86,16 +90,14 @@ function Portal() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      animatePortal(ring1Ref, ring2Ref, ring3Ref, textRef, containerRef);
+      animatePortal(ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAnimationComplete);
     });
 
     return () => ctx.revert(); // Clean up animations on unmount
-  }, []);
+  }, [onAnimationComplete]);
 
   return (
     <div className="relative overflow-hidden">
-       {/*<section className="w-screen h-[100vh] bg-green-500"></section>*/}
-
       <section
         ref={containerRef}
         className={`w-screen h-[100vh] relative overflow-hidden ${styles.PortalMain}`}
@@ -109,49 +111,36 @@ function Portal() {
         <img
           ref={ring2Ref}
           className="absolute sm:w-[85%] sm:h-[85%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%]"
-          style={{ objectFit: "contain" }}
           src={ring2}
           alt="Ring 2"
         />
         <img
           ref={ring3Ref}
           className="absolute sm:w-[65%] sm:h-[65%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%]"
-          style={{ objectFit: "cover" }}
           src={ring3}
           alt="Ring 3"
         />
-
-        <div
-          ref={textRef}
-          className="absolute inset-0 flex items-center justify-center z-[-1] pb-10"
-        >
+        <div ref={textRef} className="absolute inset-0 flex items-center justify-center z-[-1] pb-10">
           <div className="w-[100%] text-center h-[90%] flex items-center justify-center align-middle flex-col">
-            <div
-              className={`relative w-[300px] h-[80px] ${styles.HeadingBar} mx-auto mb-4`}
-            >
+            <div className={`relative w-[300px] h-[80px] ${styles.HeadingBar} mx-auto mb-4`}>
               <h1 className="w-full h-full text-black text-3xl flex items-center justify-center font-rfabb font-[400] text-[2.9rem] p-[1%] leading-[3rem]">
                 Tela Indrae
               </h1>
             </div>
-            <p className="mt-1 w-[60%] sm:w-[45%] md:w-[36%] lg:w-[35%] text-white text-[1.625rem] text-center font-vetosans font-light max-[566px]:text-[1rem]">
+            <p className="mt-1 w-[88%] sm:w-[45%] md:w-[45%] lg:w-[35%] text-white text-[1.625rem] text-center font-vetosans font-light max-[566px]:text-[1rem]">
               Latin for "the Web of Indra," <span className="text-[#16C2FD]">Tela Indrae</span> draws inspiration from
-              Indra's Web, symbolizing unity in diversity and infinite
-              interconnection. Like jewels reflecting one another, we come
-              together as unique individuals, weaving a vibrant tapestry of
-              shared brilliance. Let's celebrate the power of connection at
-              Vivacity!
+              Indra's Web, symbolizing unity in diversity and infinite interconnection. Like jewels reflecting one another, we come together as unique individuals, weaving a vibrant tapestry of
+              shared brilliance. Let's celebrate the power of connection at Vivacity!
             </p>
-            <img src={scrolldown} className="p-[2.5%]"></img>
+            <img src={scrolldown} className="p-[2.5%]" />
           </div>
         </div>
       </section>
-
-      {/*<section className="w-screen h-[100vh] bg-red-500"></section>*/}
     </div>
   );
 }
 
-
 export default Portal;
+
 
 
