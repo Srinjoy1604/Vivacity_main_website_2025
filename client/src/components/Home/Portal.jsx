@@ -39,12 +39,12 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAn
   rings.forEach((ringRef, index) => {
     if (ringRef.current) {
       const rotationAngle = (index % 2 === 0 ? (360 + index * 90) : (-360 + (-index) * 90)); // Adjust rotation angle for each ring
-      const exitDistance = 300 + index * 100; // Distance to move out of the screen
+      const exitDistance = 0; // Distance to move out of the screen
 
       gsap.set(ringRef.current, {
         transformOrigin: "50% 50%",
         rotation: 0,
-        scale: 2.6,
+        scale: (index===1?2.7:(index===2?3.3:2.3)),
         force3D: true,
       });
 
@@ -52,7 +52,7 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAn
         ringRef.current,
         {
           rotation: rotationAngle, // Rotate
-          scale: 4, // Scale up
+          scale: 5, // Scale up
           duration: 1,
           ease: "power2.inOut",
         },
@@ -60,7 +60,7 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAn
       ).to(
         ringRef.current,
         {
-          y: -exitDistance, // Move upward out of the screen
+          // y: -exitDistance, // Move upward out of the screen
           opacity: 0, // Fade out
           ease: "power2.out",
           duration: 1,
@@ -104,19 +104,19 @@ function Portal({ onAnimationComplete }) {
       >
         <img
           ref={ring1Ref}
-          className="absolute sm:w-[70%] sm:h-[55%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%]"
+          className="absolute sm:w-[70%] sm:h-[55%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] lg:w-[43%] lg:h-[43%]"
           src={ring1}
           alt="Ring 1"
         />
         <img
           ref={ring2Ref}
-          className="absolute sm:w-[85%] sm:h-[85%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%]"
+          className="absolute sm:w-[85%] sm:h-[85%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] lg:w-[62%] lg:h-[62%]"
           src={ring2}
           alt="Ring 2"
         />
         <img
           ref={ring3Ref}
-          className="absolute sm:w-[65%] sm:h-[65%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%]"
+          className="absolute sm:w-[100%] sm:h-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] lg:w-[70%] lg:h-[70%]"
           src={ring3}
           alt="Ring 3"
         />
@@ -127,12 +127,12 @@ function Portal({ onAnimationComplete }) {
                 Tela Indrae
               </h1>
             </div>
-            <p className="mt-1 w-[88%] sm:w-[45%] md:w-[45%] lg:w-[35%] text-white text-[1.625rem] text-center font-vetosans font-light max-[566px]:text-[1rem]">
+            <p className="lg:max-w-[28rem] mt-1 w-[88%] sm:w-[60%] md:w-[60%] lg:w-[37%] text-white text-[1.625rem] text-center font-vetosans font-light max-[566px]:text-[1rem]">
               Latin for "the Web of Indra," <span className="text-[#16C2FD]">Tela Indrae</span> draws inspiration from
               Indra's Web, symbolizing unity in diversity and infinite interconnection. Like jewels reflecting one another, we come together as unique individuals, weaving a vibrant tapestry of
               shared brilliance. Let's celebrate the power of connection at Vivacity!
             </p>
-            <img src={scrolldown} className="p-[2.5%]" />
+            <img src={scrolldown} className="p-[2%]" />
           </div>
         </div>
       </section>
