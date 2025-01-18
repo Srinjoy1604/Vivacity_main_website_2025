@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import Infinite from "../subPages/Infinite";
 import Image1 from "../../assets/images/AboutBkg.png";
 import Image2 from "../../assets/images/Halftone.png";
@@ -12,6 +12,18 @@ import { NavLink } from "react-router-dom";
 function About() {
   const textContent =
     "\u00A0\u00A0\u00A0\u00A0\u00A0KEEP\u00A0\u00A0SCROLLING!\u00A0\u00A0\u00A0\u00A0\u00A0";
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(true);
+    setTimeout(() => setIsClicked(false), 300);
+  };
+
+  const [clk , setclk] = useState(false);
+  const newHandleClick = () =>{
+    setclk(true);
+    setTimeout(()=>setclk(false),300);
+  }
 
   return (
     <>
@@ -26,21 +38,23 @@ function About() {
         </div>
         <div className="min-[830px]:hidden relative flex">
           <div className="absolute z-10 top-[97%] w-full">
-            <NavLink to="/">
+            <NavLink to="/" className={`block ${clk ? 'scale-95' : ''} transition-all duration-300`}
+            onClick={newHandleClick}>
               <img
                 src={Image4}
                 alt=""
-                className="max-w-[50%] mx-auto transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                className="max-w-[50%] mx-auto transform transition-transform duration-300 cursor-pointer"
               />
             </NavLink>
           </div>
 
           <div className="absolute z-20 top-[-8%] w-full">
-            <NavLink to="/">
+            <NavLink to="/" className={`block ${isClicked ? 'scale-95' : ''} transition-all duration-300`}
+            onClick={handleClick}>
               <img
                 src={Image3}
                 alt="Name Tag Unit"
-                className="max-w-[60%] mx-auto transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                className="max-w-[60%] mx-auto transform transition-transform duration-300 cursor-pointer"
               />
             </NavLink>
           </div>
@@ -88,21 +102,24 @@ function About() {
           </div>
 
           <div className="absolute z-40 top-[-14%] left-[-8%] rotate-[-16.58deg]">
-            <NavLink to="/">
+            <NavLink to="/" className={`block ${isClicked ? 'scale-95' : ''} transition-all duration-300`}
+            onClick={handleClick}
+            >
               <img
                 src={Image3}
                 alt="Name Tag Unit"
-                className="w-[15vw] transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                className="w-[15vw] transform transition-transform duration-300  cursor-pointer"
               />
             </NavLink>
           </div>
 
           <div className="absolute z-40 bottom-[-5%] right-[-5%] rotate-[-16.58deg]">
-            <NavLink to="/">
+            <NavLink to="/" className={`block ${clk ? 'scale-95' : ''} transition-all duration-300`}
+            onClick={newHandleClick}>
               <img
                 src={Image4}
                 alt="Name Tag Unit"
-                className="w-[16vw] transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                className="w-[16vw] transform transition-transform duration-300  cursor-pointer"
               />
             </NavLink>
           </div>

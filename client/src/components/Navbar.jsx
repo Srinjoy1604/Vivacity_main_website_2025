@@ -159,7 +159,7 @@ const Navbar = () => {
             transition-all duration-300 ease-in-out
             ${scrolled ? 'bg-black/90 backdrop-blur-sm shadow-lg' : 'bg-[#04091D]'}
         `}>
-                <div className="max-w-full mx-auto px-4 sm:px-6">
+                <div className="max-w-full mx-auto sm:px-6">
                     <div className="flex items-center justify-between pl-6 pr-6 xl:pl-10 xl:pr-10 h-24 sm:h-18 md:h-24">
 
                         <div className='hidden smallNav'>

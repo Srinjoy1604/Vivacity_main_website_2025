@@ -9,17 +9,17 @@ import Button_Component from "./Button_component";
 function QuizzingaEvents() {
   return (
     <div
-      className={`${Styles.QuizzingaBg} w-screen h-[100%] p-[2%] flex flex-col`}
+      className={`${Styles.QuizzingaBg} w-full h-[100%] p-[2%] flex flex-col`}
     >
       <div
-        className={`grid place-items-center`}
+        className={`grid place-items-center pt-[3.5%]`}
       >
-        <img src={QuizzingaTitle} className="w-[40%]" alt="" />
+        <img src={QuizzingaTitle} className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[50%]" alt="" />
       </div>
 
       <div className="space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[8%] md:pt-[6%] ">
         <div className="flex flex-col items-center  md:flex-row   justify-center  h-[100%] w-[100%] space-y-[5%] md:space-y-[0%] space-x-[2%] ">
-          <div className="relative  w-[91.11%] h-[29%]  md:w-[49.2%] md:h-[42.5%] ">
+          <div className="relative  w-[91.11%] h-[29%]  md:w-[59.2%] md:h-[42.5%] ">
             <img className="w-[100%] h-[100%]" src={BamboozledBg} alt="" />
             <div className="">
               <img
@@ -32,7 +32,7 @@ function QuizzingaEvents() {
                 className={`${Styles.DramaTextBox} w-[62%] aspect-[384/58] overflow-hidden  h-[19%] p-[1%] absolute bottom-[6%] left-[5%]`}
               >
                 <p
-                  className={` text-start text-[1.9vw] md:text-[1vw] pl-[3px] font-medium leading-tight font-rfabb  text-black `}
+                  className={` text-start text-[1.9vw] md:text-[1vw] pl-[3px] font-bold leading-tight font-rfabb  text-black `}
                 >
                   Form trios and compete for a spot in the movie auction! Become
                   a conqueror in this elusive quiz of cinematography.
@@ -40,7 +40,7 @@ function QuizzingaEvents() {
               </div>
             </div>
           </div>
-          <div className="relative  w-[91.11%] h-[29%]  md:w-[42.3%]  md:h-[42.5%] ">
+          <div className="relative  w-[91.11%] h-[29%]  md:w-[50.4%]  md:h-[42.5%] ">
             <img className=" h-[100%] w-[100%]" src={MovieAuctionBg} alt="" />
             <img
               className="absolute bottom-[20.5%] left-[4%] w-[39.1%] "
@@ -51,7 +51,7 @@ function QuizzingaEvents() {
               className={`absolute ${Styles.DramaTextBox} left-[0%] bottom-[6%] aspect-[446/47] overflow-hidden w-[80%] ml-[6%] h-[18%] p-[1%] pl-[2%]`}
             >
               <p
-                className={`text-start font-medium leading-tight text-[1.9vw] md:text-[1vw]  font-rfabb text-black pt-1 `}
+                className={`text-start font-bold leading-tight text-[1.9vw] md:text-[1vw]  font-rfabb text-black pt-1 `}
               >
                 The TOP 8 teams of BAMBOOZLED engage in a bidding war for their
                 chance to shine in the cinematic spotlight.
@@ -61,10 +61,9 @@ function QuizzingaEvents() {
           </div>
           
         </div>
-        <div className="w-[100%]">
+        <div className="w-[100%] pb-4">
             <Button_Component showRegister={true} showRulebook={false} />
-          </div>
-
+        </div>
       </div>
     </div>
   );

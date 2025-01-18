@@ -4,6 +4,8 @@ import FacebookIcon from "../assets/images/facebookLogo.png";
 import InstagramIcon from "../assets/images/instagramLogo.png";
 import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/Footer_mobile.png";
+import Backbg from "../assets/images/Team.png"
+import Backbg1 from "../assets/images/ExcitingBg.png"
 
 function Footer1() {
     const aspectRatio = 512 / 512; 
@@ -12,11 +14,12 @@ function Footer1() {
     <div
       className="relative "
       style={{
-        backgroundColor: "black",
+        backgroundImage:`url(${location.pathname==="/"?Backbg:Backbg1})`,
         height: `calc(100vw * ${aspectRatio})`, 
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        display: location.pathname === "/NormalRegistration" ? "none" : "block",
       }}
     >
       <div
@@ -51,6 +54,7 @@ function Footer1() {
         Developed by GDG on Campus, LNMIIT
       </p>
       <p className="text-center  xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw]  font-bold  font-vetosans text-[1rem] text-black ">
+
         Designed by Vivacity. All rights reserved.
       </p>
     </div>
@@ -83,9 +87,6 @@ function Footer1() {
         </a>
       </div>
 
-    
-
-      
       <div className="text-center text-black  h-[63.09%] mb-[3%]">
         <p className="text-[3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] xs:text-[3.3vw] xxs:text-[3.3vw] font-bold font-vetosans">For further queries:</p>
         <p className="xxxs:text-[3.3vw] 270:text-[3.3vw] xs:text-[3.3vw] xxs:text-[3.3vw] font-bold font-vetosans">Ayush Dhanesha: +91 9998523792</p>

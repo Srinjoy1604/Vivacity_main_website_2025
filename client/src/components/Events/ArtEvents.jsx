@@ -41,16 +41,16 @@ function ArtEvents() {
       }}
     >
       {/* Title Section */}
-      <div className="w-full flex justify-center mb-6">
-        <img src={title} alt="Art Events" className="w-[40%]" />
+      <div className="w-full pt-[5.3%] pb-[2.3%] flex justify-center mb-6">
+        <img src={title} alt="Art Events" className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[50%]" />
       </div>
 
       {/* Desktop Layout */}
       <div className=" mx-auto hidden md:block">
         {/* Top Row */}
-        <div className="flex flex-wrap gap-7 mb-4 justify-center">
+        <div className="flex flex-wrap gap-8 mb-4 justify-center">
           {/* Tattoo Tales */}
-          <div className="w-[54.14%]">
+          <div className="w-[56.14%]">
             <div className="relative aspect-[693/537]">
               <img
                 src={image1}
@@ -79,7 +79,7 @@ function ArtEvents() {
           </div>
 
           {/* Mystic */}
-          <div className="w-[37.5%]">
+          <div className="w-[38.5%]">
             <div className="relative aspect-[480/537]">
               <img
                 src={image2}
@@ -110,9 +110,9 @@ function ArtEvents() {
         </div>
 
         {/* Middle Row */}
-        <div className="flex flex-wrap gap-7 mb-4 justify-center">
+        <div className="flex flex-wrap gap-5 mb-4 justify-center">
           {/* Splash */}
-          <div className="w-[43.9%]">
+          <div className="w-[45.4%]">
             <div className="relative aspect-[562/354]">
               <img
                 src={image3}
@@ -141,7 +141,7 @@ function ArtEvents() {
           </div>
 
           {/* Contrasto */}
-          <div className="w-[47.7%]">
+          <div className="w-[49.4%]">
             <div className="relative aspect-[611/353]">
               <img
                 src={image4}
@@ -355,7 +355,7 @@ function ArtEvents() {
       </div>
 
       {/* Buttons Section */}
-      <div className="w-[100%]">
+      <div className="w-[100%] mb-8 mt-8">
         <Button_Component showRegister={true} showRulebook={false} />
       </div>
     </div>

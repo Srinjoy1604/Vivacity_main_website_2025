@@ -20,6 +20,7 @@ function Footer() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        display: location.pathname === "/NormalRegistration" ? "none" : "block",
       }}
     >
       <div

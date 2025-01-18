@@ -273,19 +273,19 @@ const Events = () => {
                   <p className="text-white text-[3.8vw] font-rfabb font-semibold tracking-wide ml-4 -mt-5">
                     PRIZES WORTH
                   </p>
-                  <p className="text-[#E5FF00] text-[7vw] font-semibold font-ttr text-center leading-tight ml-2">
+                  <p className="text-[#E5FF00] text-[6.8vw] font-semibold font-ttr text-center leading-tight ml-2">
                     {currentEvent.prizeWorth}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="relative w-full bg-[#53B08E] p-2 -mt-2 ml-2">
-              <ul className="space-y-1 mb-4">
+            <div className="relative w-full bg-[#53B08E] p-2 -mt-1.8 ml-2">
+              <ul className="space-y-1 mb-4 max-[380px]:mb-2">
                 {currentEvent.items.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center text-black font-vetosans font-bold max-[350px]:text-[1rem] text-[1.25rem] leading-none"
+                    className="flex items-center text-black font-vetosans font-bold max-[380px]:text-[0.9rem] text-[1.25rem] leading-none "
                   >
                     <span className="w-1.5 h-1.5 bg-black rounded-full mr-2"></span>
                     {item}
@@ -296,12 +296,12 @@ const Events = () => {
               <div className="flex items-center justify-between mt-1  relative z-20">
                 <button
                   onClick={handleKnowMore}
-                  className="w-[56%] transition-transform hover:scale-105 focus:outline-none"
+                  className="w-[55%] transition-transform hover:scale-105 focus:outline-none"
                 >
                   <img
                     src={Event_button}
                     alt="Know More"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain "
                   />
                 </button>
 
@@ -310,7 +310,7 @@ const Events = () => {
                     onClick={handlePrevious}
                     className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20"
                   >
-                    <FaRegArrowAltCircleLeft className="w-8 h-8" />
+                    <FaRegArrowAltCircleLeft className="w-8 h-8 " />
                   </button>
                   <button
                     onClick={handleNext}

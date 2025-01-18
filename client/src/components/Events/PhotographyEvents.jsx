@@ -35,17 +35,17 @@ import Button_component from "./Button_component";
 function PhotographyEvents() {
   return (
     <div
-      className="min-h-[70vh] w-full bg-center bg-cover p-4  "
+      className="min-h-[70vh] w-full bg-center bg-cover  "
       style={{
         backgroundImage: `url(${bg})`,
       }}
     >
       {/* Title Section */}
-      <div className="w-full flex justify-center mb-6">
+      <div className="w-full pt-[6.3%] flex justify-center pb-[5%]">
         <img
           src={title}
           alt="Photography Events"
-          className="w-[60%] max-w-5xl"
+          className="w-[80%] sm:w-[80%] md:w-[65%] lg:w-[55%]"
         />
       </div>
 
@@ -53,9 +53,9 @@ function PhotographyEvents() {
       <div>
         <div className="max-w-[1880px] mx-auto hidden md:block ">
           {/* Top Row */}
-          <div className="flex flex-wrap gap-7 mb-4 justify-center">
+          <div className="flex flex-wrap gap-9 mb-4 justify-center">
             {/* Image Hunt */}
-            <div className="w-[54.14%] items-center">
+            <div className="w-[55%] items-center">
               <div className="relative aspect-[693/537]">
                 <img
                   src={image1}
@@ -83,7 +83,7 @@ function PhotographyEvents() {
               </div>
             </div>
             {/* Photobooth */}
-            <div className="w-[37.5%]">
+            <div className="w-[37.4%]">
               <div className="relative aspect-[480/537]">
                 <img
                   src={image2}
@@ -113,7 +113,7 @@ function PhotographyEvents() {
             </div>
           </div>
           {/* Bottom Row */}
-          <div className="flex flex-wrap gap-7 justify-center">
+          <div className="flex flex-wrap gap-7  justify-center">
             {/* Film Making */}
             <div className="w-[43.9%]">
               <div className="relative aspect-[562/354]">
@@ -410,8 +410,9 @@ function PhotographyEvents() {
           </div>
         </div>
       </div>
-      {/* Buttons Section */}
+      <div className="pt-8 pb-10">
       <Button_component showRulebook={true} showRegister={true} />
+      </div>
     </div>
   );
 }
