@@ -22,7 +22,7 @@ function Mascot()
                     </div>
                 </div>
                 <div className="w-[100%] h-[100%] max-[800px]:hidden">
-                    <div className={`${styles.Mascot} grid place-items-center h-full w-[100%] p-[2%] pr-[5%]`}><img src={NetraLarge} className="w-[100%] h-[100%]"></img></div>
+                    <div className={`${styles.Mascot} grid place-items-center h-full w-[100%] py-[2%]`}><img src={NetraLarge} className="w-[100%] h-[100%]"></img></div>
                 </div>
             </div>
         </div>
