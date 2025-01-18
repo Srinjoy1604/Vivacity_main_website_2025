@@ -107,7 +107,7 @@ const VideoGrid = () => {
       </div>
     </div>
     <div className="bottom-[0%] left-0">
-      <h2 className=" text-[1.25rem]  2xl:text-[1.75rem] font-rfabb">NOTE-CLICK TO KNOW MORE</h2>
+      <h2 className=" text-[1.25rem] py-[1%] 2xl:text-[1.75rem] font-rfabb">NOTE-CLICK TO KNOW MORE</h2>
       </div>
     </div>
   );

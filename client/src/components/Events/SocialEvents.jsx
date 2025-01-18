@@ -79,7 +79,7 @@ function Sahyog() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[1.1vw] font-bold ">
+              <p className="font-rfabb leading-tight text-[1.1vw] px-[2%] font-bold ">
                 Let's extend a hand to the less fortunate. A show just for the
                 homeless children, as we provide them a platform to showcase
                 their own talents and assist them in receiving the support for

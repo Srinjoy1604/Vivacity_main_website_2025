@@ -128,7 +128,7 @@ function Team(){
 
 
       {/* Pin A */}
-      <div className='top-[15.4%] left-[16.6%]'
+      <div className='top-[15.2%] left-[16.9%]'
         style={{
           position: 'absolute',
           width: `${(93.14 / 583) * 100}%`,
@@ -163,8 +163,8 @@ function Team(){
             position: 'absolute',
             width: `${(86.1 / 583) * 100}%`,
             height: `${(86.1 / 520) * 100}%`,
-            top: `${(269.07 / 520) * 100}%`,
-            left: `${(207.21 / 583) * 100}%`,
+            top: `${(268.07 / 520) * 100}%`,
+            left: `${(209.21 / 583) * 100}%`,
             backgroundImage: `url(${Pin})`,
             backgroundSize: 'cover',
             transform: `rotate(1.38deg) ${showPins ? "translateY(0)" : "translateY(-50%)"}`,
@@ -180,7 +180,7 @@ function Team(){
             position: 'absolute',
             width: `${(85.54 / 583) * 100}%`,
             height: `${(85.54 / 520) * 100}%`,
-            top: `${(241.08 / 520) * 100}%`,
+            top: `${(248.08 / 520) * 100}%`,
             left: `${(378.9 / 583) * 100}%`,
             backgroundImage: `url(${Pin})`,
             backgroundSize: 'cover',
@@ -416,7 +416,7 @@ function Team(){
 >
           {/* Text Div */}
           <div
-            className="p-2 box-border text-start 1280:text-[1.325rem] text-[1.15rem] 2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[2.5rem] lg:text-[1.13rem] md:text-[0.83rem] font-vetosans"
+            className="p-2 box-border text-start 1280:text-[1.325rem] 2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[1.7vw] lg:text-[1.13rem] md:text-[0.83rem] text-[2vw] font-vetosans"
             style={{
               width: `${(325 / 387) * 100}%`, 
               height: `${(297 / 505) * 100}%`, 
@@ -425,7 +425,7 @@ function Team(){
               position: "absolute",
             }}
           >
-             Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}<span className='1280:text-[1.325rem] text-[0.95rem] 2xl-text-[1.5rem] sm-text-[0.6rem] 1500:text-[1.65rem] 1700:text-[1.8rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[2rem] lg:text-[1.03rem] md:text-[0.85rem] font-rfabb' style={{color: 'rgba(144,0,0,1)',}}>VIVACITY'25</span>  From envisioning <br></br>the cosmic threads of our<br></br> theme to weaving it into <br></br>reality,
+             Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}<span className='1280:text-[1.325rem]  2xl-text-[1.5rem] sm-text-[0.6rem] 1500:text-[1.65rem] 1700:text-[1.8rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[1.7vw]  text-[2vw] lg:text-[1.03rem] md:text-[0.85rem] font-rfabb' style={{color: 'rgba(144,0,0,1)',}}>VIVACITY'25</span>  From envisioning <br></br>the cosmic threads of our<br></br> theme to weaving it into <br></br>reality,
               this team makes it all<br></br> happen. Tap to discover the <br></br>faces and stories of
               those who <br></br>bring the multiverse to life!
           </div>
@@ -466,11 +466,11 @@ function Team(){
     border:'black'
             }}
           >
-          <p className='text-[1.875rem] xl-text-[1.5rem] 1500-[1.8rem] 1980:text-[2.05rem] 1600:text-[1.75rem] 1700:text-[1.9rem] 2100:text-[2.2rem] lg:text-[1.75ren] md:text-[1.5rem] font-rfabb'> Meet Them!</p>
+          <p className='text-[1.875rem] xl-text-[1.5rem] 1500-[1.8rem] 1980:text-[2.05rem] 1600:text-[1.75rem] 1700:text-[1.9rem] 2100:text-[2.7rem] lg:text-[1.75ren] md:text-[1.5rem] font-rfabb'> Meet Them!</p>
           </button>
           
       </div>
-      
+     { /* mobile responsive*/ }
  </div>
  <div className='md:hidden block'
   style={{
@@ -515,7 +515,7 @@ function Team(){
       position: 'absolute',
       width: `${(173 / 306.63) * 100}%`,
       height: `${(152 / 335.05) * 100}%`,
-      top: `${(68 / 335.05) * 100}%`,
+      top: `${(69 / 335.05) * 100}%`,
       left: `${(62 / 306.63) * 100}%`,
       backgroundImage: `url(${Thread1})`,
       backgroundSize: 'cover',
@@ -534,7 +534,7 @@ function Team(){
       width: `${(55.35 / 306.63) * 100}%`,
       height: `${(55.35 / 335.05) * 100}%`,
       top: `${(31.33 / 335.05) * 100}%`,
-      left: `${(35.04 / 306.63) * 100}%`,
+      left: `${(37.04 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
       transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,      zIndex: '3',
@@ -549,7 +549,7 @@ function Team(){
       position: 'absolute',
       width: `${(47.4 / 306.63) * 100}%`,
       height: `${(47.4 / 335.05) * 100}%`,
-      top: `${(28.98 / 335.05) * 100}%`,
+      top: `${(31.98 / 335.05) * 100}%`,
       left: `${(170.87 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
@@ -566,7 +566,7 @@ function Team(){
       position: 'absolute',
       width: `${(51.16 / 306.63) * 100}%`,
       height: `${(51.16 / 335.05) * 100}%`,
-      top: `${(176.85 / 335.05) * 100}%`,
+      top: `${(173.85 / 335.05) * 100}%`,
       left: `${(83.82 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
@@ -583,8 +583,8 @@ function Team(){
       position: 'absolute',
       width: `${(50.83 / 306.63) * 100}%`,
       height: `${(50.83 / 335.05) * 100}%`,
-      top: `${(143.35 / 335.05) * 100}%`,
-      left: `${(203.17 / 306.63) * 100}%`,
+      top: `${(144.35 / 335.05) * 100}%`,
+      left: `${(201.17 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
       transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,

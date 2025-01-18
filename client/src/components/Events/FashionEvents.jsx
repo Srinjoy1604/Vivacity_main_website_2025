@@ -10,7 +10,7 @@ import Button_Component from "./Button_component";
 function FashionEvents() {
   return (
     <div
-      className={`${Styles.FashionBg} w-screen h-[100%] p-[2%] flex flex-col`}
+      className={`${Styles.FashionBg} w-screen h-[100%] p-[2%] flex flex-col overflow-hidden`}
     >
       <div
         className={` pt-[3%] w-[100%] h-[10%] mx-auto  grid place-items-center`}
