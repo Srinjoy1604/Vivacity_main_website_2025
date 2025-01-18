@@ -9,7 +9,6 @@ import PaddhatiBg from "../../assets/images/PaddhatiBg.png";
 import MukhautaBg from "../../assets/images/MukhautaBg.png";
 import RangshalaBg from "../../assets/images/RangshalaBg.png";
 import HunkaarBg from "../../assets/images/HunkaarBg.png";
-
 import RangshalaTextMobile from "../../assets/images/RangshalaTextMobile.png";
 import PaddhatiTextMobile from "../../assets/images/PaddhatiTextMobile.png";
 import MukhautaTextMobile from "../../assets/images/MukhautaTextMobile.png";
@@ -22,15 +21,15 @@ import Button_Component from "./Button_component";
 function DramaEvents() {
   return (
     <div
-      className={`${Styles.DramaBg} w-fit h-[100%]  p-[2%] overflow-hidden flex flex-col`}
+      className={`${Styles.DramaBg} w-full h-[100%]  p-[2%] overflow-hidden flex flex-col`}
     >
-      <div className={`grid pt-[3.1%] place-items-center`}>
-        <img src={DramaTitle} className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[40%] " alt="" />
+      <div className={`grid pt-[6%] md:pt-[3.7%] pb-[2.2%] place-items-center`}>
+        <img src={DramaTitle} className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[50%] " alt="" />
       </div>
 
       <div className="space-y-[2%] flex flex-col justify-center  mx-auto w-full h-full px-[0.5%] pt-[5%] md:pt-[3%] ">
-        <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] w-[100%] space-y-[2%]  md:space-y-[0%] md:space-x-[2%] ">
-          <div className="relative w-[91%] md:w-[54.1%] h-[76.9%] ">
+        <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] w-[100%] space-y-[2%]  md:space-y-[0%] md:space-x-[2%]">
+          <div className="relative w-[91%] md:w-[57.1%] h-[76.9%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={PaddhatiBg}
@@ -66,7 +65,7 @@ function DramaEvents() {
               </div>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[37.5%]  h-[.9%] ">
+          <div className="relative w-[91%] md:w-[40%]  h-[.9%] ">
             <img
               className="hidden md:block h-[100%] w-[100%]"
               src={MukhautaBg}
@@ -100,7 +99,7 @@ function DramaEvents() {
           </div>
         </div>
         <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] w-[100%] space-y-[2%]  md:space-y-[0%]  md:space-x-[2%] ">
-          <div className="relative w-[91%] md:w-[44.40%] h-[50%] ">
+          <div className="relative w-[91%] md:w-[49.40%] h-[50%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={RangshalaBg}
@@ -143,7 +142,7 @@ function DramaEvents() {
               </p>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[47.73%]  h-[50%] ">
+          <div className="relative w-[91%] md:w-[53.3%] h-[50%] ">
             <img
               className="hidden md:block h-[100%] w-[100%]"
               src={HunkaarBg}
@@ -165,7 +164,7 @@ function DramaEvents() {
               alt=""
             />
             <div
-              className={`hidden md:block absolute ${Styles.DramaTextBox} right-[2.5n%] bottom-[6.5%] aspect-[465/42] overflown-hidden  w-[82%]  ml-[6%] h-[15%] p-[1%] `}
+              className={`hidden md:block absolute ${Styles.DramaTextBox} right-[2.5%] bottom-[6.5%] aspect-[465/42] overflown-hidden  w-[82%]  ml-[6%] h-[15%] p-[1%] `}
             >
               <p
                 className={`text-start font-bold leading-tight font-rfabb text-black text-[1.9vw] md:text-[1vw] pl-2 `}
@@ -187,7 +186,9 @@ function DramaEvents() {
           </div>
         </div>
       </div>
-      <Button_Component showRegister={true} showRulebook={true}/>
+      <div className="mt-8 mb-8">
+      <Button_Component showRegister={true} showRulebook={true} />
+      </div>   
     </div>
   );
 }

@@ -38,21 +38,23 @@ function About() {
         </div>
         <div className="min-[830px]:hidden relative flex">
           <div className="absolute z-10 top-[97%] w-full">
-            <NavLink to="/">
+            <NavLink to="/" className={`block ${clk ? 'scale-95' : ''} transition-all duration-300`}
+            onClick={newHandleClick}>
               <img
                 src={Image4}
                 alt=""
-                className="max-w-[50%] mx-auto transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                className="max-w-[50%] mx-auto transform transition-transform duration-300 cursor-pointer"
               />
             </NavLink>
           </div>
 
           <div className="absolute z-20 top-[-8%] w-full">
-            <NavLink to="/">
+            <NavLink to="/" className={`block ${isClicked ? 'scale-95' : ''} transition-all duration-300`}
+            onClick={handleClick}>
               <img
                 src={Image3}
                 alt="Name Tag Unit"
-                className="max-w-[60%] mx-auto transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+                className="max-w-[60%] mx-auto transform transition-transform duration-300 cursor-pointer"
               />
             </NavLink>
           </div>

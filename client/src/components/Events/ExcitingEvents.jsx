@@ -30,7 +30,7 @@ function Exciting() {
       }}
     >
       {/* Title Section */}
-      <div className="w-full pt-[4.5%] flex justify-center mb-6">
+      <div className="w-full pt-[4.7%] pb-[4%] flex justify-center mb-6">
         <img
           src={title}
           alt="Exciting Pursuits"
@@ -41,9 +41,9 @@ function Exciting() {
       {/* Desktop Layout */}
       <div className="w-full mx-auto hidden md:block">
         {/* Top Row */}
-        <div className="flex flex-wrap gap-7 mb-4 justify-center">
+        <div className="flex flex-wrap gap-5 mb-4 justify-center">
           {/* Prom Night */}
-          <div className="w-[49.375%]">
+          <div className="w-[52%]">
             <div className="relative" style={{ aspectRatio: "632/354" }}>
               <img
                 src={promNight}
@@ -72,7 +72,7 @@ function Exciting() {
           </div>
 
           {/* Silent Disco */}
-          <div className="w-[42.265%]">
+          <div className="w-[44.5%]">
             <div className="relative" style={{ aspectRatio: "541/353" }}>
               <img
                 src={silentDisco}
@@ -102,9 +102,9 @@ function Exciting() {
         </div>
 
         {/* Bottom Row */}
-        <div className="flex flex-wrap gap-7 justify-center">
+        <div className="flex flex-wrap gap-5 justify-center">
           {/* Stage Spectrum */}
-          <div className="w-[43.906%]">
+          <div className="w-[46.3%]">
             <div className="relative" style={{ aspectRatio: "562/354" }}>
               <img
                 src={stageSpectrum}
@@ -133,7 +133,7 @@ function Exciting() {
           </div>
 
           {/* Jamming Night */}
-          <div className="w-[47.812%]">
+          <div className="w-[50%]">
             <div className="relative" style={{ aspectRatio: "612/354" }}>
               <img
                 src={jammingNight}
