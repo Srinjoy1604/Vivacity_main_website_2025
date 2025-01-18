@@ -74,9 +74,9 @@
 
 // export default IndexEvents;
 
-import Title from '../../assets/images/EventsIndex.png'
-import Background from '../../assets/images/EventsIndexBg.png'
-import { useNavigate } from 'react-router-dom'
+import Title from '../../assets/images/EventsIndex.png';
+import Background from '../../assets/images/EventsIndexBg.png';
+import { useRef } from 'react';
 import DanceDiv from '../../assets/images/Dance.png';
 import MusicDiv from '../../assets/images/Music.png';
 import DramaDiv from '../../assets/images/Drama.png';
@@ -88,21 +88,18 @@ import ManyMore from '../../assets/images/Many More.png';
 import FashionDiv from '../../assets/images/Fashion.png';
 import SocialDiv from '../../assets/images/Social.png';
 
-const IndexEvents = () => {
-  const navigate = useNavigate();
-
+const IndexEvents = ({ scrollToSection }) => {
   return (
     <div
-      className="relative"
+      className="relative min-[768px]:hidden mt-2"
       style={{
         backgroundImage: `url(${Background})`,
         width: '100%',
-        aspectRatio: '393 / 1359',
+        aspectRatio: '393 / 1450',
       }}
     >
-      
       <div
-        className="absolute w-[77.6%] h-[5.7%] left-[11.2%] top-[9.6%]"
+        className="absolute w-[77.6%] h-[5.2%] left-[11.2%] top-[9.6%]"
         style={{
           backgroundImage: `url(${Title})`,
           backgroundSize: 'cover',
@@ -110,7 +107,6 @@ const IndexEvents = () => {
         }}
       ></div>
 
-      
       <div
         className="absolute w-[98%] h-[80.77%] left-[1%] top-[17.0%] grid gap-x-[2.6%] gap-y-[4%] sm:grid-cols-2"
         style={{
@@ -118,44 +114,34 @@ const IndexEvents = () => {
           alignItems: 'start',
         }}
       >
-       
-        <div className="relative overflow-hidden top-[10%]" onClick={() => navigate('/dance')}>
-          <img src={DanceDiv} alt="Dance" className="w-full h-full object-contain " />
+        <div className="relative overflow-hidden top-[10%]" onClick={() => scrollToSection('dance')}>
+          <img src={DanceDiv} alt="Dance" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden top-[17%]" onClick={() => navigate('/music')}>
-          <img src={MusicDiv} alt="Music" className="w-full h-full object-contain " />
+        <div className="relative overflow-hidden top-[16%]" onClick={() => scrollToSection('music')}>
+          <img src={MusicDiv} alt="Music" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden top-[5%]" onClick={() => navigate('/drama')}>
+        <div className="relative overflow-hidden top-[-6%]" onClick={() => scrollToSection('drama')}>
           <img src={DramaDiv} alt="Drama" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden top-[15%]" onClick={() => navigate('/speakingarts')}>
+        <div className="relative overflow-hidden top-[6%]" onClick={() => scrollToSection('speakingArts')}>
           <img src={SpeakingArtsDiv} alt="Speaking Arts" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden top-[8%]" onClick={() => navigate('/photography')}>
+        <div className="relative overflow-hidden top-[-20%]" onClick={() => scrollToSection('photography')}>
           <img src={PhotographyDiv} alt="Photography" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden top-[25%]" onClick={() => navigate('/art')}>
+        <div className="relative overflow-hidden top-[5%]" onClick={() => scrollToSection('art')}>
           <img src={ArtDiv} alt="Arts" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden top-[2%]" onClick={() => navigate('/quizzinga')}>
+        <div className="relative overflow-hidden top-[-30%]" onClick={() => scrollToSection('quizzinga')}>
           <img src={QuizzingaDiv} alt="Quizzinga" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden top-[1%]" onClick={() => navigate('/fashion')}>
+        <div className="relative overflow-hidden top-[-24%]" onClick={() => scrollToSection('fashion')}>
           <img src={FashionDiv} alt="Fashion" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden bottom-[16%] " onClick={() => navigate('/social')}>
+        <div className="relative overflow-hidden bottom-[50%]" onClick={() => scrollToSection('social')}>
           <img src={SocialDiv} alt="Social" className="w-full h-full object-contain" />
         </div>
-
-        <div className="relative overflow-hidden bottom-[14%]" onClick={() => navigate('/manymore')}>
+        <div className="relative overflow-hidden bottom-[37%]" onClick={() => scrollToSection('manymore')}>
           <img src={ManyMore} alt="Many More" className="w-full h-full object-contain" />
         </div>
       </div>
@@ -164,3 +150,4 @@ const IndexEvents = () => {
 };
 
 export default IndexEvents;
+

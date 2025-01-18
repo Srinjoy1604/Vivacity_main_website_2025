@@ -15,7 +15,7 @@ function Sec() {
       }}
     >
       <div className="flex justify-center items-center py-6">
-        <img src={Title} alt="Past Artists" className="w-[40%] h-auto my-10"></img>
+        <img src={Title} alt="Past Artists" className="sm:w-[55%] w-[100%] h-auto my-10"></img>
       </div>
 
      <div>

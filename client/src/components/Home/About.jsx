@@ -28,13 +28,13 @@ function About() {
   return (
     <>
       <div
-        className="relative w-full h-[100vh] min-[830px]:h-[100%] px-[2rem] flex items-center justify-center overflow-hidden min-[830px]:aspect-[20/17] mt-[-17%]"
+        className="relative w-full h-[1000px] min-[830px]:h-[100%] px-[2rem] flex items-center justify-center overflow-hidden min-[830px]:aspect-[20/13] mt-[-7%]"
       >
-        <div className="hidden min-[830px]:block absolute bottom-0 w-full">
-          <img src={Image1} className="w-[100vw] sm:h-[100%]" />
+        <div className="hidden min-[830px]:block absolute bottom-0 w-full h-[100%]">
+          <img src={Image1} className="w-[100vw] h-[100%]" />
         </div>
         <div className="min-[830px]:hidden absolute bottom-0 w-full">
-          <img src={Oval} className="w-[100vw] h-[100vh] min-[830px]:h-[100%]" />
+          <img src={Oval} className="w-[100vw] h-[1000px]" />
         </div>
         <div className="min-[830px]:hidden relative flex">
           <div className="absolute z-10 top-[97%] w-full">
@@ -86,16 +86,16 @@ function About() {
         </div>
 
         <div
-          className="hidden min-[830px]:flex relative gap-20 bg-[#F8B931] shadow-lg max-w-[70%] aspect-[2.5] items-center mt-[15%]"
+          className="hidden min-[830px]:flex relative gap-20 bg-[#F8B931] shadow-lg max-w-[70%] aspect-[2.5] items-center"
           style={{
             transform: "rotate(3deg)",
           }}
         >
-          <div className="absolute h-52 w-52 z-40 min-[1400px]:top-[-30%] right-[-10%] top-[-50%]">
+          <div className="absolute z-40 min-[1400px]:top-[-30%] right-[-10%] top-[-50%]">
             <img src={Image5} alt="" />
           </div>
 
-          <div className="absolute h-52 w-52 z-40 min-[1400px]:bottom-[-55%] left-[-10%] bottom-[-100%]">
+          <div className="absolute z-40 min-[1400px]:bottom-[-55%] left-[-10%] bottom-[-50%]">
             <img src={Image6} alt="" />
           </div>
 
