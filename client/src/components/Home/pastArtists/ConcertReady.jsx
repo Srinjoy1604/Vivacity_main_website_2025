@@ -93,20 +93,20 @@ const Concert = () => {
         }}
       >
         <div className="w-[90%] md:w-[88%] lg:w-[68%] h-full">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center py-[4%]">
             <div className="flex flex-row w-full gap-[5%] items-center">
-              <div className="w-[30%] flex justify-center items-center">
+              <div className="w-[28%] flex justify-center items-center">
                 <img
                   src={Gif}
                   alt="Concert animation"
-                  className="w-full h-auto max-h-[50vh] object-contain"
+                  className="w-[90%] h-auto max-h-[50%] object-contain"
                 />
               </div>
               <div className="w-[63%] flex flex-col">
-                <h2 className="font-bold font-rfabb md:text-[2.1rem] lg:text-[2.1rem] 2xl:text-[3rem] xl:text-[2.6rem] mb-[3%] text-left">
+                <h2 className="font-bold font-rfabb md:text-[2.1rem] lg:text-[2.1rem] 2xl:text-[2.8rem] mt-[2%] xl:text-[2.6rem] mb-[1%] text-left">
                   GET CONCERT-READY NOW!
                 </h2>
-                <p className="font-semibold font-vetosans md:text-[1rem] lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.9rem] tracking-tighter leading-relaxed mb-[5%] text-left">
+                <p className="font-semibold font-vetosans md:text-[1rem] lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.7rem] tracking-normal  leading-relaxed mb-[5%] text-left">
                   Get a sneak peek into Vivacity's epic lineup with our <br />
                   <span className="italic">handpicked</span> music
                   collection—crafted to set the vibe just right! <br />
