@@ -22,7 +22,7 @@ import Button_Component from "./Button_component";
 function DramaEvents() {
   return (
     <div
-      className={`${Styles.DramaBg} w-screen h-[100%]  p-[2%] overflow-hidden flex flex-col`}
+      className={`${Styles.DramaBg} w-fit h-[100%]  p-[2%] overflow-hidden flex flex-col`}
     >
       <div className={`grid pt-[3.1%] place-items-center`}>
         <img src={DramaTitle} className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[40%] " alt="" />
