@@ -9,12 +9,12 @@ import Button_Component from "./Button_component";
 function QuizzingaEvents() {
   return (
     <div
-      className={`${Styles.QuizzingaBg} w-screen h-[100%] p-[2%] flex flex-col`}
+      className={`${Styles.QuizzingaBg} w-full h-[100%] p-[2%] flex flex-col`}
     >
       <div
-        className={`grid place-items-center`}
+        className={`grid place-items-center pt-[3.2%]`}
       >
-        <img src={QuizzingaTitle} className="w-[40%]" alt="" />
+        <img src={QuizzingaTitle} className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[40%]" alt="" />
       </div>
 
       <div className="space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[8%] md:pt-[6%] ">
@@ -32,7 +32,7 @@ function QuizzingaEvents() {
                 className={`${Styles.DramaTextBox} w-[62%] aspect-[384/58] overflow-hidden  h-[19%] p-[1%] absolute bottom-[6%] left-[5%]`}
               >
                 <p
-                  className={` text-start text-[1.9vw] md:text-[1vw] pl-[3px] font-medium leading-tight font-rfabb  text-black `}
+                  className={` text-start text-[1.9vw] md:text-[1vw] pl-[3px] font-bold leading-tight font-rfabb  text-black `}
                 >
                   Form trios and compete for a spot in the movie auction! Become
                   a conqueror in this elusive quiz of cinematography.
@@ -51,7 +51,7 @@ function QuizzingaEvents() {
               className={`absolute ${Styles.DramaTextBox} left-[0%] bottom-[6%] aspect-[446/47] overflow-hidden w-[80%] ml-[6%] h-[18%] p-[1%] pl-[2%]`}
             >
               <p
-                className={`text-start font-medium leading-tight text-[1.9vw] md:text-[1vw]  font-rfabb text-black pt-1 `}
+                className={`text-start font-bold leading-tight text-[1.9vw] md:text-[1vw]  font-rfabb text-black pt-1 `}
               >
                 The TOP 8 teams of BAMBOOZLED engage in a bidding war for their
                 chance to shine in the cinematic spotlight.

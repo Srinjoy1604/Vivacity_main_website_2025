@@ -30,7 +30,7 @@ function Exciting() {
       }}
     >
       {/* Title Section */}
-      <div className="w-full flex justify-center mb-6">
+      <div className="w-full pt-[4.5%] flex justify-center mb-6">
         <img
           src={title}
           alt="Exciting Pursuits"

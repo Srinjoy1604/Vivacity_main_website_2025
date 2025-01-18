@@ -41,8 +41,8 @@ function ArtEvents() {
       }}
     >
       {/* Title Section */}
-      <div className="w-full flex justify-center mb-6">
-        <img src={title} alt="Art Events" className="w-[40%]" />
+      <div className="w-full pt-[4.3%] flex justify-center mb-6">
+        <img src={title} alt="Art Events" className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[40%]" />
       </div>
 
       {/* Desktop Layout */}
