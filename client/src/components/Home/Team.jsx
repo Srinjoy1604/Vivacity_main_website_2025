@@ -416,7 +416,7 @@ function Team(){
 >
           {/* Text Div */}
           <div
-            className="p-2 box-border text-start 1280:text-[1.325rem] 2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[1.7vw] lg:text-[1.13rem] md:text-[0.83rem] text-[2vw] font-vetosans"
+            className="p-2 box-border text-start 1280:text-[1.7vw] 1400:text-[1.7vw] sm-text-[1rem] 1500:text-[1.7vw] 1980:text-[1.7vw] 1600:text-[1.7VW] 1700:text-[1.7vw] 2100:text-[1.7vw] lg:text-[1.7vw] md:text-[1.7vw] text-[2vw] font-bold font-vetosans"
             style={{
               width: `${(325 / 387) * 100}%`, 
               height: `${(297 / 505) * 100}%`, 
@@ -425,7 +425,7 @@ function Team(){
               position: "absolute",
             }}
           >
-             Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}<span className='1280:text-[1.325rem]  2xl-text-[1.5rem] sm-text-[0.6rem] 1500:text-[1.65rem] 1700:text-[1.8rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[1.7vw]  text-[2vw] lg:text-[1.03rem] md:text-[0.85rem] font-rfabb' style={{color: 'rgba(144,0,0,1)',}}>VIVACITY'25</span>  From envisioning <br></br>the cosmic threads of our<br></br> theme to weaving it into <br></br>reality,
+             Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}<span className='1280:text-[1.325rem] 1400:text-[1.7vw] sm-text-[0.6rem] 1500:text-[1.7vw] 1700:text-[1.7vw] 1980:text-[1.7vw] 1600:text-[1.7vw] 2100:text-[1.7vw]  text-[2vw] lg:text-[1.7vw] md:text-[1.7vw] font-bold font-rfabb' style={{color: 'rgba(144,0,0,1)',}}>VIVACITY'25</span>  From envisioning <br></br>the cosmic threads of our<br></br> theme to weaving it into <br></br>reality,
               this team makes it all<br></br> happen. Tap to discover the <br></br>faces and stories of
               those who <br></br>bring the multiverse to life!
           </div>
@@ -466,7 +466,7 @@ function Team(){
     border:'black'
             }}
           >
-          <p className='text-[1.875rem] xl-text-[1.5rem] 1500-[1.8rem] 1980:text-[2.05rem] 1600:text-[1.75rem] 1700:text-[1.9rem] 2100:text-[2.7rem] lg:text-[1.75ren] md:text-[1.5rem] font-rfabb'> Meet Them!</p>
+          <p className='text-[2.05vw] font-bold xl-text-[2.05vw] 1500-[2.05vw] 1980:text-[2.05vw] 1600:text-[2.05vw] 1700:text-[2.05vw] 2100:text-[2.05vw] lg:text-[2.05vw] md:text-[2vw] font-rfabb'> Meet Them!</p>
           </button>
           
       </div>
@@ -825,7 +825,7 @@ function Team(){
 >
   {/* Text Div */}
   <div
-    className="p-2 box-border text-start   text-[1.25rem] xs:text-[1.36rem] xxs:text-[1.06rem] xxxs:text-[0.75rem] 270:text-[0.75rem] sm:text-[1.65rem] md:text-[1.75rem]  lg:text-[2.05rem] font-vetosans"
+    className="p-2 box-border text-start font-bold  text-[1.25rem] xs:text-[3.3vw] xxs:text-[3.3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] sm:text-[3.3vw] md:text-[1.75rem]  lg:text-[2.05rem] font-vetosans"
     style={{
       width: `${(255 / 307) * 100}%`, 
       height: `${(225 / 351) * 100}%`, 
@@ -837,7 +837,7 @@ function Team(){
   >
     Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}
     <span
-      className="font-rfabb   text-[1.25rem] xs:text-[1.45rem] xxs:text-[1rem] xxxs:text-[0.76rem] 270:text-[0.65rem] sm:text-[1.65rem] md:text-[1.65rem]  lg:text-[2.05rem] "
+      className="font-rfabb font-bold  text-[1.25rem] xs:text-[3.3vw] xxs:text-[3.3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] sm:text-[3.3vw] md:text-[1.65rem]  lg:text-[2.05rem] "
       style={{ color: 'rgba(144,0,0,1)' }}
     >
       VIVACITY'25
@@ -883,7 +883,7 @@ function Team(){
            backgroundPosition: "top",
     }}
   >
-    <p className="xs:text-[1.5rem] text-[1.25rem] xxs:text-[1.357rem] xxxs:text-[1.16rem] 270:text-[0.95rem] sm:text-[1.76rem] md:text-[1.78rem]  lg:text-[2.05rem] font-rfabb">
+    <p className="xs:text-[5vw] text-[5vw] xxs:text-[5vw] xxxs:text-[5vw] 270:text-[5vw] sm:text-[5vw]    font-bold font-rfabb">
       Meet Them!
     </p>
   </button>
