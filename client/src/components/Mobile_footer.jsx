@@ -49,11 +49,11 @@ function Footer1() {
         className="h-[73.80%]   "
       />
        <div style={{ height: "1.43%" }}/>
-      <p className="text-center xxxs:text-[0.82rem]  270:text-[0.65rem] xs:text-[1.3rem] font-vetosans text-[1rem] text-black"
+      <p className="text-center xxxs:text-[0.82rem]  270:text-[0.65rem] xs:text-[1.3rem] font-vetosans text-[1rem] text-black font-bold"
      >
         Developed by GDG on Campus, LNMIIT
       </p>
-      <p className="text-center  xxxs:text-[0.82rem]  270:text-[0.65rem] xs:text-[1.3rem] font-vetosans text-[1rem] text-black ">
+      <p className="text-center  xxxs:text-[0.82rem]  270:text-[0.65rem] xs:text-[1.3rem] font-vetosans text-[1rem] text-black font-bold">
         Designed by Vivacity. All rights reserved.
       </p>
     </div>
@@ -91,8 +91,8 @@ function Footer1() {
       
       <div className="text-center text-black  h-[63.09%]">
         <p className="text-[1.0625rem] xxxs:text-[0.82rem] 270:text-[0.65rem] xs:text-[1.3rem] font-vetosans">For further queries:</p>
-        <p className="text-[1.0625rem] xxxs:text-[0.82rem]  270:text-[0.65rem]  xs:text-[1.3rem] font-vetosans">Ayush Dhanesha: +91 9998523792</p>
-        <p className="text-[1.0625rem] xxxs:text-[0.82rem]  270:text-[0.65rem] xs:text-[1.3rem] font-vetosans">Shubhanshu Singhal: +91 8949024851</p>
+        <p className="text-[1.0625rem] xxxs:text-[0.82rem]  270:text-[0.65rem]  xs:text-[1.3rem] font-vetosans font-bold ">Ayush Dhanesha: +91 9998523792</p>
+        <p className="text-[1.0625rem] xxxs:text-[0.82rem]  270:text-[0.65rem] xs:text-[1.3rem] font-vetosans font-bold ">Shubhanshu Singhal: +91 8949024851</p>
       </div>
     </div>
   </div>

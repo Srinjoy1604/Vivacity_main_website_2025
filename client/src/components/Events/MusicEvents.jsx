@@ -28,14 +28,14 @@ function MusicEvents() {
       className={`${Styles.MusicBg} w-full h-[100%] p-[2%] flex flex-col`}
     >
       <div
-        className={`w-[100%] pt-[3.2%] grid place-items-center `}
+        className={`w-[100%] pt-[6%] md:pt-[3.7%] pb-[2.2%] grid place-items-center `}
       >
-        <img src={DramaTitle} className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[40%]" alt="" />
+        <img src={DramaTitle} className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[50%]" alt="" />
       </div>
 
       <div className="md:space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[3%] ">
         <div className="space-y-[4%] mb-[4%] md:mb-[0%] md:space-y-[0%] flex flex-col md:flex-row items-center justify-center  h-[100%] w-[100%] space-x-[2%] ">
-          <div className="relative w-[91%] md:w-[44.1%] md:h-[24.3%] ">
+          <div className="relative w-[91%] md:w-[51.5%] md:h-[24.3%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={BattleOfBandsBg}
@@ -70,7 +70,7 @@ function MusicEvents() {
               </div>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[46.4%]  md:h-[22.9%] ">
+          <div className="relative w-[91%] md:w-[55%]  md:h-[22.9%] ">
             <img
               className="hidden md:block h-[100%] w-[100%]"
               src={BandishBg}
@@ -106,7 +106,7 @@ function MusicEvents() {
 
         </div>
         <div className="space-y-[4%]  md:space-y-[0%]  flex md:flex-row flex-col items-center justify-center  h-[100%] w-[100%] space-x-[2%] ">
-          <div className="relative w-[91%] h-[14.61%] md:w-[29.8%] md:h-[36.9%] ">
+          <div className="relative w-[91%] h-[14.61%] md:w-[35.9%] md:h-[36.9%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={MalhaarBg}
@@ -129,7 +129,7 @@ function MusicEvents() {
             />
 
             <div
-              className={`${Styles.DramaTextBox} w-[86.6%] aspect-[329/30]  md:aspect-[328.78/65] overflow-hidden h-[16%] md:h-[13%] pl-[2%] pt-[0.5%] absolute bottom-[4%] md:bottom-[2.8%] left-[4%]`}
+              className={`${Styles.DramaTextBox} w-[86.6%] aspect-[329/30]  md:aspect-[328.78/65] overflow-hidden h-[16%] md:h-[12%] pl-[2%] pt-[0.5%] absolute bottom-[4%] md:bottom-[2.8%] left-[4%]`}
             >
               <p
                 className={`text-start font-rfabb text-black font-bold text-[2vw] md:text-[1vw] leading-tight pt-1 `}
@@ -139,7 +139,7 @@ function MusicEvents() {
               </p>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[29.8%] md:h-[36.9%] ">
+          <div className="relative w-[91%] md:w-[35.8%] md:h-[36.9%] ">
             <img
               className="hidden md:block h-[100%] w-[100%]"
               src={AarohBg}
@@ -172,7 +172,7 @@ function MusicEvents() {
               </p>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[29.8%] md:h-[36.9%] ">
+          <div className="relative w-[91%] md:w-[35.8%] md:h-[36.9%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={GullyWarBg}
@@ -195,7 +195,7 @@ function MusicEvents() {
             />
 
             <div
-              className={`${Styles.DramaTextBox} w-[89%] aspect-[329/40] md:aspect-[321.73/71] overflow-hidden h-[17%] md:h-[13.5%] p-[.8%] absolute bottom-[4%] left-[3%] md:left-[8%] md:right-[5%]`}
+              className={`${Styles.DramaTextBox} w-[89%] aspect-[329/40] md:aspect-[321.73/71] overflow-hidden h-[17%] md:h-[13.5%] p-[.8%] absolute bottom-[3.5%] left-[3%] md:left-[8%] md:right-[5%]`}
             >
               <p
                 className={`text-start font-rfabb  text-black font-bold leading-tight
@@ -210,7 +210,9 @@ function MusicEvents() {
           </div>
         </div>
         <div >
-        <Button_Component showRegister={true} showRulebook={true} />
+          <div className="mt-8 mb-9">
+          <Button_Component showRegister={true} showRulebook={true} />
+          </div>
       </div>
       </div>
 
