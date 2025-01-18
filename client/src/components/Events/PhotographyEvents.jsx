@@ -41,11 +41,11 @@ function PhotographyEvents() {
       }}
     >
       {/* Title Section */}
-      <div className="w-full flex justify-center mb-6">
+      <div className="w-full pt-[4.3%] flex justify-center mb-6">
         <img
           src={title}
           alt="Photography Events"
-          className="w-[60%] max-w-5xl"
+          className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[40%]"
         />
       </div>
 
