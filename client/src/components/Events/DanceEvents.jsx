@@ -131,7 +131,7 @@ function Page() {
                   overflow: "hidden",
                 }}
               >
-                <p className="font-rfabb leading-tight text-[1.1vw] font-bold ">
+                <p className="font-rfabb leading-tight align-middle 1280:text-[1.05vw] lg:text-[1.05vw] md:text-[1vw]  1400:text-[1.05vw] 1500:text-[1.05vw] 1600:text-[1.05vw] 1980:text-[1.05vw] text-start mt-[1%]  font-bold ">
                   Let the streets bear witness to electrifying performances and
                   exhilarating beats. Let your spirits soar with street dance!
                 </p>
@@ -407,6 +407,8 @@ function Page() {
           </div>
         </div>
       </div>
+
+      {/* MOBILE VERSION */}
       <div className="md:hidden block">
         <div
           className="min-h-screen bg-cover bg-center flex flex-col items-center"
@@ -488,7 +490,7 @@ function Page() {
               className="px-2 py-1"
               style={{
                 position: "absolute",
-                width: "90.39%",
+                width: "91.39%",
                 aspectRatio: "300/27",
                 left: "3.53%",
                 top: "79.5%",
@@ -499,7 +501,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.2vw] font-bold  ">
+              <p className="font-rfabb leading-tight text-[2.2vw] px-[2%]  font-bold  ">
                 Let the streets bear witness to electrifying performances and
                 exhilarating beats. Let your spirits soar with street dance!
               </p>
@@ -551,7 +553,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.3vw] font-bold ">
+              <p className="font-rfabb leading-tight text-[2.3vw] px-[2%] font-bold ">
                 The classic Steve Harvey show! Come and be a witness to the
                 recreation of one of the most popular reality shows of all time,
                 at Family Feud: the game show!
@@ -604,7 +606,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.5vw] font-bold ">
+              <p className="font-rfabb leading-tight text-[2.5vw] px-[2%] font-bold ">
                 Duet with a partner as your symphonies collide against<br></br>{" "}
                 each other in this competition of melodies.
               </p>
@@ -656,7 +658,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className=" font-rfabb leading-tight text-[2.3vw] font-bold  ">
+              <p className=" font-rfabb leading-tight text-[2.3vw] font-bold  px-[2%] ">
                 Let the beats flow and your body move! Engage yourself in solo
                 western performances where rhythm is everything.
               </p>
@@ -708,7 +710,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.3vw] font-bold ">
+              <p className="font-rfabb leading-tight text-[2.3vw] font-bold  px-[2%]">
                 Set the stage on fire as you unleash the rhythm and showcase
                 your choreography in this dance battle.
               </p>
@@ -760,7 +762,7 @@ function Page() {
                 overflow: "hidden",
               }}
             >
-              <p className="font-rfabb leading-tight text-[2.2vw] font-bold  ">
+              <p className="font-rfabb leading-tight text-[2.2vw] font-bold px-[2%] ">
                 Explore the allure of the classical arts! Let light <br />
                 descend onto the stage as you enamor yourself in
                 <br /> elegant styles and witness the roots of dance itself!
