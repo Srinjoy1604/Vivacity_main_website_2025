@@ -74,13 +74,14 @@ const Events = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
-    }, 6000);
+    }, 4000);
     return () => clearInterval(timer);
   }, [handleNext]);
 
   const handleKnowMore = useCallback(() => {
-    window.location.href = currentEvent.link;
-  }, [currentEvent.link]);
+    window.location.href = "/events";
+  }, []);
+
   return (
     <div
       className="min-h-screen flex flex-col justify-center items-center "
@@ -91,103 +92,77 @@ const Events = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Logo section */}
-      <div className="w-[55%] md:w-[24%] mt-1 sm:mb-6 mb-4">
+      {/* Title section */}
+      <div className="w-[53%] md:w-[24%] sm:mb-[3%] mb-[3.4%] mt-[1%] ">
         <img
           src={Event_logo}
           alt="Event Logo"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain  pointer-events-none"
         />
       </div>
 
       {/* Main content container */}
-      <div className="sm:w-[70%] w-[80%] sm:h-[71.65vh] h-[70%] relative mx-auto">
+      <div className="sm:w-[78%] w-[80%] sm:h-[71.65vh] h-[70%] relative mx-auto mb-[6%]">
         {/* Black shadow */}
-        <div className="absolute -left-2 -bottom-2 w-full h-full bg-black "></div>
+        <div className="absolute -left-2 -bottom-2 w-full h-full bg-black"></div>
 
-        {/* Desktop Layout - Hidden on mobile */}
+        {/* Desktop Layout  */}
         <div className="relative w-full h-full bg-black hidden sm:block p-2">
-          <div
-            className="absolute inset-0 z-10 mix-blend-soft-light opacity-20"
-            style={{
-              backgroundImage: `url(${Halftone})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
-
           <div className="relative w-full h-full bg-black">
-            {/* Desktop Navigation */}
-            <div
-              className="absolute top-0 right-0 z-20 w-[18.49%] h-[12.91%]"
-              style={{
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 16% 100%)",
-              }}
-            >
-              <div className="bg-[#53B08E] flex h-full p-1">
-                <button
-                  onClick={handlePrevious}
-                  className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-20"
-                >
-                  <FaRegArrowAltCircleLeft className="w-[85%] h-[85%]" />
-                </button>
-                <button
-                  onClick={handleNext}
-                  className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-20"
-                >
-                  <FaRegArrowAltCircleRight className="w-[85%] h-[85%]" />
-                </button>
-              </div>
-            </div>
-
             <div className="relative h-full">
               {/* Desktop Left panel */}
               <div
-                className="absolute top-0 left-0 h-full w-[53%] bg-[#53B08E] z-0"
+                className="absolute top-0 left-0 h-full w-[53%] bg-[#53B08E] z-30 flex flex-col"
                 style={{
                   clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)",
                 }}
               >
+                {/* Title section */}
                 <div className="h-[23%] bg-[#003E68] flex justify-start items-center">
                   <h2 className="text-white tracking-wide text-[6vw] font-ttr font-semibold ml-10">
                     {currentEvent.title}
                   </h2>
                 </div>
 
-                <div className="w-[90%] md:h-[48.61%] sm:h-[56%] mt-[3%] px-[2%] py-[2%] ml-[2%]">
-                  <ul className="lg:space-y-[2%] md:space-y-[4%] sm:space-y-[5%] text-white font-vetosans font-medium">
-                    {currentEvent.items.map((item, index) => (
-                      <li
-                        key={index}
-                        className="flex items-center justify-start text-[1.25rem] md:text-[1.8rem] leading-none"
-                      >
-                        <span className="w-2 h-2 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
-                        <span className="line-clamp-2 sm:line-clamp-1">
-                          {item}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {/* Content section with flex layout */}
+                <div className="flex flex-col justify-between h-[77%] py-4 relative">
+                  {/* List items */}
+                  <div className="w-[90%] px-[2%] ml-[2%]">
+                    <ul className="lg:space-y-[2%] md:space-y-[4%] sm:space-y-[5%] text-white font-vetosans font-medium">
+                      {currentEvent.items.map((item, index) => (
+                        <li
+                          key={index}
+                          className="flex items-center justify-start text-[1.25rem] md:text-[1.8rem] xl:text-[2vw] leading-none"
+                        >
+                          <span className="w-2 h-2 xl:w-3 xl:h-3 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
+                          <span className="line-clamp-2 sm:line-clamp-1">
+                            {item}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-                <div className="absolute bottom-[4%] left-[4.5%] md:w-[60%] md:h-[14.52%] sm:w-[73%] sm:h-[20.52%]">
-                  <button
-                    onClick={handleKnowMore}
-                    className="w-full h-full transition-transform hover:scale-105 focus:outline-none"
-                  >
-                    <img
-                      src={Event_button}
-                      alt="Know More"
-                      className="w-full h-full object-contain"
-                    />
-                  </button>
+                  {/* Button container */}
+                  <div className="w-[60%] px-[4.5%]  relative z-50 py-[1%]">
+                    <button
+                      onClick={handleKnowMore}
+                      className="w-full group relative transition-all duration-300 hover:scale-110 focus:outline-none cursor-pointer"
+                    >
+                      <img
+                        src={Event_button}
+                        alt="Know More"
+                        className="w-full h-full object-contain transition-transform group-hover:brightness-110  pointer-events-none"
+                      />
+                      <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
+                    </button>
+                  </div>
                 </div>
               </div>
 
               {/* Desktop Right panel */}
               <div
-                className="absolute top-0 right-0 h-full w-[60%]"
+                className="absolute top-0 right-0 h-full w-[60%] z-20"
                 style={{
                   clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
                 }}
@@ -195,7 +170,7 @@ const Events = () => {
                 <img
                   src={currentEvent.image}
                   alt={currentEvent.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover  pointer-events-none"
                 />
 
                 <div className="absolute bottom-0 right-0 w-[50%] h-[28%]">
@@ -206,7 +181,7 @@ const Events = () => {
                     }}
                   >
                     <div className="h-full flex flex-col justify-center items-center px-1">
-                      <p className="text-white w-[88%] 2xl:text-[2.1vw] lg:text-[2.6vw] sm:text-[2.5vw] font-rfabb text-center  lg:mt-2 lg:ml-4 sm:ml-2">
+                      <p className="text-white w-[88%] 2xl:text-[2.1vw] lg:text-[2.6vw] sm:text-[2.5vw] font-rfabb text-center lg:mt-2 lg:ml-4 sm:ml-2">
                         PRIZES WORTH
                       </p>
                       <p className="text-[#E5FF00] w-[88%] text-[5vw] lg:text-[4.5vw] sm:text-[4.5vw] font-semibold font-ttr text-center leading-tight sm:ml-2">
@@ -216,13 +191,46 @@ const Events = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Navigation buttons */}
+              <div
+                className="absolute top-0 right-0 z-30 w-[18.49%] h-[12.91%]"
+                style={{
+                  clipPath: "polygon(0 0, 100% 0, 100% 100%, 16% 100%)",
+                }}
+              >
+                <div className="bg-[#53B08E] flex h-full p-1">
+                  <button
+                    onClick={handlePrevious}
+                    className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-20 hover:scale-110"
+                  >
+                    <FaRegArrowAltCircleLeft className="w-[85%] h-[85%]" />
+                  </button>
+                  <button
+                    onClick={handleNext}
+                    className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-20 hover:scale-110"
+                  >
+                    <FaRegArrowAltCircleRight className="w-[85%] h-[85%]" />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
+          <div
+            className="absolute inset-0 z-40 mix-blend-soft-light opacity-20 pointer-events-none"
+            style={{
+              backgroundImage: `url(${Halftone})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
         </div>
-        {/* Mobile Layout - Hidden on desktop */}
+
+        {/* Mobile Layout */}
         <div className="relative w-full h-full bg-black sm:hidden p-1">
           <div
-            className="absolute inset-0 z-10 mix-blend-soft-light opacity-20"
+            className="absolute inset-0 z-10 mix-blend-soft-light opacity-20 pointer-events-none"
             style={{
               backgroundImage: `url(${Halftone})`,
               backgroundSize: "cover",
@@ -253,7 +261,7 @@ const Events = () => {
                 <img
                   src={currentEvent.image}
                   alt={currentEvent.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover  pointer-events-none"
                 />
               </div>
             </div>
@@ -269,19 +277,19 @@ const Events = () => {
                   <p className="text-white text-[3.8vw] font-rfabb font-semibold tracking-wide ml-4 -mt-5">
                     PRIZES WORTH
                   </p>
-                  <p className="text-[#E5FF00] text-[7vw] font-semibold font-ttr text-center leading-tight ml-2">
+                  <p className="text-[#E5FF00] text-[6.8vw] font-semibold font-ttr text-center leading-tight ml-2">
                     {currentEvent.prizeWorth}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="relative w-full bg-[#53B08E] p-2 -mt-2 ml-2">
-              <ul className="space-y-1 mb-4">
+            <div className="relative w-full bg-[#53B08E] p-2 -mt-1.8 ml-2">
+              <ul className="space-y-1 mb-4 max-[380px]:mb-2">
                 {currentEvent.items.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center text-black font-vetosans font-bold max-[350px]:text-[1rem] text-[1.25rem] leading-none"
+                    className="flex items-center text-black font-vetosans font-bold max-[380px]:text-[0.9rem] text-[1.25rem] leading-none"
                   >
                     <span className="w-1.5 h-1.5 bg-black rounded-full mr-2"></span>
                     {item}
@@ -289,16 +297,17 @@ const Events = () => {
                 ))}
               </ul>
 
-              <div className="flex items-center justify-between mt-1  relative z-20">
+              <div className="flex items-center justify-between mt-1 relative z-20">
                 <button
                   onClick={handleKnowMore}
-                  className="w-[56%] transition-transform hover:scale-105 focus:outline-none"
+                  className="w-[55%] group relative transition-all duration-300 hover:scale-105 focus:outline-none"
                 >
                   <img
                     src={Event_button}
                     alt="Know More"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain transition-transform group-hover:brightness-110  pointer-events-none"
                   />
+                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
                 </button>
 
                 <div className="flex gap-2 mr-2">

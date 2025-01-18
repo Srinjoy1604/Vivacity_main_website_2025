@@ -26,7 +26,7 @@ import Tatoo from "../../assets/images/art_mobile_2.png";
 import Eclitc from "../../assets/images/art_mobile_3.png";
 import Contrasto from "../../assets/images/art_mobile_4.png";
 import Splash from "../../assets/images/art_mobile_5.png";
-
+import Button_Component from "./Button_component";
 function ArtEvents() {
   const handleRegisterClick = () => {
     navigate("/register");
@@ -41,16 +41,16 @@ function ArtEvents() {
       }}
     >
       {/* Title Section */}
-      <div className="w-full flex justify-center mb-6">
-        <img src={title} alt="Art Events" className="w-[50%] max-w-2xl" />
+      <div className="w-full pt-[5.3%] pb-[2.3%] flex justify-center mb-6">
+        <img src={title} alt="Art Events" className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[50%]" />
       </div>
 
       {/* Desktop Layout */}
-      <div className="max-w-[1880px] mx-auto hidden md:block">
+      <div className=" mx-auto hidden md:block">
         {/* Top Row */}
-        <div className="flex flex-wrap gap-7 mb-4">
+        <div className="flex flex-wrap gap-8 mb-4 justify-center">
           {/* Tattoo Tales */}
-          <div className="w-[54.14%]">
+          <div className="w-[56.14%]">
             <div className="relative aspect-[693/537]">
               <img
                 src={image1}
@@ -68,8 +68,8 @@ function ArtEvents() {
                   alt="Tattoo Tales Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[1vw] font-rfabb font-medium leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-4 md:px-5 lg:px-8">
+                  <p className="text-black text-[1vw] font-rfabb font-bold leading-tight uppercase">
                     Let your skin become the portrait, become the canvas of
                     someone's imagination!
                   </p>
@@ -79,7 +79,7 @@ function ArtEvents() {
           </div>
 
           {/* Mystic */}
-          <div className="w-[37.5%]">
+          <div className="w-[38.5%]">
             <div className="relative aspect-[480/537]">
               <img
                 src={image2}
@@ -97,8 +97,8 @@ function ArtEvents() {
                   alt="Mystic Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[0.8vw] font-rfabb font-medium leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-4 md:px-5 lg:px-8">
+                  <p className="text-black text-[0.8vw] font-rfabb font-bold leading-tight uppercase">
                     May the eccentricity flow, as we bring together a plethora
                     of eras and artistic styles that span the history of the
                     world. This is Eclectic!
@@ -110,9 +110,9 @@ function ArtEvents() {
         </div>
 
         {/* Middle Row */}
-        <div className="flex flex-wrap gap-7 mb-4">
+        <div className="flex flex-wrap gap-5 mb-4 justify-center">
           {/* Splash */}
-          <div className="w-[43.9%]">
+          <div className="w-[45.4%]">
             <div className="relative aspect-[562/354]">
               <img
                 src={image3}
@@ -130,8 +130,8 @@ function ArtEvents() {
                   alt="Splash Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[0.8vw] font-rfabb font-medium leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-2 md:px-5 lg:px-8">
+                  <p className="text-black text-[0.8vw] font-rfabb font-bold leading-tight uppercase">
                     Our face painting competition, let the paint splash and the
                     faces sparkle! Become both the muse and the painting!
                   </p>
@@ -141,7 +141,7 @@ function ArtEvents() {
           </div>
 
           {/* Contrasto */}
-          <div className="w-[47.7%]">
+          <div className="w-[49.4%]">
             <div className="relative aspect-[611/353]">
               <img
                 src={image4}
@@ -159,8 +159,8 @@ function ArtEvents() {
                   alt="Contrasto Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[0.9vw] font-rfabb font-medium leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-4 md:px-5 lg:px-8">
+                  <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight uppercase">
                     Let the colors collide and creativity run boundless. Engulf
                     yourself in vivid imagery where artists push the boundaries
                     of art itself!
@@ -192,8 +192,8 @@ function ArtEvents() {
                   alt="The Universe Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[0.8vw] font-rfabb font-medium leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-4 md:px-5 lg:px-8">
+                  <p className="text-black text-[0.8vw] font-rfabb font-bold leading-tight uppercase">
                     Artists compete with the only weapon in their arsenal: a
                     single color. A single hue in a hue-niverse.
                   </p>
@@ -225,8 +225,8 @@ function ArtEvents() {
                 alt="Tattoo Tales Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight uppercase">
+              <div className="absolute inset-0  items-start flex justify-start  px-4 py-1">
+                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight uppercase">
                   Let your skin become the portrait, become the canvas of
                   someone's imagination!
                 </p>
@@ -254,8 +254,8 @@ function ArtEvents() {
                 alt="Mystic Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight uppercase">
+              <div className="absolute inset-0 flex items-start justify-start px-4 py-1">
+                <p className="text-black text-[2.4vw] font-rfabb font-bold leading-tight uppercase">
                   May the eccentricity flow, as we bring together a plethora of
                   eras and artistic styles that span the history of the world.
                   This is Eclectic!
@@ -276,7 +276,7 @@ function ArtEvents() {
             <img
               src={Splash}
               alt="Splash Title"
-              className="absolute bottom-[25%] left-[5%] w-[25%] object-contain z-10"
+              className="absolute bottom-[24%] left-[5%] w-[25%] object-contain z-10"
             />
             <div className="absolute bottom-[4%] left-[8%] w-[85%] z-10">
               <img
@@ -284,8 +284,8 @@ function ArtEvents() {
                 alt="Splash Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight uppercase">
+              <div className="absolute inset-0 flex items-start justify-center px-3 py-1">
+                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight uppercase">
                   Our face painting competition, let the paint splash and the
                   faces sparkle! Become both the muse and the painting!
                 </p>
@@ -313,8 +313,8 @@ function ArtEvents() {
                 alt="Contrasto Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight uppercase">
+              <div className="absolute inset-0 flex items-start justify-start px-3 py-1">
+                <p className="text-black text-[2.4vw] font-rfabb font-bold leading-tight uppercase">
                   Let the colors collide and creativity run boundless. Engulf
                   yourself in vivid imagery where artists push the boundaries of
                   art itself!
@@ -343,8 +343,8 @@ function ArtEvents() {
                 alt="The Universe Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight uppercase">
+              <div className="absolute inset-0 flex items-start justify-start px-3">
+                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight uppercase">
                   A celebration of diversity through art, where different
                   perspectives create a universe of expression.
                 </p>
@@ -355,17 +355,8 @@ function ArtEvents() {
       </div>
 
       {/* Buttons Section */}
-      <div className="flex justify-center gap-20 mt-8">
-        <button
-          onClick={handleRegisterClick}
-          className="transform hover:scale-105 transition-transform"
-        >
-          <img
-            src={register}
-            alt="Register"
-            className="w-[213px] h-[43px] md:w-[22vw] md:h-[8vw] object-contain"
-          />
-        </button>
+      <div className="w-[100%] mb-8 mt-8">
+        <Button_Component showRegister={true} showRulebook={false} />
       </div>
     </div>
   );

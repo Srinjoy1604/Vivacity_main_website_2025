@@ -155,11 +155,11 @@ const Navbar = () => {
     return (
         <div>
             <nav className={` absolute
-            w-full top-0 z-50
+            w-full top-0 z-50 
             transition-all duration-300 ease-in-out
             ${scrolled ? 'bg-black/90 backdrop-blur-sm shadow-lg' : 'bg-[#04091D]'}
         `}>
-                <div className="max-w-full mx-auto px-4 sm:px-6">
+                <div className="max-w-full mx-auto sm:px-6">
                     <div className="flex items-center justify-between pl-6 pr-6 xl:pl-10 xl:pr-10 h-24 sm:h-18 md:h-24">
 
                         <div className='hidden smallNav'>
@@ -213,16 +213,16 @@ const Navbar = () => {
                 </div>
 
                 <div className={`
-                lg:hidden
+                lg:hidden top-[0]
                 transition-all duration-300 ease-in-out
                 ${isOpen ? 'max-h-96  opacity-80' : 'max-h-0 opacity-0 overflow-hidden'}
                 ${scrolled ? 'bg-black/90 backdrop-blur-sm ' : 'bg-[#04091D]'}
             `}>
                     <div className="px-4 pt-2 pb-3 space-y-1 sm:px-6n">
-                        {['Home', 'Events', 'Sponsors', 'Our\u00A0Team'].map((item) => (
+                        {navItems.map((item) => (
                             <NavLink
-                                key={item}
-                                to={`/${item}`}
+                                key={item.Name}
+                                to={`${item.Link}`}
                                 onClick={handleLinkClick}
                                 className={({ isActive }) => `
                                 block px-3 py-2 rounded-md text-base font-medium
@@ -232,7 +232,7 @@ const Navbar = () => {
                                         : 'text-white hover:bg-gray-700 hover:text-orange-300'}
                             `}
                             >
-                                {item}
+                                {item.Name}
                             </NavLink>
                         ))}
                     </div>

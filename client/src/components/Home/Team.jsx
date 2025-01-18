@@ -13,7 +13,7 @@ import Cimg from '../../assets/images/TeamC_img.png';
 import Dimg from '../../assets/images/TeamD_img.png';
 import Pin from '../../assets/images/pin.png';
 import Thread from '../../assets/images/threads.png'
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import { useLocation } from "react-router-dom";
 import buttonback from '../../assets/images/Pinkbtn_black.png'
 import Background1 from '../../assets/images/TeampageMob.png';
@@ -30,34 +30,55 @@ import Cimg1 from '../../assets/images/TeamCImg.png';
 import Dimg1 from '../../assets/images/TeamDImg.png';
 import Pin1 from '../../assets/images/PinMob.png';
 import YellowBack1 from '../../assets/images/YellowbkMob.png';
-import Thread1 from '../../assets/images/ThreadsMob.png'
-import buttonback1 from '../../assets/images/Pinkbtn_back1.png'
+import Thread1 from '../../assets/images/ThreadsMob.png';
+import buttonback1 from '../../assets/images/Pinkbtn_back1.png';
+import Title from '../../assets/images/TeamTitle.png';
 
 function Team(){
 
   const [showPins, setShowPins] = useState(false);
   const [showThread, setShowThread] = useState(false);
   const [showImg, setShowImg] = useState(false);
-  const location = useLocation();
+  const elementRef = useRef(null);
+  const elementRef1 = useRef(null)
   
   useEffect(() => {
-    
-    if (location.pathname === "/team") { 
-      const pinTimer = setTimeout(() => setShowPins(true), 800);
-      const threadTimer = setTimeout(() => setShowThread(true), 1100);
-      const ImageTimer = setTimeout(() => setShowImg(true), 500);
-      
-      return () => {
-        clearTimeout(ImageTimer);
-        clearTimeout(pinTimer);
-        clearTimeout(threadTimer);
-      };
+    const element = elementRef.current;
+    const element1 = elementRef1.current;
+    let pinTimer, threadTimer, imageTimer;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          // Start timers when the element enters the viewport
+          pinTimer = setTimeout(() => setShowPins(true), 800);
+          threadTimer = setTimeout(() => setShowThread(true), 1100);
+          imageTimer = setTimeout(() => setShowImg(true), 500);
+        }
+      },
+      { threshold: 0.1 } // Adjust threshold for when the element is considered "in view"
+    );
+
+    if (element) {
+      observer.observe(element);
     }
-  }, [location.pathname]);
+    if (element1) {
+      observer.observe(element1);
+    }
+
+    return () => {
+      // Cleanup timers and observer
+      clearTimeout(pinTimer);
+      clearTimeout(threadTimer);
+      clearTimeout(imageTimer);
+      if (element) {
+        observer.unobserve(element);
+      }
+    };
+  }, []);
 
     return (
       <>
-        //desktop screen main div
  <div className='md:block hidden  '
       style={{
         position: 'relative',
@@ -71,6 +92,7 @@ function Team(){
         zIndex:'3'
       }}
     >
+      <div className='w-[100%] absolute top-0 p-[5%] grid place-items-center'><img src={Title} className='w-[40%]'></img></div>
 
       {/* Purple Div */}
       <div
@@ -87,7 +109,7 @@ function Team(){
         }}
       >
         {/* Thread */}
-      <div className='top-[24.5885%] left-[24.7%]'
+      <div className='top-[24.5885%] left-[24.7%] '
         style={{
           position: 'absolute',
           width: `${(292 / 583) * 100}%`,
@@ -106,7 +128,7 @@ function Team(){
 
 
       {/* Pin A */}
-      <div className='top-[15.4%] left-[16.6%]'
+      <div className='top-[15.2%] left-[16.9%]'
         style={{
           position: 'absolute',
           width: `${(93.14 / 583) * 100}%`,
@@ -141,8 +163,8 @@ function Team(){
             position: 'absolute',
             width: `${(86.1 / 583) * 100}%`,
             height: `${(86.1 / 520) * 100}%`,
-            top: `${(269.07 / 520) * 100}%`,
-            left: `${(207.21 / 583) * 100}%`,
+            top: `${(268.07 / 520) * 100}%`,
+            left: `${(209.21 / 583) * 100}%`,
             backgroundImage: `url(${Pin})`,
             backgroundSize: 'cover',
             transform: `rotate(1.38deg) ${showPins ? "translateY(0)" : "translateY(-50%)"}`,
@@ -158,7 +180,7 @@ function Team(){
             position: 'absolute',
             width: `${(85.54 / 583) * 100}%`,
             height: `${(85.54 / 520) * 100}%`,
-            top: `${(241.08 / 520) * 100}%`,
+            top: `${(248.08 / 520) * 100}%`,
             left: `${(378.9 / 583) * 100}%`,
             backgroundImage: `url(${Pin})`,
             backgroundSize: 'cover',
@@ -172,6 +194,7 @@ function Team(){
 
       
 <div
+  ref={elementRef}
   style={{
     position: 'absolute',
     width: '20.89%',
@@ -186,7 +209,6 @@ function Team(){
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: '1',
-    position: 'relative' 
   }}
 >
   <img
@@ -205,12 +227,8 @@ function Team(){
   />
 
   <span
-    className="text-[1.15rem] 2xl-text-[1.73rem] sm-text-[1rem]  1980:text-[1.85rem] 1600:text-[1.35rem] 2100:text-[2rem]   lg:text-[1.02rem] font-rfabb md:text-[0.8rem] md:left-[19%] "
+    className="absolute text-green-700 font-bold top-[70%] text-[1.15rem] 2xl-text-[1.73rem] sm-text-[1rem]  1980:text-[1.85rem] 1600:text-[1.35rem] 2100:text-[2rem]   lg:text-[1.02rem] font-rfabb md:text-[0.8rem] md:left-[19%] "
     style={{
-      position: 'absolute', 
-      color: 'green',
-      fontWeight: 'bold',
-      top: '70%', 
       transform: 'translateX(-50%)', 
       transform: 'rotate(4.79deg)', 
     }}
@@ -248,8 +266,8 @@ function Team(){
                   top: '10%', 
                   left: '15%',
                   transform: showImg ? "translateY(0)" : "translateY(-100%)",
-                        opacity: showImg ? 1 : 0,
-                        transition: "all 0.2s ease-out",
+                  opacity: showImg ? 1 : 0,
+                  transition: "all 0.2s ease-out",
                   
                 }}
               />
@@ -308,9 +326,7 @@ function Team(){
                 position: 'absolute', 
                 color: 'green',
                 fontWeight: 'bold',
-                transform: 'rotate(5.46deg)',
-                
-                
+                transform: 'rotate(5.46deg)',                
               }}
             >
               TEAM C
@@ -400,7 +416,7 @@ function Team(){
 >
           {/* Text Div */}
           <div
-            className="p-2 box-border text-start 1280:text-[1.325rem] text-[1.15rem] 2xl-text-[1.5rem] sm-text-[1rem] 1500:text-[1.65rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[2rem] lg:text-[1.13rem] md:text-[0.83rem] font-vetosans"
+            className="p-2 box-border text-start 1280:text-[1.7vw] 1400:text-[1.7vw] sm-text-[1rem] 1500:text-[1.7vw] 1980:text-[1.7vw] 1600:text-[1.7VW] 1700:text-[1.7vw] 2100:text-[1.7vw] lg:text-[1.7vw] md:text-[1.7vw] text-[2vw] font-bold font-vetosans"
             style={{
               width: `${(325 / 387) * 100}%`, 
               height: `${(297 / 505) * 100}%`, 
@@ -409,7 +425,7 @@ function Team(){
               position: "absolute",
             }}
           >
-             Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}<span className='1280:text-[1.325rem] text-[0.95rem] 2xl-text-[1.5rem] sm-text-[0.6rem] 1500:text-[1.65rem] 1700:text-[1.8rem] 1980:text-[1.85rem] 1600:text-[1.75rem] 2100:text-[2rem] lg:text-[1.03rem] md:text-[0.85rem] font-rfabb' style={{color: 'rgba(144,0,0,1)',}}>VIVACITY'25</span>  From envisioning <br></br>the cosmic threads of our<br></br> theme to weaving it into <br></br>reality,
+             Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}<span className='1280:text-[1.325rem] 1400:text-[1.7vw] sm-text-[0.6rem] 1500:text-[1.7vw] 1700:text-[1.7vw] 1980:text-[1.7vw] 1600:text-[1.7vw] 2100:text-[1.7vw]  text-[2vw] lg:text-[1.7vw] md:text-[1.7vw] font-bold font-rfabb' style={{color: 'rgba(144,0,0,1)',}}>VIVACITY'25</span>  From envisioning <br></br>the cosmic threads of our<br></br> theme to weaving it into <br></br>reality,
               this team makes it all<br></br> happen. Tap to discover the <br></br>faces and stories of
               those who <br></br>bring the multiverse to life!
           </div>
@@ -450,11 +466,11 @@ function Team(){
     border:'black'
             }}
           >
-          <p className='text-[1.875rem] xl-text-[1.5rem] 1500-[1.8rem] 1980:text-[2.05rem] 1600:text-[1.75rem] 1700:text-[1.9rem] 2100:text-[2.2rem] lg:text-[1.75ren] md:text-[1.5rem] font-rfabb'> Meet Them!</p>
+          <p className='text-[2.05vw] font-bold xl-text-[2.05vw] 1500-[2.05vw] 1980:text-[2.05vw] 1600:text-[2.05vw] 1700:text-[2.05vw] 2100:text-[2.05vw] lg:text-[2.05vw] md:text-[2vw] font-rfabb'> Meet Them!</p>
           </button>
           
       </div>
-      
+     { /* mobile responsive*/ }
  </div>
  <div className='md:hidden block'
   style={{
@@ -469,7 +485,8 @@ function Team(){
     zIndex: '3',
   }}
 >
-    {/* Purple Div */}
+<div className='w-[100%] absolute top-[2%] p-[5%] grid place-items-center'><img src={Title} className='w-[80%]'></img></div>    
+{/* Purple Div */}
     <div
   style={{
     position: 'absolute',
@@ -498,14 +515,13 @@ function Team(){
       position: 'absolute',
       width: `${(173 / 306.63) * 100}%`,
       height: `${(152 / 335.05) * 100}%`,
-      top: `${(68 / 335.05) * 100}%`,
+      top: `${(69 / 335.05) * 100}%`,
       left: `${(62 / 306.63) * 100}%`,
       backgroundImage: `url(${Thread1})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      transform: 'rotate(1.38deg)',
+      transform: `rotate(1.38deg) ${showThread ? 'translateY(0)' : 'translateY(-100%)'}`,
       zIndex: '3',
-      transform: showThread ? "translateY(0)" : "translateY(-100%)",
       opacity: showThread ? 1 : 0,
       transition: "all 0.6s ease-out",
     }}
@@ -518,12 +534,10 @@ function Team(){
       width: `${(55.35 / 306.63) * 100}%`,
       height: `${(55.35 / 335.05) * 100}%`,
       top: `${(31.33 / 335.05) * 100}%`,
-      left: `${(35.04 / 306.63) * 100}%`,
+      left: `${(37.04 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
-      transform: 'rotate(0.88deg)',
-      zIndex: '3',
-      transform: showPins ? "translateY(0)" : "translateY(-50%)",
+      transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,      zIndex: '3',
       opacity: showPins ? 1 : 0,
       transition: "all 0.5s ease-out",
     }}
@@ -535,13 +549,12 @@ function Team(){
       position: 'absolute',
       width: `${(47.4 / 306.63) * 100}%`,
       height: `${(47.4 / 335.05) * 100}%`,
-      top: `${(28.98 / 335.05) * 100}%`,
+      top: `${(31.98 / 335.05) * 100}%`,
       left: `${(170.87 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
-      transform: 'rotate(0.88deg)',
+      transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,
       zIndex: '3',
-      transform: showPins ? "translateY(0)" : "translateY(-50%)",
       opacity: showPins ? 1 : 0,
       transition: "all 0.5s ease-out",
     }}
@@ -553,13 +566,12 @@ function Team(){
       position: 'absolute',
       width: `${(51.16 / 306.63) * 100}%`,
       height: `${(51.16 / 335.05) * 100}%`,
-      top: `${(176.85 / 335.05) * 100}%`,
+      top: `${(173.85 / 335.05) * 100}%`,
       left: `${(83.82 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
-      transform: 'rotate(0.88deg)',
+      transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,
       zIndex: '3',
-      transform: showPins ? "translateY(0)" : "translateY(-50%)",
       opacity: showPins ? 1 : 0,
       transition: "all 0.5s ease-out",
     }}
@@ -571,13 +583,12 @@ function Team(){
       position: 'absolute',
       width: `${(50.83 / 306.63) * 100}%`,
       height: `${(50.83 / 335.05) * 100}%`,
-      top: `${(143.35 / 335.05) * 100}%`,
-      left: `${(203.17 / 306.63) * 100}%`,
+      top: `${(144.35 / 335.05) * 100}%`,
+      left: `${(201.17 / 306.63) * 100}%`,
       backgroundImage: `url(${Pin1})`,
       backgroundSize: 'cover',
-      transform: 'rotate(0.88deg)',
+      transform: `rotate(0.88deg) ${showPins ? 'translateY(0)' : 'translateY(-50%)'}`,
       zIndex: '3',
-      transform: showPins ? "translateY(0)" : "translateY(-50%)",
       opacity: showPins ? 1 : 0,
       transition: "all 0.5s ease-out",
       
@@ -586,6 +597,7 @@ function Team(){
 
   {/* Team A */}
   <div 
+  ref={elementRef1}
   style={{
     position: 'absolute',
     width: `${(72.38 / 306.63) * 100}%`,
@@ -813,7 +825,7 @@ function Team(){
 >
   {/* Text Div */}
   <div
-    className="p-2 box-border text-start   text-[1.25rem] xs:text-[1.36rem] xxs:text-[1.06rem] xxxs:text-[0.75rem] 270:text-[0.75rem] sm:text-[1.65rem] md:text-[1.75rem]  lg:text-[2.05rem] font-vetosans"
+    className="p-2 box-border text-start font-bold  text-[1.25rem] xs:text-[3.3vw] xxs:text-[3.3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] sm:text-[3.3vw] md:text-[1.75rem]  lg:text-[2.05rem] font-vetosans"
     style={{
       width: `${(255 / 307) * 100}%`, 
       height: `${(225 / 351) * 100}%`, 
@@ -825,7 +837,7 @@ function Team(){
   >
     Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}
     <span
-      className="font-rfabb   text-[1.25rem] xs:text-[1.45rem] xxs:text-[1rem] xxxs:text-[0.76rem] 270:text-[0.65rem] sm:text-[1.65rem] md:text-[1.65rem]  lg:text-[2.05rem] "
+      className="font-rfabb font-bold  text-[1.25rem] xs:text-[3.3vw] xxs:text-[3.3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] sm:text-[3.3vw] md:text-[1.65rem]  lg:text-[2.05rem] "
       style={{ color: 'rgba(144,0,0,1)' }}
     >
       VIVACITY'25
@@ -871,7 +883,7 @@ function Team(){
            backgroundPosition: "top",
     }}
   >
-    <p className="xs:text-[1.5rem] text-[1.25rem] xxs:text-[1.357rem] xxxs:text-[1.16rem] 270:text-[0.95rem] sm:text-[1.76rem] md:text-[1.78rem]  lg:text-[2.05rem] font-rfabb">
+    <p className="xs:text-[5vw] text-[5vw] xxs:text-[5vw] xxxs:text-[5vw] 270:text-[5vw] sm:text-[5vw]    font-bold font-rfabb">
       Meet Them!
     </p>
   </button>

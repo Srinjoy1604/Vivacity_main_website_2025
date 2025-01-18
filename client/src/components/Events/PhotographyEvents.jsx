@@ -7,8 +7,7 @@ import image4 from "../../assets/images/photography_event_4.png";
 import image5 from "../../assets/images/photography_event_5.png";
 import image6 from "../../assets/images/photography_event_6.png";
 import title from "../../assets/images/photography_title.png";
-import rulebook from "../../assets/images/Rulebook.png";
-import register from "../../assets/images/register.png";
+
 import text1 from "../../assets/images/textbox1.png";
 import imageHunt from "../../assets/images/imageHunt.png";
 import kalakriti from "../../assets/images/kalakriti.png";
@@ -31,210 +30,201 @@ import flimmaking from "../../assets/images/Event Name_3.png";
 import hunt from "../../assets/images/Event Name_4.png";
 import kala from "../../assets/images/Event Name_5.png";
 import perspective from "../../assets/images/Event Name_6.png";
+import Button_component from "./Button_component";
 
 function PhotographyEvents() {
-  const handleRulebookClick = () => {
-    navigate("/rulebook");
-  };
-
-  const handleRegisterClick = () => {
-    navigate("/register");
-  };
-
   return (
     <div
-      className="min-h-[70vh] w-full bg-center bg-cover p-4"
+      className="min-h-[70vh] w-full bg-center bg-cover  "
       style={{
         backgroundImage: `url(${bg})`,
       }}
     >
       {/* Title Section */}
-      <div className="w-full flex justify-center mb-6">
+      <div className="w-full pt-[6.3%] flex justify-center pb-[5%]">
         <img
           src={title}
           alt="Photography Events"
-          className="w-[60%] max-w-5xl"
+          className="w-[80%] sm:w-[80%] md:w-[65%] lg:w-[55%]"
         />
       </div>
 
       {/* Desktop Layout */}
-      <div className="max-w-[1880px] mx-auto hidden md:block">
-        {/* Top Row */}
-        <div className="flex flex-wrap gap-7 mb-4">
-          {/* Image Hunt */}
-          <div className="w-[54.14%]">
-            <div className="relative aspect-[693/537]">
-              <img
-                src={image1}
-                alt="Image Hunt"
-                className="absolute top-0 left-2 w-full h-full object-cover rounded-lg"
-              />
-              <img
-                src={imageHunt}
-                alt="Image Hunt Title"
-                className="absolute bottom-[12%] left-[5%] w-[28%] object-contain z-10"
-              />
-              <div className="absolute bottom-[4%] left-[7%] w-[70%] z-10">
+      <div>
+        <div className="max-w-[1880px] mx-auto hidden md:block ">
+          {/* Top Row */}
+          <div className="flex flex-wrap gap-9 mb-4 justify-center">
+            {/* Image Hunt */}
+            <div className="w-[55%] items-center">
+              <div className="relative aspect-[693/537]">
                 <img
-                  src={text1}
-                  alt="Image Hunt Description"
-                  className="w-full object-contain"
+                  src={image1}
+                  alt="Image Hunt"
+                  className="absolute top-0 left-2 w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[1vw] font-rfabb font-medium leading-tight">
-                    Solve clues, recreate frames, and immortalize moments in
-                    this campus-wide photography adventure.
-                  </p>
+                <img
+                  src={imageHunt}
+                  alt="Image Hunt Title"
+                  className="absolute bottom-[12%] left-[5%] w-[28%] object-contain z-10"
+                />
+                <div className="absolute bottom-[4%] left-[7%] w-[70%] z-10">
+                  <img
+                    src={text1}
+                    alt="Image Hunt Description"
+                    className="w-full object-contain"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                    <p className="text-black text-[1vw] font-rfabb font-bold leading-tight">
+                      Solve clues, recreate frames, and immortalize moments in
+                      this campus-wide photography adventure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Photobooth */}
+            <div className="w-[37.4%]">
+              <div className="relative aspect-[480/537]">
+                <img
+                  src={image2}
+                  alt="Photobooth"
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                />
+                <img
+                  src={photoBooth}
+                  alt="Photobooth Title"
+                  className="absolute bottom-[13%] left-[5%] w-[39%] object-contain z-10"
+                />
+                <div className="absolute bottom-[3%] left-[8%] w-[89%] z-10">
+                  <img
+                    src={bigtextbox}
+                    alt="Photobooth Description"
+                    className="w-full object-contain"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                    <p className="text-black  text-[0.9vw] font-rfabb font-bold leading-tight">
+                      A PHOTOBOOTH TO MAKE THESE DAYS MORE MEMORABLE. CAUTION:
+                      THE NOSTALGIA INDUCED BY THESE PICTURES IS BOUND TO BE
+                      PAINFUL.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Photobooth */}
-          <div className="w-[37.5%]">
-            <div className="relative aspect-[480/537]">
-              <img
-                src={image2}
-                alt="Photobooth"
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
-              />
-              <img
-                src={photoBooth}
-                alt="Photobooth Title"
-                className="absolute bottom-[13%] left-[5%] w-[39%] object-contain z-10"
-              />
-              <div className="absolute bottom-[3%] left-[8%] w-[89%] z-10">
+          {/* Bottom Row */}
+          <div className="flex flex-wrap gap-7  justify-center">
+            {/* Film Making */}
+            <div className="w-[43.9%]">
+              <div className="relative aspect-[562/354]">
                 <img
-                  src={bigtextbox}
-                  alt="Photobooth Description"
-                  className="w-full object-contain"
+                  src={image3}
+                  alt="Film Making Competition"
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black  text-[0.9vw] font-rfabb font-medium leading-tight">
-                    A PHOTOBOOTH TO MAKE THESE DAYS MORE MEMORABLE. CAUTION: THE
-                    NOSTALGIA INDUCED BY THESE PICTURES IS BOUND TO BE PAINFUL.
-                  </p>
+                <img
+                  src={flimmakingcompetiton}
+                  alt="Film Making Title"
+                  className="absolute top-[15%] right-[5%] w-[50%] object-contain z-10"
+                />
+                <div className="absolute top-[5%] right-[5%] w-[75%] z-10">
+                  <img
+                    src={text1}
+                    alt="Film Making Description"
+                    className="w-full object-contain"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                    <p className="text-black text-[0.9vw] font-rfabb  font-bold leading-tight">
+                      FLIM MAKING COMPETITION: SRIPT ,SHOOT, AND EDIT YOUR WAY
+                      TO MAKE YOUR STORY THE MOST MEMORABLE OF ALL!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom Row */}
-        <div className="flex flex-wrap gap-7">
-          {/* Film Making */}
-          <div className="w-[43.9%]">
-            <div className="relative aspect-[562/354]">
-              <img
-                src={image3}
-                alt="Film Making Competition"
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
-              />
-              <img
-                src={flimmakingcompetiton}
-                alt="Film Making Title"
-                className="absolute top-[15%] right-[5%] w-[50%] object-contain z-10"
-              />
-              <div className="absolute top-[5%] right-[5%] w-[75%] z-10">
+            {/* Perspective */}
+            <div className="w-[47.7%]">
+              <div className="relative aspect-[611/353]">
                 <img
-                  src={text1}
-                  alt="Film Making Description"
-                  className="w-full object-contain"
+                  src={image4}
+                  alt="Perspective"
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[0.9vw] font-rfabb  font-medium leading-tight">
-                    FLIM MAKING COMPETITION: SRIPT ,SHOOT, AND EDIT YOUR WAY TO
-                    MAKE YOUR STORY THE MOST MEMORABLE OF ALL!
-                  </p>
+                <img
+                  src={Perspective}
+                  alt="Perspective Title"
+                  className="absolute bottom-[20%] right-[5%] w-[30%] object-contain z-10"
+                />
+                <div className="absolute bottom-[5%] right-[8%] w-[70%] z-10">
+                  <img
+                    src={bigtextbox}
+                    alt="Perspective Description"
+                    className="w-full object-contain"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                    <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight">
+                      A SUMMIT OF POPULAR CONTENT CREATORS THAT PROVIDE US WITH
+                      OUR FAVOURITE CONTENT. THAT ,AND A PLETHORA OF DIFFERENT
+                      PERSPECTIVES IN PERSPECTIVE!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Perspective */}
-          <div className="w-[47.7%]">
-            <div className="relative aspect-[611/353]">
-              <img
-                src={image4}
-                alt="Perspective"
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
-              />
-              <img
-                src={Perspective}
-                alt="Perspective Title"
-                className="absolute bottom-[20%] right-[5%] w-[30%] object-contain z-10"
-              />
-              <div className="absolute bottom-[5%] right-[8%] w-[70%] z-10">
+            {/* Kalakriti */}
+            <div className="w-[49.3%]">
+              <div className="relative aspect-[631/354]">
                 <img
-                  src={bigtextbox}
-                  alt="Perspective Description"
-                  className="w-full object-contain"
+                  src={image5}
+                  alt="Kalakriti"
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[0.9vw] font-rfabb font-medium leading-tight">
-                    A SUMMIT OF POPULAR CONTENT CREATORS THAT PROVIDE US WITH
-                    OUR FAVOURITE CONTENT. THAT ,AND A PLETHORA OF DIFFERENT
-                    PERSPECTIVES IN PERSPECTIVE!
-                  </p>
+                <img
+                  src={kalakriti}
+                  alt="Kalakriti Title"
+                  className="absolute bottom-[15%] left-[5%] w-[30%] object-contain z-10"
+                />
+                <div className="absolute bottom-[6%] left-[8%] w-[70%] z-10">
+                  <img
+                    src={text1}
+                    alt="Kalakriti Description"
+                    className="w-full object-contain"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                    <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight">
+                      THE BEST CLICKS FROM THE BEST! A SHOWCASE OF IMAGINATION
+                      BY OUR PHOTOGRAPHY CLUB: IMAGINATION.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Kalakriti */}
-          <div className="w-[49.3%]">
-            <div className="relative aspect-[631/354]">
-              <img
-                src={image5}
-                alt="Kalakriti"
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
-              />
-              <img
-                src={kalakriti}
-                alt="Kalakriti Title"
-                className="absolute bottom-[15%] left-[5%] w-[30%] object-contain z-10"
-              />
-              <div className="absolute bottom-[6%] left-[8%] w-[70%] z-10">
+            {/* Pixels */}
+            <div className="w-[42.3%]">
+              <div className="relative aspect-[542/354]">
                 <img
-                  src={text1}
-                  alt="Kalakriti Description"
-                  className="w-full object-contain"
+                  src={image6}
+                  alt="Pixels"
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black text-[0.9vw] font-rfabb font-medium leading-tight">
-                    THE BEST CLICKS FROM THE BEST! A SHOWCASE OF IMAGINATION BY
-                    OUR PHOTOGRAPHY CLUB: IMAGINATION.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Pixels */}
-          <div className="w-[42.3%]">
-            <div className="relative aspect-[542/354]">
-              <img
-                src={image6}
-                alt="Pixels"
-                className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
-              />
-              <img
-                src={pixels}
-                alt="Pixels Title"
-                className="absolute bottom-[18%] left-[5%] w-[25%] object-contain z-10"
-              />
-              <div className="absolute bottom-[5%] left-[8%] w-[70%] z-10">
                 <img
-                  src={bigtextbox}
-                  alt="Pixels Description"
-                  className="w-full object-contain"
+                  src={pixels}
+                  alt="Pixels Title"
+                  className="absolute bottom-[18%] left-[5%] w-[25%] object-contain z-10"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
-                  <p className="text-black font-rfabb text-[0.9vw]  font-medium leading-tight">
-                    PRE-DEFINED THEMES AND YOUR LENSES AGAINST THE BEAUTIFUL
-                    CANVAS OF THE WORLD. LET YOUR CREATIVITY SHOW IN THIS BATTLE
-                    OF PICTURES!
-                  </p>
+                <div className="absolute bottom-[5%] left-[8%] w-[70%] z-10">
+                  <img
+                    src={bigtextbox}
+                    alt="Pixels Description"
+                    className="w-full object-contain"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center px-4 md:px-6 lg:px-8">
+                    <p className="text-black font-rfabb text-[0.9vw]  font-bold leading-tight">
+                      PRE-DEFINED THEMES AND YOUR LENSES AGAINST THE BEAUTIFUL
+                      CANVAS OF THE WORLD. LET YOUR CREATIVITY SHOW IN THIS
+                      BATTLE OF PICTURES!
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -263,8 +253,8 @@ function PhotographyEvents() {
                 alt="Image Hunt Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
+                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
                   Solve clues, recreate frames, and immortalize moments in this
                   campus-wide photography adventure.
                 </p>
@@ -292,8 +282,8 @@ function PhotographyEvents() {
                 alt="Photobooth Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black font-rfabb text-[2.5vw] font-medium leading-tight">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
+                <p className="text-black font-rfabb text-[2.5vw] font-bold leading-tight">
                   A PHOTOBOOTH TO MAKE THESE DAYS MORE MEMORABLE. CAUTION: THE
                   NOSTALGIA INDUCED BY THESE PICTURES IS BOUND TO BE PAINFUL.
                 </p>
@@ -321,8 +311,8 @@ function PhotographyEvents() {
                 alt="Film Making Competition Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.2vw] font-rfabb font-medium leading-tight">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
+                <p className="text-black text-[2.2vw] font-rfabb font-bold leading-tight">
                   FLIM MAKING COMPETITION: SRIPT ,SHOOT, AND EDIT YOUR WAY TO
                   MAKE YOUR STORY THE MOST MEMORABLE OF ALL!
                 </p>
@@ -350,8 +340,8 @@ function PhotographyEvents() {
                 alt="Perspective Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.5vw] font-rfabb font-medium leading-tight">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
+                <p className="text-black text-[2.5vw] font-rfabb font-bold leading-tight">
                   A SUMMIT OF POPULAR CONTENT CREATORS THAT PROVIDE US WITH OUR
                   FAVOURITE CONTENT. THAT ,AND A PLETHORA OF DIFFERENT
                   PERSPECTIVES IN PERSPECTIVE!
@@ -380,8 +370,8 @@ function PhotographyEvents() {
                 alt="Kalakriti Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.4vw] font-rfabb font-medium leading-tight">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
+                <p className="text-black text-[2.4vw] font-rfabb font-bold leading-tight">
                   THE BEST CLICKS FROM THE BEST! A SHOWCASE OF IMAGINATION BY
                   OUR PHOTOGRAPHY CLUB: IMAGINATION.
                 </p>
@@ -409,8 +399,8 @@ function PhotographyEvents() {
                 alt="Pixels Description Box"
                 className="w-full object-contain"
               />
-              <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-medium leading-tight">
+              <div className="absolute inset-0 flex items-center justify-start px-3 py-1">
+                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
                   PRE-DEFINED THEMES AND YOUR LENSES AGAINST THE BEAUTIFUL
                   CANVAS OF THE WORLD. LET YOUR CREATIVITY SHOW IN THIS BATTLE
                   OF PICTURES!
@@ -420,28 +410,8 @@ function PhotographyEvents() {
           </div>
         </div>
       </div>
-      {/* Buttons Section */}
-      <div className="flex justify-center items-center gap-8 md:gap-20 mt-8">
-        <button
-          onClick={handleRulebookClick}
-          className="transform hover:scale-105 transition-transform md:mr-40"
-        >
-          <img
-            src={rulebook}
-            alt="Download Rulebook"
-            className="w-[213px] h-[43px] md:w-[22vw] md:h-[8vw] object-contain"
-          />
-        </button>
-        <button
-          onClick={handleRegisterClick}
-          className="transform hover:scale-105 transition-transform"
-        >
-          <img
-            src={register}
-            alt="Register"
-            className="w-[213px] h-[43px] md:w-[22vw] md:h-[8vw] object-contain"
-          />
-        </button>
+      <div className="pt-8 pb-10">
+      <Button_component showRulebook={true} showRegister={true} />
       </div>
     </div>
   );

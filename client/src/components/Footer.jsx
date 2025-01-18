@@ -1,22 +1,26 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import vivacityLogo from "../assets/images/VivacityLogo.png";
 import FacebookIcon from "../assets/images/facebookLogo.png";
 import InstagramIcon from "../assets/images/instagramLogo.png";
 import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/FooterBackground.png";
 import Backbg from "../assets/images/Team.png"
+import Backbg1 from "../assets/images/ExcitingBg.png"
 function Footer() {
-  const aspectRatio = 415 / 1280; 
-
+  const aspectRatio = 415 / 1480; 
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <div
       className="relative w-full"
       style={{
-        backgroundImage:`url(${Backbg})`,
+        backgroundImage:`url(${location.pathname==="/"?Backbg:Backbg1})`,
         height: `calc(100vw * ${aspectRatio})`, 
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        display: location.pathname === "/NormalRegistration" ? "none" : "block",
       }}
     >
       <div
@@ -44,16 +48,16 @@ function Footer() {
           
         >
          
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start ">
             <img
               src={vivacityLogo}
               alt="Vivacity Logo"
-              className="w-[20vw] mb-[1.5vw] transform scale-150 "
+              className="w-[18vw] mb-[1.5vw]  transform scale-150  origin-left "
             />
-            <p className="text-black text-[1.5vw] font-vetosans">
+            <p className="text-black text-[1.5vw] font-bold  leading-tight font-vetosans">
               Developed by GDG on Campus, LNMIIT
             </p>
-            <p className="text-black text-[1.5vw] font-vetosans">
+            <p className="text-black text-[1.5vw] font-bold leading-tight font-vetosans">
               Designed by Vivacity. All rights reserved.
             </p>
           </div>
@@ -87,38 +91,38 @@ function Footer() {
             <div className="flex flex-wrap space-x-[1.5vw] mb-[1vw]">
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-vetosans  fontsize: hover:underline"
+                className="text-black text-[1.5vw] font-vetosans font-bold fontsize: hover:underline"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-vetosans hover:underline"
+                className="text-black text-[1.5vw] font-bold  font-vetosans hover:underline"
               >
                 Sponsors
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-vetosans hover:underline"
+                className="text-black text-[1.5vw] font-bold font-vetosans hover:underline"
               >
                 Events
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-vetosans hover:underline"
+                className="text-black text-[1.5vw] font-bold font-vetosans hover:underline"
               >
                 The Team
               </a>
             </div>
 
             <div className="flex flex-col items-end space-y-[0.5vw]">
-              <p className="text-black text-[1.5vw] font-vetosans">
+              <p className="text-black text-[1.5vw] font-bold font-vetosans">
                 For further queries,
               </p>
-              <p className="text-black text-[1.5vw] font-vetosans">
+              <p className="text-black text-[1.5vw] font-bold font-vetosans">
                 Ayush Dhanesha: +91 9998523792
               </p>
-              <p className="text-black text-[1.5vw] font-vetosans">
+              <p className="text-black text-[1.5vw] font-bold font-vetosans">
                 Shubhanshu Singhal: +91 8949024851
               </p>
             </div>
