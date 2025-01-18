@@ -39,7 +39,7 @@ const Concert = () => {
             {/* Content container */}
             <div className="flex flex-col items-center h-full px-2 py-12">
               {/* GIF container - 98.2% of parent width, 51.4% of parent height */}
-              <div className="w-[95.2%] h-[49.4%] mb-3 mt-8">
+              <div className="380:w-[95.2%] 380:h-[49.4%]  260:w-[90.2%] 260:h-[45.4%] mb-3 mt-8 max-[380px]:mt-5">
                 <img
                   src={Gif}
                   alt="Concert animation"
@@ -50,10 +50,10 @@ const Concert = () => {
               {/* Text content - 44.2% of parent height */}
               <div className="text-center w-[98.2%] h-[44.2%] flex flex-col justify-between">
                 <div>
-                  <h2 className="font-bold font-rfabb text-[1.6rem] mb-4">
+                  <h2 className="font-bold font-rfabb text-[1.6rem] 260:text-[1.14rem] 380:text-[1.6rem] mb-4">
                     GET CONCERT-READY NOW!
                   </h2>
-                  <p className="font-semibold font-vetosans text-[0.9rem] mb-1 leading-relaxed">
+                  <p className="font-semibold font-vetosans text-[0.9rem] mb-1 leading-relaxed 260:text-[0.75rem] 380:text-[0.9rem]">
                     Get a sneak peek into Vivacity's epic lineup with our{" "}
                     <span className="italic">handpicked</span> music
                     collection—crafted to set the vibe just right! So grab your
@@ -63,15 +63,19 @@ const Concert = () => {
 
                 {/* Buttons */}
                 <div className="flex gap-3 justify-center">
-                  <button className="px-3 py-2 border-2 border-green-500 rounded-full text-black font-bold flex items-center gap-2 text-[0.875rem]">
-                    <img src={Spotify} alt="Spotify logo" className="h-5" />
+                  <button className="px-3 py-2 border-2 border-green-500 rounded-full text-black font-bold flex items-center gap-2 text-[0.875rem] 260:px-2 260:py-1 260:text-[0.75rem] 380:px-2.5 380:py-1.5 380:text-[0.8rem]">
+                    <img
+                      src={Spotify}
+                      alt="Spotify logo"
+                      className="h-5 260:h-4 380:h-4.5"
+                    />
                     <span>Spotify</span>
                   </button>
-                  <button className="px-3 py-2 border-2 border-red-500 rounded-full text-black font-bold flex items-center gap-2 text-[0.875rem]">
+                  <button className="px-3 py-2 border-2 border-red-500 rounded-full text-black font-bold flex items-center gap-2 text-[0.875rem] 260:px-2 260:py-1 260:text-[0.75rem] 380:px-2.5 380:py-1.5 380:text-[0.8rem]">
                     <img
                       src={AppleMusic}
                       alt="Apple Music logo"
-                      className="h-5"
+                      className="h-5 260:h-4 380:h-4.5"
                     />
                     <span>Apple Music</span>
                   </button>
@@ -112,21 +116,21 @@ const Concert = () => {
                   So grab your squad, hit play, and let the good times roll.
                 </p>
                 <div className="flex gap-[3%] justify-start">
-                  <button className="px-[2%] py-[1%] border-2 border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
+                  <button className="px-[1%] py-[1%] border-2 border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
                     <img
                       src={Spotify}
                       alt="Spotify logo"
                       className="h-[1.5em]"
                     />
-                    <span>Spotify</span>
+                    <span className="font-vetosans-500">Spotify</span>
                   </button>
-                  <button className="px-[2%] py-[1%] border-2 border-red-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
+                  <button className="px-[1%] py-[1%] border-2 border-red-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
                     <img
                       src={AppleMusic}
                       alt="Apple Music logo"
                       className="h-[1.5em]"
                     />
-                    <span>Apple Music</span>
+                    <span className="font-vetosans-500">Apple Music</span>
                   </button>
                 </div>
               </div>
