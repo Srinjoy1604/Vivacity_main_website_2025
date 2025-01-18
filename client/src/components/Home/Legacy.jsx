@@ -3,7 +3,6 @@ import Legacybackground from "../../assets/images/LegacyBg.png";
 import VideoGrid from "./Videogrid";
 import Title from "../../assets/images/LegacyTitle.png";
 
-
 const Legacy = () => {
   return (
     <div
@@ -15,12 +14,13 @@ const Legacy = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      
-      <div
-        className="w-full flex justify-center items-center"
-        >
-          {/* legacy text component goes here */}
-        <img src={Title} alt="Legacy" className="w-[80%] sm:w-[40%] h-auto my-10"></img>
+      <div className="w-full flex justify-center items-center">
+        {/* legacy text component goes here */}
+        <img
+          src={Title}
+          alt="Legacy"
+          className="w-[80%] sm:w-[37%]  my-[2%] sm:mb-[3%] mb-[5%] "
+        ></img>
       </div>
       <VideoGrid />
     </div>
@@ -28,4 +28,4 @@ const Legacy = () => {
   );
 };
 
- export default Legacy;
+export default Legacy;

@@ -5,7 +5,6 @@ import Artist from "./ArtistCarosuel";
 import Concert from "./ConcertReady";
 
 function Sec() {
-
   return (
     <div
       style={{
@@ -15,22 +14,22 @@ function Sec() {
       }}
     >
       <div className="flex justify-center items-center py-6">
-        <img src={Title} alt="Past Artists" className="sm:w-[55%] w-[100%] h-auto my-10"></img>
+        <img
+          src={Title}
+          alt="Past Artists"
+          className="sm:w-[42%] w-[80%] my-[2%] mb-[2%]"
+        ></img>
       </div>
 
-     <div>
-      <Artist />
-     </div>
+      <div>
+        <Artist />
+      </div>
 
-     <div>
-      <Concert />
-     </div>
-     </div>
+      <div>
+        <Concert />
+      </div>
+    </div>
   );
 }
 
 export default Sec;
-
-
-
-
