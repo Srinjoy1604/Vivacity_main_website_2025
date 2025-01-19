@@ -5,7 +5,7 @@ import Amit from "../../../assets/images/Amit.png";
 const ArtistCard = ({ artist }) => {
   return (
     <div
-      className="relative w-[200px] md:w-[300px] lg:w-[350px] aspect-[312/451] mb-[5%]"
+      className="relative w-[280px] md:w-[300px] lg:w-[350px] aspect-[312/451] mb-[5%]"
       style={{
         backgroundImage: `url(${BackGround})`,
         backgroundSize: "contain",
