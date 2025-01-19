@@ -11,19 +11,21 @@ const Button_Component = ({ showRulebook = true, showRegister = true }) => {
   };
 
   return (
-    <div className="flex justify-center items-center gap-[2%] md:gap-[5%] mt-[2%] max-sm:flex-col">
+    <div className="flex justify-center items-center gap-4 lg:gap-8 mt-4 lg:mt-8 max-sm:flex-col">
       {showRulebook && (
         <button
           onClick={handleRulebookClick}
-          className="transform hover:scale-105 transition-transform relative md:mr-[5%] w-[31.8%] md:w-[31.8%] m-[1%] max-sm:w-[40%]"
+          className="transform hover:scale-105 transition-transform relative 
+            w-64 sm:w-72 md:w-80 lg:w-96 
+            max-sm:mb-4"
         >
           <img
             src={textbox}
             alt="Download Rulebook"
-            className="w-full h-[5.1vw] object-contain max-sm:h-[100%]"
+            className="w-full h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
           />
-          <div className="absolute inset-0 flex items-center justify-center px-[2%]">
-            <p className="text-black text-[2.4vw] md:text-[2.3vw] font-rfabb font-medium leading-tight">
+          <div className="absolute inset-0 flex items-center justify-center px-2">
+            <p className="text-black text-lg sm:text-xl md:text-2xl lg:text-3xl font-rfabb font-medium leading-tight">
               DOWNLOAD RULEBOOK
             </p>
           </div>
@@ -33,15 +35,16 @@ const Button_Component = ({ showRulebook = true, showRegister = true }) => {
       {showRegister && (
         <button
           onClick={handleRegisterClick}
-          className="transform hover:scale-105 transition-transform relative w-[31.8%] md:w-[31.8%] m-[1%] max-sm:w-[40%]"
+          className="transform hover:scale-105 transition-transform relative 
+            w-64 sm:w-72 md:w-80 lg:w-96"
         >
           <img
             src={textbox}
             alt="Register"
-            className="w-full h-[5.1vw] object-contain max-sm:h-[100%]"
+            className="w-full h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
           />
-          <div className="absolute inset-0 flex items-center justify-center px-[2%]">
-            <p className="text-black text-[2.4vw] md:text-[2.3vw] font-rfabb font-medium leading-tight">
+          <div className="absolute inset-0 flex items-center justify-center px-2">
+            <p className="text-black text-lg sm:text-xl md:text-2xl lg:text-3xl font-rfabb font-medium leading-tight">
               REGISTER
             </p>
           </div>

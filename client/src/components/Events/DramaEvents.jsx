@@ -186,7 +186,7 @@ function DramaEvents() {
           </div>
         </div>
       </div>
-      <div className="mt-8 mb-8">
+      <div className="mt-5 mb-5">
       <Button_Component showRegister={true} showRulebook={true} />
       </div>   
     </div>

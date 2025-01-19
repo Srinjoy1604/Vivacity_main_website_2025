@@ -5,18 +5,18 @@ import FacebookIcon from "../assets/images/facebookLogo.png";
 import InstagramIcon from "../assets/images/instagramLogo.png";
 import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/FooterBackground.png";
-import Backbg from "../assets/images/Team.png"
-import Backbg1 from "../assets/images/ExcitingBg.png"
+import Backbg from "../assets/images/Team.png";
+import Backbg1 from "../assets/images/ExcitingBg.png";
 function Footer() {
-  const aspectRatio = 415 / 1480; 
+  const aspectRatio = 415 / 1480;
   const navigate = useNavigate();
   const location = useLocation();
   return (
     <div
-      className="relative w-full"
+      className="relative w-full "
       style={{
-        backgroundImage:`url(${location.pathname==="/"?Backbg:Backbg1})`,
-        height: `calc(100vw * ${aspectRatio})`, 
+        backgroundImage: `url(${location.pathname === "/" ? Backbg : Backbg1})`,
+        height: `calc(100vw * ${aspectRatio})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -26,43 +26,38 @@ function Footer() {
       <div
         className="relative mx-auto overflow-hidden flex flex-col justify-center items-center"
         style={{
-          width: "100%", 
+          width: "100%",
           height: "100%",
-          
         }}
       >
         <div
           className="absolute inset-0 bg-center bg-no-repeat bg-cover"
           style={{
             backgroundImage: `url(${FooterBackground})`,
-            backgroundPosition:"top"
+            backgroundPosition: "top",
           }}
         />
 
-       
         <div
-          className="relative z-10 h-full flex justify-center items-center px-[3vw] m" 
+          className="relative z-10 h-full flex justify-center items-center px-[3vw] mt-[4%]"
           style={{
-            gap: "30vw",
-           }} 
-          
+            gap: "34vw",
+          }}
         >
-         
-          <div className="flex flex-col items-start ">
+          <div className="flex flex-col items-start mr-8 ">
             <img
               src={vivacityLogo}
               alt="Vivacity Logo"
-              className="w-[18vw] mb-[1.5vw]  transform scale-150  origin-left "
+              className="w-[21vw] mb-[1.5vw]  transform scale-150  origin-left "
             />
-            <p className="text-black text-[1.5vw] font-bold  leading-tight font-vetosans">
+            <p className="text-black text-[1.4vw] font-semibold   tracking-wide font-vetosans">
               Developed by GDG on Campus, LNMIIT
             </p>
-            <p className="text-black text-[1.5vw] font-bold leading-tight font-vetosans">
+            <p className="text-black text-[1.4vw] font-semibold  leading-normal tracking-wide font-vetosans">
               Designed by Vivacity. All rights reserved.
             </p>
           </div>
 
-          
           <div className="flex flex-col items-end">
             <div className="flex space-x-[2vw] mb-[1vw]">
               <a href="#" target="_blank" rel="noopener noreferrer">
@@ -88,41 +83,41 @@ function Footer() {
               </a>
             </div>
 
-            <div className="flex flex-wrap space-x-[1.5vw] mb-[1vw]">
+            <div className="flex flex-wrap space-x-[1.5vw] mb-[1vw] tracking-wide">
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-vetosans font-bold fontsize: hover:underline"
+                className="text-black text-[1.5vw] font-vetosans font-bold fontsize: hover:underline tracking-wide"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-bold  font-vetosans hover:underline"
+                className="text-black text-[1.5vw] font-bold  font-vetosans hover:underline tracking-wide"
               >
                 Sponsors
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-bold font-vetosans hover:underline"
+                className="text-black text-[1.5vw] font-bold font-vetosans hover:underline tracking-wide"
               >
                 Events
               </a>
               <a
                 href="#"
-                className="text-black text-[1.5vw] font-bold font-vetosans hover:underline"
+                className="text-black text-[1.5vw] font-semibold font-vetosans hover:underline tracking-wide"
               >
                 The Team
               </a>
             </div>
 
             <div className="flex flex-col items-end space-y-[0.5vw]">
-              <p className="text-black text-[1.5vw] font-bold font-vetosans">
+              <p className="text-black text-[1.5vw] font-medium font-vetosans tracking-wide">
                 For further queries,
               </p>
-              <p className="text-black text-[1.5vw] font-bold font-vetosans">
+              <p className="text-black text-[1.5vw] font-bold font-vetosans tracking-wide">
                 Ayush Dhanesha: +91 9998523792
               </p>
-              <p className="text-black text-[1.5vw] font-bold font-vetosans">
+              <p className="text-black text-[1.5vw] font-bold font-vetosans tracking-wide">
                 Shubhanshu Singhal: +91 8949024851
               </p>
             </div>
