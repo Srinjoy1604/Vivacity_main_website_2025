@@ -53,7 +53,7 @@ function Footer() {
             <p className="text-black text-[1.4vw] font-semibold   tracking-wide font-vetosans">
               Developed by GDG on Campus, LNMIIT
             </p>
-            <p className="text-black text-[1.4vw] font-semibold  leading-normal tracking-wide font-vetosans">
+            <p className="text-black text-[1.4vw] font-semibold  leading-normal tracking-wide font-vetosans mt-[1.5%]">
               Designed by Vivacity. All rights reserved.
             </p>
           </div>
@@ -117,7 +117,7 @@ function Footer() {
               <p className="text-black text-[1.5vw] font-bold font-vetosans tracking-wide">
                 Ayush Dhanesha: +91 9998523792
               </p>
-              <p className="text-black text-[1.5vw] font-bold font-vetosans tracking-wide">
+              <p className="text-black text-[1.5vw] font-bold font-vetosans tracking-wide mt-[1.2%]">
                 Shubhanshu Singhal: +91 8949024851
               </p>
             </div>

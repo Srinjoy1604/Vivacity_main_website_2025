@@ -47,7 +47,7 @@ function Footer1() {
             <p className="text-center xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw] font-semibold  font-vetosans text-[1rem] text-black">
               Developed by GDG on Campus, LNMIIT
             </p>
-            <p className="text-center  xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw]  font-semibold font-vetosans text-[1rem] text-black ">
+            <p className="text-center  xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw]  font-semibold font-vetosans text-[1rem] text-black mt-[1%]">
               Designed by Vivacity. All rights reserved.
             </p>
           </div>
@@ -86,7 +86,7 @@ function Footer1() {
               <p className="xxxs:text-[3.3vw] 270:text-[3.3vw] xs:text-[3.3vw] xxs:text-[3.3vw] font-semibold font-vetosans">
                 Ayush Dhanesha: +91 9998523792
               </p>
-              <p className="xxxs:text-[3.3vw] 270:text-[3.3vw] xs:text-[3.3vw] xxs:text-[3.3vw] font-semibold font-vetosans">
+              <p className="xxxs:text-[3.3vw] 270:text-[3.3vw] xs:text-[3.3vw] xxs:text-[3.3vw] font-semibold font-vetosans mt-[1.2%]">
                 Shubhanshu Singhal: +91 8949024851
               </p>
             </div>
