@@ -147,7 +147,7 @@ const Events = () => {
                   <div className="w-[60%] px-[4.5%]  relative z-50 py-[1%]">
                     <button
                       onClick={handleKnowMore}
-                      className="w-full group relative transition-all duration-300 hover:scale-110 focus:outline-none cursor-pointer"
+                      className="w-full group relative transition-all duration-300 hover:scale-105 focus:outline-none cursor-pointer"
                     >
                       <img
                         src={Event_button}
@@ -239,7 +239,7 @@ const Events = () => {
             }}
           ></div>
 
-          <div className="relative w-full h-full aspect-[8/16] max-h-[80vh] bg-[#53B08E] overflow-hidden">
+          <div className="relative w-full h-full aspect-[8/16]  bg-[#53B08E] overflow-hidden">
             <div
               className="w-full h-[60%] bg-green-400 relative"
               style={{
@@ -247,17 +247,17 @@ const Events = () => {
               }}
             >
               <div
-                className="w-full h-[17%] bg-[#003E68] flex justify-start items-center overflow-hidden"
+                className="w-full h-[25%] bg-[#003E68] flex justify-start items-center overflow-hidden"
                 style={{
                   clipPath: "polygon(0 0, 100% 0, 100% 80%, 0 100%)",
                 }}
               >
-                <h2 className="text-white tracking-wide text-[10vw] font-semibold p-3 font-ttr">
+                <h2 className="text-white tracking-wide text-[13vw]  font-semibold p-6 -mt-3 font-ttr">
                   {currentEvent.title}
                 </h2>
               </div>
 
-              <div className="w-full h-[87%] overflow-hidden -mt-4">
+              <div className="w-full h-[83%] overflow-hidden -mt-8">
                 <img
                   src={currentEvent.image}
                   alt={currentEvent.title}
@@ -266,7 +266,7 @@ const Events = () => {
               </div>
             </div>
 
-            <div className="absolute top-[45%] right-0 w-[45%] h-[20%]">
+            <div className="absolute top-[45%] right-0 w-[58%] h-[20%]">
               <div
                 className="bg-[#003E68] h-full"
                 style={{
@@ -274,10 +274,10 @@ const Events = () => {
                 }}
               >
                 <div className="h-full flex flex-col justify-center text-center items-center">
-                  <p className="text-white text-[3.8vw] font-rfabb font-semibold tracking-wide ml-4 -mt-5">
+                  <p className="text-white text-[4.5vw] font-rfabb font-semibold tracking-wide ml-[20%] -mt-[25%]">
                     PRIZES WORTH
                   </p>
-                  <p className="text-[#E5FF00] text-[6.8vw] font-semibold font-ttr text-center leading-tight ml-2">
+                  <p className="text-[#E5FF00] text-[13vw] font-semibold font-ttr text-center leading-tight ml-[12%] -mb-[8%]">
                     {currentEvent.prizeWorth}
                   </p>
                 </div>
@@ -289,41 +289,40 @@ const Events = () => {
                 {currentEvent.items.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-center text-black font-vetosans font-bold max-[380px]:text-[0.9rem] text-[1.25rem] leading-none"
+                    className="flex items-center text-black font-vetosans font-bold max-[380px]:text-[5.2vw] text-[5.5vw] leading-none"
                   >
-                    <span className="w-1.5 h-1.5 bg-black rounded-full mr-2"></span>
+                    <span className="380:w-2 380:h-2 w-1.5 h-1.5 bg-black rounded-full mr-2"></span>
                     {item}
                   </li>
                 ))}
               </ul>
+            </div>
+            <div className="flex items-center justify-between p-1 ml-[3%] relative z-20">
+              <button
+                onClick={handleKnowMore}
+                className="w-[55%] group relative transition-all duration-300 hover:scale-105 focus:outline-none"
+              >
+                <img
+                  src={Event_button}
+                  alt="Know More"
+                  className="w-full h-full object-contain transition-transform group-hover:brightness-110 pointer-events-none"
+                />
+                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
+              </button>
 
-              <div className="flex items-center justify-between mt-1 relative z-20">
+              <div className="flex gap-3 mr-[3%] w-[40%]">
                 <button
-                  onClick={handleKnowMore}
-                  className="w-[55%] group relative transition-all duration-300 hover:scale-105 focus:outline-none"
+                  onClick={handlePrevious}
+                  className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20 w-1/2 aspect-square flex items-center justify-center"
                 >
-                  <img
-                    src={Event_button}
-                    alt="Know More"
-                    className="w-full h-full object-contain transition-transform group-hover:brightness-110  pointer-events-none"
-                  />
-                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
+                  <FaRegArrowAltCircleLeft className="w-full h-full max-w-[45px]" />
                 </button>
-
-                <div className="flex gap-2 mr-2">
-                  <button
-                    onClick={handlePrevious}
-                    className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20"
-                  >
-                    <FaRegArrowAltCircleLeft className="w-8 h-8" />
-                  </button>
-                  <button
-                    onClick={handleNext}
-                    className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20"
-                  >
-                    <FaRegArrowAltCircleRight className="w-8 h-8" />
-                  </button>
-                </div>
+                <button
+                  onClick={handleNext}
+                  className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20 w-1/2 aspect-square flex items-center justify-center"
+                >
+                  <FaRegArrowAltCircleRight className="w-full h-full max-w-[45px]" />
+                </button>
               </div>
             </div>
           </div>
