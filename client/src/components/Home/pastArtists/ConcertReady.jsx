@@ -34,24 +34,24 @@ const Concert = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="flex justify-center items-center pt-40 xxs:pt-48 pb-24">
+          <div className="flex justify-center items-center pt-40 xxs:pt-48 xs:pt-64 xs:ml-8 pb-24">
             <div className=" flex flex-col justify-center w-[100%] items-center">
               {/* GIF container - made responsive */}
-              <div className="w-[60%] xs:w-[53%] mb-[2%]  ">
+              <div className="w-[60%] xs:w-[65%] mb-[2%]  ">
                 <img
                   src={Gif}
                   alt="Concert animation"
-                  className="xs:w-[90%] xs:mt-8 w-full h-full object-contain "
+                  className="xs:w-[89%] 380:w-[95%]  w-full h-full object-contain"
                 />
               </div>
 
-              <div className="flex flex-col space-y-[1vh] w-[60%] xs:w-[52%]">
-                <h2 className="font-bold font-rfabb text-[6.5vw] 380:text-[8vw] xs:text-[5.3vw] leading-tight">
+              <div className="flex flex-col space-y-[1vh] w-[62%] xs:w-[65%] ">
+                <h2 className="font-bold font-rfabb text-[6.5vw] 380:text-[7.8vw] xs:text-[6.1vw] leading-tight">
                   GET CONCERT READY NOW!
                 </h2>
 
                 <div className="relative">
-                  <p className="font-semibold font-vetosans text-[4vw] 380:text-[4vw]  xs:text-[3.1vw] tracking-wide leading-relaxed">
+                  <p className="font-semibold font-vetosans text-[4vw] 380:text-[4vw]  xs:text-[3.2vw] tracking-wide leading-relaxed">
                     Get a sneak peek into Vivacity's epic lineup with our
                     <span className="italic"> handpicked</span> music
                     collection—crafted to set the vibe just right! So grab your
@@ -59,22 +59,26 @@ const Concert = () => {
                   </p>
 
                   {/* Buttons container - made responsive */}
-                  <div className="flex gap-[3%] justify-start">
-                    <button className="px-[1%] py-[1%] border border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 xs:text-[3.3vw] text-[3.4vw]">
+                  <div className="flex gap-2 xxs:gap-3 xs:gap-4 sm:gap-5 justify-start mt-1 xs:mb-[5%]">
+                    <button className="px-[2%] py-[1.2%] xxs:px-3 xxs:py-2 xs:px-3  xs:py-2 sm:px-5 sm:py-3 border border-green-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3">
                       <img
                         src={Spotify}
                         alt="Spotify logo"
-                        className="h-[50%] 380:h-[70%] xs:h-[67%]"
+                        className="h-4 xxs:h-5 xs:h-6 sm:h-7 md:h-8"
                       />
-                      <span className="font-vetosans-500">Spotify</span>
+                      <span className="font-vetosans-500 text-[3.6vw]   xs:text-[3.5vw] sm:text-xl md:text-2xl">
+                        Spotify
+                      </span>
                     </button>
-                    <button className="px-[1%] py-[1%] border border-red-500 rounded-3xl text-black font-bold flex items-center gap-2 xs:text-[3.3vw] text-[3.4vw]">
+                    <button className="px-[2%] py-[1%] xxs:px-3 xxs:py-2 xs:px-3 xs:py-2 sm:px-5 sm:py-3 border border-red-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3">
                       <img
                         src={AppleMusic}
                         alt="Apple Music logo"
-                        className="h-[50%] 380:h-[70%] xs:h-[67%]"
+                        className="h-4 xxs:h-5 xs:h-6 sm:h-7 md:h-8"
                       />
-                      <span className="font-vetosans-500">Apple Music</span>
+                      <span className="font-vetosans-500 text-[3.5vw]  xs:text-[3.5vw] sm:text-xl md:text-2xl">
+                        Apple Music
+                      </span>
                     </button>
                   </div>
                 </div>

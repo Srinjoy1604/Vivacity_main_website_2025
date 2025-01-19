@@ -79,7 +79,7 @@ function Artist() {
   };
 
   return (
-    <div className="relative w-full md:min-h-[500px]">
+    <div className="relative w-full xl:min-h-[620px] md:min-h-[500px]">
       <div className="relative w-full flex items-center justify-center px-12">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
