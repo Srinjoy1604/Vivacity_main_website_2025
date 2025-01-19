@@ -42,7 +42,11 @@ function ArtEvents() {
     >
       {/* Title Section */}
       <div className="w-full pt-[5.3%] pb-[2.3%] flex justify-center mb-6">
-        <img src={title} alt="Art Events" className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[50%]" />
+        <img
+          src={title}
+          alt="Art Events"
+          className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[50%]"
+        />
       </div>
 
       {/* Desktop Layout */}
@@ -68,8 +72,8 @@ function ArtEvents() {
                   alt="Tattoo Tales Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-start justify-center px-4 md:px-5 lg:px-8">
-                  <p className="text-black text-[1vw] font-rfabb font-bold leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-3 md:px-4 lg:px-7 py-1">
+                  <p className="text-black text-[1.2vw] font-rfabb font-bold leading-tight uppercase">
                     Let your skin become the portrait, become the canvas of
                     someone's imagination!
                   </p>
@@ -97,8 +101,8 @@ function ArtEvents() {
                   alt="Mystic Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-start justify-center px-4 md:px-5 lg:px-8">
-                  <p className="text-black text-[0.8vw] font-rfabb font-bold leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-3 md:px-4 lg:px-6 py-1">
+                  <p className="text-black text-[1vw] font-rfabb font-bold leading-tight uppercase">
                     May the eccentricity flow, as we bring together a plethora
                     of eras and artistic styles that span the history of the
                     world. This is Eclectic!
@@ -130,8 +134,8 @@ function ArtEvents() {
                   alt="Splash Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-start justify-center px-2 md:px-5 lg:px-8">
-                  <p className="text-black text-[0.8vw] font-rfabb font-bold leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-2 md:px-3 lg:px-6 py-1">
+                  <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight uppercase">
                     Our face painting competition, let the paint splash and the
                     faces sparkle! Become both the muse and the painting!
                   </p>
@@ -159,8 +163,8 @@ function ArtEvents() {
                   alt="Contrasto Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-start justify-center px-4 md:px-5 lg:px-8">
-                  <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-2 md:px-3 lg:px-6 py-1">
+                  <p className="text-black text-[1.1vw] font-rfabb font-bold leading-tight uppercase">
                     Let the colors collide and creativity run boundless. Engulf
                     yourself in vivid imagery where artists push the boundaries
                     of art itself!
@@ -192,8 +196,8 @@ function ArtEvents() {
                   alt="The Universe Description"
                   className="w-full object-contain"
                 />
-                <div className="absolute inset-0 flex items-start justify-center px-4 md:px-5 lg:px-8">
-                  <p className="text-black text-[0.8vw] font-rfabb font-bold leading-tight uppercase">
+                <div className="absolute inset-0 flex items-start justify-center px-2 md:px-3 lg:px-6 py-1">
+                  <p className="text-black text-[0.9vw] font-rfabb font-bold leading-tight uppercase">
                     Artists compete with the only weapon in their arsenal: a
                     single color. A single hue in a hue-niverse.
                   </p>
