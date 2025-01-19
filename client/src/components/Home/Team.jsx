@@ -917,7 +917,7 @@ function Team() {
               Meet Them!
             </p>
           </button>
-        </div>
+        </div>      
       </div>
     </>
   );
