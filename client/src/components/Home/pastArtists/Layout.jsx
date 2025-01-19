@@ -17,7 +17,7 @@ function Sec() {
         <img
           src={Title}
           alt="Past Artists"
-          className="sm:w-[42%] w-[80%] my-[2%] mb-[2%]"
+          className="w-[85%] xs:w-[68%] md:w-[65%] lg:w-[35%] my-[2%] mb-[2%]"
         ></img>
       </div>
 
