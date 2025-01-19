@@ -239,7 +239,7 @@ const Events = () => {
             }}
           ></div>
 
-          <div className="relative w-full h-full aspect-[8/16] bg-[#53B08E] overflow-hidden">
+          <div className="relative w-full h-full aspect-[8/16]  bg-[#53B08E] overflow-hidden">
             <div
               className="w-full h-[60%] bg-green-400 relative"
               style={{
@@ -252,7 +252,7 @@ const Events = () => {
                   clipPath: "polygon(0 0, 100% 0, 100% 80%, 0 100%)",
                 }}
               >
-                <h2 className="text-white tracking-wide text-[13vw] font-black p-6 -mt-3 font-ttr">
+                <h2 className="text-white tracking-wide text-[13vw]  font-semibold p-6 -mt-3 font-ttr">
                   {currentEvent.title}
                 </h2>
               </div>
@@ -261,7 +261,7 @@ const Events = () => {
                 <img
                   src={currentEvent.image}
                   alt={currentEvent.title}
-                  className="w-full h-full object-cover pointer-events-none"
+                  className="w-full h-full object-cover  pointer-events-none"
                 />
               </div>
             </div>
@@ -274,10 +274,10 @@ const Events = () => {
                 }}
               >
                 <div className="h-full flex flex-col justify-center text-center items-center">
-                  <p className="text-white text-[3.8vw] font-rfabb font-black tracking-wide ml-4 -mt-5">
+                  <p className="text-white text-[4.5vw] font-rfabb font-semibold tracking-wide ml-[20%] -mt-[25%]">
                     PRIZES WORTH
                   </p>
-                  <p className="text-[#E5FF00] text-[6.8vw] font-black font-ttr text-center leading-tight ml-2">
+                  <p className="text-[#E5FF00] text-[13vw] font-semibold font-ttr text-center leading-tight ml-[12%] -mb-[8%]">
                     {currentEvent.prizeWorth}
                   </p>
                 </div>
@@ -297,7 +297,6 @@ const Events = () => {
                 ))}
               </ul>
             </div>
-
             <div className="flex items-center justify-between p-1 ml-[3%] relative z-20">
               <button
                 onClick={handleKnowMore}
@@ -311,18 +310,18 @@ const Events = () => {
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
               </button>
 
-              <div className="flex gap-3 mr-[3%] w-[35%]">
+              <div className="flex gap-3 mr-[3%] w-[40%]">
                 <button
                   onClick={handlePrevious}
                   className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20 w-1/2 aspect-square flex items-center justify-center"
                 >
-                  <FaRegArrowAltCircleLeft className="w-full h-full max-w-[40px]" />
+                  <FaRegArrowAltCircleLeft className="w-full h-full max-w-[45px]" />
                 </button>
                 <button
                   onClick={handleNext}
                   className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20 w-1/2 aspect-square flex items-center justify-center"
                 >
-                  <FaRegArrowAltCircleRight className="w-full h-full max-w-[40px]" />
+                  <FaRegArrowAltCircleRight className="w-full h-full max-w-[45px]" />
                 </button>
               </div>
             </div>
