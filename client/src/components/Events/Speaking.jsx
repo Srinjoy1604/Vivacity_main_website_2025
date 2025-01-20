@@ -26,13 +26,12 @@ function Speaking(){
     return(
         <div>
             <div 
-          className="min-h-screen bg-cover bg-center flex flex-col items-center "
+          className=" bg-cover bg-center flex flex-col items-center  "
           style={{
             backgroundImage: `url(${Background})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             width: "100%",
-            aspectRatio: "1280/1648",
             position: "relative",
           }}
         >
