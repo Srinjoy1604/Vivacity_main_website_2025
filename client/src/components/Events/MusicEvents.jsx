@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "../Events/DramaEvents.module.css";
-import DramaTitle from "../../assets/images/MusicTitle.png";
+import MusicTitle from "../../assets/images/MusicTitle.png";
 import BattleOfBandsText from "../../assets/images/BattleOfBandsText.png";
 import BobTextMobile from "../../assets/images/BobTextMobile.png";
 import BandishText from "../../assets/images/BandishText.png";
@@ -25,15 +25,15 @@ import Button_Component from "./Button_component";
 function MusicEvents() {
   return (
     <div
-      className={`${Styles.MusicBg} w-full h-[100%] p-[2%] flex flex-col`}
+      className={`${Styles.MusicBg} w-full h-[100%] p-[3%] flex flex-col`}
     >
       <div
-        className={`w-[100%] pt-[6%] md:pt-[3.7%] pb-[2.2%] grid place-items-center `}
+        className={`w-[100%] pt-[5%] md:pt-[2.8%] grid place-items-center `}
       >
-        <img src={DramaTitle} className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[50%]" alt="" />
+        <img src={MusicTitle} className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[50%]" alt="" />
       </div>
 
-      <div className="md:space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[3%] ">
+      <div className="md:space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full  pt-[3%] ">
         <div className="space-y-[4%] mb-[4%] md:mb-[0%] md:space-y-[0%] flex flex-col md:flex-row items-center justify-center  h-[100%] w-[100%] space-x-[2%] ">
           <div className="relative w-[91%] md:w-[51.5%] md:h-[24.3%] ">
             <img
@@ -210,7 +210,7 @@ function MusicEvents() {
           </div>
         </div>
         <div >
-          <div className="mt-8 mb-9">
+          <div className="mt-8 mb-12">
           <Button_Component showRegister={true} showRulebook={true} />
           </div>
       </div>

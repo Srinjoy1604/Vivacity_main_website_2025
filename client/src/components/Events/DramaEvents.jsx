@@ -23,11 +23,15 @@ function DramaEvents() {
     <div
       className={`${Styles.DramaBg} w-full h-[100%]  p-[2%] overflow-hidden flex flex-col`}
     >
-      <div className={`grid pt-[6%] md:pt-[3.7%] pb-[2.2%] place-items-center`}>
-        <img src={DramaTitle} className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[50%] " alt="" />
+      <div className={`grid pt-[6%] md:pt-[3.5%]  place-items-center`}>
+        <img
+          src={DramaTitle}
+          className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[51%] aspect-653/178.16 "
+          alt=""
+        />
       </div>
 
-      <div className="space-y-[2%] flex flex-col justify-center  mx-auto w-full h-full px-[0.5%] pt-[5%] md:pt-[3%] ">
+      <div className="space-y-[2%] flex flex-col justify-center  mx-auto w-full h-full px-[0.5%] pt-[5%] md:pt-[3.5%] ">
         <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] w-[100%] space-y-[2%]  md:space-y-[0%] md:space-x-[2%]">
           <div className="relative w-[91%] md:w-[57.1%] h-[76.9%] ">
             <img
@@ -186,9 +190,9 @@ function DramaEvents() {
           </div>
         </div>
       </div>
-      <div className="mt-5 mb-5">
-      <Button_Component showRegister={true} showRulebook={true} />
-      </div>   
+      <div className="mt-8 mb-12 ">
+        <Button_Component showRegister={true} showRulebook={true} />
+      </div>
     </div>
   );
 }
