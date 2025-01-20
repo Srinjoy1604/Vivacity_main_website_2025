@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Hero from "../components/Home/Hero";
 import About from "../components/Home/About";
 import Portal from "../components/Home/Portal";
@@ -17,6 +17,7 @@ function Home() {
   const section1 = useRef();
   const section2 = useRef();
   const heroRef = useRef(null);
+  const [isHeroVisible, setIsHeroVisible] = useState(true);
 
   const heroHeight = heroRef.current ? heroRef.current.offsetHeight : "100vh";
 
@@ -88,9 +89,10 @@ function Home() {
           left: 0,
           width: "100vw",
           height: heroHeight,
+          zIndex: -1,
         }}
       >
-        <Hero />
+        {isHeroVisible && <Hero />}
       </div>
 
       {/* Parallax About Section */}
