@@ -153,7 +153,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`
+        className={`absolute
             w-full top-0 z-50 
             transition-all duration-300 ease-in-out
             ${
