@@ -26,13 +26,13 @@ function Hero() {
   }, []);
 
   return (
-    <div className="overflow-hidden relative z-[-1]">
+    <div className="fixed top-0 left-0 overflow-hidden relative z-[-1]">
       <div className="h-[100vh] w-[100vw] text-center flex items-center align-center justify-center bg-yellow-200 max-[830px]:hidden">
         <div
           className={`flex items-center align-center justify-center relative w-[100%] h-[100%] ${styles.MainBackgroundHero}`}
-          style={{
-            transform: `translateY(${scroll * 0.3}px)`,
-          }}
+          // style={{
+          //   transform: `translateY(${scroll}px)`,
+          // }}
         >
           <img
             src={Image7}
@@ -43,9 +43,9 @@ function Hero() {
 
       <div
         className={`text-center flex items-center align-center justify-center w-[100vw] ${styles.HeroMobile} aspect-[131/284] hidden max-[830px]:block`}
-        style={{
-            transform: `translateY(${scroll * 0.3}px)`,
-          }}
+        // style={{
+        //     transform: `translateY(${scroll}px)`,
+        //   }}
       >
         <div
           className={`text-center w-[100%] h-[100%] ${styles.HeroTop} flex items-center align-center justify-center relative`}

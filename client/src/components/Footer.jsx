@@ -7,6 +7,8 @@ import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/FooterBackground.png";
 import Backbg from "../assets/images/Team.png";
 import Backbg1 from "../assets/images/ExcitingBg.png";
+import Backbg2 from "../assets/images/DarkVioletCrissCross.png";
+
 function Footer() {
   const aspectRatio = 415 / 1480;
   const navigate = useNavigate();
@@ -15,7 +17,7 @@ function Footer() {
     <div
       className="relative w-full "
       style={{
-        backgroundImage: `url(${location.pathname === "/" ? Backbg : Backbg1})`,
+        backgroundImage: `url(${location.pathname === "/" ? Backbg :location.pathname === "/events"? Backbg1:location.pathname === "/OurTeam"? Backbg2:Backbg})`,
         height: `calc(100vw * ${aspectRatio})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

@@ -6,6 +6,7 @@ import TwitterIcon from "../assets/images/twitterLogo.png";
 import FooterBackground from "../assets/images/Footer_mobile.png";
 import Backbg from "../assets/images/Team.png";
 import Backbg1 from "../assets/images/ExcitingBg.png";
+import Backbg2 from "../assets/images/DarkVioletCrissCross.png";
 
 function Footer1() {
   const aspectRatio = 512 / 512;
@@ -14,11 +15,10 @@ function Footer1() {
     <div
       className="relative "
       style={{
-        backgroundImage: `url(${location.pathname === "/" ? Backbg : Backbg1})`,
+        backgroundImage: `url(${location.pathname === "/" ? Backbg :location.pathname === "/events"? Backbg1:location.pathname === "/OurTeam"? Backbg2:Backbg})`,
         height: `calc(100vw * ${aspectRatio})`,
-        backgroundPosition: "top",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
         display: location.pathname === "/NormalRegistration" ? "none" : "block",
       }}
     >

@@ -153,9 +153,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`
-            w-full top-0 z-50 
-            transition-all duration-300 ease-in-out
+        className={`absolute w-full top-0 z-50 transition-all duration-300 ease-in-out
             ${
               scrolled
                 ? "bg-black/90 backdrop-blur-sm shadow-lg"

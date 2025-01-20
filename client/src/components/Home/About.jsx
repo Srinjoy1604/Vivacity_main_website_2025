@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import Infinite from "../subPages/Infinite";
 import Image1 from "../../assets/images/AboutBkg.png";
 import Image2 from "../../assets/images/Halftone.png";
@@ -19,27 +19,30 @@ function About() {
     setTimeout(() => setIsClicked(false), 300);
   };
 
-  const [clk , setclk] = useState(false);
-  const newHandleClick = () =>{
+  const [clk, setclk] = useState(false);
+  const newHandleClick = () => {
     setclk(true);
-    setTimeout(()=>setclk(false),300);
-  }
+    setTimeout(() => setclk(false), 300);
+  };
 
   return (
     <>
-      <div
-        className="relative w-full h-[1000px] min-[830px]:h-[100%] px-[2rem] flex items-center justify-center overflow-hidden min-[830px]:aspect-[20/13] mt-[-7%]"
-      >
+      <div className="relative w-full h-[1000px] min-[830px]:h-[110vh] px-[2rem] flex items-center justify-center overflow-hidden min-[830px]:aspect-[20/13] mt-[-7%]">
         <div className="hidden min-[830px]:block absolute bottom-0 w-full h-[100%]">
           <img src={Image1} className="w-[100vw] h-[100%]" />
         </div>
         <div className="min-[830px]:hidden absolute bottom-0 w-full">
           <img src={Oval} className="w-[100vw] h-[1000px]" />
         </div>
-        <div className="min-[830px]:hidden relative flex">
+        <div className="min-[830px]:hidden relative flex mt-[25%]">
           <div className="absolute z-10 top-[97%] w-full">
-            <NavLink to="/" className={`block ${clk ? 'scale-95' : ''} transition-all duration-300`}
-            onClick={newHandleClick}>
+            <NavLink
+              to="/"
+              className={`block ${
+                clk ? "scale-95" : ""
+              } transition-all duration-300`}
+              onClick={newHandleClick}
+            >
               <img
                 src={Image4}
                 alt=""
@@ -49,8 +52,13 @@ function About() {
           </div>
 
           <div className="absolute z-20 top-[-8%] w-full">
-            <NavLink to="/" className={`block ${isClicked ? 'scale-95' : ''} transition-all duration-300`}
-            onClick={handleClick}>
+            <NavLink
+              to="/"
+              className={`block ${
+                isClicked ? "scale-95" : ""
+              } transition-all duration-300`}
+              onClick={handleClick}
+            >
               <img
                 src={Image3}
                 alt="Name Tag Unit"
@@ -59,10 +67,10 @@ function About() {
             </NavLink>
           </div>
 
-          <div className="absolute h-52 w-52 top-[-20%] right-[-30%]">
+          <div className="absolute top-[-22.5%] right-[-30%]">
             <img src={Image5} alt="" />
           </div>
-          <div className="absolute h-52 w-52 z-40 bottom-[-40%] left-[-35%]">
+          <div className="absolute z-40 bottom-[-20%] left-[-35%]">
             <img src={Image6} alt="" />
           </div>
 
@@ -88,7 +96,7 @@ function About() {
         </div>
 
         <div
-          className="hidden min-[830px]:flex relative gap-20 bg-[#F8B931] shadow-lg max-w-[70%] aspect-[2.5] items-center"
+          className="hidden min-[830px]:flex relative gap-20 bg-[#F8B931] shadow-lg max-w-[70%] aspect-[2.5] items-center mt-[5%]"
           style={{
             transform: "rotate(3deg)",
           }}
@@ -97,29 +105,38 @@ function About() {
             <img src={Image5} alt="" />
           </div>
 
-          <div className="absolute z-40 min-[1400px]:bottom-[-55%] left-[-10%] bottom-[-50%]">
+          <div className="absolute z-40 min-[1400px]:bottom-[-35%] min-[1400px]:left-[-10%] left-[-20%] bottom-[-50%]">
             <img src={Image6} alt="" />
           </div>
 
           <div className="absolute z-40 top-[-14%] left-[-8%] rotate-[-16.58deg]">
-            <NavLink to="/" className={`block ${isClicked ? 'scale-95' : ''} transition-all duration-300`}
-            onClick={handleClick}
+            <NavLink
+              to="/"
+              className={`block ${
+                isClicked ? "scale-95" : ""
+              } transition-all duration-300`}
+              onClick={handleClick}
             >
               <img
                 src={Image3}
                 alt="Name Tag Unit"
-                className="w-[15vw] transform transition-transform duration-300  cursor-pointer"
+                className="w-[15vw] transform transition-transform duration-300 cursor-pointer"
               />
             </NavLink>
           </div>
 
-          <div className="absolute z-40 bottom-[-5%] right-[-5%] rotate-[-16.58deg]">
-            <NavLink to="/" className={`block ${clk ? 'scale-95' : ''} transition-all duration-300`}
-            onClick={newHandleClick}>
+          <div className="absolute z-40 bottom-[-8%] right-[-5%] rotate-[-16.58deg]">
+            <NavLink
+              to="/NormalRegistration"
+              className={`block ${
+                clk ? "scale-95" : ""
+              } transition-all duration-300`}
+              onClick={newHandleClick}
+            >
               <img
                 src={Image4}
                 alt="Name Tag Unit"
-                className="w-[16vw] transform transition-transform duration-300  cursor-pointer"
+                className="w-[16vw] transform transition-transform duration-300 cursor-pointer"
               />
             </NavLink>
           </div>
@@ -160,4 +177,3 @@ function About() {
 }
 
 export default About;
-

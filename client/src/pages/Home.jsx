@@ -16,6 +16,9 @@ function Home() {
 
   const section1 = useRef();
   const section2 = useRef();
+  const heroRef = useRef(null);
+
+  const heroHeight = heroRef.current ? heroRef.current.offsetHeight : "100vh";
 
   function scrollTo(section) {
     section.current.scrollIntoView({ behavior: "smooth" });
@@ -77,8 +80,27 @@ function Home() {
 
   return (
     <div>
-      <Hero />
-      <About />
+      <div
+        ref={heroRef}
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: heroHeight,
+        }}
+      >
+        <Hero />
+      </div>
+
+      {/* Parallax About Section */}
+      <div
+        style={{
+          marginTop: heroHeight, // Ensure About section starts after Hero
+        }}
+      >
+          <About />
+      </div>
       <div ref={section1}>
         <Portal onAnimationComplete={onAnimationComplete} />
       </div>

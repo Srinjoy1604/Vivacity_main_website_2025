@@ -89,14 +89,15 @@ const Concert = () => {
       </div>
       {/* Desktop Layout */}
       <div
-        className="hidden md:flex relative justify-center items-center w-full min-h-screen md:min-h-[60vh] overflow-hidden py-8 md:py-[5%]"
+        className="hidden md:flex relative justify-center items-center h-[100%] w-[100%] overflow-hidden py-8 md:py-[10%]"
         style={{
           backgroundImage: `url(${BackGround})`,
-          backgroundSize: backgroundSize,
+          backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="w-[90%] md:w-[88%] lg:w-[68%] h-full">
+        <div className="w-[90%] md:w-[88%] lg:w-[78%] h-full">
           <div className="flex flex-col items-center py-[4%]">
             <div className="flex flex-row w-full gap-[5%] items-center">
               <div className="w-[28%] flex justify-center items-center">
@@ -107,17 +108,17 @@ const Concert = () => {
                 />
               </div>
               <div className="w-[63%] flex flex-col">
-                <h2 className="font-bold font-rfabb md:text-[2.1rem] lg:text-[2.1rem] 2xl:text-[2.8rem] mt-[2%] xl:text-[2.6rem] mb-[1%] text-left">
+                <h2 className="font-bold font-rfabb md:text-[2.1rem] lg:text-[2.1rem] 2xl:text-[2.8rem] mt-[2%] xl:text-[2.6rem] 2100:text-[3rem] min-[2500px]:text-[3.3rem] mb-[1%] text-left">
                   GET CONCERT-READY NOW!
                 </h2>
-                <p className="font-semibold font-vetosans md:text-[1rem] lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.7rem] tracking-normal  leading-relaxed mb-[5%] text-left">
+                <p className="font-semibold font-vetosans md:text-[1rem] lg:text-[1.2rem] xl:text-[1.4rem] 2xl:text-[1.7rem] 2100:text-[2rem] min-[2500px]:text-[2.25rem] tracking-normal leading-relaxed mb-[5%] text-left">
                   Get a sneak peek into Vivacity's epic lineup with our <br />
                   <span className="italic">handpicked</span> music
                   collection—crafted to set the vibe just right! <br />
                   So grab your squad, hit play, and let the good times roll.
                 </p>
                 <div className="flex gap-[3%] justify-start">
-                  <button className="px-[1%] py-[1%] border border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
+                  <button className="pl-[1%] pr-[1.5%] py-[1%] border border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
                     <img
                       src={Spotify}
                       alt="Spotify logo"
@@ -125,7 +126,7 @@ const Concert = () => {
                     />
                     <span className="font-vetosans-500">Spotify</span>
                   </button>
-                  <button className="px-[1%] py-[1%] border border-red-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
+                  <button className="pl-[1%] pr-[1.5%] py-[1%] border border-red-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
                     <img
                       src={AppleMusic}
                       alt="Apple Music logo"
