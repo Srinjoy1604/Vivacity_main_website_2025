@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import NormalRegistration from './pages/NormalRegistration';
 import EventsPage from './pages/EventsPage';
+import OurTeams from './pages/OurTeams';
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/NormalRegistration" element={<NormalRegistration />} />
+          <Route path="/OurTeam" element={<OurTeams />} />
         </Routes>
         {/* Mobile footer */}
         <div className="block sm:hidden">

@@ -124,7 +124,7 @@ const navItems = [
   { Name: "HOME", Link: "/" },
   { Name: "EVENTS", Link: "/events" },
   { Name: "SPONSORS", Link: "/sponsors" },
-  { Name: "OUR TEAM", Link: "/team" },
+  { Name: "OUR TEAM", Link: "/OurTeam" },
 ];
 
 const Navbar = () => {
@@ -153,7 +153,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={` absolute
+        className={`
             w-full top-0 z-50 
             transition-all duration-300 ease-in-out
             ${
