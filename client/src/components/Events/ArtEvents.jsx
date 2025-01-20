@@ -359,7 +359,7 @@ function ArtEvents() {
       </div>
 
       {/* Buttons Section */}
-      <div className="w-[100%] mb-8 mt-8">
+      <div className="w-[100%] p-[2%] mb-[3%]">
         <Button_Component showRegister={true} showRulebook={false} />
       </div>
     </div>

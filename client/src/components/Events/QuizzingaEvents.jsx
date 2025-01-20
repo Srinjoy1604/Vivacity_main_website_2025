@@ -9,7 +9,7 @@ import Button_Component from "./Button_component";
 function QuizzingaEvents() {
   return (
     <div
-      className={`${Styles.QuizzingaBg} w-full h-[100%] p-[2%] flex flex-col`}
+      className={`${Styles.QuizzingaBg} w-full h-[100%] p-[2%] pb-[3.5%] flex flex-col`}
     >
       <div
         className={`grid place-items-center pt-[3.5%]`}

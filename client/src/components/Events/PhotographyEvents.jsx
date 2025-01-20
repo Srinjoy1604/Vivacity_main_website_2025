@@ -35,23 +35,23 @@ import Button_component from "./Button_component";
 function PhotographyEvents() {
   return (
     <div
-      className="min-h-[70vh] w-full bg-center bg-cover  "
+      className=" w-full bg-center bg-cover  "
       style={{
         backgroundImage: `url(${bg})`,
       }}
     >
       {/* Title Section */}
-      <div className="w-full pt-[6.3%] flex justify-center pb-[5%]">
+      <div className="w-full pt-[4.8%] flex justify-center pb-[3%]">
         <img
           src={title}
           alt="Photography Events"
-          className="w-[80%] sm:w-[80%] md:w-[65%] lg:w-[55%]"
+          className="w-[80%] sm:w-[80%] md:w-[65%] lg:w-[72%]"
         />
       </div>
 
       {/* Desktop Layout */}
       <div>
-        <div className="max-w-[1880px] mx-auto hidden md:block ">
+        <div className="  hidden md:block ">
           {/* Top Row */}
           <div className="flex flex-wrap gap-9 mb-4 justify-center">
             {/* Image Hunt */}
@@ -113,7 +113,7 @@ function PhotographyEvents() {
             </div>
           </div>
           {/* Bottom Row */}
-          <div className="flex flex-wrap gap-7  justify-center">
+          <div className="flex flex-wrap gap-7  pt-[0.4%] justify-center">
             {/* Film Making */}
             <div className="w-[43.9%]">
               <div className="relative aspect-[562/354]">
@@ -143,7 +143,7 @@ function PhotographyEvents() {
               </div>
             </div>
             {/* Perspective */}
-            <div className="w-[47.7%]">
+            <div className="w-[47.7%] pt-[0.1%]">
               <div className="relative aspect-[611/353]">
                 <img
                   src={image4}
@@ -410,7 +410,7 @@ function PhotographyEvents() {
           </div>
         </div>
       </div>
-      <div className="pt-8 pb-10">
+      <div className="pt-8 pb-[6.3%]">
       <Button_component showRulebook={true} showRegister={true} />
       </div>
     </div>
