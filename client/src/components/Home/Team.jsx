@@ -418,26 +418,19 @@ function Team() {
         >
           {/* Text Div */}
           <div
-            className="p-2 box-border text-start 1280:text-[1.7vw] 1400:text-[1.7vw] sm-text-[1rem] 1500:text-[1.7vw] 1980:text-[1.7vw] 1600:text-[1.7VW] 1700:text-[1.7vw] 2100:text-[1.7vw] lg:text-[1.7vw] md:text-[1.7vw] text-[2vw] font-semibold font-vetosans"
+            className="p-2 box-border text-start 1280:text-[1.7vw] 1400:text-[1.7vw] sm-text-[1rem] 1500:text-[1.7vw] 1980:text-[1.7vw] 1600:text-[1.7VW] 1700:text-[1.7vw] 2100:text-[1.7vw] lg:text-[1.7vw] md:text-[1.7vw] text-[2vw]  font-vetosans"
             style={{
               width: `${(325 / 387) * 100}%`,
               height: `${(297 / 505) * 100}%`,
               top: `${(38 / 505) * 100}%`,
               left: `${(31 / 387) * 100}%`,
               position: "absolute",
+              fontWeight:'500'
             }}
           >
-            Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{" "}
-            <span
-              className="1280:text-[1.325rem] 1400:text-[1.7vw] sm-text-[0.6rem] 1500:text-[1.7vw] 1700:text-[1.7vw] 1980:text-[1.7vw] 1600:text-[1.7vw] 2100:text-[1.7vw]  text-[2vw] lg:text-[1.7vw] md:text-[1.7vw] font-semibold font-rfabb"
-              style={{ color: "rgba(144,0,0,1)" }}
-            >
-              VIVACITY'25
-            </span>{" "}
-            From envisioning <br></br>the cosmic threads of our<br></br> theme
-            to weaving it into <br></br>reality, this team makes it all<br></br>{" "}
-            happen. Tap to discover the <br></br>faces and stories of those who{" "}
-            <br></br>bring the multiverse to life!
+             Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}<span className='1280:text-[1.325rem] 1400:text-[1.7vw] sm-text-[0.6rem] 1500:text-[1.7vw] 1700:text-[1.7vw] 1980:text-[1.7vw] 1600:text-[1.7vw] 2100:text-[1.7vw]  text-[2vw] lg:text-[1.7vw] md:text-[1.7vw]  font-rfabb' style={{color: 'rgba(144,0,0,1)', fontWeight:'500'}}>VIVACITY'25</span>  From envisioning <br></br>the cosmic threads of our<br></br> theme to weaving it into <br></br>reality,
+              this team makes it all<br></br> happen. Tap to discover the <br></br>faces and stories of
+              those who <br></br>bring the multiverse to life!
           </div>
 
           <div
@@ -839,42 +832,43 @@ function Team() {
           }}
         ></div>
 
-        {/* Yellow Div */}
-        <div
-          className="absolute border flex flex-col justify-center items-center box-border"
-          style={{
-            width: `${(300.78 / 393) * 100}%`,
-            height: `${(344.85 / 924) * 100}%`,
-            top: `${(501 / 924) * 100}%`,
-            left: `${(47.22 / 393) * 100}%`,
-            backgroundImage: `url(${RightBg1})`,
-            backgroundSize: "cover",
-            backgroundPosition: "top",
-          }}
-        >
-          {/* Text Div */}
-          <div
-            className="p-2 box-border text-start font-semibold  text-[1.25rem] xs:text-[3.3vw] xxs:text-[3.3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] sm:text-[3.3vw] md:text-[1.75rem]  lg:text-[2.05rem] font-vetosans "
-            style={{
-              width: `${(255 / 307) * 100}%`,
-              height: `${(225 / 351) * 100}%`,
-              top: `${(23 / 351) * 100}%`,
-              left: `${(22.78 / 307) * 100}%`,
-              position: "absolute",
-            }}
-          >
-            Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{" "}
-            <span
-              className="font-rfabb font-semibold  text-[1.25rem] xs:text-[3.3vw] xxs:text-[3.3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] sm:text-[3.3vw] md:text-[1.65rem]  lg:text-[2.05rem] "
-              style={{ color: "rgba(144,0,0,1)" }}
-            >
-              VIVACITY'25
-            </span>{" "}
-            From envisioning <br></br>the cosmic threads of our<br></br> theme
-            to weaving it into <br></br>reality, this team makes it all<br></br>{" "}
-            happen. Tap to discover the <br></br>faces and stories of those who{" "}
-            <br></br>bring the multiverse to life!
-          </div>
+{/* Yellow Div */}
+<div
+  className="absolute border flex flex-col justify-center items-center box-border"
+  style={{
+    width: `${(300.78 / 393) * 100}%`, 
+    height: `${(344.85 / 924) * 100}%`, 
+    top: `${(501 / 924) * 100}%`, 
+    left: `${(47.22/ 393) * 100}%`, 
+    backgroundImage: `url(${RightBg1})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'top',
+  }}
+>
+  {/* Text Div */}
+  <div
+    className="p-2 box-border text-start   text-[1.25rem] xs:text-[3.3vw] xxs:text-[3.3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] sm:text-[3.3vw] md:text-[1.75rem]  lg:text-[2.05rem] font-vetosans"
+    style={{
+      width: `${(255 / 307) * 100}%`, 
+      height: `${(225 / 351) * 100}%`, 
+      top: `${(23 / 351) * 100}%`, 
+      left: `${(22.78 / 307) * 100}%`, 
+      position: 'absolute',
+      fontWeight:'500'
+      
+    }}
+  >
+    Meet the dreamers, doers, and<br></br> masterminds behind<br></br>{' '}
+    <span
+      className="font-rfabb  text-[1.25rem] xs:text-[3.3vw] xxs:text-[3.3vw] xxxs:text-[3.3vw] 270:text-[3.3vw] sm:text-[3.3vw] md:text-[1.65rem]  lg:text-[2.05rem] "
+      style={{ color: 'rgba(144,0,0,1)',fontWeight:'500' }}
+    >
+      VIVACITY'25
+    </span>{' '}
+    From envisioning <br></br>the cosmic threads of our<br></br> theme to weaving it into <br></br>reality,
+    this team makes it all<br></br> happen. Tap to discover the <br></br>faces and stories of
+    those who <br></br>bring the multiverse to life!
+  </div>
 
           <div
             style={{

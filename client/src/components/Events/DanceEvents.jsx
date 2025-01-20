@@ -769,7 +769,7 @@ function Page() {
               </p>
             </div>
           </div>
-          <div className="w-[100%] absolute bottom-[1%] p-[5%]">
+          <div className="w-[100%] absolute bottom-0 p-[5%]">
             <Button_Component showRegister={true} showRulebook={true} />
           </div>
         </div>
