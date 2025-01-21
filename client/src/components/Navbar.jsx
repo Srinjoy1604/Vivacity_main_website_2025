@@ -162,7 +162,7 @@ const Navbar = () => {
         `}
       >
         <div className="max-w-full mx-auto sm:px-6">
-          <div className="flex items-center justify-between pl-9 pr-9 xl:pl-10 xl:pr-10 h-24 sm:h-18 md:h-24">
+          <div className="flex items-center justify-between pl-9 pr-9 xl:pl-10 xl:pr-10 py-2  sm:h-18 md:h-24">
             <div className="sm:hidden block  smallNav">
               <img src={SmallNavImg} alt="" />
             </div>
