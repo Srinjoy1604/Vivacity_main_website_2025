@@ -410,8 +410,8 @@ function PhotographyEvents() {
           </div>
         </div>
       </div>
-      <div className="pt-8 pb-[6.3%]">
-      <Button_component showRulebook={true} showRegister={true} />
+      <div className="pt-[0.1%] lg:pt-8 md:pt-8 lg:pb-[6.3%] md:pb-[6.3%] pb-[8%]">
+        <Button_component showRulebook={true} showRegister={true} />
       </div>
     </div>
   );
