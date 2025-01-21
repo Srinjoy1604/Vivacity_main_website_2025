@@ -14,7 +14,6 @@ import Dimg from "../../assets/images/TeamD_img.png";
 import Pin from "../../assets/images/pin.png";
 import Thread from "../../assets/images/threads.png";
 import React, { useState, useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
 import buttonback from "../../assets/images/Pinkbtn_black.png";
 import Background1 from "../../assets/images/TeampageMob.png";
 import LeftBg1 from "../../assets/images/PurpledivMob.png";

@@ -3,7 +3,6 @@ import ring1 from "../../assets/images/ring1.svg";
 import ring2 from "../../assets/images/ring2.svg";
 import ring3 from "../../assets/images/ring3.svg";
 import ring4 from "../../assets/images/ring4.svg";
-import scrolldown from "../../assets/images/scroll-down_svgrepo.com.png";
 import styles from "./Portal.module.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

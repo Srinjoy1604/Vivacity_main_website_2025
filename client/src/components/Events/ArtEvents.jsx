@@ -7,7 +7,6 @@ import image4 from "../../assets/images/ArtEvent_4.png";
 import image5 from "../../assets/images/ArtEvent_5.png";
 import title from "../../assets/images/ArtEvent_title.png";
 import text1 from "../../assets/images/textbox1.png";
-import register from "../../assets/images/register.png";
 import image7 from "../../assets/images/Artevent_mobile_1.png";
 import image8 from "../../assets/images/Artevent_mobile_2.png";
 import image9 from "../../assets/images/Artevent_mobile_3.png";
