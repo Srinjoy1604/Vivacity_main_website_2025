@@ -10,7 +10,8 @@ import EventsPage from './pages/EventsPage';
 import OurTeams from './pages/OurTeams';
 import StartLoader from '../src/assets/videos/StartLoader.gif'; // Replace with the actual path
 import Preloader from '../src/assets/videos/PreLoader.gif'; // Replace with the actual path
-
+import Sponsors from './pages/Sponsors';
+import Page404 from './pages/404';
 function AppContent() {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
@@ -78,6 +79,8 @@ function AppContent() {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/NormalRegistration" element={<NormalRegistration />} />
         <Route path="/OurTeam" element={<OurTeams />} />
+        <Route path="/Sponsors" element={<Sponsors />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
       {/* Mobile footer */}
       <div className="block sm:hidden">

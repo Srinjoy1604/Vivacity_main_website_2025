@@ -21,9 +21,9 @@
     {
         "TitleName":"Development Team",
         "CardTeam":[
-            {"Name":"Krishna Khatri","Position":"Head of Development","Image":"/Dashotar.png","EmailLink":"","InstagramLink":""},
-            {"Name":"Srinjoy Roy","Position":"Head of Development","Image":"/Srinjoy.png","EmailLink":"","InstagramLink":""},
-            {"Name":"Harshit Daga","Position":"Head of Development","Image":"/Harshit.png","EmailLink":"","InstagramLink":""}
+            {"Name":"Harshit Daga","Position":"Head of Development","Image":"/Harshit.png","EmailLink":"","InstagramLink":""},
+            {"Name":"Srinjoy Roy","Position":"Head of Development","Image":"/Srinjoy.jpg","EmailLink":"","InstagramLink":""},
+            {"Name":"Krishna Khatri","Position":"Head of Development","Image":"/Dashotar.png","EmailLink":"","InstagramLink":""}
             
             
         ],
