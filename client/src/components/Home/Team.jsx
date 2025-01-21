@@ -928,7 +928,7 @@ function Team() {
               backgroundSize: "cover",
               backgroundPosition: "top",
               transition: "transform 300ms",
-              transform: isClicked ? "translate(-8px, 8px) scale(0.95)" : "",
+              transform: isClicked ? "translate(-5px, 5px) scale(0.95)" : "",
             }}
           >
             <p className="xs:text-[5vw] text-[5vw] xxs:text-[5vw] xxxs:text-[5vw] 270:text-[5vw] sm:text-[5vw]    font-bold font-rfabb">
