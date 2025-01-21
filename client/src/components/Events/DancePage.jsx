@@ -272,9 +272,9 @@ function DancePage(){
                 className="px-4"
                 style={{
                   position: "absolute",
-                  width: "82.71%",
+                  width: "90.71%",
                   aspectRatio: "464 /43",
-                  left: "12%",
+                  left: "6%",
                   top: "5%",
                   backgroundImage: `url(${Bottomleftdiv})`,
                   backgroundSize: "cover",

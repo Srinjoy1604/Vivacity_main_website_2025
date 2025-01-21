@@ -1,6 +1,5 @@
 import Background from "../../assets/images/Danceevents2bg.png";
 // import Title2 from "../../assets/images/Title2.png";
-
 // import subtitle2 from "../../assets/images/Subheading.png";
 import Topleft from "../../assets/images/Group 96-2.png";
 import Topright from "../../assets/images/Subtext.png";
