@@ -139,9 +139,9 @@ function Speaking(){
                 className="px-4  py-1"
                 style={{
                   position: "absolute",
-                  width: "89.59%",
+                  width: "90.59%",
                   aspectRatio: "446 /60",
-                  left: "8.78%",
+                  left: "7.78%",
                   top: "76.5%",
                   backgroundImage: `url(${Topright})`,
                   backgroundSize: "cover",
@@ -269,9 +269,9 @@ function Speaking(){
                 className="px-4  py-1"
                 style={{
                   position: "absolute",
-                  width: "76.99%",
+                  width: "79.99%",
                   aspectRatio: "446/43",
-                  left: "20.78%",
+                  left: "15.78%",
                   top: "79.5%",
                   backgroundImage: `url(${BottomLeft})`,
                   backgroundSize: "cover",
