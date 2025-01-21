@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import DanceEvents from '../components/Events/DanceEvents';
-import SpeakingArts from '../components/Events/SpeakingArtsEvents';
+import DanceEvents from '../components/Events/DancePage';
+import SpeakingArts from '../components/Events/Speaking';
 import DramaEvents from '../components/Events/DramaEvents';
 import MusicEvents from '../components/Events/MusicEvents';
 import PhotographyEvents from '../components/Events/PhotographyEvents';

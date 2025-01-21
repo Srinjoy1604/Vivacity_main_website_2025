@@ -8,6 +8,8 @@ import Image5 from "../../assets/images/blue_arrow.png";
 import Image6 from "../../assets/images/red_arrow.png";
 import Oval from "../../assets/images/Oval.png";
 import { NavLink } from "react-router-dom";
+import Lottie from "lottie-react";
+import MouseAnimation from "../../assets/videos/Mouse.json";
 
 function About() {
   const textContent =
@@ -30,9 +32,29 @@ function About() {
       <div className="relative w-full h-[1000px] min-[830px]:h-[110vh] px-[2rem] flex items-center justify-center overflow-hidden min-[830px]:aspect-[20/13] min-[830px]:mt-[-7%] mt-[-25%]">
         <div className="hidden min-[830px]:block absolute bottom-0 w-full h-[100%]">
           <img src={Image1} className="w-[100vw] h-[100%]" />
+          <div className="absolute top-[1.5%] w-full">
+          <div className="flex justify-center">
+          <Lottie
+            animationData={MouseAnimation}
+            loop
+            autoplay
+            className="h-16"
+          />
+          </div>
+          </div>
         </div>
         <div className="min-[830px]:hidden absolute bottom-0 w-full">
           <img src={Oval} className="w-[100vw] h-[1000px]" />
+          <div className="absolute top-[1%] w-full">
+          <div className="flex justify-center">
+          <Lottie
+            animationData={MouseAnimation}
+            loop
+            autoplay
+            className="h-16"
+          />
+          </div>
+          </div>
         </div>
         <div className="min-[830px]:hidden relative flex mt-[25%]">
           <div className="absolute z-10 top-[97%] w-full">
