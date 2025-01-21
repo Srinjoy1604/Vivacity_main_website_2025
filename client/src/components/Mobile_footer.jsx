@@ -1,12 +1,12 @@
 import React from "react";
-import vivacityLogo from "../assets/images/Vivalogo_mobile.png";
-import FacebookIcon from "../assets/images/facebookLogo.png";
-import InstagramIcon from "../assets/images/instagramLogo.png";
-import TwitterIcon from "../assets/images/twitterLogo.png";
-import FooterBackground from "../assets/images/Footer_mobile.png";
-import Backbg from "../assets/images/Team.png";
-import Backbg1 from "../assets/images/ExcitingBg.png";
-import Backbg2 from "../assets/images/DarkVioletCrissCross.png";
+import vivacityLogo from "../assets/images/Vivalogo_mobile.webp";
+import FacebookIcon from "../assets/images/facebookLogo.webp";
+import InstagramIcon from "../assets/images/instagramLogo.webp";
+import TwitterIcon from "../assets/images/twitterLogo.webp";
+import FooterBackground from "../assets/images/Footer_mobile.webp";
+import Backbg from "../assets/images/Team.webp";
+import Backbg1 from "../assets/images/ExcitingBg.webp";
+import Backbg2 from "../assets/images/DarkVioletCrissCross.webp";
 
 function Footer1() {
   const aspectRatio = 512 / 512;

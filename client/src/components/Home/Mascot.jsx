@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../Home/Mascot.module.css";
-import NetraLarge from "../../assets/images/NetraImg.png";
-import NetraText from "../../assets/images/NETRAText.png";
-import NetraMobile from "../../assets/images/NetraMobile.png";
-import netra_black_textbox from "../../assets/images/netra_black_textbox.png";
-import NetraYellowBox from "../../assets/images/NetraYellowBox.png";
+import NetraLarge from "../../assets/images/NetraImg.webp";
+import NetraText from "../../assets/images/NETRAText.webp";
+import NetraMobile from "../../assets/images/NetraMobile.webp";
+import netra_black_textbox from "../../assets/images/netra_black_textbox.webp";
+import NetraYellowBox from "../../assets/images/NetraYellowBox.webp";
 
 function Mascot() {
   const [isClicked, setIsClicked] = useState(false);

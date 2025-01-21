@@ -1,13 +1,13 @@
 import React from "react";
-import Image1 from "../../assets/images/left1.png";
-import Image2 from "../../assets/images/top1.png";
-import Image3 from "../../assets/images/top2.png";
-import Image4 from "../../assets/images/right1.png";
-import Image5 from "../../assets/images/bottom1.png";
-import Image6 from "../../assets/images/bottom2.png";
-import Image7 from "../../assets/images/viva_logo_hero.png";
+import Image1 from "../../assets/images/left1.webp";
+import Image2 from "../../assets/images/top1.webp";
+import Image3 from "../../assets/images/top2.webp";
+import Image4 from "../../assets/images/right1.webp";
+import Image5 from "../../assets/images/bottom1.webp";
+import Image6 from "../../assets/images/bottom2.webp";
+import Image7 from "../../assets/images/viva_logo_hero.webp";
 import styles from "./Herox.module.css";
-import VivaMobile from "../../assets/images/Vivalogo_mobile.png";
+import VivaMobile from "../../assets/images/Vivalogo_mobile.webp";
 function Herox() {
     return (
         <div>

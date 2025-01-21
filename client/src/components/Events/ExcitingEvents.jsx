@@ -1,25 +1,25 @@
 import React from "react";
-import Background from "../../assets/images/ExcitingBg.png";
-import title from "../../assets/images/Title3.png";
-import promNight from "../../assets/images/Prom Night.png";
-import silentDisco from "../../assets/images/Silent Disco.png";
-import jammingNight from "../../assets/images/Jamming Night.png";
-import stageSpectrum from "../../assets/images/Stage Spectrum.png";
-import promNight_text from "../../assets/images/TopLeft.png";
-import silentDisco_text from "../../assets/images/TopRightText.png";
-import stageSpectrum_text from "../../assets/images/BottomLeftt.png";
-import jammingNight_text from "../../assets/images/BottomRightt.png";
-import text1 from "../../assets/images/textbox1.png";
-import bigtextbox from "../../assets/images/bigtextbox.png";
+import Background from "../../assets/images/ExcitingBg.webp";
+import title from "../../assets/images/Title3.webp";
+import promNight from "../../assets/images/Prom Night.webp";
+import silentDisco from "../../assets/images/Silent Disco.webp";
+import jammingNight from "../../assets/images/Jamming Night.webp";
+import stageSpectrum from "../../assets/images/Stage Spectrum.webp";
+import promNight_text from "../../assets/images/TopLeft.webp";
+import silentDisco_text from "../../assets/images/TopRightText.webp";
+import stageSpectrum_text from "../../assets/images/BottomLeftt.webp";
+import jammingNight_text from "../../assets/images/BottomRightt.webp";
+import text1 from "../../assets/images/textbox1.webp";
+import bigtextbox from "../../assets/images/bigtextbox.webp";
 
-import PromNight_mobile from "../../assets/images/Prom Night-2.png";
-import SilentDisco_mobile from "../../assets/images/Silent Disco-2.png";
-import JammingNight_mobile from "../../assets/images/Image Box.png";
-import StageSpectrum_mobile from "../../assets/images/Stage Spectrum-2.png";
-import PromNight_text_mobile from "../../assets/images/Event Name-4.png";
-import SilentDisco_text_mobile from "../../assets/images/Text-2.png";
-import StageSpectrum_text_mobile from "../../assets/images/Text-3.png";
-import JammingNight_text_mobile from "../../assets/images/Text-4.png";
+import PromNight_mobile from "../../assets/images/Prom Night-2.webp";
+import SilentDisco_mobile from "../../assets/images/Silent Disco-2.webp";
+import JammingNight_mobile from "../../assets/images/Image Box.webp";
+import StageSpectrum_mobile from "../../assets/images/Stage Spectrum-2.webp";
+import PromNight_text_mobile from "../../assets/images/Event Name-4.webp";
+import SilentDisco_text_mobile from "../../assets/images/Text-2.webp";
+import StageSpectrum_text_mobile from "../../assets/images/Text-3.webp";
+import JammingNight_text_mobile from "../../assets/images/Text-4.webp";
 
 function Exciting() {
   return (

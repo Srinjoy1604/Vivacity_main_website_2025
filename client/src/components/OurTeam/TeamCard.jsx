@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
-import YellowLower from "../../assets/images/CardYellowBellowPattern.png";
-import YellowTop from "../../assets/images/CardYellowTopPattern.png";
-import mail from "../../assets/images/mail_heart_svgrepo.png";
-import Insta from "../../assets/images/vimeo_social_logo.png";
+import YellowLower from "../../assets/images/CardYellowBellowPattern.webp";
+import YellowTop from "../../assets/images/CardYellowTopPattern.webp";
+import mail from "../../assets/images/mail_heart_svgrepo.webp";
+import Insta from "../../assets/images/vimeo_social_logo.webp";
 function TeamCard({ CardData }) {
     return (
         <div className="relative aspect-[100/133] lg:w-[21.6vw] sm:w-[60vw] w-[85vw] max-w-[400px]"
