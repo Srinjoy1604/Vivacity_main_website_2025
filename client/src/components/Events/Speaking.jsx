@@ -139,10 +139,10 @@ function Speaking(){
                 className="px-4  py-1"
                 style={{
                   position: "absolute",
-                  width: "82.59%",
+                  width: "89.59%",
                   aspectRatio: "446 /60",
-                  left: "10.78%",
-                  top: "77.5%",
+                  left: "8.78%",
+                  top: "76.5%",
                   backgroundImage: `url(${Topright})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
@@ -269,10 +269,10 @@ function Speaking(){
                 className="px-4  py-1"
                 style={{
                   position: "absolute",
-                  width: "70.99%",
+                  width: "76.99%",
                   aspectRatio: "446/43",
-                  left: "24.78%",
-                  top: "81.5%",
+                  left: "20.78%",
+                  top: "79.5%",
                   backgroundImage: `url(${BottomLeft})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
