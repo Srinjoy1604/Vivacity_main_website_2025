@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import ring1 from "../../assets/images/ring1.svg";
 import ring2 from "../../assets/images/ring2.svg";
 import ring3 from "../../assets/images/ring3.svg";
+import ring4 from "../../assets/images/ring4.svg";
 import scrolldown from "../../assets/images/scroll-down_svgrepo.com.png";
 import styles from "./Portal.module.css";
 import gsap from "gsap";
@@ -11,8 +12,8 @@ import MouseAnimation from "../../assets/videos/Mouse.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAnimationComplete) => {
-  const rings = [ring1Ref, ring2Ref, ring3Ref];
+const animatePortal = (ring1Ref, ring2Ref, ring3Ref, ring4Ref, textRef, containerRef, onAnimationComplete) => {
+  const rings = [ring1Ref, ring2Ref, ring3Ref, ring4Ref];
   // Enable GPU acceleration for the rings
   rings.forEach((ringRef) => {
     if (ringRef.current) {
@@ -31,8 +32,8 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAn
       pinSpacing: true,
       scrub: 0.5,
       anticipatePin: 1,
-      fastScrollEnd:true,
-      smooth:true,
+      fastScrollEnd: true,
+      smooth: true,
       onLeave: () => onAnimationComplete(), // Callback for triggering scroll
     },
   });
@@ -40,13 +41,13 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAn
   // Ring rotation and exit animation
   rings.forEach((ringRef, index) => {
     if (ringRef.current) {
-      const rotationAngle = (index % 2 === 0 ? (360 + index * 90) : (-360 + (-index) * 90)); // Adjust rotation angle for each ring
+      const rotationAngle = (index % 2 === 0 ? 360 + index * 90 : -360 + -index * 90); // Adjust rotation angle for each ring
       const exitDistance = 0; // Distance to move out of the screen
 
       gsap.set(ringRef.current, {
         transformOrigin: "50% 50%",
-        rotation: 0,
-        scale: (index===1?2.7:(index===2?3.3:2.3)),
+        rotation: index===3?-30:0,
+        scale: index === 1 ? 2.7 : index === 2 ? 3.3 : index === 3 ? 3.8 : index===4? 1.5 :2.3,
         force3D: true,
       });
 
@@ -87,12 +88,13 @@ function Portal({ onAnimationComplete }) {
   const ring1Ref = useRef(null);
   const ring2Ref = useRef(null);
   const ring3Ref = useRef(null);
+  const ring4Ref = useRef(null); // New ring reference
   const textRef = useRef(null);
   const containerRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      animatePortal(ring1Ref, ring2Ref, ring3Ref, textRef, containerRef, onAnimationComplete);
+      animatePortal(ring1Ref, ring2Ref, ring3Ref, ring4Ref, textRef, containerRef, onAnimationComplete);
     });
 
     return () => ctx.revert(); // Clean up animations on unmount
@@ -122,6 +124,12 @@ function Portal({ onAnimationComplete }) {
           src={ring3}
           alt="Ring 3"
         />
+        <img
+          ref={ring4Ref}
+          className="absolute sm:w-[110%] sm:h-[110%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50%] h-[50%] lg:w-[95%] lg:h-[95%]"
+          src={ring4} // Using ring1 for the new ring
+          alt="Ring 4"
+        />
         <div ref={textRef} className="absolute inset-0 flex items-center justify-center z-[-1] pb-10">
           <div className="w-[100%] text-center h-[90%] flex items-center justify-center align-middle flex-col">
             <div className={`relative w-[300px] h-[80px] ${styles.HeadingBar} mx-auto mb-4`}>
@@ -148,6 +156,3 @@ function Portal({ onAnimationComplete }) {
 }
 
 export default Portal;
-
-
-
