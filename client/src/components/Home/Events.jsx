@@ -4,10 +4,11 @@ import {
   FaRegArrowAltCircleLeft,
 } from "react-icons/fa";
 import Event_logo from "../../assets/images/Event_logo.png";
-import Event_button from "../../assets/images/Event_know_button.png";
+import Event_button from "../../assets/images/Pinkbtn_front.png";
 import Halftone from "../../assets/images/Halftone.png";
 import BackGround from "../../assets/images/YellowBg.png";
 import DanceEvents from "../../assets/images/Razzmatazz.png";
+import Pinkbtn_black from "../../assets/images/Pinkbtn_black.png";
 
 const Events = () => {
   const eventData = [
@@ -60,7 +61,7 @@ const Events = () => {
 
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
   const currentEvent = eventData[currentEventIndex];
-
+  const [isClicked, setIsClicked] = useState(false);
   const handleNext = useCallback(() => {
     setCurrentEventIndex((prev) => (prev + 1) % eventData.length);
   }, [eventData.length]);
@@ -79,12 +80,16 @@ const Events = () => {
   }, [handleNext]);
 
   const handleKnowMore = useCallback(() => {
-    window.location.href = "/events";
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+      //window.location.href = "/events";
+    }, 300);
   }, []);
 
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center "
+      className="min-h-[60vh] flex flex-col justify-center items-center "
       style={{
         backgroundImage: `url(${BackGround})`,
         backgroundSize: "cover",
@@ -102,12 +107,12 @@ const Events = () => {
       </div>
 
       {/* Main content container */}
-      <div className="sm:w-[78%] w-[80%] sm:h-[71.65vh] h-[70%] relative mx-auto mb-[6%]">
+      <div className="sm:w-[78%] w-[80%] h-auto relative mx-auto mb-[6%]">
         {/* Black shadow */}
         <div className="absolute -left-2 -bottom-2 w-full h-full bg-black"></div>
 
         {/* Desktop Layout  */}
-        <div className="relative w-full h-full bg-black hidden sm:block p-2">
+        <div className="relative w-full h-[390px] md:h-[460px] lg:h-[470px] xl:h-[550px] 2xl:h-[600px] 1980:h-[900px] md:min-h-[50vh] xl:min-h-[70vh]  bg-black hidden sm:block p-2">
           <div className="relative w-full h-full bg-black">
             <div className="relative h-full">
               {/* Desktop Left panel */}
@@ -132,7 +137,7 @@ const Events = () => {
                       {currentEvent.items.map((item, index) => (
                         <li
                           key={index}
-                          className="flex items-center justify-start text-[1.25rem] md:text-[1.8rem] xl:text-[2vw] leading-none"
+                          className="flex items-center justify-start text-[1.25rem] md:text-[1.8rem] xl:text-[2.5vw] 2xl:text-[2vw] 1980:text-[2.7vw] 2600:text-[2vw] leading-none"
                         >
                           <span className="w-2 h-2 xl:w-3 xl:h-3 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
                           <span className="line-clamp-2 sm:line-clamp-1">
@@ -142,19 +147,42 @@ const Events = () => {
                       ))}
                     </ul>
                   </div>
-
-                  {/* Button container */}
-                  <div className="w-[60%] px-[4.5%]  relative z-50 py-[1%]">
+                  <div className="w-[60%] px-[4.5%] relative z-50 py-[1%]">
                     <button
                       onClick={handleKnowMore}
-                      className="w-full group relative transition-all duration-300 hover:scale-105 focus:outline-none cursor-pointer"
+                      className="w-full group relative focus:outline-none cursor-pointer"
                     >
-                      <img
-                        src={Event_button}
-                        alt="Know More"
-                        className="w-full h-full object-contain transition-transform group-hover:brightness-110  pointer-events-none"
-                      />
-                      <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
+                      <div className="absolute -left-2 -bottom-2 w-full h-full">
+                        <img
+                          src={Pinkbtn_black}
+                          alt="button shadow"
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+
+                      <div
+                        className={`relative duration-300 ${
+                          isClicked
+                            ? "scale-95 -translate-x-2 translate-y-2"
+                            : ""
+                        }`}
+                      >
+                        <img
+                          src={Event_button}
+                          alt="Know More"
+                          className={`w-full h-full object-contain transition-transform ${
+                            isClicked ? "brightness-110" : ""
+                          }`}
+                        />
+                        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black font-rfabb font-medium text-[2.3vw] whitespace-nowrap">
+                          Know More
+                        </p>
+                        <div
+                          className={`absolute inset-0 bg-white transition-opacity duration-300 rounded-lg ${
+                            isClicked ? "opacity-10" : "opacity-0"
+                          }`}
+                        />
+                      </div>
                     </button>
                   </div>
                 </div>
@@ -200,17 +228,17 @@ const Events = () => {
                 }}
               >
                 <div className="bg-[#53B08E] flex h-full p-1">
-                  <button
-                    onClick={handlePrevious}
-                    className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-20 hover:scale-110"
-                  >
-                    <FaRegArrowAltCircleLeft className="w-[85%] h-[85%]" />
+                  <button className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-5 relative z-20 ">
+                    <FaRegArrowAltCircleLeft
+                      className="w-auto h-[85%] hover:scale-110"
+                      onClick={handlePrevious}
+                    />
                   </button>
-                  <button
-                    onClick={handleNext}
-                    className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4 relative z-20 hover:scale-110"
-                  >
-                    <FaRegArrowAltCircleRight className="w-[85%] h-[85%]" />
+                  <button className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-3 relative z-20 ">
+                    <FaRegArrowAltCircleRight
+                      className="w-auto h-[85%] hover:scale-110"
+                      onClick={handleNext}
+                    />
                   </button>
                 </div>
               </div>
@@ -257,13 +285,13 @@ const Events = () => {
                 </h2>
               </div>
 
-              <div className="w-full h-[83%] overflow-hidden -mt-8">
+              <di v className="w-full h-[83%] overflow-hidden -mt-8">
                 <img
                   src={currentEvent.image}
                   alt={currentEvent.title}
                   className="w-full h-full object-cover  pointer-events-none"
                 />
-              </div>
+              </di>
             </div>
 
             <div className="absolute top-[45%] right-0 w-[58%] h-[20%]">
@@ -300,28 +328,51 @@ const Events = () => {
             <div className="flex items-center justify-between p-1 ml-[3%] relative z-20">
               <button
                 onClick={handleKnowMore}
-                className="w-[55%] group relative transition-all duration-300 hover:scale-105 focus:outline-none"
+                className="w-[55%] group relative focus:outline-none cursor-pointer"
               >
-                <img
-                  src={Event_button}
-                  alt="Know More"
-                  className="w-full h-full object-contain transition-transform group-hover:brightness-110 pointer-events-none"
-                />
-                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
+                <div className="absolute -left-1 -bottom-1 w-full h-full">
+                  <img
+                    src={Pinkbtn_black}
+                    alt="button shadow"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+
+                <div
+                  className={`relative duration-300 ${
+                    isClicked ? "scale-95 -translate-x-1 translate-y-1" : ""
+                  }`}
+                >
+                  <img
+                    src={Event_button}
+                    alt="Know More"
+                    className={`w-full h-full object-contain transition-transform ${
+                      isClicked ? "brightness-110" : ""
+                    }`}
+                  />
+                  <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black font-rfabb font-medium text-[5.3vw] whitespace-nowrap">
+                    Know More
+                  </p>
+                  <div
+                    className={`absolute inset-0 bg-white transition-opacity duration-300 rounded-lg ${
+                      isClicked ? "opacity-10" : "opacity-0"
+                    }`}
+                  />
+                </div>
               </button>
 
-              <div className="flex gap-3 mr-[3%] w-[40%]">
-                <button
-                  onClick={handlePrevious}
-                  className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20 w-1/2 aspect-square flex items-center justify-center"
-                >
-                  <FaRegArrowAltCircleLeft className="w-full h-full max-w-[45px]" />
+              <div className="flex  mr-[3%] w-[40%]">
+                <button className="bg-transparent p-1 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20 w-1/2 aspect-square flex items-center justify-center">
+                  <FaRegArrowAltCircleLeft
+                    className="w-full h-full max-w-[45px]"
+                    onClick={handlePrevious}
+                  />
                 </button>
-                <button
-                  onClick={handleNext}
-                  className="bg-transparent p-2 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20 w-1/2 aspect-square flex items-center justify-center"
-                >
-                  <FaRegArrowAltCircleRight className="w-full h-full max-w-[45px]" />
+                <button className="bg-transparent p-1 rounded-full text-black hover:bg-[#47997C] active:bg-[#47997C] transition-colors relative z-20 w-1/2 aspect-square flex items-center justify-center">
+                  <FaRegArrowAltCircleRight
+                    className="w-full h-full max-w-[45px]"
+                    onClick={handleNext}
+                  />
                 </button>
               </div>
             </div>
