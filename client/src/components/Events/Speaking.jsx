@@ -1,25 +1,25 @@
-import Background from "../../assets/images/Danceevents2bg.png";
+import Background from "../../assets/images/Danceevents2bg.webp";
 
-import SpeakingTitle from "../../assets/images/SpeakingArtsTitle.png";
+import SpeakingTitle from "../../assets/images/SpeakingArtsTitle.webp";
 
-import Topleft from "../../assets/images/Group 96-2.png";
-import Topright from "../../assets/images/Subtext.png";
-import MiddleLeft from "../../assets/images/Subtext-2.png";
-import MiddleRight from "../../assets/images/Subtext-3.png";
-import BottomLeft from "../../assets/images/Subtext-4.png";
-import BottomRight from "../../assets/images/Subtext-5.png";
-import Topleftdiv from "../../assets/images/Duologue.png";
-import TopRightdiv from "../../assets/images/Family Feud.png";
-import Middleleftdiv from "../../assets/images/Spotlight.png";
-import Middlerightdiv from "../../assets/images/Afreen.png";
-import Bottomleftdiv from "../../assets/images/Potpourii.png";
-import BottomRightdiv from "../../assets/images/Dare to Spell.png";
-import Duologue from "../../assets/images/duologuee.png";
-import FamilyFeud from "../../assets/images/FamilyFeud.png";
-import Spotlight from "../../assets/images/Spotlightt.png";
-import Afreen from "../../assets/images/Afreenn.png";
-import Potpouri from "../../assets/images/Potpouri.png";
-import DareToSpell from "../../assets/images/DareToSpell.png";
+import Topleft from "../../assets/images/Group 96-2.webp";
+import Topright from "../../assets/images/Subtext.webp";
+import MiddleLeft from "../../assets/images/Subtext-2.webp";
+import MiddleRight from "../../assets/images/Subtext-3.webp";
+import BottomLeft from "../../assets/images/Subtext-4.webp";
+import BottomRight from "../../assets/images/Subtext-5.webp";
+import Topleftdiv from "../../assets/images/Duologue.webp";
+import TopRightdiv from "../../assets/images/Family Feud.webp";
+import Middleleftdiv from "../../assets/images/Spotlight.webp";
+import Middlerightdiv from "../../assets/images/Afreen.webp";
+import Bottomleftdiv from "../../assets/images/Potpourii.webp";
+import BottomRightdiv from "../../assets/images/Dare to Spell.webp";
+import Duologue from "../../assets/images/duologuee.webp";
+import FamilyFeud from "../../assets/images/FamilyFeud.webp";
+import Spotlight from "../../assets/images/Spotlightt.webp";
+import Afreen from "../../assets/images/Afreenn.webp";
+import Potpouri from "../../assets/images/Potpouri.webp";
+import DareToSpell from "../../assets/images/DareToSpell.webp";
 import Button_Component from "./Button_component";
 
 function Speaking() {

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import BackGround from "../../../assets/images/Section6Background2.png";
-import mdbackground from "../../../assets/images/mdbackground.png";
+import BackGround from "../../../assets/images/Section6Background2.webp";
+import mdbackground from "../../../assets/images/mdbackground.webp";
 import Gif from "../../../assets/videos/cd_glitch.gif";
-import AppleMusic from "../../../assets/images/AppleMusicLogo.png";
-import Spotify from "../../../assets/images/SpotifyLogo.png";
-import PastArtistGIFBorder from "../../../assets/images/PastArtistGIFBorder.png";
+import AppleMusic from "../../../assets/images/AppleMusicLogo.webp";
+import Spotify from "../../../assets/images/SpotifyLogo.webp";
+import PastArtistGIFBorder from "../../../assets/images/PastArtistGIFBorder.webp";
 const Concert = () => {
   const [backgroundSize, setBackgroundSize] = useState("cover");
 

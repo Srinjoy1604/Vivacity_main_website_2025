@@ -1,8 +1,8 @@
 // import React, { useState, useEffect } from 'react';
 // import { Link, NavLink, useLocation } from 'react-router-dom';
 // import { Menu, X } from 'lucide-react';
-// import NavImage from "../assets/images/nav_logo.png";
-// import register from "../assets/images/register_button.png";
+// import NavImage from "../assets/images/nav_logo.webp";
+// import register from "../assets/images/register_button.webp";
 
 // const Navbar = () => {
 //     const [isOpen, setIsOpen] = useState(false);
@@ -117,8 +117,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, ArrowRight } from "lucide-react";
-import NavImage from "../assets/images/nav_logo.png";
-import SmallNavImg from "../assets/images/small_viva_img.png";
+import NavImage from "../assets/images/nav_logo.webp";
+import SmallNavImg from "../assets/images/small_viva_img.webp";
 
 const navItems = [
   { Name: "HOME", Link: "/" },

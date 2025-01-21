@@ -1,32 +1,32 @@
 .DramaTitle
 {
-    background-image: url("../../assets/images/DramaTitle.png");
+    background-image: url("../../assets/images/DramaTitle.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
 }
 .FashionBg
 {
-   background-image: url("../../assets/images/FashionBg.png");
+   background-image: url("../../assets/images/FashionBg.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .QuizzingaBg
 {
-   background-image: url("../../assets/images/QuizzingaBg.png");
+   background-image: url("../../assets/images/QuizzingaBg.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .MusicBg
 {
-   background-image: url("../../assets/images/MusicBg.png");
+   background-image: url("../../assets/images/MusicBg.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .DramaBg
 {
-   background-image: url("../../assets/images/DramaBg.png");
+   background-image: url("../../assets/images/DramaBg.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -34,7 +34,7 @@
 
 .DramaTextBox
 {
-    background-image: url("../../assets/images/DramaTextBox.png");
+    background-image: url("../../assets/images/DramaTextBox.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

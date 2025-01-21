@@ -1,13 +1,13 @@
-import Background from "../../assets/images/Sahyog_bg.png";
-import Title from "../../assets/images/Title4.png";
-import Text from "../../assets/images/Sahyog.png";
-import Image from "../../assets/images/SahyogImg.png";
-import bg from "../../assets/images/SahyogDiv.png";
-import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 10.png";
-import Title1 from "../../assets/images/Name-2.png";
-import Text1 from "../../assets/images/Text.png";
-import Image1 from "../../assets/images/Sahyog-2.png";
-import bg1 from "../../assets/images/bigtextbox.png";
+import Background from "../../assets/images/Sahyog_bg.webp";
+import Title from "../../assets/images/Title4.webp";
+import Text from "../../assets/images/Sahyog.webp";
+import Image from "../../assets/images/SahyogImg.webp";
+import bg from "../../assets/images/SahyogDiv.webp";
+import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 10.webp";
+import Title1 from "../../assets/images/Name-2.webp";
+import Text1 from "../../assets/images/Text.webp";
+import Image1 from "../../assets/images/Sahyog-2.webp";
+import bg1 from "../../assets/images/bigtextbox.webp";
 
 function Sahyog() {
   return (

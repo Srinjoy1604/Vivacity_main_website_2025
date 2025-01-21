@@ -1,13 +1,13 @@
 .HeroMobile
 {
-    background-image: url("../../assets/images/HeroMobileBackgroundParts.png");
+    background-image: url("../../assets/images/HeroMobileBackgroundParts.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
 }
 .HeroTop
 {
-    background-image: url("../../assets/images/HeroMobileBackgroundParts.png"),url("../../assets/images/HeroMobileBackground.png");
+    background-image: url("../../assets/images/HeroMobileBackgroundParts.webp"),url("../../assets/images/HeroMobileBackground.webp");
     background-size: 110% 110%;
     background-repeat: no-repeat;
     background-position-x: 59%;
@@ -15,13 +15,13 @@
 }
 .RegisterStrip
 {
-    background-image: url("../../assets/images/HeroMobileBackgroundStrip.png");
+    background-image: url("../../assets/images/HeroMobileBackgroundStrip.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .StripButton
 {
-    background-image: url("../../assets/images/HeroMobileRegisterButton.png");
+    background-image: url("../../assets/images/HeroMobileRegisterButton.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -35,7 +35,7 @@
 }
 .MainBackgroundHero
 {
-    background-image: url("../../assets/images/HeroSectionMainImage.png");
+    background-image: url("../../assets/images/HeroSectionMainImage.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     

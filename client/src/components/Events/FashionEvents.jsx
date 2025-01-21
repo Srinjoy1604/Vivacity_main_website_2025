@@ -1,10 +1,10 @@
 import React from "react";
 import Styles from "../Events/DramaEvents.module.css";
-import FashionTitle from "../../assets/images/FashionTitle.png";
-import VivaText from "../../assets/images/vivaText.png";
-import VougeText from "../../assets/images/VougeText.png";
-import VivaBg from "../../assets/images/VivaBg.png";
-import VogueBg from "../../assets/images/VogueBg.png";
+import FashionTitle from "../../assets/images/FashionTitle.webp";
+import VivaText from "../../assets/images/vivaText.webp";
+import VougeText from "../../assets/images/VougeText.webp";
+import VivaBg from "../../assets/images/VivaBg.webp";
+import VogueBg from "../../assets/images/VogueBg.webp";
 import Button_Component from "./Button_component";
 
 function FashionEvents() {

@@ -1,6 +1,6 @@
 import React from "react";
-import Image7 from "../../assets/images/viva_logo_hero.png";
-import VivaMobile from "../../assets/images/Vivalogo_mobile.png";
+import Image7 from "../../assets/images/viva_logo_hero.webp";
+import VivaMobile from "../../assets/images/Vivalogo_mobile.webp";
 import styles from "./Herox.module.css";
 import { useEffect, useState } from "react";
 

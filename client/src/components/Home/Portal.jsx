@@ -11,7 +11,15 @@ import MouseAnimation from "../../assets/videos/Mouse.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const animatePortal = (ring1Ref, ring2Ref, ring3Ref, ring4Ref, textRef, containerRef, onAnimationComplete) => {
+const animatePortal = (
+  ring1Ref,
+  ring2Ref,
+  ring3Ref,
+  ring4Ref,
+  textRef,
+  containerRef,
+  onAnimationComplete
+) => {
   const rings = [ring1Ref, ring2Ref, ring3Ref, ring4Ref];
   // Enable GPU acceleration for the rings
   rings.forEach((ringRef) => {
@@ -40,13 +48,23 @@ const animatePortal = (ring1Ref, ring2Ref, ring3Ref, ring4Ref, textRef, containe
   // Ring rotation and exit animation
   rings.forEach((ringRef, index) => {
     if (ringRef.current) {
-      const rotationAngle = (index % 2 === 0 ? 360 + index * 90 : -360 + -index * 90); // Adjust rotation angle for each ring
+      const rotationAngle =
+        index % 2 === 0 ? 360 + index * 90 : -360 + -index * 90; // Adjust rotation angle for each ring
       const exitDistance = 0; // Distance to move out of the screen
 
       gsap.set(ringRef.current, {
         transformOrigin: "50% 50%",
-        rotation: index===3?-30:0,
-        scale: index === 1 ? 2.7 : index === 2 ? 3.3 : index === 3 ? 3.8 : index===4? 1.5 :2.3,
+        rotation: index === 3 ? -30 : 0,
+        scale:
+          index === 1
+            ? 2.7
+            : index === 2
+            ? 3.3
+            : index === 3
+            ? 3.8
+            : index === 4
+            ? 1.5
+            : 2.3,
         force3D: true,
       });
 
@@ -93,7 +111,15 @@ function Portal({ onAnimationComplete }) {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      animatePortal(ring1Ref, ring2Ref, ring3Ref, ring4Ref, textRef, containerRef, onAnimationComplete);
+      animatePortal(
+        ring1Ref,
+        ring2Ref,
+        ring3Ref,
+        ring4Ref,
+        textRef,
+        containerRef,
+        onAnimationComplete
+      );
     });
 
     return () => ctx.revert(); // Clean up animations on unmount
@@ -129,24 +155,33 @@ function Portal({ onAnimationComplete }) {
           src={ring4} // Using ring1 for the new ring
           alt="Ring 4"
         />
-        <div ref={textRef} className="absolute inset-0 flex items-center justify-center z-[-1] pb-10">
+        <div
+          ref={textRef}
+          className="absolute inset-0 flex items-center justify-center z-[-1] pb-10"
+        >
           <div className="w-[100%] text-center h-[90%] flex items-center justify-center align-middle flex-col">
-            <div className={`relative w-[300px] h-[80px] ${styles.HeadingBar} mx-auto mb-4`}>
+            <div
+              className={`relative w-[300px] h-[80px] ${styles.HeadingBar} mx-auto mb-4`}
+            >
               <h1 className="w-full h-full text-black text-3xl flex items-center justify-center font-rfabb font-[400] text-[2.9rem] p-[1%] leading-[3rem]">
                 Tela Indrae
               </h1>
             </div>
             <p className="lg:max-w-[28rem] mt-1 w-[88%] sm:w-[60%] md:w-[60%] lg:w-[37%] text-white text-[1.625rem] text-center font-vetosans font-light max-[566px]:text-[1rem]">
-              Latin for "the Web of Indra," <span className="text-[#16C2FD]">Tela Indrae</span> draws inspiration from
-              Indra's Web, symbolizing unity in diversity and infinite interconnection. Like jewels reflecting one another, we come together as unique individuals, weaving a vibrant tapestry of
-              shared brilliance. Let's celebrate the power of connection at Vivacity!
+              Latin for "the Web of Indra,"{" "}
+              <span className="text-[#16C2FD]">Tela Indrae</span> draws
+              inspiration from Indra's Web, symbolizing unity in diversity and
+              infinite interconnection. Like jewels reflecting one another, we
+              come together as unique individuals, weaving a vibrant tapestry of
+              shared brilliance. Let's celebrate the power of connection at
+              Vivacity!
             </p>
             <Lottie
-            animationData={MouseAnimation}
-            loop
-            autoplay
-            className="p-[2%]"
-          />
+              animationData={MouseAnimation}
+              loop
+              autoplay
+              className="p-[2%]"
+            />
           </div>
         </div>
       </section>

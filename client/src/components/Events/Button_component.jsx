@@ -1,5 +1,5 @@
 import React from "react";
-import textbox from "../../assets/images/DownloadRulebook.png";
+import textbox from "../../assets/images/DownloadRulebook.webp";
 
 const Button_Component = ({ showRulebook = true, showRegister = true }) => {
   const handleRulebookClick = () => {

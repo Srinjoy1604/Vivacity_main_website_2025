@@ -1,10 +1,10 @@
 import React from "react";
 import Styles from "../Events/DramaEvents.module.css";
-import QuizzingaTitle from "../../assets/images/QuizzingaTitle.png";
-import BamboozledText from "../../assets/images/BamboozledText.png";
-import MovieAuctionText from "../../assets/images/MovieAuctionText.png";
-import BamboozledBg from "../../assets/images/BamboozledBg.png";
-import MovieAuctionBg from "../../assets/images/MovieAuctionBg.png";
+import QuizzingaTitle from "../../assets/images/QuizzingaTitle.webp";
+import BamboozledText from "../../assets/images/BamboozledText.webp";
+import MovieAuctionText from "../../assets/images/MovieAuctionText.webp";
+import BamboozledBg from "../../assets/images/BamboozledBg.webp";
+import MovieAuctionBg from "../../assets/images/MovieAuctionBg.webp";
 import Button_Component from "./Button_component";
 function QuizzingaEvents() {
   return (

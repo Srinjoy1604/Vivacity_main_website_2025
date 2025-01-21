@@ -1,24 +1,24 @@
-import Background from "../../assets/images/MacBook Air - 1.png";
-import Title2 from "../../assets/images/DanceTitle2.png";
+import Background from "../../assets/images/MacBook Air - 1.webp";
+import Title2 from "../../assets/images/DanceTitle2.webp";
 
-import Topleft from "../../assets/images/TopLeftimg.png";
-import Topright from "../../assets/images/TopRightimg.png";
-import MiddleLeft from "../../assets/images/MiddleLeftimg.png";
-import MiddleRight from "../../assets/images/MiddleRightimg.png";
-import BottomLeft from "../../assets/images/BottomLeftimg.png";
-import BottomRight from "../../assets/images/BottomRightimg.png";
-import Topleftdiv from "../../assets/images/Topleftdiv.png";
-import TopRightdiv from "../../assets/images/TopRight.png";
-import Streetdance from "../../assets/images/Streetdance.png";
-import TalNarang from "../../assets/images/TalTarang.png";
-import Razzmataaz from "../../assets/images/Razzmaatazz.png";
-import Middleleftdiv from "../../assets/images/MiddleLeftdiv.png";
-import Middlerightdiv from "../../assets/images/MiddleRightDiv.png";
-import Bottomleftdiv from "../../assets/images/BottomleftDiv.png";
-import BottomRightdiv from "../../assets/images/Bottomrightdiv.png";
-import PumpItUp from "../../assets/images/PumpItUp.png";
-import Letstangle from "../../assets/images/LetsTangle.png";
-import mudra from "../../assets/images/Mudra.png";
+import Topleft from "../../assets/images/TopLeftimg.webp";
+import Topright from "../../assets/images/TopRightimg.webp";
+import MiddleLeft from "../../assets/images/MiddleLeftimg.webp";
+import MiddleRight from "../../assets/images/MiddleRightimg.webp";
+import BottomLeft from "../../assets/images/BottomLeftimg.webp";
+import BottomRight from "../../assets/images/BottomRightimg.webp";
+import Topleftdiv from "../../assets/images/Topleftdiv.webp";
+import TopRightdiv from "../../assets/images/TopRight.webp";
+import Streetdance from "../../assets/images/Streetdance.webp";
+import TalNarang from "../../assets/images/TalTarang.webp";
+import Razzmataaz from "../../assets/images/Razzmaatazz.webp";
+import Middleleftdiv from "../../assets/images/MiddleLeftdiv.webp";
+import Middlerightdiv from "../../assets/images/MiddleRightDiv.webp";
+import Bottomleftdiv from "../../assets/images/BottomleftDiv.webp";
+import BottomRightdiv from "../../assets/images/Bottomrightdiv.webp";
+import PumpItUp from "../../assets/images/PumpItUp.webp";
+import Letstangle from "../../assets/images/LetsTangle.webp";
+import mudra from "../../assets/images/Mudra.webp";
 import Button_Component from "./Button_component";
 function Dance() {
   return (

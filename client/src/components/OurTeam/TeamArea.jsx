@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import TeamCard from "./TeamCard";
-import MentorLine from "../../assets/images/MentorLine.png";
+import MentorLine from "../../assets/images/MentorLine.webp";
 function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne, LeftTwo, CardTeam, Members, PositionArr = ["0", "0", "0", "0"] }) {
     
     return (
