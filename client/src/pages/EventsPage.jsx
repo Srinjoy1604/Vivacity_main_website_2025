@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import DanceEvents from '../components/Events/DancePage';
-import SpeakingArts from '../components/Events/Speaking';
+import DancePage from '../components/Events/DancePage';
+import Speaking from '../components/Events/Speaking';
 import DramaEvents from '../components/Events/DramaEvents';
 import MusicEvents from '../components/Events/MusicEvents';
 import PhotographyEvents from '../components/Events/PhotographyEvents';
@@ -43,8 +43,8 @@ function EventsPage() {
   return (
     <div>
       <IndexEvents scrollToSection={scrollToSection} />
-      <div ref={danceRef}><DanceEvents /></div>
-      <div ref={speakingArtsRef}><SpeakingArts /></div>
+      <div ref={danceRef}><DancePage /></div>
+      <div ref={speakingArtsRef}><Speaking /></div>
       <div ref={dramaRef}><DramaEvents /></div>
       <div ref={musicRef}><MusicEvents /></div>
       <div ref={photographyRef}><PhotographyEvents /></div>
