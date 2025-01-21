@@ -9,6 +9,7 @@ import Legacy from "../components/Home/Legacy";
 import Strip from "../components/Home/strip";
 import Mascot from "../components/Home/Mascot";
 import Team from "../components/Home/Team";
+import Navbar from "../components/Navbar";
 
 function Home() {
   const textContent =
@@ -75,7 +76,7 @@ function Home() {
   };
 
   const onAnimationComplete = () => {
-    smoothScrollTo(section2.current, 1); // Fast smooth scroll to the next section
+    smoothScrollTo(section2.current, 40); // Fast smooth scroll to the next section
   };
 
 
@@ -92,7 +93,12 @@ function Home() {
           zIndex: -1,
         }}
       >
-        {isHeroVisible && <Hero />}
+        {isHeroVisible && 
+        <>
+        <Navbar />
+        <Hero />
+        </>
+        }
       </div>
 
       {/* Parallax About Section */}

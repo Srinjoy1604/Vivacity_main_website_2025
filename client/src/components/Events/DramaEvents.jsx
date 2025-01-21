@@ -190,7 +190,7 @@ function DramaEvents() {
           </div>
         </div>
       </div>
-      <div className="mt-8 mb-12 ">
+      <div className=" pt-[0.7%] lg:pt-8 md:pt-8 lg:pb-[6.3%] md:pb-[6.3%] pb-[4%]">
         <Button_Component showRegister={true} showRulebook={true} />
       </div>
     </div>

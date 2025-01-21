@@ -7,6 +7,8 @@ import scrolldown from "../../assets/images/scroll-down_svgrepo.com.png";
 import styles from "./Portal.module.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Lottie from "lottie-react";
+import MouseAnimation from "../../assets/videos/Mouse.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -140,7 +142,12 @@ function Portal({ onAnimationComplete }) {
               Indra's Web, symbolizing unity in diversity and infinite interconnection. Like jewels reflecting one another, we come together as unique individuals, weaving a vibrant tapestry of
               shared brilliance. Let's celebrate the power of connection at Vivacity!
             </p>
-            <img src={scrolldown} className="p-[2%]" />
+            <Lottie
+            animationData={MouseAnimation}
+            loop
+            autoplay
+            className="p-[2%]"
+          />
           </div>
         </div>
       </section>

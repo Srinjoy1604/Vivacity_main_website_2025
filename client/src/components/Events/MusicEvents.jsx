@@ -24,13 +24,13 @@ import AarohBgMobile from "../../assets/images/AarohBgMobile.png";
 import Button_Component from "./Button_component";
 function MusicEvents() {
   return (
-    <div
-      className={`${Styles.MusicBg} w-full h-[100%] p-[3%] flex flex-col`}
-    >
-      <div
-        className={`w-[100%] pt-[5%] md:pt-[2.8%] grid place-items-center `}
-      >
-        <img src={MusicTitle} className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[50%]" alt="" />
+    <div className={`${Styles.MusicBg} w-full h-[100%] p-[3%] flex flex-col`}>
+      <div className={`w-[100%] pt-[5%] md:pt-[2.8%] grid place-items-center `}>
+        <img
+          src={MusicTitle}
+          className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[50%]"
+          alt=""
+        />
       </div>
 
       <div className="md:space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full  pt-[3%] ">
@@ -103,7 +103,6 @@ function MusicEvents() {
               </p>
             </div>
           </div>
-
         </div>
         <div className="space-y-[4%]  md:space-y-[0%]  flex md:flex-row flex-col items-center justify-center  h-[100%] w-[100%] space-x-[2%] ">
           <div className="relative w-[91%] h-[14.61%] md:w-[35.9%] md:h-[36.9%] ">
@@ -204,18 +203,16 @@ function MusicEvents() {
                 Let the beats drop and the voices soar. Be a witness to the
                 battlefield as rappers try to out-rap each other in this all out
                 war!
-                
               </p>
             </div>
           </div>
         </div>
-        <div >
-          <div className="mt-8 mb-12">
-          <Button_Component showRegister={true} showRulebook={true} />
+        <div>
+          <div className=" pt-[0.1%] lg:pt-8 md:pt-8 lg:pb-[6.3%] md:pb-[6.3%] pb-[2%]">
+            <Button_Component showRegister={true} showRulebook={true} />
           </div>
+        </div>
       </div>
-      </div>
-
     </div>
   );
 }

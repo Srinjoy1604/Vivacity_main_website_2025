@@ -73,7 +73,7 @@ function AppContent() {
 
   return (
     <div>
-      <Navbar />
+      {location.pathname === '/' ? <div className='hidden'></div>:<Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsPage />} />
