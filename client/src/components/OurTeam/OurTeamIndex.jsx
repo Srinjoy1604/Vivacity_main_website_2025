@@ -1,12 +1,12 @@
 import React from "react";
-import FestHeads from "../../assets/images/FestHeads.png";
-import Council from "../../assets/images/council.png";
-import Creative from "../../assets/images/creative.png";
-import Dev from "../../assets/images/Dev.png";
-import Sponsorship from "../../assets/images/Sponsorship.png";
-import Events from "../../assets/images/Events.png";
-import Logistics from "../../assets/images/Logistics.png";
-import Curation from "../../assets/images/Curation.png";
+import FestHeads from "../../assets/images/FestHeads.webp";
+import Council from "../../assets/images/council.webp";
+import Creative from "../../assets/images/creative.webp";
+import Dev from "../../assets/images/Dev.webp";
+import Sponsorship from "../../assets/images/Sponsorship.webp";
+import Events from "../../assets/images/Events.webp";
+import Logistics from "../../assets/images/Logistics.webp";
+import Curation from "../../assets/images/Curation.webp";
 
 function OurTeamIndex({ scrollToSection }) {
     return (

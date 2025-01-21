@@ -1,35 +1,35 @@
 import React from "react";
-import bg from "../../assets/images/photography_event_0.png";
-import image1 from "../../assets/images/photography_event_1.png";
-import image2 from "../../assets/images/photography_event_2.png";
-import image3 from "../../assets/images/photography_event_3.png";
-import image4 from "../../assets/images/photography_event_4.png";
-import image5 from "../../assets/images/photography_event_5.png";
-import image6 from "../../assets/images/photography_event_6.png";
-import title from "../../assets/images/photography_title.png";
+import bg from "../../assets/images/photography_event_0.webp";
+import image1 from "../../assets/images/photography_event_1.webp";
+import image2 from "../../assets/images/photography_event_2.webp";
+import image3 from "../../assets/images/photography_event_3.webp";
+import image4 from "../../assets/images/photography_event_4.webp";
+import image5 from "../../assets/images/photography_event_5.webp";
+import image6 from "../../assets/images/photography_event_6.webp";
+import title from "../../assets/images/photography_title.webp";
 
-import text1 from "../../assets/images/textbox1.png";
-import imageHunt from "../../assets/images/imageHunt.png";
-import kalakriti from "../../assets/images/kalakriti.png";
-import flimmakingcompetiton from "../../assets/images/flimmakingcompetiton.png";
-import pixels from "../../assets/images/pixels.png";
-import photoBooth from "../../assets/images/photoBooth.png";
-import Perspective from "../../assets/images/Perspective.png";
-import bigtextbox from "../../assets/images/bigtextbox.png";
+import text1 from "../../assets/images/textbox1.webp";
+import imageHunt from "../../assets/images/imageHunt.webp";
+import kalakriti from "../../assets/images/kalakriti.webp";
+import flimmakingcompetiton from "../../assets/images/flimmakingcompetiton.webp";
+import pixels from "../../assets/images/pixels.webp";
+import photoBooth from "../../assets/images/photoBooth.webp";
+import Perspective from "../../assets/images/Perspective.webp";
+import bigtextbox from "../../assets/images/bigtextbox.webp";
 
-import image7 from "../../assets/images/photographyevent_mobile_1.png";
-import image8 from "../../assets/images/photographyevent_mobile_2.png";
-import image9 from "../../assets/images/photographyevent_mobile_3.png";
-import image10 from "../../assets/images/photographyevent_mobile_4.png";
-import image11 from "../../assets/images/photographyevent_mobile_5.png";
-import image12 from "../../assets/images/photographyevent_mobile_6.png";
+import image7 from "../../assets/images/photographyevent_mobile_1.webp";
+import image8 from "../../assets/images/photographyevent_mobile_2.webp";
+import image9 from "../../assets/images/photographyevent_mobile_3.webp";
+import image10 from "../../assets/images/photographyevent_mobile_4.webp";
+import image11 from "../../assets/images/photographyevent_mobile_5.webp";
+import image12 from "../../assets/images/photographyevent_mobile_6.webp";
 
-import pixel from "../../assets/images/Event Name_1.png";
-import photo from "../../assets/images/Event Name_2.png";
-import flimmaking from "../../assets/images/Event Name_3.png";
-import hunt from "../../assets/images/Event Name_4.png";
-import kala from "../../assets/images/Event Name_5.png";
-import perspective from "../../assets/images/Event Name_6.png";
+import pixel from "../../assets/images/Event Name_1.webp";
+import photo from "../../assets/images/Event Name_2.webp";
+import flimmaking from "../../assets/images/Event Name_3.webp";
+import hunt from "../../assets/images/Event Name_4.webp";
+import kala from "../../assets/images/Event Name_5.webp";
+import perspective from "../../assets/images/Event Name_6.webp";
 import Button_component from "./Button_component";
 
 function PhotographyEvents() {

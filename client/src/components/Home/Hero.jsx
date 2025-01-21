@@ -1,13 +1,6 @@
 import React from "react";
-import Image1 from "../../assets/images/left1.png";
-import Image2 from "../../assets/images/top1.png";
-import Image3 from "../../assets/images/top2.png";
-import Image4 from "../../assets/images/right1.png";
-import Image5 from "../../assets/images/bottom1.png";
-import Image6 from "../../assets/images/bottom2.png";
-import Image7 from "../../assets/images/viva_logo_hero.png";
-import MainImage from "../../assets/images/HeroSectionMainImage.png";
-import VivaMobile from "../../assets/images/Vivalogo_mobile.png";
+import Image7 from "../../assets/images/viva_logo_hero.webp";
+import VivaMobile from "../../assets/images/Vivalogo_mobile.webp";
 import styles from "./Herox.module.css";
 import { useEffect, useState } from "react";
 
@@ -34,8 +27,9 @@ function Hero() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 overflow-hidden relative z-[-1]"
-    style={{ opacity: scroll, transition: "opacity ease-in-out" }}
+    <div
+      className="fixed top-0 left-0 overflow-hidden relative z-[-1]"
+      style={{ opacity: scroll, transition: "opacity ease-in-out" }}
     >
       <div className="h-[100vh] w-[100vw] text-center flex items-center align-center justify-center bg-yellow-200 max-[830px]:hidden">
         <div
@@ -64,7 +58,8 @@ function Hero() {
           <div
             className={`absolute bottom-[28.5%]  w-[100%] h-[12.5%] ${styles.RegisterStrip} flex items-center align-center justify-center font-rfabb text-[1.25rem]`}
           >
-            <button onClick={() => window.location.href = "/NormalRegistration"}
+            <button
+              onClick={() => (window.location.href = "/NormalRegistration")}
               className={`${styles.StripButton} pt-[2.5%] pb-[2.5%] pr-[1.5%] pl-[1.5%] text-center w-[60%] h-auto max-w-[200px]`}
             >
               {"Register Now ->"}
@@ -77,5 +72,3 @@ function Hero() {
 }
 
 export default Hero;
-
-

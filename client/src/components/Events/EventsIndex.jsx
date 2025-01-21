@@ -1,16 +1,16 @@
-// import Title from '../../assets/images/EventsIndex.png'
-// import Background from '../../assets/images/EventsIndexBg.png'
+// import Title from '../../assets/images/EventsIndex.webp'
+// import Background from '../../assets/images/EventsIndexBg.webp'
 // import {useNavigate} from 'react-router-dom'
-// import DanceDiv from '../../assets/images/Dance.png';
-// import MusicDiv from '../../assets/images/Music.png';
-// import DramaDiv from '../../assets/images/Drama.png';
-// import SpeakingArtsDiv from '../../assets/images/Speaking Arts.png';
-// import PhotographyDiv from '../../assets/images/Photography.png';
-// import ArtDiv from '../../assets/images/Art.png';
-// import QuizzingaDiv from '../../assets/images/Quizzing.png';
-// import ManyMore from '../../assets/images/Many More.png';
-// import FashionDiv from '../../assets/images/Fashion.png';
-// import SocialDiv from '../../assets/images/Social.png';
+// import DanceDiv from '../../assets/images/Dance.webp';
+// import MusicDiv from '../../assets/images/Music.webp';
+// import DramaDiv from '../../assets/images/Drama.webp';
+// import SpeakingArtsDiv from '../../assets/images/Speaking Arts.webp';
+// import PhotographyDiv from '../../assets/images/Photography.webp';
+// import ArtDiv from '../../assets/images/Art.webp';
+// import QuizzingaDiv from '../../assets/images/Quizzing.webp';
+// import ManyMore from '../../assets/images/Many More.webp';
+// import FashionDiv from '../../assets/images/Fashion.webp';
+// import SocialDiv from '../../assets/images/Social.webp';
 
 // const IndexEvents = () => {
 //     const navigate = useNavigate(); 
@@ -74,19 +74,19 @@
 
 // export default IndexEvents;
 
-import Title from '../../assets/images/EventsIndex.png';
-import Background from '../../assets/images/EventsIndexBg.png';
+import Title from '../../assets/images/EventsIndex.webp';
+import Background from '../../assets/images/EventsIndexBg.webp';
 import { useRef } from 'react';
-import DanceDiv from '../../assets/images/Dance.png';
-import MusicDiv from '../../assets/images/Music.png';
-import DramaDiv from '../../assets/images/Drama.png';
-import SpeakingArtsDiv from '../../assets/images/Speaking Arts.png';
-import PhotographyDiv from '../../assets/images/Photography.png';
-import ArtDiv from '../../assets/images/Art.png';
-import QuizzingaDiv from '../../assets/images/Quizzing.png';
-import ManyMore from '../../assets/images/Many More.png';
-import FashionDiv from '../../assets/images/Fashion.png';
-import SocialDiv from '../../assets/images/Social.png';
+import DanceDiv from '../../assets/images/Dance.webp';
+import MusicDiv from '../../assets/images/Music.webp';
+import DramaDiv from '../../assets/images/Drama.webp';
+import SpeakingArtsDiv from '../../assets/images/Speaking Arts.webp';
+import PhotographyDiv from '../../assets/images/Photography.webp';
+import ArtDiv from '../../assets/images/Art.webp';
+import QuizzingaDiv from '../../assets/images/Quizzing.webp';
+import ManyMore from '../../assets/images/Many More.webp';
+import FashionDiv from '../../assets/images/Fashion.webp';
+import SocialDiv from '../../assets/images/Social.webp';
 
 const IndexEvents = ({ scrollToSection }) => {
   return (

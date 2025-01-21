@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Legacybackground from "../../assets/images/LegacyBg.png";
+import Legacybackground from "../../assets/images/LegacyBg.webp";
 import VideoGrid from "./Videogrid";
-import Title from "../../assets/images/LegacyTitle.png";
+import Title from "../../assets/images/LegacyTitle.webp";
 
 const Legacy = () => {
   return (

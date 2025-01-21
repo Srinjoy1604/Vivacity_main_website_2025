@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import thumbnail1 from "../../assets/images/Top_left.png";
-import thumbnail2 from "../../assets/images/Top_right.png";
-import thumbnail3 from "../../assets/images/Bottom_left.png";
-import thumbnail4 from "../../assets/images/Bottom_right.png";
-import button1 from "../../assets/images/Btn_front1.png";
-import button2 from "../../assets/images/Btn_front2.png";
+import thumbnail1 from "../../assets/images/Top_left.webp";
+import thumbnail2 from "../../assets/images/Top_right.webp";
+import thumbnail3 from "../../assets/images/Bottom_left.webp";
+import thumbnail4 from "../../assets/images/Bottom_right.webp";
+import button1 from "../../assets/images/Btn_front1.webp";
+import button2 from "../../assets/images/Btn_front2.webp";
 import vhs from "../../assets/videos/vhs.mp4";
 
 const VideoGrid = () => {

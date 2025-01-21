@@ -1,5 +1,5 @@
 import React from "react";
-import page_footer from "../../assets/images/strip.png";
+import page_footer from "../../assets/images/strip.webp";
 
 function Strip() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import BackGround from "../../../assets/images/Group 60.png";
-import Amit from "../../../assets/images/Amit.png";
+import BackGround from "../../../assets/images/Group 60.webp";
+import Amit from "../../../assets/images/Amit.webp";
 
 const ArtistCard = ({ artist }) => {
   return (

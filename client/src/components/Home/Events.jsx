@@ -3,12 +3,12 @@ import {
   FaRegArrowAltCircleRight,
   FaRegArrowAltCircleLeft,
 } from "react-icons/fa";
-import Event_logo from "../../assets/images/Event_logo.png";
-import Event_button from "../../assets/images/Pinkbtn_front.png";
-import Halftone from "../../assets/images/Halftone.png";
-import BackGround from "../../assets/images/YellowBg.png";
-import DanceEvents from "../../assets/images/Razzmatazz.png";
-import Pinkbtn_black from "../../assets/images/Pinkbtn_black.png";
+import Event_logo from "../../assets/images/Event_logo.webp";
+import Event_button from "../../assets/images/Pinkbtn_front.webp";
+import Halftone from "../../assets/images/Halftone.webp";
+import BackGround from "../../assets/images/YellowBg.webp";
+import DanceEvents from "../../assets/images/Razzmatazz.webp";
+import Pinkbtn_black from "../../assets/images/Pinkbtn_black.webp";
 
 const Events = () => {
   const eventData = [

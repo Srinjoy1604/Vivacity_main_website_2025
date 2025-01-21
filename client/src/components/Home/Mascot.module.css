@@ -1,25 +1,25 @@
 .MascotBackground
 {
-    background-image: url("../../assets/images/mascotBackground.png");
+    background-image: url("../../assets/images/mascotBackground.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
 }
 .NetraDiv
 {
-    background-image: url("../../assets/images/NetraBg.png");
+    background-image: url("../../assets/images/NetraBg.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .NetraButton
 {
-    background-image: url("../../assets/images/Group96.png");
+    background-image: url("../../assets/images/Group96.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .NetraOriginDiv
 {
-    background-image: url("../../assets/images/chroniclesBg.png");
+    background-image: url("../../assets/images/chroniclesBg.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
