@@ -11,7 +11,7 @@ const Button_Component = ({ showRulebook = true, showRegister = true }) => {
   };
 
   return (
-    <div className="flex justify-center items-center gap-4 lg:gap-8 mt-4 lg:mt-8 max-sm:flex-col">
+    <div className="flex justify-center items-center  md:gap-4 lg:gap-8 mt-4 lg:mt-8 max-sm:flex-col">
       {showRulebook && (
         <button
           onClick={handleRulebookClick}
