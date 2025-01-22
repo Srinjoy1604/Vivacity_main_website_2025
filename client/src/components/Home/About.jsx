@@ -3,7 +3,8 @@ import Infinite from "../subPages/Infinite";
 import Image1 from "../../assets/images/AboutBkg.webp";
 import Image2 from "../../assets/images/Halftone.webp";
 import Image3 from "../../assets/images/Name_Tag_unit.png";
-import Image4 from "../../assets/images/CTA.webp";
+import Image4 from "../../assets/images/BlackRegisterNowBtn.png";
+import Image44 from "../../assets/images/RegisterNowBtn.png"
 import Image5 from "../../assets/images/blue_arrow.webp";
 import Image6 from "../../assets/images/red_arrow.webp";
 import Oval from "../../assets/images/Oval.webp";
@@ -55,30 +56,35 @@ function About() {
         </div>
         <div className="min-[830px]:hidden absolute bottom-0 w-full">
           <img src={Oval} className="w-[100vw] h-[1000px]" />
-          <div className="absolute top-[1%] w-full">
+          <div className="absolute top-[1%] 1980:top-[2%] w-full">
             <div className="flex justify-center">
               <Lottie
                 animationData={MouseAnimation}
                 loop
                 autoplay
-                className="h-16"
+                className="h-16 1980:h-32"
               />
             </div>
           </div>
         </div>
         <div className="min-[830px]:hidden relative flex mt-[25%]">
           <div className="absolute z-10 top-[97%] w-full">
+          <img
+                src={Image4}
+                alt=""
+                className={`max-w-[50%] mx-auto absolute top-[8%] left-[24%] transform transition-transform duration-300 cursor-pointer`}
+          />
             <NavLink
               to="/"
               className={`block ${
-                clk ? "scale-95" : ""
+                clk ? "scale-95 -translate-x-1 translate-y-1" : ""
               } transition-all duration-300`}
               onClick={newHandleClick}
             >
               <img
-                src={Image4}
+                src={Image44}
                 alt=""
-                className={`max-w-[50%] mx-auto transform transition-transform duration-300 cursor-pointer`}
+                className={`max-w-[50%] mx-auto transform transition-transform duration-300 cursor-pointer relative z-10`}
               />
             </NavLink>
           </div>
@@ -179,17 +185,22 @@ function About() {
           </div>
 
           <div className="absolute z-40 bottom-[-8%] right-[-5%] rotate-[-16.58deg]">
+          <img
+                src={Image4}
+                alt="Name Tag Unit"
+                className="w-[16vw] absolute top-[8%] right-[3%] transform transition-transform duration-300 cursor-pointer"
+          />
             <NavLink
               to="/NormalRegistration"
               className={`block ${
-                clk ? "scale-95" : ""
+                clk ? "scale-95 -translate-x-1 translate-y-1" : ""
               } transition-all duration-300`}
               onClick={newHandleClick}
             >
               <img
-                src={Image4}
+                src={Image44}
                 alt="Name Tag Unit"
-                className="w-[16vw] transform transition-transform duration-300 cursor-pointer"
+                className="w-[16vw] transform transition-transform duration-300 cursor-pointer relative z-10"
               />
             </NavLink>
           </div>

@@ -86,3 +86,12 @@
     object-fit: contain;
   }
 }
+
+/** Text Gradient Example */ 
+.text-gradient {
+  color: #4285F4; 
+  background-image: linear-gradient(90deg, #4285F4 0%, #34A853 25%, #FBBC05 50%, #EA4335 75%); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+ }
