@@ -5,28 +5,33 @@ import NetraText from "../../assets/images/NETRAText.webp";
 import NetraMobile from "../../assets/images/NetraMobile.webp";
 import netra_black_textbox from "../../assets/images/netra_black_textbox.webp";
 import NetraYellowBox from "../../assets/images/NetraYellowBox.webp";
+import { useNavigate } from "react-router-dom";
+
 
 function Mascot() {
   const [isClicked, setIsClicked] = useState(false);
-  const handleClick = () => {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    e.preventDefault();
     setIsClicked(true);
-    setTimeout(() => {
+    setTimeout(() =>{
       setIsClicked(false);
-    }, 300);
+      navigate("/Netra");
+    } , 600);
   };
   return (
     <div
-      className={`w-[100%] h-[100%] flex items-center align-middle justify-center ${styles.MascotBackground} max-[800px]:h-fit pt-[5%] pl-[2%] pr-[2%] pb-[6%]`}
+      className={`w-[100%] h-[100%] flex items-center align-middle justify-center ${styles.MascotBackground} max-[800px]:h-fit pt-[2%] pl-[2%] pr-[2%] pb-[6%]`}
     >
       <div className="w-[100%] grid grid-cols-2 place-items-center max-[800px]:grid-cols-1">
-        <div className="w-[100%] lg:h-[100%]">
+        <div className="w-[100%] py-[2%] ">
           <div
-            className={`${styles.NetraDiv} p-[6%] mb-[1%] pb-[10%] w-[100%] sm:h-[49.5%]`}
+            className={`${styles.NetraDiv} p-[6%] mb-[1%] pb-[10%] w-[100%] `}
           >
             <h1 className="text-center m-[1%] mt-0 text-[#FFFFFF] font-rfabb text-[400] text-[2rem] max-[800px]:text-[1.5rem]">
               MEET OUR MASCOT
             </h1>
-            <div className="w-[100%] grid place-items-center">
+            <div className="w-[100% grid place-items-center">
               <img
                 src={NetraText}
                 className="w-[70%] h-auto max-[800px]:w-[50%]"
@@ -36,9 +41,9 @@ function Mascot() {
           <div
             className={`${styles.NetraMobile} grid place-items-center w-[100%] h-[100%] pl-[1.2%] pr-[1.2%] pb-[2.5%] hidden max-[800px]:block`}
           >
-            <img src={NetraMobile} className={`w-[100%] h-auto`}></img>
+            <img src={NetraMobile} className={`w-[100%] h-[100%]`}></img>
           </div>
-          <div className={`${styles.NetraOriginDiv} p-[5%] w-[100%] sm:h-[49.5%]`}>
+          <div className={`${styles.NetraOriginDiv} p-[5%] w-[100%]`}>
             <h1 className="text-white text-[2rem] font-rfabb m-[2%] mb-[6%] max-[800px]:text-[1.5rem]">
               want to know the origin story of netra?
             </h1>
@@ -84,7 +89,7 @@ function Mascot() {
         </div>
         <div className="w-[100%] h-[100%] max-[800px]:hidden">
           <div
-            className={`${styles.Mascot} grid place-items-center h-full w-[100%] `}
+            className={`${styles.Mascot} grid place-items-center h-full w-[100%] py-[2%]`}
           >
             <img src={NetraLarge} className="w-[100%] h-[100%]"></img>
           </div>
@@ -95,4 +100,3 @@ function Mascot() {
 }
 
 export default Mascot;
-//className={`${styles.NetraButton} p-[2.5%] pl-[5%] pr-[5%] w-fit text-black text-[400]  text-[2rem] font-rfabb text-center max-[800px]:text-[1.25rem] `}

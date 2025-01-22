@@ -121,7 +121,6 @@ function Artist() {
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
           spaceBetween={40}
           slidesPerView={slidesPerView}
-          onSwiper={(swiper) => console.log(swiper)}
           className="w-[90%] relative py-[3%] [&_.swiper-slide]:flex [&_.swiper-slide]:items-center [&_.swiper-slide]:justify-center"
           ref={swiperRef}
           initialSlide={0}

@@ -36,11 +36,14 @@ import TeamA from "../../assets/videos/TeamA.gif";
 import TeamB from "../../assets/videos/TeamB.gif";
 import TeamC from "../../assets/videos/TeamC.gif";
 import TeamD from "../../assets/videos/TeamD.gif";
+import { useNavigate } from "react-router-dom";
+
 function Team() {
   const [showPins, setShowPins] = useState(false);
   const [showThread, setShowThread] = useState(false);
   const [showImg, setShowImg] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
+    const navigate = useNavigate();
   const elementRef = useRef(null);
   const elementRef1 = useRef(null);
 
@@ -52,7 +55,6 @@ function Team() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Start timers when the element enters the viewport
           pinTimer = setTimeout(() => setShowPins(true), 800);
           threadTimer = setTimeout(() => setShowThread(true), 1100);
           imageTimer = setTimeout(() => setShowImg(true), 500);
@@ -78,11 +80,14 @@ function Team() {
       }
     };
   }, []);
-  const handleClick = () => {
+  
+  const handleClick = (e) => {
+    e.preventDefault();
     setIsClicked(true);
-    setTimeout(() => {
+    setTimeout(() =>{
       setIsClicked(false);
-    }, 300);
+      navigate("/OurTeam");
+    } , 600);
   };
 
   return (
@@ -229,9 +234,6 @@ function Team() {
               alignItems: "center",
               justifyContent: "center",
               zIndex: "1",
-              transform: showImg ? "translateY(0)" : "translateY(-100%)",
-              opacity: showImg ? 1 : 0,
-              transition: "all 0.2s ease-out",
             }}
           >
             <img
@@ -243,7 +245,9 @@ function Team() {
                 position: "absolute",
                 top: "10%",
                 left: "15%",
-               
+                transform: showImg ? "translateY(0)" : "translateY(-100%)",
+                opacity: showImg ? 1 : 0,
+                transition: "all 0.2s ease-out",
               }}
             />
 
@@ -274,9 +278,6 @@ function Team() {
               alignItems: "center",
               justifyContent: "center",
               zIndex: "1",
-              transform: showImg ? "translateY(0)" : "translateY(-100%)",
-                opacity: showImg ? 1 : 0,
-                transition: "all 0.2s ease-out",
             }}
           >
             <img
@@ -288,7 +289,9 @@ function Team() {
                 position: "absolute",
                 top: "10%",
                 left: "15%",
-                
+                transform: showImg ? "translateY(0)" : "translateY(-100%)",
+                opacity: showImg ? 1 : 0,
+                transition: "all 0.2s ease-out",
               }}
             />
             <span
@@ -320,9 +323,6 @@ function Team() {
               alignItems: "center",
               justifyContent: "center",
               zIndex: "1",
-              transform: showImg ? "translateY(0)" : "translateY(-100%)",
-                opacity: showImg ? 1 : 0,
-                transition: "all 0.2s ease-out",
             }}
           >
             <img
@@ -335,7 +335,9 @@ function Team() {
                 position: "absolute",
                 top: "10%",
                 left: "15%",
-                
+                transform: showImg ? "translateY(0)" : "translateY(-100%)",
+                opacity: showImg ? 1 : 0,
+                transition: "all 0.2s ease-out",
               }}
             />
             <span
@@ -367,9 +369,6 @@ function Team() {
               alignItems: "center",
               justifyContent: "center",
               zIndex: "1",
-              transform: showImg ? "translateY(0)" : "translateY(-100%)",
-              opacity: showImg ? 1 : 0,
-              transition: "all 0.2s ease-out",
             }}
           >
             <img
@@ -382,7 +381,9 @@ function Team() {
                 objectFit: "contain",
                 top: "10%",
                 left: "15%",
-               
+                transform: showImg ? "translateY(0)" : "translateY(-100%)",
+                opacity: showImg ? 1 : 0,
+                transition: "all 0.2s ease-out",
               }}
             />
             <span

@@ -6,7 +6,7 @@ import TwitterIcon from "../assets/images/twitterLogo.webp";
 import FooterBackground from "../assets/images/Footer_mobile.webp";
 import Backbg from "../assets/images/Team.webp";
 import Backbg1 from "../assets/images/ExcitingBg.webp";
-import Backbg2 from "../assets/images/DarkVioletCrissCross.webp";
+import Backbg2 from "../assets/images/VioletBg.webp";
 
 function Footer1() {
   const aspectRatio = 512 / 512;
