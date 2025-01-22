@@ -55,6 +55,32 @@
   object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .event-parent {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+    height: 100vh;
+  }
+
+  .event-parent::-webkit-scrollbar {
+    display: none;
+  }
+
+  .event-parent > div {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .navbar-position {
+    position: absolute;
+  }
+}
+
 @media (max-width: 640px) {
   .loader {
     object-fit: contain;

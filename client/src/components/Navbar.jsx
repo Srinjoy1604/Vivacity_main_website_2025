@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import NavImage from "../assets/images/nav_logo.webp";
 import SmallNavImg from "../assets/images/small_viva_img.webp";
+import "../App.css"
 
 const navItems = [
   { Name: "HOME", Link: "/" },
@@ -41,7 +42,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`absolute w-full top-0 z-50 transition-all duration-300 ease-in-out`}
+        className={`navbar-position w-full top-0 z-50 transition-all duration-300 ease-in-out`}
         style={{
           backgroundColor: `rgba(4, 9, 29, 1)`,
           backdropFilter: scrolledOpacity < 1 ? "blur(10px)" : "none",
