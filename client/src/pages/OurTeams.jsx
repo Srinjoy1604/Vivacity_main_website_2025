@@ -233,3 +233,27 @@ function OurTeams() {
 }
 
 export default OurTeams;
+
+
+// const x= {
+//     "TitleName": "Coverage Team",
+//     "CardTeam": [
+//         {
+//             "Name": "Krishna Manchanda",
+//             "Position": "Coverage head",
+//             "Image": "/Skeleton.webp",
+//             "EmailLink": "krishhh.jpg@gmail.com",
+//             "InstagramLink": "https://www.instagram.com/krishhh.jpg?igsh=MXRpaXNrajdrZXgy&utm_source=qr"
+//         },
+//         {
+//             "Name": "Imagination Club",
+//             "Position": "Coverage Partner",
+//             "Image": "/Skeleton.webp",
+//             "EmailLink": "imagination@lnmiit.ac.in",
+//             "InstagramLink": "https://www.instagram.com/imagination.lnmiit?igshid=YmMyMTA2M2Y%3D"
+//         }
+//     ],
+//     "Members": [
+//         "Imagination Team"
+//     ]
+// },
