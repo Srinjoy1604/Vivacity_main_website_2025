@@ -3,7 +3,6 @@ import Infinite from "../subPages/Infinite";
 import Image1 from "../../assets/images/AboutBkg.webp";
 import Image2 from "../../assets/images/Halftone.webp";
 import Image3 from "../../assets/images/Name_Tag_unit.png";
-import Image32 from "../../assets/images/Name_Tag_unit2.png";
 import Image4 from "../../assets/images/CTA.webp";
 import Image5 from "../../assets/images/blue_arrow.webp";
 import Image6 from "../../assets/images/red_arrow.webp";
