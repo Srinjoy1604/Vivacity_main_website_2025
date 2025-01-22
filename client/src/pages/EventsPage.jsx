@@ -1,17 +1,20 @@
-import React, { useRef } from 'react';
-import DancePage from '../components/Events/DancePage';
-import Speaking from '../components/Events/Speaking';
-import DramaEvents from '../components/Events/DramaEvents';
-import MusicEvents from '../components/Events/MusicEvents';
-import PhotographyEvents from '../components/Events/PhotographyEvents';
-import ArtEvents from '../components/Events/ArtEvents';
-import QuizzingaEvents from '../components/Events/QuizzingaEvents';
-import FashionEvents from '../components/Events/FashionEvents';
-import Sahyog from '../components/Events/SocialEvents';
-import Exciting from '../components/Events/ExcitingEvents';
-import IndexEvents from '../components/Events/EventsIndex';
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+import DancePage from "../components/Events/DancePage";
+import Speaking from "../components/Events/Speaking";
+import DramaEvents from "../components/Events/DramaEvents";
+import MusicEvents from "../components/Events/MusicEvents";
+import PhotographyEvents from "../components/Events/PhotographyEvents";
+import ArtEvents from "../components/Events/ArtEvents";
+import QuizzingaEvents from "../components/Events/QuizzingaEvents";
+import FashionEvents from "../components/Events/FashionEvents";
+import Sahyog from "../components/Events/SocialEvents";
+import Exciting from "../components/Events/ExcitingEvents";
+import IndexEvents from "../components/Events/EventsIndex";
 
 function EventsPage() {
+  const location = useLocation();
+
   const danceRef = useRef(null);
   const musicRef = useRef(null);
   const dramaRef = useRef(null);
@@ -37,22 +40,48 @@ function EventsPage() {
       manymore: manyMoreRef,
     };
 
-    refs[section]?.current?.scrollIntoView({ behavior: 'smooth' });
+    refs[section]?.current?.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    if (location.hash) {
+      const section = location.hash.substring(1);
+      scrollToSection(section);
+    }
+  }, [location.hash]);
 
   return (
     <div>
-      <IndexEvents scrollToSection={scrollToSection} />
-      <div ref={danceRef}><DancePage /></div>
-      <div ref={speakingArtsRef}><Speaking /></div>
-      <div ref={dramaRef}><DramaEvents /></div>
-      <div ref={musicRef}><MusicEvents /></div>
-      <div ref={photographyRef}><PhotographyEvents /></div>
-      <div ref={artRef}><ArtEvents /></div>
-      <div ref={quizzingaRef}><QuizzingaEvents /></div>
-      <div ref={fashionRef}><FashionEvents /></div>
-      <div ref={socialRef}><Sahyog /></div>
-      <div ref={manyMoreRef}><Exciting /></div>
+      <div ref={danceRef}>
+        <DancePage />
+      </div>
+      <div ref={musicRef}>
+        <MusicEvents />
+      </div>
+      <div ref={dramaRef}>
+        <DramaEvents />
+      </div>
+      <div ref={speakingArtsRef}>
+        <Speaking />
+      </div>
+      <div ref={photographyRef}>
+        <PhotographyEvents />
+      </div>
+      <div ref={artRef}>
+        <ArtEvents />
+      </div>
+      <div ref={quizzingaRef}>
+        <QuizzingaEvents />
+      </div>
+      <div ref={fashionRef}>
+        <FashionEvents />
+      </div>
+      <div ref={socialRef}>
+        <Sahyog />
+      </div>
+      <div ref={manyMoreRef}>
+        <Exciting />
+      </div>
     </div>
   );
 }

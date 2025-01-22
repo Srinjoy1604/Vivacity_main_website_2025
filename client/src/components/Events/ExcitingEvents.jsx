@@ -11,7 +11,7 @@ import stageSpectrum_text from "../../assets/images/BottomLeftt.webp";
 import jammingNight_text from "../../assets/images/BottomRightt.webp";
 import text1 from "../../assets/images/textbox1.webp";
 import bigtextbox from "../../assets/images/bigtextbox.webp";
-
+import EventsB from '../../assets/pdf/EventBrochure.pdf'
 import PromNight_mobile from "../../assets/images/Prom Night-2.webp";
 import SilentDisco_mobile from "../../assets/images/Silent Disco-2.webp";
 import JammingNight_mobile from "../../assets/images/Image Box.webp";
@@ -20,11 +20,11 @@ import PromNight_text_mobile from "../../assets/images/Event Name-4.webp";
 import SilentDisco_text_mobile from "../../assets/images/Text-2.webp";
 import StageSpectrum_text_mobile from "../../assets/images/Text-3.webp";
 import JammingNight_text_mobile from "../../assets/images/Text-4.webp";
-
+import Button_Component from "./Button_component";
 function Exciting() {
   return (
     <div
-      className="min-h-[70vh] w-full bg-center bg-cover p-4"
+      className="w-full bg-center px-4 pt-4 md:pb-16  bg-cover "
       style={{
         backgroundImage: `url(${Background})`,
       }}
@@ -34,12 +34,12 @@ function Exciting() {
         <img
           src={title}
           alt="Exciting Pursuits"
-          className="w-[63%] md:min-w-[600px]  sm:min-w-[500px]  object-contain"
+          className="w-[97%]  md:w-[63%] md:min-w-[600px]  sm:min-w-[500px]  object-contain"
         />
       </div>
 
       {/* Desktop Layout */}
-      <div className="w-full mx-auto hidden md:block">
+      <div className="w-full mx-auto  hidden md:block">
         {/* Top Row */}
         <div className="flex flex-wrap gap-5 mb-4 justify-center">
           {/* Prom Night */}
@@ -164,8 +164,9 @@ function Exciting() {
         </div>
       </div>
 
+
       {/* Mobile Layout */}
-      <div className="md:hidden w-full">
+      <div className="md:hidden pb-7 w-full">
         {/* Prom Night Mobile */}
         <div className="w-full mb-4">
           <div className="relative" style={{ aspectRatio: "358/204" }}>
@@ -254,7 +255,7 @@ function Exciting() {
         </div>
 
         {/* Jamming Night Mobile */}
-        <div className="w-full mb-4">
+        <div className="w-full mb-0">
           <div className="relative" style={{ aspectRatio: "358/204" }}>
             <img
               src={JammingNight_mobile}
@@ -282,6 +283,9 @@ function Exciting() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-[100%]  pb-6">
+            <Button_Component section={EventsB} showRegister={true} showRulebook={true} />
       </div>
     </div>
   );
