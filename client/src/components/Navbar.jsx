@@ -70,7 +70,7 @@ const Navbar = () => {
                   className={({ isActive }) => `relative group px-2 py-2 md:px-3 text-base md:text-lg font-medium transition-all duration-300 ${
                     isActive
                       ? "text-orange-400"
-                      : "text-white hover:text-orange-300"
+                      : "text-white hover:text-orange-400"
                   }`}
                 >
                   {item.Name}
@@ -87,7 +87,7 @@ const Navbar = () => {
 
             <div className="lg:hidden">
               <button
-                className="inline-flex border-2 border-blue-500 items-center justify-center p-1 rounded-xl text-white hover:text-orange-300 transition-colors duration-300 focus:outline-none"
+                className="inline-flex border-2 border-blue-500 items-center justify-center p-1 rounded-xl text-white hover:text-orange-400 transition-colors duration-300 focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-expanded={isOpen}
               >
@@ -111,13 +111,13 @@ const Navbar = () => {
           <div className="px-4 pt-2 pb-3 space-y-1 sm:px-6n">
             {navItems.map((item) => (
               <NavLink
-                key={item.Name}
+                key={item.Name} 
                 to={`${item.Link}`}
                 onClick={handleLinkClick}
                 className={({ isActive }) => `block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 ease-in-out ${
                   isActive
                     ? "bg-gray-900 text-orange-400"
-                    : "text-white hover:bg-gray-700 hover:text-orange-300"
+                    : "text-white hover:bg-gray-700 hover:text-orange-400"
                 }`}
               >
                 {item.Name}

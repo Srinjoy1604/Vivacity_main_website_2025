@@ -85,9 +85,9 @@ function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne,
                         </div>
                     </div>
                     {Members && <div className="w-[100%] flex items-center text-center flex-wrap justify-center p-[2%]">
-                        <h3 className="font-vetosans font-[600] text-[1.375rem] w-[64%]">Team Members:
+                        <h3 className="font-vetosans font-[600] text-[1.375rem] sm:w-[64%] leading-none">Team Members:
                             {Members.map((Member, index) => (
-                                <span>{` ${(index > 0 ? "," : "")} ${Member}`}</span>
+                                <span>{`${(index > 0 ? "," : "")} ${Member}`}</span>
                             ))}
                         </h3>
                     </div>}
