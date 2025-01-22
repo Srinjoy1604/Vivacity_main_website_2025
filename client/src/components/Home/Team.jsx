@@ -669,7 +669,7 @@ function Team() {
                 }}
               >
                 <img
-                  src={Aimg1}
+                  src={TeamA}
                   alt="Team A Member"
                   style={{
                     width: "70%",
@@ -717,7 +717,7 @@ function Team() {
               }}
             >
               <img
-                src={Bimg1}
+                src={TeamB}
                 alt="Team B Member"
                 style={{
                   width: "70%",
@@ -765,7 +765,7 @@ function Team() {
               }}
             >
               <img
-                src={Cimg1}
+                src={TeamC}
                 alt="Team C Member"
                 style={{
                   width: "70%",
@@ -812,7 +812,7 @@ function Team() {
               }}
             >
               <img
-                src={Dimg1}
+                src={TeamD}
                 alt="Team D Member"
                 style={{
                   width: "70%",
