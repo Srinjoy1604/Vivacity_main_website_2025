@@ -8,6 +8,7 @@ import FooterBackground from "../assets/images/FooterBackground.webp";
 import Backbg from "../assets/images/Team.webp";
 import Backbg1 from "../assets/images/ExcitingBg.webp";
 import Backbg2 from "../assets/images/DarkVioletCrissCross.webp";
+import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
   const aspectRatio = 415 / 1480;
@@ -17,7 +18,15 @@ function Footer() {
     <div
       className="relative w-full "
       style={{
-        backgroundImage: `url(${location.pathname === "/" ? Backbg :location.pathname === "/events"? Backbg1:location.pathname === "/OurTeam"? Backbg2:Backbg})`,
+        backgroundImage: `url(${
+          location.pathname === "/"
+            ? Backbg
+            : location.pathname === "/events"
+            ? Backbg1
+            : location.pathname === "/OurTeam"
+            ? Backbg2
+            : Backbg
+        })`,
         height: `calc(100vw * ${aspectRatio})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -69,7 +78,7 @@ function Footer() {
                   className="w-[2vw] h-[2vw] object-contain"
                 />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <img
                   src={TwitterIcon}
                   alt="Twitter"
@@ -86,30 +95,30 @@ function Footer() {
             </div>
 
             <div className="flex flex-wrap space-x-[1.5vw] mb-[1vw] tracking-wide">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="text-black text-[1.5vw] font-vetosans font-bold fontsize: hover:underline tracking-wide"
               >
                 Home
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/Sponsors"
                 className="text-black text-[1.5vw] font-bold  font-vetosans hover:underline tracking-wide"
               >
                 Sponsors
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/events"
                 className="text-black text-[1.5vw] font-bold font-vetosans hover:underline tracking-wide"
               >
                 Events
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/OurTeam"
                 className="text-black text-[1.5vw] font-semibold font-vetosans hover:underline tracking-wide"
               >
                 The Team
-              </a>
+              </Link>
             </div>
 
             <div className="flex flex-col items-end space-y-[0.5vw]">
