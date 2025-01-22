@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import Infinite from "../subPages/Infinite";
 import Image1 from "../../assets/images/AboutBkg.webp";
 import Image2 from "../../assets/images/Halftone.webp";
-import Image3 from "../../assets/images/Name_Tag_unit.webp";
+import Image3 from "../../assets/images/Name_Tag_unit.png";
+import Image32 from "../../assets/images/Name_Tag_unit2.png";
 import Image4 from "../../assets/images/CTA.webp";
 import Image5 from "../../assets/images/blue_arrow.webp";
 import Image6 from "../../assets/images/red_arrow.webp";
 import Oval from "../../assets/images/Oval.webp";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import MouseAnimation from "../../assets/videos/Mouse.json";
 import Spiderman from "../../assets/videos/spiderman.gif";
@@ -15,16 +16,25 @@ function About() {
   const textContent =
     "\u00A0\u00A0\u00A0\u00A0\u00A0KEEP\u00A0\u00A0SCROLLING!\u00A0\u00A0\u00A0\u00A0\u00A0";
   const [isClicked, setIsClicked] = useState(false);
+  const [clk, setclk] = useState(false);
+  const navigate = useNavigate();
 
-  const handleClick = () => {
-    setIsClicked(true);
-    setTimeout(() => setIsClicked(false), 300);
+  const handleClick = (e) => {
+    e.preventDefault();
+    setIsClicked(true); 
+    setTimeout(() =>{
+      setIsClicked(false);
+      navigate("/");
+    } , 800);
   };
 
-  const [clk, setclk] = useState(false);
-  const newHandleClick = () => {
+  const newHandleClick = (e) => {
+    e.preventDefault();
     setclk(true);
-    setTimeout(() => setclk(false), 300);
+    setTimeout(() => {
+      setclk(false);
+      navigate("/NormalRegistration")
+    }, 800)
   };
 
   return (
@@ -33,36 +43,35 @@ function About() {
         <div className="hidden min-[830px]:block absolute bottom-0 w-full h-[100%]">
           <img src={Image1} className="w-[100vw] h-[100%]" />
           <div className="absolute top-[1.5%] w-full">
-          <div className="flex justify-center">
-          <Lottie
-            animationData={MouseAnimation}
-            loop
-            autoplay
-            className="h-16"
-          />
-          </div>
+            <div className="flex justify-center">
+              <Lottie
+                animationData={MouseAnimation}
+                loop
+                autoplay
+                className="h-16"
+              />
+            </div>
           </div>
         </div>
         <div className="min-[830px]:hidden absolute bottom-0 w-full">
           <img src={Oval} className="w-[100vw] h-[1000px]" />
           <div className="absolute top-[1%] w-full">
-          <div className="flex justify-center">
-          <Lottie
-            animationData={MouseAnimation}
-            loop
-            autoplay
-            className="h-16"
-          />
-          </div>
+            <div className="flex justify-center">
+              <Lottie
+                animationData={MouseAnimation}
+                loop
+                autoplay
+                className="h-16"
+              />
+            </div>
           </div>
         </div>
         <div className="min-[830px]:hidden relative flex mt-[25%]">
           <div className="absolute z-10 top-[97%] w-full">
             <NavLink
               to="/"
-              className={`block ${
-                clk ? "scale-95" : ""
-              } transition-all duration-300`}
+              className={`block ${clk ? "scale-95" : ""
+                } transition-all duration-300`}
               onClick={newHandleClick}
             >
               <img
@@ -76,9 +85,8 @@ function About() {
           <div className="absolute z-20 top-[-8%] w-full">
             <NavLink
               to="/"
-              className={`block ${
-                isClicked ? "scale-95" : ""
-              } transition-all duration-300`}
+              className={`block ${isClicked ? "scale-95" : ""
+                } transition-all duration-300`}
               onClick={handleClick}
             >
               <img
@@ -99,7 +107,7 @@ function About() {
           <div className="p-3 sm:p-6 md:p-8 max-w-[26rem] h-[100%] bg-[#F8B931] grid place-items-center">
             <div className="flex justify-center w-full">
               <div className="relative bg-gray-300 border-black border-2 mt-5 sm:mt-2 mb-4 rounded-md w-[83%] h-[16rem]">
-                <img src={Spiderman} alt="spiderman" className="h-full w-full object-cover"/>
+                <img src={Spiderman} alt="spiderman" className="h-full w-full object-cover" />
               </div>
             </div>
 
@@ -134,9 +142,8 @@ function About() {
           <div className="absolute z-40 top-[-14%] left-[-8%] rotate-[-16.58deg]">
             <NavLink
               to="/"
-              className={`block ${
-                isClicked ? "scale-95" : ""
-              } transition-all duration-300`}
+              className={`block ${isClicked ? "scale-95" : ""
+                } transition-all duration-300`}
               onClick={handleClick}
             >
               <img
@@ -150,9 +157,8 @@ function About() {
           <div className="absolute z-40 bottom-[-8%] right-[-5%] rotate-[-16.58deg]">
             <NavLink
               to="/NormalRegistration"
-              className={`block ${
-                clk ? "scale-95" : ""
-              } transition-all duration-300`}
+              className={`block ${clk ? "scale-95" : ""
+                } transition-all duration-300`}
               onClick={newHandleClick}
             >
               <img
