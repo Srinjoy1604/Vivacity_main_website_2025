@@ -11,6 +11,7 @@ import FashionEvents from "../components/Events/FashionEvents";
 import Sahyog from "../components/Events/SocialEvents";
 import Exciting from "../components/Events/ExcitingEvents";
 import IndexEvents from "../components/Events/EventsIndex";
+import "../App.css";
 
 function EventsPage() {
   const location = useLocation();
@@ -51,7 +52,7 @@ function EventsPage() {
   }, [location.hash]);
 
   return (
-    <div>
+    <div className="event-parent">
       <IndexEvents scrollToSection={scrollToSection} />
       <div ref={danceRef}>
         <DancePage />
@@ -83,6 +84,7 @@ function EventsPage() {
       <div ref={manyMoreRef}>
         <Exciting />
       </div>
+      
     </div>
   );
 }
