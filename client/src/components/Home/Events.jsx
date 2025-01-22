@@ -76,7 +76,7 @@ const Events = () => {
     },
     {
       id: 6,
-      title: "speaking Arts",
+      title: "Speaking Arts",
       items: [
         " Spotlight",
         "Family Feud",
@@ -110,7 +110,7 @@ const Events = () => {
       id: 8,
       title: "Quizzing Events",
       items: ["Bamboozled", "Movie Auction"],
-      prizeWorth: "20 Thousand+",
+      prizeWorth: "20 K+",
       image: Quizzing,
       link: "#quizzinga",
     },
@@ -203,7 +203,7 @@ const Events = () => {
               >
                 {/* Title section */}
                 <div className="h-[23%] bg-[#003E68] flex justify-start items-center">
-                  <h2 className="text-white tracking-wide text-[6vw] font-ttr font-semibold ml-10">
+                  <h2 className="text-white tracking-wide text-[6vw] font-ttr font-semibold ml-[8%]">
                     {currentEvent.title}
                   </h2>
                 </div>
@@ -211,12 +211,12 @@ const Events = () => {
                 {/* Content section with flex layout */}
                 <div className="flex flex-col justify-between h-[77%] py-4 relative">
                   {/* List items */}
-                  <div className="w-[90%] px-[2%] ml-[2%]">
-                    <ul className="lg:space-y-[2%] md:space-y-[4%] sm:space-y-[5%] text-white font-vetosans font-medium">
+                  <div className="w-[90%] px-[2%] ml-[2%] flex-grow flex items-center">
+                    <ul className="w-full flex flex-col justify-center space-y-[2.8%]">
                       {currentEvent.items.map((item, index) => (
                         <li
                           key={index}
-                          className="flex items-center justify-start text-[1.25rem] md:text-[1.8rem] xl:text-[2.5vw] 2xl:text-[2vw] 1980:text-[2.7vw] 2600:text-[2vw] leading-none"
+                          className="flex items-center justify-start text-[1.25rem] md:text-[1.8rem] xl:text-[2.5vw] 2xl:text-[2vw] 1980:text-[2.7vw] 2600:text-[2vw] leading-none text-white font-vetosans font-medium"
                         >
                           <span className="w-2 h-2 xl:w-3 xl:h-3 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
                           <span className="line-clamp-2 sm:line-clamp-1">
@@ -231,7 +231,7 @@ const Events = () => {
                       onClick={handleKnowMore}
                       className="w-full group relative focus:outline-none cursor-pointer"
                     >
-                      <div className="absolute -left-2 -bottom-2 w-full h-full">
+                      <div className="absolute -left-1 -bottom-1 w-full h-full">
                         <img
                           src={Pinkbtn_black}
                           alt="button shadow"
@@ -359,16 +359,16 @@ const Events = () => {
                   clipPath: "polygon(0 0, 100% 0, 100% 80%, 0 100%)",
                 }}
               >
-                <h2 className="text-white tracking-wide text-[13vw]  font-semibold p-6 -mt-3 font-ttr">
+                <h2 className="text-white tracking-wide text-[9.9vw] xxxs:text-[10vw] 380:text-[10.6vw] font-semibold p-6 -mt-3 font-ttr">
                   {currentEvent.title}
                 </h2>
               </div>
 
-              <di v className="w-full h-[83%] overflow-hidden -mt-8">
+              <di v className="w-full h-[83%] overflow-hidden ">
                 <img
                   src={currentEvent.image}
                   alt={currentEvent.title}
-                  className="w-full h-full object-cover  pointer-events-none"
+                  className="w-full h-full object-cover  pointer-events-none -mt-9"
                 />
               </di>
             </div>
@@ -391,8 +391,8 @@ const Events = () => {
               </div>
             </div>
 
-            <div className="relative w-full bg-[#53B08E] p-2 -mt-1.8 ml-2">
-              <ul className="space-y-1 mb-4 max-[380px]:mb-2">
+            <div className="relative w-full bg-[#53B08E] p-2 -mt-1.8 ml-2 h-[25%] flex items-center">
+              <ul className="w-full flex flex-col justify-center space-y-1">
                 {currentEvent.items.map((item, index) => (
                   <li
                     key={index}
