@@ -1,93 +1,337 @@
 [
     {
-        "TitleName":"Fest Heads",
-        "CardTeam":[
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""}
-            
+        "TitleName": "Fest Heads",
+        "CardTeam": [
+            {
+                "Name": "Ayush Dhanesha",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Subhanshu.jpg",
+                "EmailLink": "shubhanshusinghal77@gmail.com",
+                "InstagramLink": "https://www.instagram.com/shubhanshu_singhal_?igsh=MWs0OGJ0Mm5yNTJmMA=="
+            }
         ]
-
     },
     {
-        "TitleName":"Cultural Council",
-        "CardTeam":[
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""}
-            
-        ],
-        "Members":["Priyal Maheshwari","Priyal Maheshwari","Priyal Maheshwari", "Rishabh Srivastava", "Navya Jain", "Kriti Jindal", "Prasoon Agrawal", "Aniket Aslaliya"]
+        "TitleName": "Cultural Council",
+        "CardTeam": [
+            {
+                "Name": "Prateek Lakhotia",
+                "Position": "General Secretary",
+                "Image": "/Prateek.jpg",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Manasvi Sharma",
+                "Position": "Associate G.sec.",
+                "Image": "/Manasvi.jpg",
+                "EmailLink": "manasvisharma0908@gmail.com",
+                "InstagramLink": "https://www.instagram.com/manasvii_09/"
+            },
+            {
+                "Name": "Samkit Soni",
+                "Position": "Finance convenor",
+                "Image": "/Samkit.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            }
+        ]
     },
     {
-        "TitleName":"Development Team",
-        "CardTeam":[
-            {"Name":"Harshit Daga","Position":"Head of Development","Image":"/Harshit.png","EmailLink":"","InstagramLink":""},
-            {"Name":"Srinjoy Roy","Position":"Head of Development","Image":"/Srinjoy.jpg","EmailLink":"","InstagramLink":""},
-            {"Name":"Krishna Khatri","Position":"Head of Development","Image":"/Dashotar.png","EmailLink":"","InstagramLink":""}
-            
-            
+        "TitleName": "Development Team",
+        "CardTeam": [
+            {
+                "Name": "Harshit Daga",
+                "Position": "Head of Development",
+                "Image": "/Harshit.png",
+                "EmailLink": "harshitdaga2003@gmail.com",
+                "InstagramLink": "https://www.instagram.com/harshitdaga03/"
+            },
+            {
+                "Name": "Srinjoy Roy",
+                "Position": "Head of Development",
+                "Image": "/Srinjoy.jpg",
+                "EmailLink": "srinjoy12345@gmail.com",
+                "InstagramLink": "https://www.instagram.com/srinjoy1604/"
+            },
+            {
+                "Name": "Krishna Khatri",
+                "Position": "Head of Development",
+                "Image": "/Khatri.jpg",
+                "EmailLink": "krishnakhattri24@gmail.com",
+                "InstagramLink": "https://www.instagram.com/krishnakhattri_27?igsh=MnlmN3pqaGF6cmln"
+            }
         ],
-        "Members":["Priyal Maheshwari","Priyal Maheshwari","Priyal Maheshwari", "Rishabh Srivastava", "Navya Jain", "Kriti Jindal", "Prasoon Agrawal", "Aniket Aslaliya"]
+        "Members": [
+            "Prateek Bala",
+            "Harshita Tiwari",
+            "Aishwarya Wadhwani",
+            "Ankan Patra",
+            "Manas Yadav"
+        ]
     },
     {
-        "TitleName":"Creative Team",
-        "CardTeam":[
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""}
-            
+        "TitleName": "Creative Team",
+        "CardTeam": [
+            {
+                "Name": "Divya Dashotar",
+                "Position": "Creative Head",
+                "Image": "/Dashotar.png",
+                "EmailLink": "divyauptown@gmail.com",
+                "InstagramLink": "https://www.instagram.com/divya.dashotar?igsh=MWVnejdmY2YwN2JrcA%3D%3D&utm_source=qr"
+            },
+            {
+                "Name": "Saurav Chaudhary",
+                "Position": "Creative Head",
+                "Image": "/Saurav.webp",
+                "EmailLink": "sauravchoudhary417@gmail.com",
+                "InstagramLink": "https://www.instagram.com/choudhary_d_saurav?igsh=MWZjeDNmbjRpMmdtdw=="
+            },
+            {
+                "Name": "Karan Singh",
+                "Position": "Creative Head",
+                "Image": "/karan.png",
+                "EmailLink": "mailtoksingh08@gmail.com",
+                "InstagramLink": "https://www.instagram.com/_singh_08__?igsh=NTQ4Yml0MnJmaWM1"
+            }
         ],
-        "Members":["Priyal Maheshwari","Priyal Maheshwari","Priyal Maheshwari", "Rishabh Srivastava", "Navya Jain", "Kriti Jindal", "Prasoon Agrawal", "Aniket Aslaliya"]
+        "Members": [
+            "Navya Jain",
+            "Rishabh Srivastava",
+            "Kriti Jindal",
+            "Prasoon Agrawal",
+            "Aniket Aslaliya",
+            "Krishna Gopal Rathi",
+            "Aditya Mehta",
+            "Ayush Popat",
+            "Vishishth",
+            "Thrijol",
+            "Siddharth Swarnakar"
+        ]
     },
     {
-        "TitleName":"Sponsorship Team",
-        "CardTeam":[
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""}
-            
+        "TitleName": "Sponsorship Team",
+        "CardTeam": [
+            {
+                "Name": "Vineet Dhuria",
+                "Position": "Sponosorship  head",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Divyansh Arora",
+                "Position": "Sponosorship  head",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Harsh Jindal",
+                "Position": "Sponosorship  head",
+                "Image": "/Harsh.JPG",
+                "EmailLink": "harshjindal458@gmail.com",
+                "InstagramLink": "https://www.instagram.com/jindal_ji_07?igsh=bTZqMnpqamJsNWIx"
+            },
+            {
+                "Name": "Utsav Singh",
+                "Position": "Sponosorship  head",
+                "Image": "/Utsav.JPG",
+                "EmailLink": "utsavayush7@gmail.com",
+                "InstagramLink": "https://www.instagram.com/ootsavv?igsh=MmxnOXl3MzN4Ynlp&utm_source=qr"
+            },
+            {
+                "Name": "Sanidhya Baldawa",
+                "Position": "Sponosorship  head",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Siddharth Chaudhary",
+                "Position": "Sponosorship  head",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            }
         ],
-        "Members":["Priyal Maheshwari","Priyal Maheshwari","Priyal Maheshwari", "Rishabh Srivastava", "Navya Jain", "Kriti Jindal", "Prasoon Agrawal", "Aniket Aslaliya"]
+        "Members": [
+            "Vikrant Singh Rathore",
+            "Vanshika Garg",
+            "Ayush Modi",
+            "Sajal Jaggi",
+            "Anurag Yadav",
+            "Akarsh Sharma",
+            "Vidit Sharma",
+            "Jayesh Jhamnani",
+            "Rudra Banerjee",
+            "Vaibhav Kapoor",
+            "Kartikeya Singh",
+            "Arnav Kumar"
+        ]
     },
     {
-        "TitleName":"PR & Events Team",
-        "CardTeam":[
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""}
-            
+        "TitleName": "PR & Events Team",
+        "CardTeam": [
+            {
+                "Name": "Ayush Dhanesha",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Ayush Dhanesha",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            }
         ],
-        "Members":["Priyal Maheshwari","Priyal Maheshwari","Priyal Maheshwari", "Rishabh Srivastava", "Navya Jain", "Kriti Jindal", "Prasoon Agrawal", "Aniket Aslaliya"]
+        "Members": [
+            "Priyal Maheshwari",
+            "Priyal Maheshwari",
+            "Priyal Maheshwari",
+            "Rishabh Srivastava",
+            "Navya Jain",
+            "Kriti Jindal",
+            "Prasoon Agrawal",
+            "Aniket Aslaliya"
+        ]
     },
     {
-        "TitleName":"Hospitality & Logistics Team",
-        "CardTeam":[
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""}
-            
+        "TitleName": "Hospitality & Logistics Team",
+        "CardTeam": [
+            {
+                "Name": "Ayush Dhanesha",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Ayush Dhanesha",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            }
         ],
-        "Members":["Priyal Maheshwari","Priyal Maheshwari","Priyal Maheshwari", "Rishabh Srivastava", "Navya Jain", "Kriti Jindal", "Prasoon Agrawal", "Aniket Aslaliya"]
+        "Members": [
+            "Priyal Maheshwari",
+            "Priyal Maheshwari",
+            "Priyal Maheshwari",
+            "Rishabh Srivastava",
+            "Navya Jain",
+            "Kriti Jindal",
+            "Prasoon Agrawal",
+            "Aniket Aslaliya"
+        ]
     },
     {
-        "TitleName":"Curation Team",
-        "CardTeam":[
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Ayush Dhanesha","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""},
-            {"Name":"Shubhanshu Singhal","Position":"FEST HEAD","Image":"/Dashotar.webp","EmailLink":"","InstagramLink":""}
-            
+        "TitleName": "Curation Team",
+        "CardTeam": [
+            {
+                "Name": "Ayush Dhanesha",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Ayush Dhanesha",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            },
+            {
+                "Name": "Shubhanshu Singhal",
+                "Position": "FEST HEAD",
+                "Image": "/Skeleton.webp",
+                "EmailLink": "",
+                "InstagramLink": ""
+            }
         ],
-        "Members":["Priyal Maheshwari","Priyal Maheshwari","Priyal Maheshwari", "Rishabh Srivastava", "Navya Jain", "Kriti Jindal", "Prasoon Agrawal", "Aniket Aslaliya"]
+        "Members": [
+            "Priyal Maheshwari",
+            "Priyal Maheshwari",
+            "Priyal Maheshwari",
+            "Rishabh Srivastava",
+            "Navya Jain",
+            "Kriti Jindal",
+            "Prasoon Agrawal",
+            "Aniket Aslaliya"
+        ]
     }
-
 ]

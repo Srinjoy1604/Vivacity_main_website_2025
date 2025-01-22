@@ -7,6 +7,25 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Amit from "../../../assets/images/AmitTrivedi.webp";
+import AmitName from "../../../assets/images/Amit.webp";
+import Jublin from "../../../assets/images/Jubin.png";
+import JublinName from "../../../assets/images/JublinName.png";
+import Harrdy from "../../../assets/images/Hardy.png";
+import HarrdyName from "../../../assets/images/HardyName.png";
+import Darshan from "../../../assets/images/Darshan.png";
+import DarshanName from "../../../assets/images/DarshanName.png";
+import Mohit from "../../../assets/images/MohitChauhan.png";
+import MohitName from "../../../assets/images/MohitName.png";
+import Asees from "../../../assets/images/Asees.png";
+import AseesName from "../../../assets/images/AssesName.png";
+import Kullu from "../../../assets/images/Kullu.png";
+import KulluName from "../../../assets/images/KulluName.png";
+import Ritviz from "../../../assets/images/Ritviz.png";
+import RitvizName from "../../../assets/images/RitvizName.png";
+import ManyMore from "../../../assets/images/ManyMore.png";
+import ManyMoreName from "../../../assets/images/ManyMoreName.png";
+// import Neha from "../../../assets/images/Neha.png";  // Example new artist image
+// import Arijit from "../../../assets/images/Arijit.png";  // Example new artist image
 import {
   FaRegArrowAltCircleRight,
   FaRegArrowAltCircleLeft,
@@ -38,31 +57,48 @@ function Artist() {
   const Artists = [
     {
       Name: "Amit Trivedi",
-      Src: Amit,
+      ArtistImage: Amit,
+      NameImage: AmitName,
     },
     {
-      Name: "Amit Trivedi",
-      Src: Amit,
+      Name: "Jublin Nautiyal",
+      ArtistImage: Jublin,
+      NameImage: JublinName,
     },
     {
-      Name: "Amit Trivedi",
-      Src: Amit,
+      Name: "Harrdy Sandhu",
+      ArtistImage: Harrdy,
+      NameImage: HarrdyName,
     },
     {
-      Name: "Amit Trivedi",
-      Src: Amit,
+      Name: "Darshan Rawal",
+      ArtistImage: Darshan,
+      NameImage: DarshanName,
     },
     {
-      Name: "Amit Trivedi",
-      Src: Amit,
+      Name: "Mohit Chauchan",
+      ArtistImage: Mohit,
+      NameImage: MohitName,
     },
     {
-      Name: "Amit Trivedi",
-      Src: Amit,
+      Name: "Asees Kaur",
+      ArtistImage: Asees,
+      NameImage: AseesName,
     },
     {
-      Name: "Amit Trivedi",
-      Src: Amit,
+      Name: "Kullu",
+      ArtistImage: Kullu,
+      NameImage: KulluName,
+    },
+    {
+      Name: "Ritviz",
+      ArtistImage: Ritviz,
+      NameImage: RitvizName,
+    },
+    {
+      Name: "Many More",
+      ArtistImage: ManyMore,
+      NameImage: ManyMoreName,
     },
   ];
 
@@ -123,3 +159,4 @@ function Artist() {
 }
 
 export default Artist;
+
