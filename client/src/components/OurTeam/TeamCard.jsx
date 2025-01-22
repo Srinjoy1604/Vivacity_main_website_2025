@@ -35,8 +35,8 @@ function TeamCard({ CardData }) {
                 }}
             >
                 <div className="flex justify-evenly items-center h-[100%] w-[100%] ml-[5%]">
-                    <a><img  className="cursor-pointer w-[100%] h-auto" src={mail}></img></a>
-                    <a><img src={Insta} className="cursor-pointer w-[100%] h-auto"></img></a>
+                    <a href={`mailto:${CardData.EmailLink}`}><img  className="cursor-pointer w-[100%] h-auto" src={mail}></img></a>
+                    <a href={`${CardData.InstagramLink}`} target="_blank"><img src={Insta} className="cursor-pointer w-[100%] h-auto"></img></a>
                 </div>
             </div>
         </div>

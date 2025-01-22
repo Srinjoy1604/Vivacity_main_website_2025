@@ -10,7 +10,7 @@ import Oval from "../../assets/images/Oval.webp";
 import { NavLink } from "react-router-dom";
 import Lottie from "lottie-react";
 import MouseAnimation from "../../assets/videos/Mouse.json";
-
+import Spiderman from "../../assets/videos/spiderman.gif";
 function About() {
   const textContent =
     "\u00A0\u00A0\u00A0\u00A0\u00A0KEEP\u00A0\u00A0SCROLLING!\u00A0\u00A0\u00A0\u00A0\u00A0";
@@ -99,7 +99,7 @@ function About() {
           <div className="p-3 sm:p-6 md:p-8 max-w-[26rem] h-[100%] bg-[#F8B931] grid place-items-center">
             <div className="flex justify-center w-full">
               <div className="relative bg-gray-300 border-black border-2 mt-5 sm:mt-2 mb-4 rounded-md w-[83%] h-[16rem]">
-                <img src="" alt="" />
+                <img src={Spiderman} alt="spiderman" className="h-full w-full object-cover"/>
               </div>
             </div>
 
@@ -172,7 +172,7 @@ function About() {
 
           <div className="relative z-10 flex items-center w-full h-full">
             <div className="leftDiv w-[30%] h-[80%] rounded-lg bg-gray-600 border-[3px] border-black ml-12">
-              <img src="" alt="" />
+              <img src={Spiderman} alt="spiderman" className="h-full w-full object-cover" />
             </div>
 
             <div className="relative flex-1 transform -skew-x-6 p-12 mr-4 min-[1100px]:mr-12 1300:mr-20">

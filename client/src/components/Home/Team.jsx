@@ -32,7 +32,10 @@ import YellowBack1 from "../../assets/images/YellowbkMob.webp";
 import Thread1 from "../../assets/images/ThreadsMob.webp";
 import buttonback1 from "../../assets/images/Pinkbtn_back1.webp";
 import Title from "../../assets/images/TeamTitle.webp";
-
+import TeamA from "../../assets/videos/TeamA.gif";
+import TeamB from "../../assets/videos/TeamB.gif";
+import TeamC from "../../assets/videos/TeamC.gif";
+import TeamD from "../../assets/videos/TeamD.gif";
 function Team() {
   const [showPins, setShowPins] = useState(false);
   const [showThread, setShowThread] = useState(false);
@@ -229,7 +232,7 @@ function Team() {
             }}
           >
             <img
-              src={Aimg}
+              src={TeamA}
               alt="Team A Member"
               style={{
                 width: "70%",
@@ -273,7 +276,7 @@ function Team() {
             }}
           >
             <img
-              src={Bimg}
+              src={TeamB}
               alt="Team B Member"
               style={{
                 width: "70%",
@@ -318,7 +321,7 @@ function Team() {
             }}
           >
             <img
-              src={Cimg}
+              src={TeamC}
               alt="Team C Member"
               style={{
                 width: "70%",
@@ -364,7 +367,7 @@ function Team() {
             }}
           >
             <img
-              src={Dimg}
+              src={TeamD}
               alt="Team D Member"
               style={{
                 width: "70%",
