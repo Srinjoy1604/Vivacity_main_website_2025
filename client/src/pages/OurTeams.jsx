@@ -35,7 +35,8 @@ import Doghnut from "../assets/images/Donut.webp";
 import OurMentors from "../assets/images/OurMentors.webp";
 import OurTeamIndex from "../components/OurTeam/OurTeamIndex";
 import OurTeamTitle from "../assets/images/OurTeam.webp";
-
+import MentorMobile from "../assets/images/OurTeamsMentorMobile.png";
+import MentorMobileText from "../assets/images/OurTeamsMentorTextMobile.png";
 function OurTeams() {
     const festHeadsRef = useRef(null);
     const councilRef = useRef(null);
@@ -64,7 +65,7 @@ function OurTeams() {
     return (
         <div className="overflow-hidden">
             <div
-                className="relative sm:pt-[20%] pt-[25%] md:pt-[6.5%]"
+                className="relative sm:pt-[20%] pt-[25%] md:pt-[9%]"
                 style={{
                     backgroundImage: `url(${BgGreen})`,
                     backgroundSize: "cover",
@@ -86,7 +87,9 @@ function OurTeams() {
                 </h1>
 
                 <div className="grid place-items-center w-[100%]">
-                    <img src={OurMentors} className="p-[2%] pl-[8%]" />
+                    <img src={OurMentors} className="p-[2%] pl-[8%] hidden md:block" />
+                    <img src={MentorMobile} className="block md:hidden px-[7%] w-[100%]" />
+                    <img src={MentorMobileText} className="block md:hidden px-[5%] w-[100%] h-[100%]"/>
                 </div>
                 <div className="w-[100%] flex items-center text-center flex-wrap justify-center p-[2%]">
                     <h3 className="font-vetosans font-[600] text-[1.375rem] w-[64%]">
