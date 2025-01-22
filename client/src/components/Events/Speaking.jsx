@@ -42,6 +42,7 @@ import Potpouri1 from "../../assets/images/Event Name-11.webp";
 import DareToSpell1 from "../../assets/images/Event Name-12.webp";
 import Button_Component from "./Button_component";
 import SpeakingTitle from "../../assets/images/SpeakingArtsTitle.webp";
+import MediaCell from '../../assets/pdf/MediaCell.pdf'
 
 function Speaking(){
     return(
@@ -331,7 +332,7 @@ function Speaking(){
                     </div>
                 </div>
                 <div className="w-[100%] p-[2%] mb-[3%]">
-            <Button_Component showRegister={true} showRulebook={true} />
+            <Button_Component section={MediaCell} showRegister={true} showRulebook={true} />
           </div>
             </div>
             </div>
@@ -616,7 +617,7 @@ function Speaking(){
                  </div>
                 
                  <div className="w-[100%] relative bottom-0 p-[5%]">
-            <Button_Component showRegister={true} showRulebook={true} />
+            <Button_Component section={MediaCell}  showRegister={true} showRulebook={true} />
           </div>
             </div>
             </div>

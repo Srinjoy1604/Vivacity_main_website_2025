@@ -151,7 +151,7 @@ function Portal({ onAnimationComplete }) {
         />
         <img
           ref={ring4Ref}
-          className="absolute sm:w-[110%] sm:h-[110%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50%] h-[50%] lg:w-[95%] lg:h-[95%]"
+          className="1980:hidden absolute sm:w-[110%] sm:h-[110%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50%] h-[50%] lg:w-[95%] lg:h-[95%]"
           src={ring4} // Using ring1 for the new ring
           alt="Ring 4"
         />

@@ -16,12 +16,12 @@ function Mascot() {
   };
   return (
     <div
-      className={`w-[100%] h-[100%] flex items-center align-middle justify-center ${styles.MascotBackground} max-[800px]:h-fit pt-[2%] pl-[2%] pr-[2%] pb-[6%]`}
+      className={`w-[100%] h-[100%] flex items-center align-middle justify-center ${styles.MascotBackground} max-[800px]:h-fit pt-[5%] pl-[2%] pr-[2%] pb-[6%]`}
     >
       <div className="w-[100%] grid grid-cols-2 place-items-center max-[800px]:grid-cols-1">
-        <div className="w-[100%] py-[2%] ">
+        <div className="w-[100%]  h-[100%] ">
           <div
-            className={`${styles.NetraDiv} p-[6%] mb-[1%] pb-[10%] w-[100%] `}
+            className={`${styles.NetraDiv} p-[6%] mb-[1%] pb-[10%] w-[100%] h-[49.5%]`}
           >
             <h1 className="text-center m-[1%] mt-0 text-[#FFFFFF] font-rfabb text-[400] text-[2rem] max-[800px]:text-[1.5rem]">
               MEET OUR MASCOT
@@ -38,7 +38,7 @@ function Mascot() {
           >
             <img src={NetraMobile} className={`w-[100%] h-[100%]`}></img>
           </div>
-          <div className={`${styles.NetraOriginDiv} p-[5%] w-[100%]`}>
+          <div className={`${styles.NetraOriginDiv} p-[5%] w-[100%] h-[49.5%]`}>
             <h1 className="text-white text-[2rem] font-rfabb m-[2%] mb-[6%] max-[800px]:text-[1.5rem]">
               want to know the origin story of netra?
             </h1>
@@ -84,7 +84,7 @@ function Mascot() {
         </div>
         <div className="w-[100%] h-[100%] max-[800px]:hidden">
           <div
-            className={`${styles.Mascot} grid place-items-center h-full w-[100%] py-[2%]`}
+            className={`${styles.Mascot} grid place-items-center h-full w-[100%] `}
           >
             <img src={NetraLarge} className="w-[100%] h-[100%]"></img>
           </div>

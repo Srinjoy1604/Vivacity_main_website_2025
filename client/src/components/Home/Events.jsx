@@ -7,55 +7,130 @@ import Event_logo from "../../assets/images/Event_logo.webp";
 import Event_button from "../../assets/images/Pinkbtn_front.webp";
 import Halftone from "../../assets/images/Halftone.webp";
 import BackGround from "../../assets/images/YellowBg.webp";
-import DanceEvents from "../../assets/images/Razzmatazz.webp";
 import Pinkbtn_black from "../../assets/images/Pinkbtn_black.webp";
-
+import Music from "../../assets/images/Picture1.webp";
+import Photography from "../../assets/images/Picture2.webp";
+import Art from "../../assets/images/Picture3.webp";
+import Quizzing from "../../assets/images/Picture4.webp";
+import Drama from "../../assets/images/Picture5.webp";
+import Blind from "../../assets/images/Picture6.webp";
+import Fashion from "../../assets/images/Picture7.webp";
+import social from "../../assets/images/Picture8.webp";
+import Fun from "../../assets/images/Picture9.webp";
+import { useNavigate } from "react-router-dom";
 const Events = () => {
+  const navigate = useNavigate();
   const eventData = [
     {
       id: 1,
-      title: "Dance Events",
-      items: [
-        "Razzmatazz (Group dance)",
-        "Street dance",
-        "Classical group dance",
-        "Duet dance",
-        "Solo dance",
-        "Individual western dance",
-      ],
-      prizeWorth: "2.5 Lakh+",
-      image: DanceEvents,
-      link: "/dance-events",
+      title: "Fashion Events",
+      items: ["Vogue", "Mr and Mrs viva"],
+      prizeWorth: "1.75 Lakh+",
+      image: Fashion,
+      link: "#fashion",
     },
     {
       id: 2,
       title: "Music Events",
-      items: [
-        "Solo Singing",
-        "Group Singing",
-        "Battle of Bands",
-        "Classical Vocals",
-        "Rap Battle",
-        "Instrumental Solo",
-      ],
-      prizeWorth: "1.8 Lakh+",
-      image: "https://picsum.photos/200/300",
-      link: "/music-events",
+      items: ["Battle of Bands", "Gully War", "Malhaar", "Aaroh", "Bandish"],
+      prizeWorth: "2.3 Lakh+",
+      image: Music,
+      link: "music",
     },
     {
       id: 3,
       title: "Drama Events",
+      items: ["Rangshala", "Hunkaar", "paddhati", "Mukhauta "],
+      prizeWorth: "2.4 Lakh+",
+      image: Drama,
+      link: "#drama",
+    },
+    {
+      id: 4,
+      title: "Art Events",
       items: [
-        "Street Play",
-        "One Act Play",
-        "Mime Show",
-        "Monologue",
-        "Skit Performance",
-        "Stand-up Comedy",
+        "Tattoo Tales ",
+        "Splash",
+        "Eclectic",
+        "Hue-Universe",
+        "Contrasto",
       ],
-      prizeWorth: "1.5 Lakh+",
-      image: "https://picsum.photos/200/300",
-      link: "/drama-events",
+      prizeWorth: "1.0 Lakh+",
+      image: Art,
+      link: "#art",
+    },
+    {
+      id: 5,
+      title: "Dance Events",
+      items: [
+        "Razzmatazz",
+        "Street Dance",
+        "Let's Tangle",
+        "Pump It Up",
+        "Mudra",
+        "Taal Tarang",
+      ],
+      prizeWorth: "2.5 Lakh+",
+      image: Fun,
+      link: "",
+    },
+    {
+      id: 6,
+      title: "speaking Arts",
+      items: [
+        " Spotlight",
+        "Family Feud",
+        "Potpourit",
+        "Dare to spell",
+        "Duologue",
+        "Afreen",
+        "Open Discussion",
+      ],
+      prizeWorth: "2.5 Lakh+",
+      image: Fun,
+      link: "",
+    },
+    {
+      id: 7,
+      title: "Photography Events",
+      items: [
+        "FMC",
+        "Photobooth",
+        "Image Hunt",
+        "Pixels",
+        "Perspective",
+        "Kalakriti",
+      ],
+      prizeWorth: "",
+      image: Photography,
+      link: "#photography",
+    },
+
+    {
+      id: 8,
+      title: "Quizzing Events",
+      items: ["Bamboozled", "Movie Auction"],
+      prizeWorth: "20 Thousand+",
+      image: Quizzing,
+      link: "#quizzinga",
+    },
+
+    {
+      id: 9,
+      title: "Social Events",
+      items: ["Sahyog"],
+      prizeWorth: "",
+      image: social,
+      link: "#social",
+    },
+
+    {
+      id: 10,
+      title: "Exciting Pursuits",
+      items: ["Prom Night", "silent disco", "jam night", "stage spectrum"],
+      prizeWorth: "",
+      image: Fun,
+      link: "",
     },
   ];
 
@@ -83,9 +158,13 @@ const Events = () => {
     setIsClicked(true);
     setTimeout(() => {
       setIsClicked(false);
-      //window.location.href = "/events";
+      if (currentEvent.link) {
+        navigate(`/events${currentEvent.link}`);
+      } else {
+        navigate("/events");
+      }
     }, 300);
-  }, []);
+  }, [currentEvent, navigate]);
 
   return (
     <div

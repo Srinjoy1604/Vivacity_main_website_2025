@@ -1,23 +1,38 @@
 @font-face {
-  font-family: 'Ready For Anything';
-  src: url('./static/ReadyforAnythingBB-Regular.ttf') format('truetype');
+  font-family: "Ready For Anything";
+  src: url("./static/ReadyforAnythingBB-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Ralltez';
-  src: url('./static/Ralltez.ttf') format('truetype');
+  font-family: "Ralltez";
+  src: url("./static/Ralltez.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'TT Ricks';
-  src: url('./static/TTRicksRegular.ttf') format('truetype');
+  font-family: "TT Ricks";
+  src: url("./static/TTRicksRegular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Veto Sans';
-  src: url('./static/VetoSansRegular.ttf') format('truetype');
+  font-family: "Veto Sans";
+  src: url("./static/VetoSansRegular.ttf") format("truetype");
+}
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: #2196f3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2196f3;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
 .loader-container {
   display: flex;
   justify-content: center;
@@ -40,7 +55,7 @@
   object-fit: cover;
 }
 
-@media (max-width:640px) {
+@media (max-width: 640px) {
   .loader {
     object-fit: contain;
   }
