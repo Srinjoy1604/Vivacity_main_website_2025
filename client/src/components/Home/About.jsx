@@ -78,12 +78,17 @@ function About() {
               <img
                 src={Image4}
                 alt=""
-                className="max-w-[50%] mx-auto transform transition-transform duration-300 cursor-pointer"
+                className={`max-w-[50%] mx-auto transform transition-transform duration-300 cursor-pointer`}
               />
             </NavLink>
           </div>
 
           <div className="absolute z-20 top-[-8%] w-full">
+            <img
+                src={HelloBtnshadow}
+                alt="Name Tag Shadow"
+                className="max-w-[60%] mx-auto absolute top-[7%] left-[48%] transform -translate-x-1/2 "
+            />
             <NavLink
               to="/"
               className={`block ${
@@ -92,14 +97,13 @@ function About() {
               onClick={handleClick}
             >
               <img
-                src={HelloBtnshadow}
-                alt="Name Tag Shadow"
-                className="max-w-[60%] mx-auto absolute top-[7%] left-[48%] transform -translate-x-1/2 "
-              />
-              <img
                 src={Image3}
                 alt="Name Tag Unit"
-                className="max-w-[60%] mx-auto transform transition-transform duration-300 cursor-pointer relative z-10"
+                className={`max-w-[60%] mx-auto transform transition-transform duration-300 cursor-pointer relative z-10 ${
+                          isClicked
+                            ? "-translate-x-2 translate-y-2"
+                            : ""
+                        }`}
               />
             </NavLink>
           </div>
@@ -150,6 +154,11 @@ function About() {
             <img src={Image6} alt="" />
           </div>
           <div className="absolute z-40 top-[-14%] left-[-8%] rotate-[-16.58deg]">
+            <img
+                src={HelloBtnshadow}
+                alt="Name Tag Shadow"
+                className="w-[15vw] absolute top-[8%] left-[46%] transform -translate-x-1/2 "
+            />
             <NavLink
               to="/"
               className={`block ${
@@ -158,14 +167,13 @@ function About() {
               onClick={handleClick}
             >
               <img
-                src={HelloBtnshadow}
-                alt="Name Tag Shadow"
-                className="w-[15vw] absolute top-[8%] left-[46%] transform -translate-x-1/2 "
-              />
-              <img
                 src={Image3}
                 alt="Name Tag Unit"
-                className="w-[15vw] transform transition-transform duration-300 cursor-pointer relative z-10"
+                className={`w-[15vw] transform transition-transform duration-300 cursor-pointer relative z-10 ${
+                          isClicked
+                            ? "-translate-x-2 translate-y-2"
+                            : ""
+                        }`}
               />
             </NavLink>
           </div>
