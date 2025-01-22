@@ -11,7 +11,7 @@ import Curation from "../../assets/images/Curation.webp";
 function OurTeamIndex({ scrollToSection }) {
     return (
         <div className="grid place-items-center">
-            <div className="grid max-[400px]:place-items-center grid-cols-2 gap-2 w-[100%]">
+            <div className="grid max-[400px]:place-items-center grid-cols-2 gap-2 w-[100%] pb-[10%]">
                 <div onClick={() => scrollToSection("festHeads")}>
                     <img src={FestHeads} className="w-[100%] h-[100%] min-[400px]:p-[2%]" />
                 </div>

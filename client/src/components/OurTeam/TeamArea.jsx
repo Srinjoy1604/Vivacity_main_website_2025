@@ -4,7 +4,7 @@ import MentorLine from "../../assets/images/MentorLine.webp";
 function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne, LeftTwo, CardTeam, Members, PositionArr = ["0", "0", "0", "0"] }) {
     
     return (
-        <div className="relative flex justify-center "
+        <div className="relative flex justify-center py-[5%]"
             style={{
                 backgroundImage: `url(${BgColor})`,
                 backgroundSize: "cover",
