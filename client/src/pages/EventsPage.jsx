@@ -52,6 +52,7 @@ function EventsPage() {
 
   return (
     <div>
+      <IndexEvents scrollToSection={scrollToSection} />
       <div ref={danceRef}>
         <DancePage />
       </div>

@@ -91,7 +91,7 @@ import SocialDiv from '../../assets/images/Social.webp';
 const IndexEvents = ({ scrollToSection }) => {
   return (
     <div
-      className="relative min-[768px]:hidden mt-2"
+      className="relative min-[768px]:hidden mt-8"
       style={{
         backgroundImage: `url(${Background})`,
         width: '100%',
