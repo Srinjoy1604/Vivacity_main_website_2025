@@ -1,9 +1,27 @@
 import React, { useRef, useEffect } from "react";
 import TeamCard from "./TeamCard";
 import CurvyLine from "../../assets/images/MentorLine.webp";
+import CurvyLine2 from "../../assets/images/line2.png"
 import CurveLine from "../../assets/images/line.png";
 function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne, LeftTwo, CardTeam, Members, PositionArr = ["0", "0", "0", "0"] }) {
-    
+    let asset;
+    if (SectionTitle === "Fest Heads") {
+        asset = CurvyLine;
+      } else if (SectionTitle === "Cultural Council") {
+        asset = CurvyLine;
+      } else if (SectionTitle === "Development Team") {
+        asset = CurvyLine;
+      } else if (SectionTitle === "Creative Team") {
+        asset = CurvyLine;
+      } else if (SectionTitle === "Sponsorship Team") {
+        asset = CurvyLine;
+      } else if (SectionTitle === "PR & Events Team") {
+        asset = CurvyLine;
+      } else if (SectionTitle === "Hospitality & Logistics Team") {
+        asset = CurvyLine;
+      } else if (SectionTitle === "Curation Team") {
+        asset = CurvyLine;
+      }
     return (
         <div className="relative flex justify-center py-[5%]"
             style={{
@@ -54,8 +72,12 @@ function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne,
                     )}
 
 
-                    <div className="w-[100%] text-center font-ttr lg:text-[6.25rem] font-[600] text-[4.5rem] lg:mt-[0%] mt-[15%]">{SectionTitle}</div>
-                    <div className="w-full flex justify-center mt-[-3.25rem]"><img src={CurvyLine} className="rotate-[-4.75°]"></img></div>
+                    <div className="w-[100%] text-center font-ttr lg:text-[6.25rem] font-[600] text-[4.5rem] lg:mt-[0%] mt-[15%] flex justify-center items-center">
+                        <div className="w-fit">
+                            {SectionTitle}
+                            <div className="w-full flex justify-center mt-[-3.25rem]"><img src={asset} className="rotate-[-4.75°] w-full"></img></div>
+                        </div>
+                    </div>
                     <div className="grid place-items-center grid-cols-1 mx-32">
                         <div className="hidden lg:flex items-center gap-6 my-[1%]">
                             {CardTeam.map((Person, index) =>
