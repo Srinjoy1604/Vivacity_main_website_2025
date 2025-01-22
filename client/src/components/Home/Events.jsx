@@ -364,13 +364,13 @@ const Events = () => {
                 </h2>
               </div>
 
-              <di v className="w-full h-[83%] overflow-hidden ">
+              <div className="w-full h-[83%] overflow-hidden">
                 <img
                   src={currentEvent.image}
                   alt={currentEvent.title}
                   className="w-full h-full object-cover  pointer-events-none -mt-9"
                 />
-              </di>
+              </div>
             </div>
 
             <div className="absolute top-[45%] right-0 w-[58%] h-[20%]">

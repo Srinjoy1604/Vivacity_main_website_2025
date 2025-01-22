@@ -140,7 +140,7 @@ function OurTeams() {
                     CardTeam={data[1].CardTeam}
                     Members={data[1].Members}
                     BgColor={BgBlue}
-                    Pattern={PatternViolet}
+                    Pattern={PatternDarkViolet}
                     RightOne={PianoL}
                     LeftOne={GuitarR}
                     PositionArr={["30", "30", "0", "0"]}
@@ -206,7 +206,7 @@ function OurTeams() {
                     CardTeam={data[6].CardTeam}
                     Members={data[6].Members}
                     BgColor={BgBlue}
-                    Pattern={PatternDarkViolet}
+                    Pattern={PatternViolet}
                     RightOne={Doghnut}
                     LeftOne={DvDTR}
                     LeftTwo={BlackDiscBL}
