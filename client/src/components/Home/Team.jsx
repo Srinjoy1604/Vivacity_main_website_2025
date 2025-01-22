@@ -229,6 +229,9 @@ function Team() {
               alignItems: "center",
               justifyContent: "center",
               zIndex: "1",
+              transform: showImg ? "translateY(0)" : "translateY(-100%)",
+              opacity: showImg ? 1 : 0,
+              transition: "all 0.2s ease-out",
             }}
           >
             <img
@@ -240,9 +243,7 @@ function Team() {
                 position: "absolute",
                 top: "10%",
                 left: "15%",
-                transform: showImg ? "translateY(0)" : "translateY(-100%)",
-                opacity: showImg ? 1 : 0,
-                transition: "all 0.2s ease-out",
+               
               }}
             />
 
@@ -273,6 +274,9 @@ function Team() {
               alignItems: "center",
               justifyContent: "center",
               zIndex: "1",
+              transform: showImg ? "translateY(0)" : "translateY(-100%)",
+                opacity: showImg ? 1 : 0,
+                transition: "all 0.2s ease-out",
             }}
           >
             <img
@@ -284,9 +288,7 @@ function Team() {
                 position: "absolute",
                 top: "10%",
                 left: "15%",
-                transform: showImg ? "translateY(0)" : "translateY(-100%)",
-                opacity: showImg ? 1 : 0,
-                transition: "all 0.2s ease-out",
+                
               }}
             />
             <span
@@ -318,6 +320,9 @@ function Team() {
               alignItems: "center",
               justifyContent: "center",
               zIndex: "1",
+              transform: showImg ? "translateY(0)" : "translateY(-100%)",
+                opacity: showImg ? 1 : 0,
+                transition: "all 0.2s ease-out",
             }}
           >
             <img
@@ -330,9 +335,7 @@ function Team() {
                 position: "absolute",
                 top: "10%",
                 left: "15%",
-                transform: showImg ? "translateY(0)" : "translateY(-100%)",
-                opacity: showImg ? 1 : 0,
-                transition: "all 0.2s ease-out",
+                
               }}
             />
             <span
@@ -364,6 +367,9 @@ function Team() {
               alignItems: "center",
               justifyContent: "center",
               zIndex: "1",
+              transform: showImg ? "translateY(0)" : "translateY(-100%)",
+              opacity: showImg ? 1 : 0,
+              transition: "all 0.2s ease-out",
             }}
           >
             <img
@@ -376,9 +382,7 @@ function Team() {
                 objectFit: "contain",
                 top: "10%",
                 left: "15%",
-                transform: showImg ? "translateY(0)" : "translateY(-100%)",
-                opacity: showImg ? 1 : 0,
-                transition: "all 0.2s ease-out",
+               
               }}
             />
             <span

@@ -95,11 +95,11 @@ const IndexEvents = ({ scrollToSection }) => {
       style={{
         backgroundImage: `url(${Background})`,
         width: '100%',
-        aspectRatio: '393 / 1450',
+        aspectRatio: '393 / 1250',
       }}
     >
       <div
-        className="absolute w-[77.6%] h-[5.2%] left-[11.2%] top-[9.6%]"
+        className="absolute w-[77.6%] h-[5.2%] left-[11.2%] top-[6.6%]"
         style={{
           backgroundImage: `url(${Title})`,
           backgroundSize: 'cover',
@@ -108,7 +108,7 @@ const IndexEvents = ({ scrollToSection }) => {
       ></div>
 
       <div
-        className="absolute w-[98%] h-[80.77%] left-[1%] top-[17.0%] grid gap-x-[2.6%] gap-y-[4%] sm:grid-cols-2"
+        className="absolute w-[98%] h-[85.77%] left-[1%] top-[12.0%] grid gap-x-[2.6%] gap-y-[4%] sm:grid-cols-2"
         style={{
           gridTemplateColumns: 'repeat(2, 1fr)',
           alignItems: 'start',
@@ -126,22 +126,22 @@ const IndexEvents = ({ scrollToSection }) => {
         <div className="relative overflow-hidden top-[6%]" onClick={() => scrollToSection('speakingArts')}>
           <img src={SpeakingArtsDiv} alt="Speaking Arts" className="w-full h-full object-contain" />
         </div>
-        <div className="relative overflow-hidden top-[-20%]" onClick={() => scrollToSection('photography')}>
+        <div className="relative overflow-hidden top-[-13%]" onClick={() => scrollToSection('photography')}>
           <img src={PhotographyDiv} alt="Photography" className="w-full h-full object-contain" />
         </div>
-        <div className="relative overflow-hidden top-[5%]" onClick={() => scrollToSection('art')}>
+        <div className="relative overflow-hidden top-[13%]" onClick={() => scrollToSection('art')}>
           <img src={ArtDiv} alt="Arts" className="w-full h-full object-contain" />
         </div>
-        <div className="relative overflow-hidden top-[-30%]" onClick={() => scrollToSection('quizzinga')}>
+        <div className="relative overflow-hidden top-[-26%]" onClick={() => scrollToSection('quizzinga')}>
           <img src={QuizzingaDiv} alt="Quizzinga" className="w-full h-full object-contain" />
         </div>
-        <div className="relative overflow-hidden top-[-24%]" onClick={() => scrollToSection('fashion')}>
+        <div className="relative overflow-hidden top-[-19%]" onClick={() => scrollToSection('fashion')}>
           <img src={FashionDiv} alt="Fashion" className="w-full h-full object-contain" />
         </div>
-        <div className="relative overflow-hidden bottom-[50%]" onClick={() => scrollToSection('social')}>
+        <div className="relative overflow-hidden bottom-[40%]" onClick={() => scrollToSection('social')}>
           <img src={SocialDiv} alt="Social" className="w-full h-full object-contain" />
         </div>
-        <div className="relative overflow-hidden bottom-[37%]" onClick={() => scrollToSection('manymore')}>
+        <div className="relative overflow-hidden bottom-[23%]" onClick={() => scrollToSection('manymore')}>
           <img src={ManyMore} alt="Many More" className="w-full h-full object-contain" />
         </div>
       </div>

@@ -22,6 +22,7 @@ import GullyWarBgMobile from "../../assets/images/GullyWarBgMobile.webp";
 import MalhaarBgMobile from "../../assets/images/MalhaarBgMobile.webp";
 import AarohBgMobile from "../../assets/images/AarohBgMobile.webp";
 import Button_Component from "./Button_component";
+import Capriccio from '../../assets/pdf/Capriccio.pdf'
 function MusicEvents() {
   return (
     <div className={`${Styles.MusicBg} w-full h-[100%] p-[3%] flex flex-col`}>
@@ -33,9 +34,9 @@ function MusicEvents() {
         />
       </div>
 
-      <div className="md:space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full  pt-[3%] ">
-        <div className="space-y-[4%] mb-[4%] md:mb-[0%] md:space-y-[0%] flex flex-col md:flex-row items-center justify-center  h-[100%] w-[100%] space-x-[2%] ">
-          <div className="relative w-[91%] md:w-[51.5%] md:h-[24.3%] ">
+      <div className="md:space-y-[2%] flex flex-col justify-center  items-center  mx-auto w-full h-full  pt-[3%] ">
+        <div className="space-y-[4%] mb-[4%] md:mb-[0%] md:space-y-[0%] flex flex-col md:flex-row items-center justify-center  h-[100%] md:w-[100%] w-[98%] space-x-[2%] ">
+          <div className="relative w-[100%] md:w-[51.5%] md:h-[24.3%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={BattleOfBandsBg}
@@ -70,14 +71,14 @@ function MusicEvents() {
               </div>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[55%]  md:h-[22.9%] ">
+          <div className="relative w-[100%] md:w-[55%]  md:h-[22.9%] ">
             <img
               className="hidden md:block h-[100%] w-[100%]"
               src={BandishBg}
               alt=""
             />
             <img
-              className=" block md:hidden h-[100%] w-[100%]"
+              className=" block md:hidden h-[100%] ml-[-1%] w-[100%]"
               src={BandishBgMobile}
               alt=""
             />
@@ -104,8 +105,8 @@ function MusicEvents() {
             </div>
           </div>
         </div>
-        <div className="space-y-[4%]  md:space-y-[0%]  flex md:flex-row flex-col items-center justify-center  h-[100%] w-[100%] space-x-[2%] ">
-          <div className="relative w-[91%] h-[14.61%] md:w-[35.9%] md:h-[36.9%] ">
+        <div className="space-y-[4%]  md:space-y-[0%]  flex md:flex-row flex-col items-center justify-center  h-[100%] md:w-[100%] w-[98%]  ">
+          <div className="relative w-[100%] h-[14.61%] md:w-[35.9%] md:h-[36.9%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={MalhaarBg}
@@ -138,7 +139,7 @@ function MusicEvents() {
               </p>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[35.8%] md:h-[36.9%] ">
+          <div className="relative w-[100%] md:w-[35.8%] md:h-[36.9%] ">
             <img
               className="hidden md:block h-[100%] w-[100%]"
               src={AarohBg}
@@ -171,7 +172,7 @@ function MusicEvents() {
               </p>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[35.8%] md:h-[36.9%] ">
+          <div className="relative w-[100%] md:w-[35.8%] md:h-[36.9%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={GullyWarBg}
@@ -209,7 +210,7 @@ function MusicEvents() {
         </div>
         <div>
           <div className=" pt-[0.1%] lg:pt-8 md:pt-8 lg:pb-[6.3%] md:pb-[6.3%] pb-[2%]">
-            <Button_Component showRegister={true} showRulebook={true} />
+            <Button_Component section={Capriccio} showRegister={true} showRulebook={true} />
           </div>
         </div>
       </div>

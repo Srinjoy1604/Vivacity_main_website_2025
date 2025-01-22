@@ -1,18 +1,21 @@
 import React from "react";
 import textbox from "../../assets/images/DownloadRulebook.webp";
-
-const Button_Component = ({ showRulebook = true, showRegister = true }) => {
+import {useNavigate} from 'react-router-dom'
+const Button_Component = ({ showRulebook = true, showRegister = true,section }) => {
   const handleRulebookClick = () => {
     console.log("Rulebook clicked");
   };
 
   const handleRegisterClick = () => {
+    navigate("/NormalRegistration")
     console.log("Register clicked");
   };
 
+const navigate=useNavigate();
   return (
     <div className="flex justify-center items-center  md:gap-4 lg:gap-8 mt-4 lg:mt-8 max-sm:flex-col">
       {showRulebook && (
+         <a  href={section} target="_blank" rel="noopener noreferrer">
         <button
           onClick={handleRulebookClick}
           className="transform hover:scale-105 transition-transform relative 
@@ -30,9 +33,11 @@ const Button_Component = ({ showRulebook = true, showRegister = true }) => {
             </p>
           </div>
         </button>
+        </a>
       )}
 
       {showRegister && (
+        
         <button
           onClick={handleRegisterClick}
           className="transform hover:scale-105 transition-transform relative 
@@ -54,4 +59,4 @@ const Button_Component = ({ showRulebook = true, showRegister = true }) => {
   );
 };
 
-export default Button_Component;
+export default Button_Component; 

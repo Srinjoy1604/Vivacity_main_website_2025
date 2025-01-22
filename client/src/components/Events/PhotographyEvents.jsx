@@ -45,7 +45,7 @@ function PhotographyEvents() {
         <img
           src={title}
           alt="Photography Events"
-          className="w-[80%] sm:w-[80%] md:w-[65%] lg:w-[72%]"
+          className="w-[98%] sm:w-[80%] md:w-[65%] lg:w-[72%]"
         />
       </div>
 
@@ -233,10 +233,10 @@ function PhotographyEvents() {
       </div>
 
       {/* Mobile design */}
-      <div className="md:hidden w-full">
+      <div className="md:hidden    w-full">
         {/* Image Hunt */}
-        <div className="w-full mb-4">
-          <div className="relative aspect-[358/204]">
+        <div className="w-[92%]  ml-[4%] mb-4">
+          <div className="relative aspect-[358/204] ">
             <img
               src={image7}
               alt="Image Hunt"
@@ -264,7 +264,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Photobooth */}
-        <div className="w-full mb-4">
+        <div className="w-[92%]  ml-[4%] mb-4">
           <div className="relative aspect-[358/204]">
             <img
               src={image8}
@@ -293,7 +293,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Film Making Competition */}
-        <div className="w-full mb-4">
+        <div className="w-[92%]  ml-[4%] mb-4">
           <div className="relative aspect-[358/204]">
             <img
               src={image9}
@@ -322,7 +322,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Perspective */}
-        <div className="w-full mb-4">
+        <div className="w-[92%]  ml-[4%] mb-4">
           <div className="relative aspect-[358/204]">
             <img
               src={image10}
@@ -352,7 +352,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Kalakriti */}
-        <div className="w-full mb-4">
+        <div className="w-[92%]  ml-[4%] mb-4">
           <div className="relative aspect-[358/204]">
             <img
               src={image11}
@@ -381,7 +381,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Pixels */}
-        <div className="w-full mb-4">
+        <div className="w-[92%]  ml-[4%] mb-4">
           <div className="relative aspect-[358/204]">
             <img
               src={image12}
