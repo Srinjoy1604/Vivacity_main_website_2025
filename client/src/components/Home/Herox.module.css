@@ -1,17 +1,9 @@
 .HeroMobile
 {
-    background-image: url("../../assets/images/HeroMobileBackgroundParts.webp");
+    background-image: url("../../assets/videos/HeroSectionGif.gif");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
-}
-.HeroTop
-{
-    background-image: url("../../assets/images/HeroMobileBackgroundParts.webp"),url("../../assets/images/HeroMobileBackground.webp");
-    background-size: 110% 110%;
-    background-repeat: no-repeat;
-    background-position-x: 59%;
-    background-position-y: 20%;
+    margin-top: 4rem;
 }
 .RegisterStrip
 {
@@ -25,18 +17,11 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.ImageParts
-{
-    transition: 0.7s ease-in-out all;
-}
-.ImageParts:hover
-{
-    scale: 1.1;
-}
 .MainBackgroundHero
 {
-    background-image: url("../../assets/images/HeroSectionMainImage.webp");
-    background-size: 100% 100%;
+    background-image: url("../../assets/videos/HeroSectionGif.gif");
     background-repeat: no-repeat;
-    
+    background-size: cover;
+    width: 100%;
+    margin-top: 12rem;
 }

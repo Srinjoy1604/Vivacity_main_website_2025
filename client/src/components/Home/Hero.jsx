@@ -1,6 +1,6 @@
 import React from "react";
-import Image7 from "../../assets/images/viva_logo_hero.webp";
-import VivaMobile from "../../assets/images/Vivalogo_mobile.webp";
+import TimerBkg from "../../assets/images/TimerBkg.png";
+import TimerBkgMob from "../../assets/images/TimerBkgMob.png";
 import styles from "./Herox.module.css";
 import { useEffect, useState } from "react";
 
@@ -35,10 +35,12 @@ function Hero() {
         <div
           className={`flex items-center align-center justify-center relative w-[100%] h-[100%] ${styles.MainBackgroundHero}`}
         >
+        <div className="w-[58%] mt-[0%] 1300:mt-[-20%] 1400:mt-[-15%] 1500:mt-[-10%] 1600:mt-[-5%] min-[1700px]:mt-[0%] 1980:mt-[5%]">
           <img
-            src={Image7}
-            className="w-[35%] h-auto translate-x-[-2%] translate-y-[3%] min-[2552px]:w-[30%]"
+            src={TimerBkg}
+            className="w-[100%] h-auto hidden min-[830px]:block"
           />
+        </div>
         </div>
       </div>
 
@@ -47,13 +49,17 @@ function Hero() {
         style={{ opacity: scroll, transition: "opacity ease-in-out" }}
       >
         <div
-          className={`text-center w-[100%] h-[100vh] ${styles.HeroTop} flex items-center align-center justify-center relative`}
+          className={`text-center w-[100%] h-[100vh] flex items-center align-center justify-center relative`}
         >
-          <div className="w-[100%] grid place-items-center relative">
+          <div className="w-[100%] max-w-[333px] mt-[-70%] min-[325px]:mt-[-60%] 380:mt-[-50%] min-[450px]:mt-[-40%] min-[550px]:mt-[-30%] sm:mt-[-10%]">
             <img
-              src={VivaMobile}
-              className="w-[74%] h-auto max-w-[400px] max-[500px]:translate-y-[-20%] translate-y-[-15%]"
+              src={TimerBkgMob}
+              className="w-[100%] h-auto block min-[640px]:hidden"
             />
+            <img
+            src={TimerBkg}
+            className="w-[100%] h-auto hidden min-[640px]:block min-[830px]:hidden"
+          />
           </div>
           <div
             className={`absolute bottom-[28.5%]  w-[100%] h-[12.5%] ${styles.RegisterStrip} flex items-center align-center justify-center font-rfabb text-[1.25rem]`}
