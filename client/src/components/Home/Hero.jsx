@@ -28,7 +28,7 @@ function Hero() {
 
   return (
     <div
-      className="fixed top-0 left-0 overflow-hidden z-[-1]"
+      className="fixed top-0 left-0  z-[-1]"
       style={{ opacity: scroll, transition: "opacity ease-in-out" }}
     >
       <div className="h-[100vh] w-[100vw] text-center flex items-center align-center justify-center bg-yellow-200 max-[830px]:hidden">
