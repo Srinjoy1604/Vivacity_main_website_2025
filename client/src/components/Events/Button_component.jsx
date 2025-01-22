@@ -19,13 +19,12 @@ const navigate=useNavigate();
         <button
           onClick={handleRulebookClick}
           className="transform hover:scale-105 transition-transform relative 
-            w-64 sm:w-72 md:w-80 lg:w-96 
-            max-sm:mb-4"
+            w-64 sm:w-72 md:w-80 lg:w-96 xl:w-[30rem] max-sm:mb-4"
         >
           <img
             src={textbox}
             alt="Download Rulebook"
-            className="w-full h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
+            className="w-full h-12 sm:h-14 md:h-16 lg:h-40 object-contain"
           />
           <div className="absolute inset-0 flex items-center justify-center px-2">
             <p className="text-black text-lg sm:text-xl md:text-2xl lg:text-3xl font-rfabb font-medium leading-tight">
@@ -41,12 +40,12 @@ const navigate=useNavigate();
         <button
           onClick={handleRegisterClick}
           className="transform hover:scale-105 transition-transform relative 
-            w-64 sm:w-72 md:w-80 lg:w-96"
+            w-64 sm:w-72 md:w-80 lg:w-96 xl:w-[30rem]"
         >
           <img
             src={textbox}
             alt="Register"
-            className="w-full h-12 sm:h-14 md:h-16 lg:h-20 object-contain"
+            className="w-full object-contain"
           />
           <div className="absolute inset-0 flex items-center justify-center px-2">
             <p className="text-black text-lg sm:text-xl md:text-2xl lg:text-3xl font-rfabb font-medium leading-tight">
