@@ -5,22 +5,58 @@ import CurvyLine2 from "../../assets/images/line2.png"
 import CurveLine from "../../assets/images/line.png";
 function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne, LeftTwo, CardTeam, Members, PositionArr = ["0", "0", "0", "0"] }) {
     let asset;
+    let rotang;
+    let w;
+    let mt;
+    let mt1;
     if (SectionTitle === "Fest Heads") {
         asset = CurvyLine;
+        rotang = "-4.75°";
+        w = "100";
+        mt = "-3.25rem";
+        mt1 = "-2.5rem";
       } else if (SectionTitle === "Cultural Council") {
-        asset = CurvyLine;
+        asset = CurvyLine2;
+        rotang = "-4.75°";
+        w = "100";
+        mt = "-3rem";
+        mt1 = "-2rem";
       } else if (SectionTitle === "Development Team") {
-        asset = CurvyLine;
+        asset = CurveLine;
+        rotang = "0°";
+        w = "95";
+        mt = "-2.25rem";
+        mt1 = "-1.5rem";
       } else if (SectionTitle === "Creative Team") {
         asset = CurvyLine;
+        rotang = "-4.75°";
+        w = "90";
+        mt = "-3.5rem";
+        mt1 = "-2rem";
       } else if (SectionTitle === "Sponsorship Team") {
-        asset = CurvyLine;
+        asset = CurveLine;
+        rotang = "0°";
+        w = "95";
+        mt = "-2.25rem";
+        mt1 = "-1.25rem";
       } else if (SectionTitle === "PR & Events Team") {
-        asset = CurvyLine;
+        asset = CurvyLine2;
+        rotang = "-2.25°";
+        w = "100";
+        mt = "-2.75rem";
+        mt1 = "-1.5rem";
       } else if (SectionTitle === "Hospitality & Logistics Team") {
-        asset = CurvyLine;
+        asset = CurvyLine2;
+        rotang = "-2.25°";
+        w = "69";
+        mt = "-3.25rem";
+        mt1 = "-1.25rem";
       } else if (SectionTitle === "Curation Team") {
-        asset = CurvyLine;
+        asset = CurvyLine2;
+        rotang = "-2.25°";
+        w = "100";
+        mt = "-2.75rem";
+        mt1 = "-1.75rem";
       }
     return (
         <div className="relative flex justify-center py-[5%]"
@@ -72,10 +108,11 @@ function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne,
                     )}
 
 
-                    <div className="w-[100%] text-center font-ttr lg:text-[6.25rem] font-[600] text-[4.5rem] lg:mt-[0%] mt-[15%] flex justify-center items-center">
-                        <div className="w-fit">
+                    <div className="w-[100%] text-center font-ttr lg:text-[6.25rem] font-[600] text-[17.5vw] lg:mt-[0%] mt-[15%] flex justify-center items-center">
+                        <div className={`w-fit ${rotang === "0°" ? "mb-[3%]" : "mb-0"} `}>
                             {SectionTitle}
-                            <div className="w-full flex justify-center mt-[-3.25rem]"><img src={asset} className="rotate-[-4.75°] w-full"></img></div>
+                            <div className={`w-full justify-center items-center hidden lg:flex`} style={{marginTop:mt}}><img src={asset} className={`rotate-[${rotang}] w-[${w}%]`}></img></div>
+                            <div className={`w-full justify-center items-center flex lg:hidden`} style={{marginTop:mt1}}><img src={asset} className={`rotate-[${rotang}] w-[${w}%]`}></img></div>
                         </div>
                     </div>
                     <div className="grid place-items-center grid-cols-1 mx-32">
