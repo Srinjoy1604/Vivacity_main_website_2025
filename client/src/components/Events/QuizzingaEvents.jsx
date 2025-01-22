@@ -19,7 +19,7 @@ function QuizzingaEvents() {
 
       <div className="space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[8%] md:pt-[6%] ">
         <div className="flex flex-col items-center  md:flex-row   justify-center  h-[100%] w-[100%] space-y-[5%] md:space-y-[0%] space-x-[2%] ">
-          <div className="relative  w-[91.11%] h-[29%]  md:w-[59.2%] md:h-[42.5%] ">
+          <div className="relative  w-[98.11%] h-[29%]  md:w-[59.2%] md:h-[42.5%] ">
             <img className="w-[100%] h-[100%]" src={BamboozledBg} alt="" />
             <div className="">
               <img
@@ -40,8 +40,8 @@ function QuizzingaEvents() {
               </div>
             </div>
           </div>
-          <div className="relative  w-[91.11%] h-[29%]  md:w-[50.4%]  md:h-[42.5%] ">
-            <img className=" h-[100%] w-[100%]" src={MovieAuctionBg} alt="" />
+          <div className="relative  w-[98.11%] h-[29%]  md:w-[50.4%]  md:h-[42.5%] ">
+            <img className=" h-[100%] ml-[-1%] w-[100%]" src={MovieAuctionBg} alt="" />
             <img
               className="absolute bottom-[20.5%] left-[4%] w-[39.1%] "
               src={MovieAuctionText}

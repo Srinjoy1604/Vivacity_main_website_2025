@@ -20,7 +20,7 @@ function FashionEvents() {
 
       <div className=" space-y-[2%]  flex flex-row md:flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[10%] md:pt-[6%] ">
         <div className="flex items-center flex-col md:flex-row   justify-center  h-[100%] w-[100%] space-y-[4%] md:space-y-[0%]  md:space-x-[2%] ">
-          <div className="relative w-[91.11%] h-[29%] md:w-[49.5%] md:h-[42.5%] ">
+          <div className="relative w-[98.11%] h-[29%] md:w-[49.5%] md:h-[42.5%] ">
             <img className="w-[100%] h-[100%]" src={VivaBg} alt="" />
             <div className="">
               <img
@@ -41,7 +41,7 @@ function FashionEvents() {
               </div>
             </div>
           </div>
-          <div className="relative  w-[91.11%] h-[40%]  md:w-[55%]  md:h-[42.5%] ">
+          <div className="relative  w-[98.11%] h-[40%]  md:w-[55%]  md:h-[42.5%] ">
             <img className=" h-[100%] w-[100%]" src={VogueBg} alt="" />
             <img
               className="absolute bottom-[24%] left-[3%] md:right-[3%] w-[18.1%] "

@@ -31,9 +31,9 @@ function DramaEvents() {
         />
       </div>
 
-      <div className="space-y-[2%] flex flex-col justify-center  mx-auto w-full h-full px-[0.5%] pt-[5%] md:pt-[3.5%] ">
-        <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] w-[100%] space-y-[2%]  md:space-y-[0%] md:space-x-[2%]">
-          <div className="relative w-[91%] md:w-[57.1%] h-[76.9%] ">
+      <div className="space-y-[2%] flex flex-col justify-center  items-center w-full h-full md:px-[0.5%] pt-[5%] md:pt-[3.5%] ">
+        <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] md:w-[100%] w-[95%] space-y-[2%]  md:space-y-[0%] md:space-x-[2%]">
+          <div className="relative w-[100%] md:w-[57.1%] h-[76.9%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={PaddhatiBg}
@@ -69,7 +69,7 @@ function DramaEvents() {
               </div>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[40%]  h-[.9%] ">
+          <div className="relative w-[100%] md:w-[40%]  h-[.9%] ">
             <img
               className="hidden md:block h-[100%] w-[100%]"
               src={MukhautaBg}
@@ -102,8 +102,8 @@ function DramaEvents() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] w-[100%] space-y-[2%]  md:space-y-[0%]  md:space-x-[2%] ">
-          <div className="relative w-[91%] md:w-[49.40%] h-[50%] ">
+        <div className="flex flex-col  md:flex-row  justify-center  items-center h-[100%] md:w-[100%] w-[95%] space-y-[2%]  md:space-y-[0%]  md:space-x-[2%] ">
+          <div className="relative w-[100%] md:w-[49.40%] h-[50%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
               src={RangshalaBg}
@@ -146,7 +146,7 @@ function DramaEvents() {
               </p>
             </div>
           </div>
-          <div className="relative w-[91%] md:w-[53.3%] h-[50%] ">
+          <div className="relative w-[100%] md:w-[53.3%] h-[50%] ">
             <img
               className="hidden md:block h-[100%] w-[100%]"
               src={HunkaarBg}
