@@ -6,6 +6,7 @@ import MovieAuctionText from "../../assets/images/MovieAuctionText.webp";
 import BamboozledBg from "../../assets/images/BamboozledBg.webp";
 import MovieAuctionBg from "../../assets/images/MovieAuctionBg.webp";
 import Button_Component from "./Button_component";
+import Quizzinga from '../../assets/pdf/Quzzinga.pdf'
 function QuizzingaEvents() {
   return (
     <div
@@ -62,7 +63,7 @@ function QuizzingaEvents() {
           
         </div>
         <div className="w-[100%] pb-4">
-            <Button_Component showRegister={true} showRulebook={false} />
+            <Button_Component section={Quizzinga} showRegister={true} showRulebook={true} />
         </div>
       </div>
     </div>

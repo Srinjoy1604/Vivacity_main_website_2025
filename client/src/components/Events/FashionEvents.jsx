@@ -6,7 +6,7 @@ import VougeText from "../../assets/images/VougeText.webp";
 import VivaBg from "../../assets/images/VivaBg.webp";
 import VogueBg from "../../assets/images/VogueBg.webp";
 import Button_Component from "./Button_component";
-
+import Eminence from '../../assets/pdf/Eminence.pdf'
 function FashionEvents() {
   return (
     <div
@@ -65,7 +65,7 @@ function FashionEvents() {
         </div>
       </div>
       <div className="w-[100%] mt-6 mb-6">
-            <Button_Component showRegister={true} showRulebook={false} />
+            <Button_Component section={Eminence} showRegister={true} showRulebook={true} />
       </div>
     </div>
   );

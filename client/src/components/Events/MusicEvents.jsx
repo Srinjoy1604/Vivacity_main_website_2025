@@ -22,6 +22,7 @@ import GullyWarBgMobile from "../../assets/images/GullyWarBgMobile.webp";
 import MalhaarBgMobile from "../../assets/images/MalhaarBgMobile.webp";
 import AarohBgMobile from "../../assets/images/AarohBgMobile.webp";
 import Button_Component from "./Button_component";
+import Capriccio from '../../assets/pdf/Capriccio.pdf'
 function MusicEvents() {
   return (
     <div className={`${Styles.MusicBg} w-full h-[100%] p-[3%] flex flex-col`}>
@@ -209,7 +210,7 @@ function MusicEvents() {
         </div>
         <div>
           <div className=" pt-[0.1%] lg:pt-8 md:pt-8 lg:pb-[6.3%] md:pb-[6.3%] pb-[2%]">
-            <Button_Component showRegister={true} showRulebook={true} />
+            <Button_Component section={Capriccio} showRegister={true} showRulebook={true} />
           </div>
         </div>
       </div>

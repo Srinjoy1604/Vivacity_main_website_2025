@@ -18,6 +18,8 @@ import MukhautaBgMobile from "../../assets/images/MukhautaBgMobile.webp";
 import RangshalaBgMobile from "../../assets/images/RangshalaBgMobile.webp";
 import HunkaarBgMobile from "../../assets/images/HunkaarBgMobile.webp";
 import Button_Component from "./Button_component";
+
+import Rendition from '../../assets/pdf/Rendition.pdf'
 function DramaEvents() {
   return (
     <div
@@ -191,7 +193,7 @@ function DramaEvents() {
         </div>
       </div>
       <div className=" pt-[0.7%] lg:pt-8 md:pt-8 lg:pb-[6.3%] md:pb-[6.3%] pb-[4%]">
-        <Button_Component showRegister={true} showRulebook={true} />
+        <Button_Component section={Rendition} showRegister={true} showRulebook={true} />
       </div>
     </div>
   );

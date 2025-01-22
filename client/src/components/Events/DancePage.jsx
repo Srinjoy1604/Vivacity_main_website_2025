@@ -1,6 +1,6 @@
 import Background from "../../assets/images/MacBook Air - 1.webp";
 import Title2 from "../../assets/images/DanceTitle2.webp";
-
+import Insignia from '../../assets/pdf/Insignia.pdf';
 import Topleft from "../../assets/images/TopLeftimg.webp";
 import Topright from "../../assets/images/TopRightimg.webp";
 import MiddleLeft from "../../assets/images/MiddleLeftimg.webp";
@@ -353,7 +353,7 @@ function DancePage(){
           {/* Buttons */}
 
           <div className="w-[100%] p-[2%] mb-[3%]">
-            <Button_Component showRegister={true} showRulebook={true} />
+            <Button_Component section={Insignia} showRegister={true} showRulebook={true} />
           </div>
             
             </div>
@@ -614,7 +614,7 @@ function DancePage(){
                  </div>
                 
                  <div className="w-[100%] relative bottom-0 p-[5%]">
-            <Button_Component showRegister={true} showRulebook={true} />
+            <Button_Component section={Insignia} showRegister={true} showRulebook={true} />
           </div>
             </div>
                 </div>
