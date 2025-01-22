@@ -8,7 +8,6 @@ body {
     user-select: none; /* Standard syntax */
     -ms-user-select: none;
     -webkit-user-drag: none;
-    touch-action: none;
 }
 
 img {
