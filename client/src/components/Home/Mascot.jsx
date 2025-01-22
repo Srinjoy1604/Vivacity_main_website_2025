@@ -89,7 +89,7 @@ function Mascot() {
         </div>
         <div className="w-[100%] h-[100%] max-[800px]:hidden">
           <div
-            className={`${styles.Mascot} grid place-items-center h-full w-[100%] py-[2%]`}
+            className={`${styles.Mascot} grid place-items-center h-full w-[100%]`}
           >
             <img src={NetraLarge} className="w-[100%] h-[100%]"></img>
           </div>
