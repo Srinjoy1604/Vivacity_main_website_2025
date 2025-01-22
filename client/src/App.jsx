@@ -12,6 +12,7 @@ import StartLoader from '../src/assets/videos/StartLoader.gif'; // Replace with 
 import Preloader from '../src/assets/videos/PreLoader.gif'; // Replace with the actual path
 import Sponsors from './pages/Sponsors';
 import Page404 from './pages/404';
+import MobileStartLoader from './assets/videos/MobileStartLoader.gif';
 function AppContent() {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
@@ -57,7 +58,11 @@ function AppContent() {
   if (isFirstLoad) {
     return (
       <div className="loader-container">
-        <img src={StartLoader} alt="Start Loading..." className="loader" />
+        <img src={StartLoader} alt="Start Loading..." className="loader lg:block hidden" />
+        <img src={MobileStartLoader} alt="Loading..." className="loaderMob lg:hidden block" style={{
+          height:"100%",
+          width:"100%"
+        }} />
       </div>
     );
   }
@@ -67,6 +72,7 @@ function AppContent() {
     return (
       <div className="loader-container full-screen">
         <img src={Preloader} alt="Loading..." className="loader" />
+        
       </div>
     );
   }
@@ -80,6 +86,7 @@ function AppContent() {
         <Route path="/NormalRegistration" element={<NormalRegistration />} />
         <Route path="/OurTeam" element={<OurTeams />} />
         <Route path="/Sponsors" element={<Sponsors />} />
+        <Route path="/Netra" element={<Sponsors />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
       {/* Mobile footer */}
