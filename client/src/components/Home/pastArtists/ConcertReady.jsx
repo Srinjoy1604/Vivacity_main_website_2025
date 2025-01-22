@@ -34,10 +34,10 @@ const Concert = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="flex justify-center items-center pt-40 xxs:pt-48 xs:pt-64 xs:ml-8 pb-24">
+          <div className="flex justify-center items-center pt-48 xxs:pt-48 xs:pt-64 xs:ml-8 pb-24">
             <div className=" flex flex-col justify-center w-[100%] items-center">
               {/* GIF container - made responsive */}
-              <div className="w-[60%] xs:w-[65%] mb-[2%] relative">
+              <div className="w-[82%] xxs:w-[70%] mb-[2%] relative">
                 <div className="relative w-full">
                   <img
                     src={PastArtistGIFBorder}
@@ -52,7 +52,7 @@ const Concert = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col space-y-[1vh] w-[62%] xs:w-[65%] ">
+              <div className="flex flex-col space-y-[2%] pt-[2%] xxs:w-[70%] w-[82%] xs:w-[65%] ">
                 <h2 className="font-bold font-rfabb text-[6.5vw] 380:text-[7.8vw] xs:text-[6.1vw] leading-tight">
                   GET CONCERT READY NOW!
                 </h2>
@@ -66,7 +66,7 @@ const Concert = () => {
                   </p>
 
                   {/* Buttons container*/}
-                  <div className="flex gap-2 xxs:gap-3 xs:gap-4 sm:gap-5 justify-start mt-1 xs:mb-[5%]">
+                  <div className="flex gap-2 xxs:gap-3 xs:gap-4 sm:gap-5 justify-start mt-[7%] xs:mb-[5%]">
                     <button className="px-[2%] py-[1.2%] xxs:px-3 xxs:py-2 xs:px-3  xs:py-2 sm:px-5 sm:py-3 border border-green-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3">
                       <img
                         src={Spotify}

@@ -7,7 +7,7 @@ import TwitterIcon from "../assets/images/twitterLogo.webp";
 import FooterBackground from "../assets/images/FooterBackground.webp";
 import Backbg from "../assets/images/Team.webp";
 import Backbg1 from "../assets/images/ExcitingBg.webp";
-import Backbg2 from "../assets/images/DarkVioletCrissCross.webp";
+import Backbg2 from "../assets/images/VioletBg.webp";
 import { Link, NavLink } from "react-router-dom";
 
 function Footer() {

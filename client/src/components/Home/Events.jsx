@@ -168,7 +168,7 @@ const Events = () => {
 
   return (
     <div
-      className="min-h-[60vh] flex flex-col justify-center items-center "
+      className="min-h-[60vh] flex flex-col justify-center items-center md:pb-[0%] xs:pb-[4%] xxs:pb-[7%] pb-[10%]"
       style={{
         backgroundImage: `url(${BackGround})`,
         backgroundSize: "cover",

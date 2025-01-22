@@ -67,7 +67,7 @@ function OurTeams() {
     return (
         <div className="overflow-hidden">
             <div
-                className="relative sm:pt-[20%] pt-[25%] md:pt-[9%]"
+                className="relative pt-[25%] sm:pt-[20%] md:pt-[10%] pb-[5%]"
                 style={{
                     backgroundImage: `url(${BgGreen})`,
                     backgroundSize: "cover",
@@ -87,7 +87,7 @@ function OurTeams() {
                 <div className="w-[100%] text-center font-ttr lg:text-[6.25rem] font-[600] text-[4.5rem] lg:mt-[0%] mt-[15%] flex justify-center items-center">
                         <div className="w-fit">
                             Our Mentors
-                            <div className="w-[100%] flex justify-center items-center mt-[-3.25rem]"><img src={asset} className="rotate-[-4.75°] w-[90%]"></img></div>
+                            <div className="w-[100%] flex justify-center items-center mt-[-2.25rem] lg:mt-[-3.25rem]"><img src={asset} className="rotate-[-4.75°] w-[100%] lg:w-[85%]"></img></div>
                         </div>
                     </div>
 
