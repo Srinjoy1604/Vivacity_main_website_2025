@@ -1,12 +1,14 @@
 import React from "react";
-import vivacityLogo from "../assets/images/Vivalogo_mobile.webp";
-import FacebookIcon from "../assets/images/facebookLogo.webp";
-import InstagramIcon from "../assets/images/instagramLogo.webp";
-import TwitterIcon from "../assets/images/twitterLogo.webp";
-import FooterBackground from "../assets/images/Footer_mobile.webp";
-import Backbg from "../assets/images/Team.webp";
-import Backbg1 from "../assets/images/ExcitingBg.webp";
-import Backbg2 from "../assets/images/VioletBg.webp";
+const aws = import.meta.env.VITE_AWS;
+
+const vivacityLogo = `${aws}/Vivalogo_mobile.webp`;
+const FacebookIcon = `${aws}/facebookLogo.webp`;
+const InstagramIcon = `${aws}/instagramLogo.webp`;
+const TwitterIcon = `${aws}/twitterLogo.webp`;
+const FooterBackground = `${aws}/Footer_mobile.webp`;
+const Backbg = `${aws}/Team.webp`;
+const Backbg1 = `${aws}/ExcitingBg.webp`;
+const Backbg2 = `${aws}/VioletBg.webp`;
 
 function Footer1() {
   const aspectRatio = 512 / 512;

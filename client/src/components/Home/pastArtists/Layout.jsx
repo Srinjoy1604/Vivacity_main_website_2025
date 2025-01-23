@@ -1,8 +1,11 @@
 import React from "react";
-import BackGround from "../../../assets/images/YellowBg.webp";
-import Title from "../../../assets/images/PastArtistsTitle.webp";
+
 import Artist from "./ArtistCarosuel";
 import Concert from "./ConcertReady";
+const aws = import.meta.env.VITE_AWS;
+
+const BackGround = `${aws}/YellowBg.webp`;
+const Title = `${aws}/PastArtistsTitle.webp`;
 
 function Sec() {
   return (

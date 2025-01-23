@@ -1,8 +1,8 @@
 .HeadingBar {
-  background-image: url("../../assets/images/PortalHeading.webp");
+  background-image: url("https://d2tfnz5m7k1weq.cloudfront.net/PortalHeading.webp");
 }
 .PortalMain {
-  background-image: url("../../assets/images/portalBg.svg");
+  background-image: url("https://d2tfnz5m7k1weq.cloudfront.net/portalBg.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }

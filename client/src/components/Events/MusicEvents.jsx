@@ -1,28 +1,32 @@
 import React from "react";
 import Styles from "../Events/DramaEvents.module.css";
-import MusicTitle from "../../assets/images/MusicTitle.webp";
-import BattleOfBandsText from "../../assets/images/BattleOfBandsText.webp";
-import BobTextMobile from "../../assets/images/BobTextMobile.webp";
-import BandishText from "../../assets/images/BandishText.webp";
-import BandishTextMobile from "../../assets/images/BandishTextMobile.webp";
-import AarohText from "../../assets/images/AArohText.webp";
-import AarohTextMobile from "../../assets/images/AarohTextMobile.webp";
-import MalhaarText from "../../assets/images/MalhaarText.webp";
-import MalhaarTextMobile from "../../assets/images/MalhaarTextMobile.webp";
-import GullyWarText from "../../assets/images/GullyWarText.webp";
-import GullyWarTextMobile from "../../assets/images/GullyWarTextMobile.webp";
-import BattleOfBandsBg from "../../assets/images/BattleOfBandsBg.webp";
-import BandishBg from "../../assets/images/BandishBg.webp";
-import GullyWarBg from "../../assets/images/GullyWarBg.webp";
-import MalhaarBg from "../../assets/images/MalhaarBg.webp";
-import AarohBg from "../../assets/images/AarohBg.webp";
-import BobBgMobile from "../../assets/images/BobBgMobile.webp";
-import BandishBgMobile from "../../assets/images/BandishBgMobile.webp";
-import GullyWarBgMobile from "../../assets/images/GullyWarBgMobile.webp";
-import MalhaarBgMobile from "../../assets/images/MalhaarBgMobile.webp";
-import AarohBgMobile from "../../assets/images/AarohBgMobile.webp";
+
 import Button_Component from "./Button_component";
-import Capriccio from '../../assets/pdf/Capriccio.pdf'
+const aws = import.meta.env.VITE_AWS;
+
+const MusicTitle = `${aws}/MusicTitle.webp`;
+const BattleOfBandsText = `${aws}/BattleOfBandsText.webp`;
+const BobTextMobile = `${aws}/BobTextMobile.webp`;
+const BandishText = `${aws}/BandishText.webp`;
+const BandishTextMobile = `${aws}/BandishTextMobile.webp`;
+const AarohText = `${aws}/AArohText.webp`;
+const AarohTextMobile = `${aws}/AarohTextMobile.webp`;
+const MalhaarText = `${aws}/MalhaarText.webp`;
+const MalhaarTextMobile = `${aws}/MalhaarTextMobile.webp`;
+const GullyWarText = `${aws}/GullyWarText.webp`;
+const GullyWarTextMobile = `${aws}/GullyWarTextMobile.webp`;
+const BattleOfBandsBg = `${aws}/BattleOfBandsBg.webp`;
+const BandishBg = `${aws}/BandishBg.webp`;
+const GullyWarBg = `${aws}/GullyWarBg.webp`;
+const MalhaarBg = `${aws}/MalhaarBg.webp`;
+const AarohBg = `${aws}/AarohBg.webp`;
+const BobBgMobile = `${aws}/BobBgMobile.webp`;
+const BandishBgMobile = `${aws}/BandishBgMobile.webp`;
+const GullyWarBgMobile = `${aws}/GullyWarBgMobile.webp`;
+const MalhaarBgMobile = `${aws}/MalhaarBgMobile.webp`;
+const AarohBgMobile = `${aws}/AarohBgMobile.webp`;
+const Capriccio = `${aws}/Capriccio.pdf`;
+
 function MusicEvents() {
   return (
     <div className={`${Styles.MusicBg} w-full h-[100%] p-[3%] flex flex-col`}>

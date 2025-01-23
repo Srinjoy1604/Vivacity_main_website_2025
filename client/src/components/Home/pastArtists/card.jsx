@@ -1,12 +1,11 @@
 import React from "react";
-import BackGround from "../../../assets/images/Group 60.webp";
 
 const ArtistCard = ({ artist }) => {
   return (
     <div
       className="relative w-[280px] md:w-[300px] lg:w-[350px] aspect-[312/451] mb-[5%]"
       style={{
-        backgroundImage: `url(${BackGround})`,
+        backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Group 60.webp")`,
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

@@ -1,13 +1,18 @@
 import React, { useEffect, useRef } from "react";
-import ring1 from "../../assets/images/ring1.svg";
-import ring2 from "../../assets/images/ring2.svg";
-import ring3 from "../../assets/images/ring3.svg";
-import ring4 from "../../assets/images/ring4.svg";
+
 import styles from "./Portal.module.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lottie from "lottie-react";
 import MouseAnimation from "../../assets/videos/Mouse.json";
+
+const aws = import.meta.env.VITE_AWS;
+
+const ring1 = `${aws}/ring1.svg`;
+const ring2 = `${aws}/ring2.svg`;
+const ring3 = `${aws}/ring3.svg`;
+const ring4 = `${aws}/ring4.svg`;
+
 
 gsap.registerPlugin(ScrollTrigger);
 

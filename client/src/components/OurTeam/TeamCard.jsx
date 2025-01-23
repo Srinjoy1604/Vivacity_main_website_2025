@@ -1,8 +1,11 @@
 import React, { useRef, useEffect } from "react";
-import YellowLower from "../../assets/images/CardYellowBellowPattern.webp";
-import YellowTop from "../../assets/images/CardYellowTopPattern.webp";
-import mail from "../../assets/images/mail_heart_svgrepo.webp";
-import Insta from "../../assets/images/vimeo_social_logo.webp";
+const aws = import.meta.env.VITE_AWS;
+
+const YellowLower = `${aws}/CardYellowBellowPattern.webp`;
+const YellowTop = `${aws}/CardYellowTopPattern.webp`;
+const mail = `${aws}/mail_heart_svgrepo.webp`;
+const Insta = `${aws}/vimeo_social_logo.webp`;
+
 function TeamCard({ CardData }) {
     return (
         <div className="relative aspect-[100/133] lg:w-[21.6vw] sm:w-[60vw] w-[85vw] max-w-[400px]"

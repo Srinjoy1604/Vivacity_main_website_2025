@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
-import BackGround from "../../../assets/images/Section6Background2.webp";
-import mdbackground from "../../../assets/images/mdbackground.webp";
-import Gif from "../../../assets/videos/cd_glitch.gif";
-import AppleMusic from "../../../assets/images/AppleMusicLogo.webp";
-import Spotify from "../../../assets/images/SpotifyLogo.webp";
-import PastArtistGIFBorder from "../../../assets/images/PastArtistGIFBorder.webp";
+const aws = import.meta.env.VITE_AWS;
+
+const BackGround = `${aws}/Section6Background2.webp`;
+const mdbackground = `${aws}/mdbackground.webp`;
+const Gif = `${aws}/cd_glitch.gif`;
+const AppleMusic = `${aws}/AppleMusicLogo.webp`;
+const Spotify = `${aws}/SpotifyLogo.webp`;
+const PastArtistGIFBorder = `${aws}/PastArtistGIFBorder.webp`;
+
 const Concert = () => {
   const [backgroundSize, setBackgroundSize] = useState("cover");
 

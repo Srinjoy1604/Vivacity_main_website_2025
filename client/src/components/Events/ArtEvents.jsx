@@ -1,31 +1,36 @@
 import React from "react";
-import bg from "../../assets/images/ArtEvent_0.webp";
-import image1 from "../../assets/images/ArtEvent_1.webp";
-import image2 from "../../assets/images/ArtEvent_2.webp";
-import image3 from "../../assets/images/ArtEvent_3.webp";
-import image4 from "../../assets/images/ArtEvent_4.webp";
-import image5 from "../../assets/images/ArtEvent_5.webp";
-import title from "../../assets/images/ArtEvent_title.webp";
-import text1 from "../../assets/images/textbox1.webp";
-import image7 from "../../assets/images/Artevent_mobile_1.webp";
-import image8 from "../../assets/images/Artevent_mobile_2.webp";
-import image9 from "../../assets/images/Artevent_mobile_3.webp";
-import image10 from "../../assets/images/Artevent_mobile_4.webp";
-import image11 from "../../assets/images/Artevent_mobile_5.webp";
 
-import bigtextbox from "../../assets/images/bigtextbox.webp";
-import tatoo from "../../assets/images/tatoo.webp";
-import splash from "../../assets/images/splash.webp";
-import contrasto from "../../assets/images/contrasto.webp";
-import universe from "../../assets/images/universe.webp";
-import eclitc from "../../assets/images/eclitc.webp";
+const aws=import.meta.env.VITE_AWS;
+const bg = `${aws}/ArtEvent_0.webp`;
+const image1 = `${aws}/ArtEvent_1.webp`;
+const image2 = `${aws}/ArtEvent_2.webp`;
+const image3 = `${aws}/ArtEvent_3.webp`;
+const image4 = `${aws}/ArtEvent_4.webp`;
+const image5 = `${aws}/ArtEvent_5.webp`;
+const title = `${aws}/ArtEvent_title.webp`;
+const text1 = `${aws}/textbox1.webp`;
+const image7 = `${aws}/Artevent_mobile_1.webp`;
+const image8 = `${aws}/Artevent_mobile_2.webp`;
+const image9 = `${aws}/Artevent_mobile_3.webp`;
+const image10 = `${aws}/Artevent_mobile_4.webp`;
+const image11 = `${aws}/Artevent_mobile_5.webp`;
+const bigtextbox = `${aws}/bigtextbox.webp`;
+const tatoo = `${aws}/tatoo.webp`;
+const splash = `${aws}/splash.webp`;
+const contrasto = `${aws}/contrasto.webp`;
+const universe = `${aws}/universe.webp`;
+const eclitc = `${aws}/eclitc.webp`;
+const Universe = `${aws}/art_mobile_1.webp`;
+const Tatoo = `${aws}/art_mobile_2.webp`;
+const Eclitc = `${aws}/art_mobile_3.webp`;
+const Contrasto = `${aws}/art_mobile_4.webp`;
+const Splash = `${aws}/art_mobile_5.webp`;
 
-import Universe from "../../assets/images/art_mobile_1.webp";
-import Tatoo from "../../assets/images/art_mobile_2.webp";
-import Eclitc from "../../assets/images/art_mobile_3.webp";
-import Contrasto from "../../assets/images/art_mobile_4.webp";
-import Splash from "../../assets/images/art_mobile_5.webp";
+
+
+
 import Button_Component from "./Button_component";
+
 function ArtEvents() {
   const handleRegisterClick = () => {
     navigate("/register");

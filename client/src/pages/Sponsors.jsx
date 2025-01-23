@@ -1,8 +1,11 @@
 import React from "react";
-import ComingSoon from "../assets/images/ComingSoonDesktop.webp";
-import ComingSoonMob from "../assets/images/ComingSoonMobile.webp";
-import SkateGIF from "../assets/videos/skatepink.gif";
-import SkateGIFMob from "../assets/videos/skatepinkMobile.gif";
+const aws = import.meta.env.VITE_AWS;
+
+const ComingSoon = `${aws}/ComingSoonDesktop.webp`;
+const ComingSoonMob = `${aws}/ComingSoonMobile.webp`;
+const SkateGIF = `${aws}/skatepink.gif`;
+const SkateGIFMob = `${aws}/skatepinkMobile.gif`;
+
 function Sponsors() {
     return (
         <div className="w-full h-[100%]">

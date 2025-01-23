@@ -1,5 +1,8 @@
 import React from "react";
-import textbox from "../../assets/images/DownloadRulebook.webp";
+const aws=import.meta.env.VITE_AWS;
+
+const textbox = `${aws}/DownloadRulebook.webp`;
+
 import {useNavigate} from 'react-router-dom'
 const Button_Component = ({ showRulebook = true, showRegister = true,section }) => {
   const handleRulebookClick = () => {

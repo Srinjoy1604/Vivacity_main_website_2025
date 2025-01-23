@@ -1,18 +1,23 @@
 import React, { useState } from "react";
 import Infinite from "../subPages/Infinite";
-import Image1 from "../../assets/images/AboutBkg.webp";
-import Image2 from "../../assets/images/Halftone.webp";
-import Image3 from "../../assets/images/Name_Tag_unit.webp";
-import Image4 from "../../assets/images/BlackRegisterNowBtn.webp";
-import Image44 from "../../assets/images/RegisterNowBtn.webp"
-import Image5 from "../../assets/images/blue_arrow.webp";
-import Image6 from "../../assets/images/red_arrow.webp";
-import Oval from "../../assets/images/Oval.webp";
-import HelloBtnshadow from "../../assets/images/HelloBtnshadow.webp";
+
 import { NavLink, useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import MouseAnimation from "../../assets/videos/Mouse.json";
-import Spiderman from "../../assets/videos/spiderman.gif";
+
+const aws = import.meta.env.VITE_AWS;
+
+const Image1 = `${aws}/AboutBkg.webp`;
+const Image2 = `${aws}/Halftone.webp`;
+const Image3 = `${aws}/Name_Tag_unit.webp`;
+const Image4 = `${aws}/BlackRegisterNowBtn.webp`;
+const Image44 = `${aws}/RegisterNowBtn.webp`;
+const Image5 = `${aws}/blue_arrow.webp`;
+const Image6 = `${aws}/red_arrow.webp`;
+const Oval = `${aws}/Oval.webp`;
+const Spiderman = `${aws}/spiderman.gif`;
+const HelloBtnshadow = `${aws}/HelloBtnshadow.webp`;
+
 function About() {
   const textContent =
     "\u00A0\u00A0\u00A0\u00A0\u00A0KEEP\u00A0\u00A0SCROLLING!\u00A0\u00A0\u00A0\u00A0\u00A0";

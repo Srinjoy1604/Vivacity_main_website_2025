@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import Legacybackground from "../../assets/images/LegacyBg.webp";
 import VideoGrid from "./Videogrid";
-import Title from "../../assets/images/LegacyTitle.webp";
+
+
+const aws = import.meta.env.VITE_AWS;
+
+const Legacybackground = `${aws}/LegacyBg.webp`;
+const Title = `${aws}/LegacyTitle.webp`;
 
 const Legacy = () => {
   return (

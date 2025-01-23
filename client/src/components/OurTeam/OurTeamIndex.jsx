@@ -1,12 +1,15 @@
 import React from "react";
-import FestHeads from "../../assets/images/FestHeads.webp";
-import Council from "../../assets/images/council.webp";
-import Creative from "../../assets/images/creative.webp";
-import Dev from "../../assets/images/Dev.webp";
-import Sponsorship from "../../assets/images/Sponsorship.webp";
-import Events from "../../assets/images/Events.webp";
-import Logistics from "../../assets/images/Logistics.webp";
-import Curation from "../../assets/images/Curation.webp";
+const aws = import.meta.env.VITE_AWS;
+
+const FestHeads = `${aws}/FestHeads.webp`;
+const Council = `${aws}/council.webp`;
+const Creative = `${aws}/creative.webp`;
+const Dev = `${aws}/Dev.webp`;
+const Sponsorship = `${aws}/Sponsorship.webp`;
+const Events = `${aws}/Events.webp`;
+const Logistics = `${aws}/Logistics.webp`;
+const Curation = `${aws}/Curation.webp`;
+
 
 function OurTeamIndex({ scrollToSection }) {
     return (

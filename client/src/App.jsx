@@ -13,11 +13,17 @@ import Home from "./pages/Home";
 import NormalRegistration from "./pages/NormalRegistration";
 import EventsPage from "./pages/EventsPage";
 import OurTeams from "./pages/OurTeams";
-import StartLoader from "../src/assets/videos/StartLoader.gif"; // Replace with the actual path
-import Preloader from "../src/assets/videos/PreLoader.gif"; // Replace with the actual path
+
 import Sponsors from "./pages/Sponsors";
 import Page404 from "./pages/404";
-import MobileStartLoader from "./assets/videos/MobileStartLoader.gif";
+
+const aws = import.meta.env.VITE_AWS;
+
+const StartLoader = `${aws}/StartLoader.gif`;
+const Preloader = `${aws}/PreLoader.gif`;
+const MobileStartLoader = `${aws}/MobileStartLoader.gif`;
+
+
 function AppContent() {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [isLoading, setIsLoading] = useState(false);

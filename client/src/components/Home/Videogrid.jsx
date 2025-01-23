@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import thumbnail1 from "../../assets/images/Top_left.webp";
-import thumbnail2 from "../../assets/images/Top_right.webp";
-import thumbnail3 from "../../assets/images/Bottom_left.webp";
-import thumbnail4 from "../../assets/images/Bottom_right.webp";
-import button1 from "../../assets/images/Btn_front1.webp";
-import button2 from "../../assets/images/Btn_front2.webp";
-import vhs from "../../assets/videos/vhs.mp4";
+const aws = import.meta.env.VITE_AWS;
+
+const thumbnail1 = `${aws}/Top_left.webp`;
+const thumbnail2 = `${aws}/Top_right.webp`;
+const thumbnail3 = `${aws}/Bottom_left.webp`;
+const thumbnail4 = `${aws}/Bottom_right.webp`;
+const button1 = `${aws}/Btn_front1.webp`;
+const button2 = `${aws}/Btn_front2.webp`;
+const vhs = `${aws}/vhs.mp4`;
+
 
 const VideoGrid = () => {
   const [activeVideo, setActiveVideo] = useState(null);

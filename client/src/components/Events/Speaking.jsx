@@ -1,48 +1,50 @@
-import Background from "../../assets/images/Danceevents2bg.webp";
-// import Title2 from "../../assets/images/Title2.webp";
-// import subtitle2 from "../../assets/images/Subheading.webp";
-import Topleft from "../../assets/images/Group 96-2.webp";
-import Topright from "../../assets/images/Subtext.webp";
-import MiddleLeft from "../../assets/images/Subtext-2.webp";
-import MiddleRight from "../../assets/images/Subtext-3.webp";
-import BottomLeft from "../../assets/images/Subtext-4.webp";
-import BottomRight from "../../assets/images/Subtext-5.webp";
-import Topleftdiv from "../../assets/images/Duologue.webp";
-import TopRightdiv from "../../assets/images/Family Feud.webp";
-import Middleleftdiv from "../../assets/images/Spotlight.webp";
-import Middlerightdiv from "../../assets/images/Afreen.webp";
-import Bottomleftdiv from "../../assets/images/Potpourii.webp";
-import BottomRightdiv from "../../assets/images/Dare to Spell.webp";
-import Duologue from "../../assets/images/duologuee.webp";
-import FamilyFeud from "../../assets/images/FamilyFeud.webp";
-import Spotlight from "../../assets/images/Spotlightt.webp";
-import Afreen from "../../assets/images/Afreenn.webp";
-import Potpouri from "../../assets/images/Potpouri.webp";
-import DareToSpell from "../../assets/images/DareToSpell.webp";
-import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 3.webp";
-// import Title1 from "../../assets/images/Name-4.webp";
-// import subtitle1 from "../../assets/images/Cash Prize.webp";
-import Topleft1 from "../../assets/images/Duologue-2.webp";
-import Topright1 from "../../assets/images/Family Feud-2.webp";
-import MiddleLeft1 from "../../assets/images/Spotlight-2.webp";
-import MiddleRight1 from "../../assets/images/Afreen-2.webp";
-import BottomLeft1 from "../../assets/images/Potpourii-2.webp";
-import BottomRight1 from "../../assets/images/Dare to Spell-2.webp";
-import Topleftdiv1 from "../../assets/images/Subtext-19.webp";
-import TopRightdiv1 from "../../assets/images/Subtext-20.webp";
-import Middleleftdiv1 from "../../assets/images/Subtext-21.webp";
-import Middlerightdiv1 from "../../assets/images/Cash Prize-2.webp";
-import Bottomleftdiv1 from "../../assets/images/Subtext-22.webp";
-import BottomRightdiv1 from "../../assets/images/Subtext-23.webp";
-import Duologue1 from "../../assets/images/Event Name-7.webp";
-import FamilyFeud1 from "../../assets/images/Event Name-8.webp";
-import Spotlight1 from "../../assets/images/Event Name-9.webp";
-import Afreen1 from "../../assets/images/Event Name-10.webp";
-import Potpouri1 from "../../assets/images/Event Name-11.webp";
-import DareToSpell1 from "../../assets/images/Event Name-12.webp";
+
 import Button_Component from "./Button_component";
-import SpeakingTitle from "../../assets/images/SpeakingArtsTitle.webp";
-import MediaCell from '../../assets/pdf/MediaCell.pdf'
+const aws = import.meta.env.VITE_AWS;
+
+const Background = `${aws}/Danceevents2bg.webp`;
+const Topleft = `${aws}/Group 96-2.webp`;
+const Topright = `${aws}/Subtext.webp`;
+const MiddleLeft = `${aws}/Subtext-2.webp`;
+const MiddleRight = `${aws}/Subtext-3.webp`;
+const BottomLeft = `${aws}/Subtext-4.webp`;
+const BottomRight = `${aws}/Subtext-5.webp`;
+const Topleftdiv = `${aws}/Duologue.webp`;
+const TopRightdiv = `${aws}/Family Feud.webp`;
+const Middleleftdiv = `${aws}/Spotlight.webp`;
+const Middlerightdiv = `${aws}/Afreen.webp`;
+const Bottomleftdiv = `${aws}/Potpourii.webp`;
+const BottomRightdiv = `${aws}/Dare to Spell.webp`;
+const Duologue = `${aws}/duologuee.webp`;
+const FamilyFeud = `${aws}/FamilyFeud.webp`;
+const Spotlight = `${aws}/Spotlightt.webp`;
+const Afreen = `${aws}/Afreenn.webp`;
+const Potpouri = `${aws}/Potpouri.webp`;
+const DareToSpell = `${aws}/DareToSpell.webp`;
+const Background1 = `${aws}/iPhone 14 & 15 Pro - 3.webp`;
+const Topleft1 = `${aws}/Duologue-2.webp`;
+const Topright1 = `${aws}/Family Feud-2.webp`;
+const MiddleLeft1 = `${aws}/Spotlight-2.webp`;
+const MiddleRight1 = `${aws}/Afreen-2.webp`;
+const BottomLeft1 = `${aws}/Potpourii-2.webp`;
+const BottomRight1 = `${aws}/Dare to Spell-2.webp`;
+const Topleftdiv1 = `${aws}/Subtext-19.webp`;
+const TopRightdiv1 = `${aws}/Subtext-20.webp`;
+const Middleleftdiv1 = `${aws}/Subtext-21.webp`;
+const Middlerightdiv1 = `${aws}/Cash Prize-2.webp`;
+const Bottomleftdiv1 = `${aws}/Subtext-22.webp`;
+const BottomRightdiv1 = `${aws}/Subtext-23.webp`;
+const Duologue1 = `${aws}/Event Name-7.webp`;
+const FamilyFeud1 = `${aws}/Event Name-8.webp`;
+const Spotlight1 = `${aws}/Event Name-9.webp`;
+const Afreen1 = `${aws}/Event Name-10.webp`;
+const Potpouri1 = `${aws}/Event Name-11.webp`;
+const DareToSpell1 = `${aws}/Event Name-12.webp`;
+const SpeakingTitle = `${aws}/SpeakingArtsTitle.webp`;
+const MediaCell = `${aws}/MediaCell.pdf`;
+
+
+
 
 function Speaking(){
     return(

@@ -1,8 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import Error404 from "../assets/images/Error404desktop.webp";
-import Error404Mob from "../assets/images/Error404Mobile.webp";
-import RIPGIF from "../assets/videos/RIPDesktop.gif";
-import RIPGIFMob from "../assets/videos/RIPMobile.gif";
+const aws = import.meta.env.VITE_AWS;
+
+const Error404 = `${aws}/Error404desktop.webp`;
+const Error404Mob = `${aws}/Error404Mobile.webp`;
+const RIPGIF = `${aws}/RIPDesktop.gif`;
+const RIPGIFMob = `${aws}/RIPMobile.gif`;
+
 function Page404() {
     return (
         <div className="w-full h-[100%]">

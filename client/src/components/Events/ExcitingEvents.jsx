@@ -1,28 +1,33 @@
 import React from "react";
-import Background from "../../assets/images/ExcitingBg.webp";
-import title from "../../assets/images/Title3.webp";
-import promNight from "../../assets/images/Prom Night.webp";
-import silentDisco from "../../assets/images/Silent Disco.webp";
-import jammingNight from "../../assets/images/Jamming Night.webp";
-import stageSpectrum from "../../assets/images/Stage Spectrum.webp";
-import promNight_text from "../../assets/images/TopLeft.webp";
-import silentDisco_text from "../../assets/images/TopRightText.webp";
-import stageSpectrum_text from "../../assets/images/BottomLeftt.webp";
-import jammingNight_text from "../../assets/images/BottomRightt.webp";
-import text1 from "../../assets/images/textbox1.webp";
-import bigtextbox from "../../assets/images/bigtextbox.webp";
-import EventsB from "../../assets/pdf/EventBrochure.pdf";
-import PromNight_mobile from "../../assets/images/Prom Night-2.webp";
-import SilentDisco_mobile from "../../assets/images/Silent Disco-2.webp";
-import JammingNight_mobile from "../../assets/images/Image Box.webp";
-import StageSpectrum_mobile from "../../assets/images/Stage Spectrum-2.webp";
-import PromNight_text_mobile from "../../assets/images/Event Name-4.webp";
-import SilentDisco_text_mobile from "../../assets/images/Text-2.webp";
-import StageSpectrum_text_mobile from "../../assets/images/Text-3.webp";
-import JammingNight_text_mobile from "../../assets/images/Text-4.webp";
+
 import Button_Component from "./Button_component";
 import Footer from "../Footer";
 import Footer1 from "../Mobile_footer";
+
+const aws = import.meta.env.VITE_AWS;
+
+const Background = `${aws}/ExcitingBg.webp`;
+const title = `${aws}/Title3.webp`;
+const promNight = `${aws}/Prom Night.webp`;
+const silentDisco = `${aws}/Silent Disco.webp`;
+const jammingNight = `${aws}/Jamming Night.webp`;
+const stageSpectrum = `${aws}/Stage Spectrum.webp`;
+const promNight_text = `${aws}/TopLeft.webp`;
+const silentDisco_text = `${aws}/TopRightText.webp`;
+const stageSpectrum_text = `${aws}/BottomLeftt.webp`;
+const jammingNight_text = `${aws}/BottomRightt.webp`;
+const text1 = `${aws}/textbox1.webp`;
+const bigtextbox = `${aws}/bigtextbox.webp`;
+const EventsB = `${aws}/EventBrochure.pdf`;
+const PromNight_mobile = `${aws}/Prom Night-2.webp`;
+const SilentDisco_mobile = `${aws}/Silent Disco-2.webp`;
+const JammingNight_mobile = `${aws}/Image Box.webp`;
+const StageSpectrum_mobile = `${aws}/Stage Spectrum-2.webp`;
+const PromNight_text_mobile = `${aws}/Event Name-4.webp`;
+const SilentDisco_text_mobile = `${aws}/Text-2.webp`;
+const StageSpectrum_text_mobile = `${aws}/Text-3.webp`;
+const JammingNight_text_mobile = `${aws}/Text-4.webp`;
+
 
 function Exciting() {
   return (
