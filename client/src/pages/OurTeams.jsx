@@ -71,7 +71,7 @@ function OurTeams() {
     return (
         <div className="overflow-hidden">
             <div
-                className="relative pt-[25%] sm:pt-[20%] md:pt-[10%] pb-[5%]"
+                className="relative pt-[25%] sm:pt-[20%] md:pt-[3%] pb-[5%]"
                 style={{
                     backgroundImage: `url(${BgGreen})`,
                     backgroundSize: "cover",

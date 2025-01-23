@@ -23,7 +23,7 @@ function Footer() {
   const aspectRatio = 415 / 1480;
   const navigate = useNavigate();
   const location = useLocation();
-  const is404 = !["/NormalRegistration","/","/events","/OurTeam"].includes(location.pathname);
+  const is404 = !["/","/events","/OurTeam"].includes(location.pathname);
 
   return (
     <div
