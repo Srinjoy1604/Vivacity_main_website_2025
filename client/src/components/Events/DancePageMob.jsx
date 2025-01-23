@@ -1,26 +1,26 @@
-import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 2.png";
-import Title21 from "../../assets/images/Name.png";
-import subtitle2 from "../../assets/images/Cash Prize.png";
-import Topleft1 from "../../assets/images/TopLeftimg.png";
-import Topright1 from "../../assets/images/Mobdancediv.png";
-import MiddleLeft1 from "../../assets/images/TopRightimg.png";
-import MiddleRight1 from "../../assets/images/Pump It Up.png";
-import BottomLeft1 from "../../assets/images/MiddleLeftimg.png";
-import BottomRight1 from "../../assets/images/BottomRightimg.png";
-import Topleftdiv1 from "../../assets/images/Subtext-19.png";
-import TopRightdiv1 from "../../assets/images/Subtext-20.png";
-import Middleleftdiv1 from "../../assets/images/Subtext-21.png";
-import Middlerightdiv1 from "../../assets/images/Cash Prize-2.png";
-import Bottomleftdiv1 from "../../assets/images/Subtext-22.png";
-import BottomRightdiv1 from "../../assets/images/Subtext-23.png";
-import PumpItUp1 from "../../assets/images/Text-7.png";
-import Letstangle1 from "../../assets/images/Event Name-2.png";
-import mudra1 from "../../assets/images/Event Name-6.png";
-import Streetdance1 from "../../assets/images/Event Name.png";
-import TalNarang1 from "../../assets/images/Event Name-3.png";
-import Razzmataaz1 from "../../assets/images/Event Name-5.png";
+import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 2.webp";
+import Title21 from "../../assets/images/Name.webp";
+import subtitle2 from "../../assets/images/Cash Prize.webp";
+import Topleft1 from "../../assets/images/TopLeftimg.webp";
+import Topright1 from "../../assets/images/Mobdancediv.webp";
+import MiddleLeft1 from "../../assets/images/TopRightimg.webp";
+import MiddleRight1 from "../../assets/images/Pump It Up.webp";
+import BottomLeft1 from "../../assets/images/MiddleLeftimg.webp";
+import BottomRight1 from "../../assets/images/BottomRightimg.webp";
+import Topleftdiv1 from "../../assets/images/Subtext-19.webp";
+import TopRightdiv1 from "../../assets/images/Subtext-20.webp";
+import Middleleftdiv1 from "../../assets/images/Subtext-21.webp";
+import Middlerightdiv1 from "../../assets/images/Cash Prize-2.webp";
+import Bottomleftdiv1 from "../../assets/images/Subtext-22.webp";
+import BottomRightdiv1 from "../../assets/images/Subtext-23.webp";
+import PumpItUp1 from "../../assets/images/Text-7.webp";
+import Letstangle1 from "../../assets/images/Event Name-2.webp";
+import mudra1 from "../../assets/images/Event Name-6.webp";
+import Streetdance1 from "../../assets/images/Event Name.webp";
+import TalNarang1 from "../../assets/images/Event Name-3.webp";
+import Razzmataaz1 from "../../assets/images/Event Name-5.webp";
 import Button_Component from "./Button_component";
-import Title2 from "../../assets/images/DanceTitle2.png";
+import Title2 from "../../assets/images/DanceTitle2.webp";
 
 function Pagess(){
     return(

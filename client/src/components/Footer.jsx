@@ -9,6 +9,8 @@ import Backbg from "../assets/images/Team.webp";
 import Backbg1 from "../assets/images/ExcitingBg.webp";
 import Backbg2 from "../assets/images/VioletBg.webp";
 import { Link, NavLink } from "react-router-dom";
+import GDG from "../assets/images/gdglogo.webp";
+import "../App.css";
 
 function Footer() {
   const aspectRatio = 415 / 1480;
@@ -61,11 +63,11 @@ function Footer() {
               alt="Vivacity Logo"
               className="w-[21vw] mb-[1.5vw]  transform scale-150  origin-left "
             />
-            <p className="text-black text-[1.4vw] font-semibold   tracking-wide font-vetosans">
-              Developed by GDG on Campus, LNMIIT
+            <p className="flex items-center justify-center text-black text-[1.4vw] font-semibold tracking-wide font-vetosans">
+              <span className="font-medium">Developed by </span><a href="https://gdg.community.dev/gdg-on-campus-the-lnm-institute-of-information-technology-jaipur-india/"><span className="xtext-gradient font-black flex items-center justify-center"><img src={GDG} className="w-8 h-auto ml-1.5 mr-0.5"></img>GDG on Campus, LNMIIT</span></a>
             </p>
             <p className="text-black text-[1.4vw] font-semibold  leading-normal tracking-wide font-vetosans mt-[1.5%]">
-              Designed by Vivacity. All rights reserved.
+            <span className="font-medium">Designed by</span> Vivacity. All rights reserved.
             </p>
           </div>
 

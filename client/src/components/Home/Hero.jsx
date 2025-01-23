@@ -1,12 +1,12 @@
 import React from "react";
-import TimerBkg from "../../assets/images/TimerBkg.png";
-import TimerBkgMob from "../../assets/images/TimerBkgMob.png";
+import TimerBkg from "../../assets/images/TimerBkg.webp";
+import TimerBkgMob from "../../assets/images/TimerBkgMob.webp";
 import styles from "./Herox.module.css";
 import { useEffect, useState } from "react";
-import Timer from "../../assets/images/timer.png";
-import Timer2 from "../../assets/images/Timer2.png"
-import abovecountdown from "../../assets/images/above_countdown.png";
-import abovecountdown2 from "../../assets/images/above_countdown2.png";
+import Timer from "../../assets/images/timer.webp";
+import Timer2 from "../../assets/images/Timer2.webp"
+import abovecountdown from "../../assets/images/above_countdown.webp";
+import abovecountdown2 from "../../assets/images/above_countdown2.webp";
 import CountDownTimer from "./CountDownTimer";
 
 function Hero() {

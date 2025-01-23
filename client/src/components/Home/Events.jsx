@@ -35,7 +35,7 @@ const Events = () => {
       items: ["Battle of Bands", "Gully War", "Malhaar", "Aaroh", "Bandish"],
       prizeWorth: "2.3 Lakh+",
       image: Music,
-      link: "music",
+      link: "#music",
     },
     {
       id: 3,
@@ -72,7 +72,7 @@ const Events = () => {
       ],
       prizeWorth: "2.5 Lakh+",
       image: Fun,
-      link: "",
+      link: "#dance",
     },
     {
       id: 6,
@@ -88,7 +88,7 @@ const Events = () => {
       ],
       prizeWorth: "2.5 Lakh+",
       image: Fun,
-      link: "",
+      link: "#speakingArts",
     },
     {
       id: 7,
@@ -130,7 +130,7 @@ const Events = () => {
       items: ["Prom Night", "silent disco", "jam night", "stage spectrum"],
       prizeWorth: "",
       image: Fun,
-      link: "",
+      link: "#manymore",
     },
   ];
 
@@ -211,8 +211,8 @@ const Events = () => {
                 {/* Content section with flex layout */}
                 <div className="flex flex-col justify-between h-[77%] py-4 relative">
                   {/* List items */}
-                  <div className="w-[90%] px-[2%] ml-[2%] flex-grow flex items-center">
-                    <ul className="w-full flex flex-col justify-center space-y-[2.8%]">
+                  <div className="w-[90%] px-[2%] ml-[2%] flex-grow flex ">
+                    <ul className="w-full flex flex-col justify-start space-y-[2.8%]">
                       {currentEvent.items.map((item, index) => (
                         <li
                           key={index}
