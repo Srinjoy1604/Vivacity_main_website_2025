@@ -1,26 +1,31 @@
-import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 2.webp";
-import Title21 from "../../assets/images/Name.webp";
-import subtitle2 from "../../assets/images/Cash Prize.webp";
-import Topleft1 from "../../assets/images/TopLeftimg.webp";
-import Topright1 from "../../assets/images/Mobdancediv.webp";
-import MiddleLeft1 from "../../assets/images/TopRightimg.webp";
-import MiddleRight1 from "../../assets/images/Pump It Up.webp";
-import BottomLeft1 from "../../assets/images/MiddleLeftimg.webp";
-import BottomRight1 from "../../assets/images/BottomRightimg.webp";
-import Topleftdiv1 from "../../assets/images/Subtext-19.webp";
-import TopRightdiv1 from "../../assets/images/Subtext-20.webp";
-import Middleleftdiv1 from "../../assets/images/Subtext-21.webp";
-import Middlerightdiv1 from "../../assets/images/Cash Prize-2.webp";
-import Bottomleftdiv1 from "../../assets/images/Subtext-22.webp";
-import BottomRightdiv1 from "../../assets/images/Subtext-23.webp";
-import PumpItUp1 from "../../assets/images/Text-7.webp";
-import Letstangle1 from "../../assets/images/Event Name-2.webp";
-import mudra1 from "../../assets/images/Event Name-6.webp";
-import Streetdance1 from "../../assets/images/Event Name.webp";
-import TalNarang1 from "../../assets/images/Event Name-3.webp";
-import Razzmataaz1 from "../../assets/images/Event Name-5.webp";
+
 import Button_Component from "./Button_component";
-import Title2 from "../../assets/images/DanceTitle2.webp";
+
+const aws = import.meta.env.VITE_AWS;
+
+const Background1 = `${aws}/iPhone 14 & 15 Pro - 2.webp`;
+const Title21 = `${aws}/Name.webp`;
+const subtitle2 = `${aws}/Cash Prize.webp`;
+const Topleft1 = `${aws}/TopLeftimg.webp`;
+const Topright1 = `${aws}/Mobdancediv.webp`;
+const MiddleLeft1 = `${aws}/TopRightimg.webp`;
+const MiddleRight1 = `${aws}/Pump It Up.webp`;
+const BottomLeft1 = `${aws}/MiddleLeftimg.webp`;
+const BottomRight1 = `${aws}/BottomRightimg.webp`;
+const Topleftdiv1 = `${aws}/Subtext-19.webp`;
+const TopRightdiv1 = `${aws}/Subtext-20.webp`;
+const Middleleftdiv1 = `${aws}/Subtext-21.webp`;
+const Middlerightdiv1 = `${aws}/Cash Prize-2.webp`;
+const Bottomleftdiv1 = `${aws}/Subtext-22.webp`;
+const BottomRightdiv1 = `${aws}/Subtext-23.webp`;
+const PumpItUp1 = `${aws}/Text-7.webp`;
+const Letstangle1 = `${aws}/Event Name-2.webp`;
+const mudra1 = `${aws}/Event Name-6.webp`;
+const Streetdance1 = `${aws}/Event Name.webp`;
+const TalNarang1 = `${aws}/Event Name-3.webp`;
+const Razzmataaz1 = `${aws}/Event Name-5.webp`;
+const Title2 = `${aws}/DanceTitle2.webp`;
+
 
 function Pagess(){
     return(

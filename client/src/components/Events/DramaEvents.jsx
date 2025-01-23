@@ -1,25 +1,29 @@
 import React from "react";
 import Styles from "../Events/DramaEvents.module.css";
-import DramaTitle from "../../assets/images/DramaTitle.webp";
-import RangshalaText from "../../assets/images/RangshalaText.webp";
-import PadhatiText from "../../assets/images/PadhatiText.webp";
-import MukhautaText from "../../assets/images/MukhautaText.webp";
-import HunkaarText from "../../assets/images/HunkaarText.webp";
-import PaddhatiBg from "../../assets/images/PaddhatiBg.webp";
-import MukhautaBg from "../../assets/images/MukhautaBg.webp";
-import RangshalaBg from "../../assets/images/RangshalaBg.webp";
-import HunkaarBg from "../../assets/images/HunkaarBg.webp";
-import RangshalaTextMobile from "../../assets/images/RangshalaTextMobile.webp";
-import PaddhatiTextMobile from "../../assets/images/PaddhatiTextMobile.webp";
-import MukhautaTextMobile from "../../assets/images/MukhautaTextMobile.webp";
-import HunkaarTextMobile from "../../assets/images/HunkaarTextMobile.webp";
-import PaddhatiBgMobile from "../../assets/images/PaddhatiBgMobile.webp";
-import MukhautaBgMobile from "../../assets/images/MukhautaBgMobile.webp";
-import RangshalaBgMobile from "../../assets/images/RangshalaBgMobile.webp";
-import HunkaarBgMobile from "../../assets/images/HunkaarBgMobile.webp";
-import Button_Component from "./Button_component";
 
-import Rendition from '../../assets/pdf/Rendition.pdf'
+import Button_Component from "./Button_component";
+const aws = import.meta.env.VITE_AWS;
+
+const DramaTitle = `${aws}/DramaTitle.webp`;
+const RangshalaText = `${aws}/RangshalaText.webp`;
+const PadhatiText = `${aws}/PadhatiText.webp`;
+const MukhautaText = `${aws}/MukhautaText.webp`;
+const HunkaarText = `${aws}/HunkaarText.webp`;
+const PaddhatiBg = `${aws}/PaddhatiBg.webp`;
+const MukhautaBg = `${aws}/MukhautaBg.webp`;
+const RangshalaBg = `${aws}/RangshalaBg.webp`;
+const HunkaarBg = `${aws}/HunkaarBg.webp`;
+const RangshalaTextMobile = `${aws}/RangshalaTextMobile.webp`;
+const PaddhatiTextMobile = `${aws}/PaddhatiTextMobile.webp`;
+const MukhautaTextMobile = `${aws}/MukhautaTextMobile.webp`;
+const HunkaarTextMobile = `${aws}/HunkaarTextMobile.webp`;
+const PaddhatiBgMobile = `${aws}/PaddhatiBgMobile.webp`;
+const MukhautaBgMobile = `${aws}/MukhautaBgMobile.webp`;
+const RangshalaBgMobile = `${aws}/RangshalaBgMobile.webp`;
+const HunkaarBgMobile = `${aws}/HunkaarBgMobile.webp`;
+const Rendition = `${aws}/Rendition.pdf`;
+
+
 function DramaEvents() {
   return (
     <div

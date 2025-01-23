@@ -1,12 +1,17 @@
 import React from "react";
 import Styles from "../Events/DramaEvents.module.css";
-import FashionTitle from "../../assets/images/FashionTitle.webp";
-import VivaText from "../../assets/images/vivaText.webp";
-import VougeText from "../../assets/images/VougeText.webp";
-import VivaBg from "../../assets/images/VivaBg.webp";
-import VogueBg from "../../assets/images/VogueBg.webp";
+
 import Button_Component from "./Button_component";
-import Eminence from '../../assets/pdf/Eminence.pdf'
+const aws = import.meta.env.VITE_AWS;
+
+const FashionTitle = `${aws}/FashionTitle.webp`;
+const VivaText = `${aws}/vivaText.webp`;
+const VougeText = `${aws}/VougeText.webp`;
+const VivaBg = `${aws}/VivaBg.webp`;
+const VogueBg = `${aws}/VogueBg.webp`;
+const Eminence = `${aws}/Eminence.pdf`;
+
+
 function FashionEvents() {
   return (
     <div

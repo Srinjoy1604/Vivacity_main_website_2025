@@ -1,59 +1,64 @@
-import Background from "../../assets/images/MacBook Air - 1.webp";
-import Title2 from "../../assets/images/DanceTitle2.webp";
-import Insignia from "../../assets/pdf/Insignia.pdf";
-import Topleft from "../../assets/images/TopLeftimg.webp";
-import Topright from "../../assets/images/TopRightimg.webp";
-import MiddleLeft from "../../assets/images/MiddleLeftimg.webp";
-import MiddleRight from "../../assets/images/MiddleRightimg.webp";
-import BottomLeft from "../../assets/images/BottomLeftimg.webp";
-import BottomRight from "../../assets/images/BottomRightimg.webp";
-import Topleftdiv from "../../assets/images/Topleftdiv.webp";
-import TopRightdiv from "../../assets/images/TopRight.webp";
-import Streetdance from "../../assets/images/Streetdance.webp";
-import TalNarang from "../../assets/images/TalTarang.webp";
-import Razzmataaz from "../../assets/images/Razzmaatazz.webp";
-import Middleleftdiv from "../../assets/images/MiddleLeftdiv.webp";
-import Middlerightdiv from "../../assets/images/MiddleRightDiv.webp";
-import Bottomleftdiv from "../../assets/images/BottomleftDiv.webp";
-import BottomRightdiv from "../../assets/images/Bottomrightdiv.webp";
-import PumpItUp from "../../assets/images/PumpItUp.webp";
-import Letstangle from "../../assets/images/LetsTangle.webp";
-import mudra from "../../assets/images/Mudra.webp";
-import Button_Component from "./Button_component";
-
-import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 2.webp";
-// import Title21 from "../../assets/images/Name.webp";
-// import subtitle2 from "../../assets/images/Cash Prize.webp";
-import Topleft1 from "../../assets/images/TopLeftimg.webp";
-import Topright1 from "../../assets/images/Mobdancediv.webp";
-import MiddleLeft1 from "../../assets/images/TopRightimg.webp";
-import MiddleRight1 from "../../assets/images/Pump It Up.webp";
-import BottomLeft1 from "../../assets/images/MiddleLeftimg.webp";
-import BottomRight1 from "../../assets/images/BottomRightimg.webp";
-import Topleftdiv1 from "../../assets/images/Subtext-19.webp";
-import TopRightdiv1 from "../../assets/images/Subtext-20.webp";
-import Middleleftdiv1 from "../../assets/images/Subtext-21.webp";
-import Middlerightdiv1 from "../../assets/images/Cash Prize-2.webp";
-import Bottomleftdiv1 from "../../assets/images/Subtext-22.webp";
-import BottomRightdiv1 from "../../assets/images/Subtext-23.webp";
-import PumpItUp1 from "../../assets/images/Text-7.webp";
-import Letstangle1 from "../../assets/images/Event Name-2.webp";
-import mudra1 from "../../assets/images/Event Name-6.webp";
-import Streetdance1 from "../../assets/images/Event Name.webp";
-import TalNarang1 from "../../assets/images/Event Name-3.webp";
-import Razzmataaz1 from "../../assets/images/Event Name-5.webp";
 import Navbar from "../Navbar";
+
+const aws = import.meta.env.VITE_AWS;
+
+const Background = `${aws}/MacBook Air - 1.webp`;
+const Title2 = `${aws}/DanceTitle2.webp`;
+const Insignia = `${aws}/Insignia.pdf`;
+const Topleft = `${aws}/TopLeftimg.webp`;
+const Topright = `${aws}/TopRightimg.webp`;
+const MiddleLeft = `${aws}/MiddleLeftimg.webp`;
+const MiddleRight = `${aws}/MiddleRightimg.webp`;
+const BottomLeft = `${aws}/BottomLeftimg.webp`;
+const BottomRight = `${aws}/BottomRightimg.webp`;
+const Topleftdiv = `${aws}/Topleftdiv.webp`;
+const TopRightdiv = `${aws}/TopRight.webp`;
+const Streetdance = `${aws}/Streetdance.webp`;
+const TalNarang = `${aws}/TalTarang.webp`;
+const Razzmataaz = `${aws}/Razzmaatazz.webp`;
+const Middleleftdiv = `${aws}/MiddleLeftdiv.webp`;
+const Middlerightdiv = `${aws}/MiddleRightDiv.webp`;
+const Bottomleftdiv = `${aws}/BottomleftDiv.webp`;
+const BottomRightdiv = `${aws}/Bottomrightdiv.webp`;
+const PumpItUp = `${aws}/PumpItUp.webp`;
+const Letstangle = `${aws}/LetsTangle.webp`;
+const mudra = `${aws}/Mudra.webp`;
+
+const Background1 = `${aws}/iPhone 14 & 15 Pro - 2.webp`;
+
+const Topleft1 = `${aws}/TopLeftimg.webp`;
+const Topright1 = `${aws}/Mobdancediv.webp`;
+const MiddleLeft1 = `${aws}/TopRightimg.webp`;
+const MiddleRight1 = `${aws}/Pump It Up.webp`;
+const BottomLeft1 = `${aws}/MiddleLeftimg.webp`;
+const BottomRight1 = `${aws}/BottomRightimg.webp`;
+const Topleftdiv1 = `${aws}/Subtext-19.webp`;
+const TopRightdiv1 = `${aws}/Subtext-20.webp`;
+const Middleleftdiv1 = `${aws}/Subtext-21.webp`;
+const Middlerightdiv1 = `${aws}/Cash Prize-2.webp`;
+const Bottomleftdiv1 = `${aws}/Subtext-22.webp`;
+const BottomRightdiv1 = `${aws}/Subtext-23.webp`;
+const PumpItUp1 = `${aws}/Text-7.webp`;
+const Letstangle1 = `${aws}/Event Name-2.webp`;
+const mudra1 = `${aws}/Event Name-6.webp`;
+const Streetdance1 = `${aws}/Event Name.webp`;
+const TalNarang1 = `${aws}/Event Name-3.webp`;
+const Razzmataaz1 = `${aws}/Event Name-5.webp`;
+import Button_Component from "./Button_component";
 
 function DancePage() {
   return (
     <div>
-     <div className="min-[768px]:block hidden"> <Navbar /></div>
+      <div className="min-[768px]:block hidden">
+        {" "}
+        <Navbar />
+      </div>
       <div>
         <div className=" md:block hidden">
           <div
             className="bg-cover bg-center flex flex-col items-center pt-[3%]  max-[802px]:pt-[10rem] "
             style={{
-              backgroundImage: `url(${Background})`,
+              backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/MacBook%20Air%20-%201.webp")`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               width: "100%",

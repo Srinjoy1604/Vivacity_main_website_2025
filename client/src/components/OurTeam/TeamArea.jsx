@@ -1,8 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import TeamCard from "./TeamCard";
-import CurvyLine from "../../assets/images/MentorLine.webp";
-import CurvyLine2 from "../../assets/images/line2.webp"
-import CurveLine from "../../assets/images/line.webp";
+const aws = import.meta.env.VITE_AWS;
+
+const CurvyLine = `${aws}/MentorLine.webp`;
+const CurvyLine2 = `${aws}/line2.webp`;
+const CurveLine = `${aws}/line.webp`;
+
 function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne, LeftTwo, CardTeam, Members, PositionArr = ["0", "0", "0", "0"] }) {
     let asset;
     let rotang;

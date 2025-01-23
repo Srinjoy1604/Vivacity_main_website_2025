@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import NavImage from "../assets/images/nav_logo.webp";
-import SmallNavImg from "../assets/images/small_viva_img.webp";
+
 import "../App.css"
+const aws = import.meta.env.VITE_AWS;
+
+const NavImage = `${aws}/nav_logo.webp`;
+const SmallNavImg = `${aws}/small_viva_img.webp`;
 
 const navItems = [
   { Name: "HOME", Link: "/" },

@@ -1,16 +1,23 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import vivacityLogo from "../assets/images/VivacityLogo.webp";
-import FacebookIcon from "../assets/images/facebookLogo.webp";
-import InstagramIcon from "../assets/images/instagramLogo.webp";
-import TwitterIcon from "../assets/images/twitterLogo.webp";
-import FooterBackground from "../assets/images/FooterBackground.webp";
-import Backbg from "../assets/images/Team.webp";
-import Backbg1 from "../assets/images/ExcitingBg.webp";
-import Backbg2 from "../assets/images/VioletBg.webp";
+
 import { Link, NavLink } from "react-router-dom";
-import GDG from "../assets/images/gdglogo.webp";
 import "../App.css";
+const aws = import.meta.env.VITE_AWS;
+
+const vivacityLogo = `${aws}/VivacityLogo.webp`;
+const FacebookIcon = `${aws}/facebookLogo.webp`;
+const InstagramIcon = `${aws}/instagramLogo.webp`;
+const TwitterIcon = `${aws}/twitterLogo.webp`;
+const FooterBackground = `${aws}/FooterBackground.webp`;
+const Backbg = `${aws}/Team.webp`;
+const Backbg1 = `${aws}/ExcitingBg.webp`;
+const Backbg2 = `${aws}/VioletBg.webp`;
+const GDG = `${aws}/gdglogo.webp`;
+
+
+
+
 
 function Footer() {
   const aspectRatio = 415 / 1480;

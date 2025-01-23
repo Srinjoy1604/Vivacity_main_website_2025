@@ -6,24 +6,27 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import Amit from "../../../assets/images/AmitTrivedi.webp";
-import AmitName from "../../../assets/images/Amit.webp";
-import Jublin from "../../../assets/images/Jubin.webp";
-import JublinName from "../../../assets/images/JublinName.webp";
-import Harrdy from "../../../assets/images/Hardy.webp";
-import HarrdyName from "../../../assets/images/HardyName.webp";
-import Darshan from "../../../assets/images/Darshan.webp";
-import DarshanName from "../../../assets/images/DarshanName.webp";
-import Mohit from "../../../assets/images/MohitChauhan.webp";
-import MohitName from "../../../assets/images/MohitName.webp";
-import Asees from "../../../assets/images/Asees.webp";
-import AseesName from "../../../assets/images/AssesName.webp";
-import Kullu from "../../../assets/images/Kullu.webp";
-import KulluName from "../../../assets/images/KulluName.webp";
-import Ritviz from "../../../assets/images/Ritviz.webp";
-import RitvizName from "../../../assets/images/RitvizName.webp";
-import ManyMore from "../../../assets/images/ManyMore.webp";
-import ManyMoreName from "../../../assets/images/ManyMoreName.webp";
+const aws = import.meta.env.VITE_AWS;
+
+const Amit = `${aws}/AmitTrivedi.webp`;
+const AmitName = `${aws}/Amit.webp`;
+const Jublin = `${aws}/Jubin.webp`;
+const JublinName = `${aws}/JublinName.webp`;
+const Harrdy = `${aws}/Hardy.webp`;
+const HarrdyName = `${aws}/HardyName.webp`;
+const Darshan = `${aws}/Darshan.webp`;
+const DarshanName = `${aws}/DarshanName.webp`;
+const Mohit = `${aws}/MohitChauhan.webp`;
+const MohitName = `${aws}/MohitName.webp`;
+const Asees = `${aws}/Asees.webp`;
+const AseesName = `${aws}/AssesName.webp`;
+const Kullu = `${aws}/Kullu.webp`;
+const KulluName = `${aws}/KulluName.webp`;
+const Ritviz = `${aws}/Ritviz.webp`;
+const RitvizName = `${aws}/RitvizName.webp`;
+const ManyMore = `${aws}/ManyMore.webp`;
+const ManyMoreName = `${aws}/ManyMoreName.webp`;
+
 // import Neha from "../../../assets/images/Neha.webp";  // Example new artist image
 // import Arijit from "../../../assets/images/Arijit.webp";  // Example new artist image
 import {

@@ -3,21 +3,26 @@ import {
   FaRegArrowAltCircleRight,
   FaRegArrowAltCircleLeft,
 } from "react-icons/fa";
-import Event_logo from "../../assets/images/Event_logo.webp";
-import Event_button from "../../assets/images/Pinkbtn_front.webp";
-import Halftone from "../../assets/images/Halftone.webp";
-import BackGround from "../../assets/images/YellowBg.webp";
-import Pinkbtn_black from "../../assets/images/Pinkbtn_black.webp";
-import Music from "../../assets/images/Picture1.webp";
-import Photography from "../../assets/images/Picture2.webp";
-import Art from "../../assets/images/Picture3.webp";
-import Quizzing from "../../assets/images/Picture4.webp";
-import Drama from "../../assets/images/Picture5.webp";
-import Blind from "../../assets/images/Picture6.webp";
-import Fashion from "../../assets/images/Picture7.webp";
-import social from "../../assets/images/Picture8.webp";
-import Fun from "../../assets/images/Picture9.webp";
+
 import { useNavigate } from "react-router-dom";
+
+const aws = import.meta.env.VITE_AWS;
+
+const Event_logo = `${aws}/Event_logo.webp`;
+const Event_button = `${aws}/Pinkbtn_front.webp`;
+const Halftone = `${aws}/Halftone.webp`;
+const BackGround = `${aws}/YellowBg.webp`;
+const Pinkbtn_black = `${aws}/Pinkbtn_black.webp`;
+const Music = `${aws}/Picture1.webp`;
+const Photography = `${aws}/Picture2.webp`;
+const Art = `${aws}/Picture3.webp`;
+const Quizzing = `${aws}/Picture4.webp`;
+const Drama = `${aws}/Picture5.webp`;
+const Blind = `${aws}/Picture6.webp`;
+const Fashion = `${aws}/Picture7.webp`;
+const social = `${aws}/Picture8.webp`;
+const Fun = `${aws}/Picture9.webp`;
+
 const Events = () => {
   const navigate = useNavigate();
   const eventData = [

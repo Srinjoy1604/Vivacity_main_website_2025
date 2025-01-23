@@ -1,13 +1,16 @@
 import React from "react";
-import TimerBkg from "../../assets/images/TimerBkg.webp";
-import TimerBkgMob from "../../assets/images/TimerBkgMob.webp";
+// import TimerBkg from "../../assets/images/TimerBkg.webp";
+// import TimerBkgMob from "../../assets/images/TimerBkgMob.webp";
 import styles from "./Herox.module.css";
 import { useEffect, useState } from "react";
-import Timer from "../../assets/images/timer.webp";
-import Timer2 from "../../assets/images/Timer2.webp"
-import abovecountdown from "../../assets/images/above_countdown.webp";
-import abovecountdown2 from "../../assets/images/above_countdown2.webp";
+
 import CountDownTimer from "./CountDownTimer";
+const aws = import.meta.env.VITE_AWS;
+
+const Timer = `${aws}/timer.webp`;
+const Timer2 = `${aws}/Timer2.webp`;
+const abovecountdown = `${aws}/above_countdown.webp`;
+const abovecountdown2 = `${aws}/above_countdown2.webp`;
 
 function Hero() {
   const [scroll, setScroll] = useState(1);

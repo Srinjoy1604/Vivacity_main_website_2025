@@ -1,12 +1,18 @@
 import React from "react";
 import Styles from "../Events/DramaEvents.module.css";
-import QuizzingaTitle from "../../assets/images/QuizzingaTitle.webp";
-import BamboozledText from "../../assets/images/BamboozledText.webp";
-import MovieAuctionText from "../../assets/images/MovieAuctionText.webp";
-import BamboozledBg from "../../assets/images/BamboozledBg.webp";
-import MovieAuctionBg from "../../assets/images/MovieAuctionBg.webp";
+
 import Button_Component from "./Button_component";
-import Quizzinga from '../../assets/pdf/Quzzinga.pdf'
+const aws = import.meta.env.VITE_AWS;
+
+const QuizzingaTitle = `${aws}/QuizzingaTitle.webp`;
+const BamboozledText = `${aws}/BamboozledText.webp`;
+const MovieAuctionText = `${aws}/MovieAuctionText.webp`;
+const BamboozledBg = `${aws}/BamboozledBg.webp`;
+const MovieAuctionBg = `${aws}/MovieAuctionBg.webp`;
+const Quizzinga = `${aws}/Quzzinga.pdf`;
+
+
+
 function QuizzingaEvents() {
   return (
     <div

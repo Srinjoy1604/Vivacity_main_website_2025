@@ -1,36 +1,39 @@
 import React from "react";
-import bg from "../../assets/images/photography_event_0.webp";
-import image1 from "../../assets/images/photography_event_1.webp";
-import image2 from "../../assets/images/photography_event_2.webp";
-import image3 from "../../assets/images/photography_event_3.webp";
-import image4 from "../../assets/images/photography_event_4.webp";
-import image5 from "../../assets/images/photography_event_5.webp";
-import image6 from "../../assets/images/photography_event_6.webp";
-import title from "../../assets/images/photography_title.webp";
 
-import text1 from "../../assets/images/textbox1.webp";
-import imageHunt from "../../assets/images/imageHunt.webp";
-import kalakriti from "../../assets/images/kalakriti.webp";
-import flimmakingcompetiton from "../../assets/images/flimmakingcompetiton.webp";
-import pixels from "../../assets/images/pixels.webp";
-import photoBooth from "../../assets/images/photoBooth.webp";
-import Perspective from "../../assets/images/Perspective.webp";
-import bigtextbox from "../../assets/images/bigtextbox.webp";
-
-import image7 from "../../assets/images/photographyevent_mobile_1.webp";
-import image8 from "../../assets/images/photographyevent_mobile_2.webp";
-import image9 from "../../assets/images/photographyevent_mobile_3.webp";
-import image10 from "../../assets/images/photographyevent_mobile_4.webp";
-import image11 from "../../assets/images/photographyevent_mobile_5.webp";
-import image12 from "../../assets/images/photographyevent_mobile_6.webp";
-
-import pixel from "../../assets/images/Event Name_1.webp";
-import photo from "../../assets/images/Event Name_2.webp";
-import flimmaking from "../../assets/images/Event Name_3.webp";
-import hunt from "../../assets/images/Event Name_4.webp";
-import kala from "../../assets/images/Event Name_5.webp";
-import perspective from "../../assets/images/Event Name_6.webp";
 import Button_component from "./Button_component";
+const aws = import.meta.env.VITE_AWS;
+
+const bg = `${aws}/photography_event_0.webp`;
+const image1 = `${aws}/photography_event_1.webp`;
+const image2 = `${aws}/photography_event_2.webp`;
+const image3 = `${aws}/photography_event_3.webp`;
+const image4 = `${aws}/photography_event_4.webp`;
+const image5 = `${aws}/photography_event_5.webp`;
+const image6 = `${aws}/photography_event_6.webp`;
+const title = `${aws}/photography_title.webp`;
+
+const text1 = `${aws}/textbox1.webp`;
+const imageHunt = `${aws}/imageHunt.webp`;
+const kalakriti = `${aws}/kalakriti.webp`;
+const flimmakingcompetiton = `${aws}/flimmakingcompetiton.webp`;
+const pixels = `${aws}/pixels.webp`;
+const photoBooth = `${aws}/photoBooth.webp`;
+const Perspective = `${aws}/Perspective.webp`;
+const bigtextbox = `${aws}/bigtextbox.webp`;
+
+const image7 = `${aws}/photographyevent_mobile_1.webp`;
+const image8 = `${aws}/photographyevent_mobile_2.webp`;
+const image9 = `${aws}/photographyevent_mobile_3.webp`;
+const image10 = `${aws}/photographyevent_mobile_4.webp`;
+const image11 = `${aws}/photographyevent_mobile_5.webp`;
+const image12 = `${aws}/photographyevent_mobile_6.webp`;
+
+const pixel = `${aws}/Event Name_1.webp`;
+const photo = `${aws}/Event Name_2.webp`;
+const flimmaking = `${aws}/Event Name_3.webp`;
+const hunt = `${aws}/Event Name_4.webp`;
+const kala = `${aws}/Event Name_5.webp`;
+const perspective = `${aws}/Event Name_6.webp`;
 
 function PhotographyEvents() {
   return (

@@ -1,11 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../Home/Mascot.module.css";
-import NetraLarge from "../../assets/images/NetraImg.webp";
-import NetraText from "../../assets/images/NETRAText.webp";
-import NetraMobile from "../../assets/images/NetraMobile.webp";
-import netra_black_textbox from "../../assets/images/netra_black_textbox.webp";
-import NetraYellowBox from "../../assets/images/NetraYellowBox.webp";
+
 import { useNavigate } from "react-router-dom";
+const aws = import.meta.env.VITE_AWS;
+
+const NetraLarge = `${aws}/NetraImg.webp`;
+const NetraText = `${aws}/NETRAText.webp`;
+const NetraMobile = `${aws}/NetraMobile.webp`;
+const netra_black_textbox = `${aws}/netra_black_textbox.webp`;
+const NetraYellowBox = `${aws}/NetraYellowBox.webp`;
 
 
 function Mascot() {

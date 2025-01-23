@@ -74,20 +74,27 @@
 
 // export default IndexEvents;
 
-import Title from "../../assets/images/EventsIndex.webp";
-import Background from "../../assets/images/EventsIndexBg.webp";
 import { useRef } from "react";
-import DanceDiv from "../../assets/images/Dance.webp";
-import MusicDiv from "../../assets/images/Music.webp";
-import DramaDiv from "../../assets/images/Drama.webp";
-import SpeakingArtsDiv from "../../assets/images/Speaking Arts.webp";
-import PhotographyDiv from "../../assets/images/Photography.webp";
-import ArtDiv from "../../assets/images/Art.webp";
-import QuizzingaDiv from "../../assets/images/Quizzing.webp";
-import ManyMore from "../../assets/images/Many More.webp";
-import FashionDiv from "../../assets/images/Fashion.webp";
-import SocialDiv from "../../assets/images/Social.webp";
+
+
 import Navbar from "../Navbar";
+const aws = import.meta.env.VITE_AWS;
+
+const DanceDiv = `${aws}/Dance.webp`;
+const MusicDiv = `${aws}/Music.webp`;
+const DramaDiv = `${aws}/Drama.webp`;
+const SpeakingArtsDiv = `${aws}/Speaking Arts.webp`;
+const PhotographyDiv = `${aws}/Photography.webp`;
+const ArtDiv = `${aws}/Art.webp`;
+const QuizzingaDiv = `${aws}/Quizzing.webp`;
+const ManyMore = `${aws}/Many More.webp`;
+const FashionDiv = `${aws}/Fashion.webp`;
+const SocialDiv = `${aws}/Social.webp`;
+
+const Title = `${aws}/EventsIndex.webp`;
+const Background = `${aws}/EventsIndexBg.webp`;
+
+
 const IndexEvents = ({ scrollToSection }) => {
   return (
     <div>

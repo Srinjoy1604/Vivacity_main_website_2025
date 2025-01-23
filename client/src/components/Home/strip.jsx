@@ -1,5 +1,7 @@
 import React from "react";
-import page_footer from "../../assets/images/strip.webp";
+const aws = import.meta.env.VITE_AWS;
+
+const page_footer = `${aws}/strip.webp`;
 
 function Strip() {
   return (

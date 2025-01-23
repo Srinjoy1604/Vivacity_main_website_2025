@@ -1,42 +1,40 @@
-import Background from "../../assets/images/Team.webp";
-import LeftBg from "../../assets/images/PurpleComp.webp";
-import RightBg from "../../assets/images/YellowdivFront.webp";
-import YellowBack from "../../assets/images/YellowDivback.webp";
-import button from "../../assets/images/Pinkbtn_front.webp";
-import Abg from "../../assets/images/TeamA_bg.webp";
-import Bbg from "../../assets/images/TeamB_bgg.webp";
-import Cbg from "../../assets/images/TeamC_bg.webp";
-import Dbg from "../../assets/images/TeamD_bg.webp";
-import Aimg from "../../assets/images/TeamA_img.webp";
-import Bimg from "../../assets/images/TeamB_img.webp";
-import Cimg from "../../assets/images/TeamC_img.webp";
-import Dimg from "../../assets/images/TeamD_img.webp";
-import Pin from "../../assets/images/pin.webp";
-import Thread from "../../assets/images/threads.webp";
+
+
 import React, { useState, useEffect, useRef } from "react";
-import buttonback from "../../assets/images/Pinkbtn_black.webp";
-import Background1 from "../../assets/images/TeampageMob.webp";
-import LeftBg1 from "../../assets/images/PurpledivMob.webp";
-import RightBg1 from "../../assets/images/YellowFrontMob.webp";
-import button1 from "../../assets/images/Pinkbtn_1.webp";
-import Abg1 from "../../assets/images/TeamAmob.webp";
-import Bbg1 from "../../assets/images/TeamBmob.webp";
-import Cbg1 from "../../assets/images/TeamCmob.webp";
-import Dbg1 from "../../assets/images/TeamDmob.webp";
-import Aimg1 from "../../assets/images/TeamAImg.webp";
-import Bimg1 from "../../assets/images/TeamBImg.webp";
-import Cimg1 from "../../assets/images/TeamCImg.webp";
-import Dimg1 from "../../assets/images/TeamDImg.webp";
-import Pin1 from "../../assets/images/PinMob.webp";
-import YellowBack1 from "../../assets/images/YellowbkMob.webp";
-import Thread1 from "../../assets/images/ThreadsMob.webp";
-import buttonback1 from "../../assets/images/Pinkbtn_back1.webp";
-import Title from "../../assets/images/TeamTitle.webp";
-import TeamA from "../../assets/videos/TeamA.gif";
-import TeamB from "../../assets/videos/TeamB.gif";
-import TeamC from "../../assets/videos/TeamC.gif";
-import TeamD from "../../assets/videos/TeamD.gif";
+
 import { useNavigate } from "react-router-dom";
+const aws = import.meta.env.VITE_AWS;
+
+const Background = `${aws}/Team.webp`;
+const LeftBg = `${aws}/PurpleComp.webp`;
+const RightBg = `${aws}/YellowdivFront.webp`;
+const YellowBack = `${aws}/YellowDivback.webp`;
+const button = `${aws}/Pinkbtn_front.webp`;
+const Abg = `${aws}/TeamA_bg.webp`;
+const Bbg = `${aws}/TeamB_bgg.webp`;
+const Cbg = `${aws}/TeamC_bg.webp`;
+const Dbg = `${aws}/TeamD_bg.webp`;
+const Pin = `${aws}/pin.webp`;
+const Thread = `${aws}/threads.webp`;
+
+const buttonback = `${aws}/Pinkbtn_black.webp`;
+const Background1 = `${aws}/TeampageMob.webp`;
+const LeftBg1 = `${aws}/PurpledivMob.webp`;
+const RightBg1 = `${aws}/YellowFrontMob.webp`;
+const button1 = `${aws}/Pinkbtn_1.webp`;
+const Abg1 = `${aws}/TeamAmob.webp`;
+const Bbg1 = `${aws}/TeamBmob.webp`;
+const Cbg1 = `${aws}/TeamCmob.webp`;
+const Dbg1 = `${aws}/TeamDmob.webp`;
+const Pin1 = `${aws}/PinMob.webp`;
+const YellowBack1 = `${aws}/YellowbkMob.webp`;
+const Thread1 = `${aws}/ThreadsMob.webp`;
+const buttonback1 = `${aws}/Pinkbtn_back1.webp`;
+const Title = `${aws}/TeamTitle.webp`;
+const TeamA = `${aws}/TeamA.gif`;
+const TeamB = `${aws}/TeamB.gif`;
+const TeamC = `${aws}/TeamC.gif`;
+const TeamD = `${aws}/TeamD.gif`;
 
 function Team() {
   const [showPins, setShowPins] = useState(false);

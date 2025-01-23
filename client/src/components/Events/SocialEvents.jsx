@@ -1,13 +1,16 @@
-import Background from "../../assets/images/Sahyog_bg.webp";
-import Title from "../../assets/images/Title4.webp";
-import Text from "../../assets/images/Sahyog.webp";
-import Image from "../../assets/images/SahyogImg.webp";
-import bg from "../../assets/images/SahyogDiv.webp";
-import Background1 from "../../assets/images/iPhone 14 & 15 Pro - 10.webp";
-import Title1 from "../../assets/images/Name-2.webp";
-import Text1 from "../../assets/images/Text.webp";
-import Image1 from "../../assets/images/Sahyog-2.webp";
-import bg1 from "../../assets/images/bigtextbox.webp";
+const aws = import.meta.env.VITE_AWS;
+
+const Background = `${aws}/Sahyog_bg.webp`;
+const Title = `${aws}/Title4.webp`;
+const Text = `${aws}/Sahyog.webp`;
+const Image = `${aws}/SahyogImg.webp`;
+const bg = `${aws}/SahyogDiv.webp`;
+const Background1 = `${aws}/iPhone 14 & 15 Pro - 10.webp`;
+const Title1 = `${aws}/Name-2.webp`;
+const Text1 = `${aws}/Text.webp`;
+const Image1 = `${aws}/Sahyog-2.webp`;
+const bg1 = `${aws}/bigtextbox.webp`;
+
 
 function Sahyog() {
   return (
