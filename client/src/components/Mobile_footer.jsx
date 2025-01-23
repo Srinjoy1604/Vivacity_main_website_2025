@@ -9,9 +9,12 @@ const FooterBackground = `${aws}/Footer_mobile.webp`;
 const Backbg = `${aws}/Team.webp`;
 const Backbg1 = `${aws}/ExcitingBg.webp`;
 const Backbg2 = `${aws}/VioletBg.webp`;
+const GDG = `${aws}/gdglogo.webp`;
+
 
 function Footer1() {
   const aspectRatio = 512 / 512;
+  const is404 = !["/","/events","/OurTeam"].includes(location.pathname);
 
   return (
     <div
@@ -21,7 +24,7 @@ function Footer1() {
         height: `calc(100vw * ${aspectRatio})`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        display: location.pathname === "/NormalRegistration" ? "none" : "block",
+        display: is404 ? "none" : "block",
       }}
     >
       <div
@@ -46,11 +49,11 @@ function Footer1() {
               className="h-[71.80%]   "
             />
             <div style={{ height: "1.43%" }} />
-            <p className="text-center xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw] font-semibold  font-vetosans text-[1rem] text-black">
-              Developed by GDG on Campus, LNMIIT
+            <p className="flex justify-center items-center text-center xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw] font-semibold  font-vetosans text-[1rem] text-black">
+            <span className="font-medium">Developed by</span><a href="https://gdg.community.dev/gdg-on-campus-the-lnm-institute-of-information-technology-jaipur-india/"><span className="xtext-gradient font-black flex items-center justify-center"><img src={GDG} className="w-8 h-auto ml-1.5 mr-0.5"></img> GDG on Campus, LNMIIT</span></a>
             </p>
             <p className="text-center  xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw]  font-semibold font-vetosans text-[1rem] text-black mt-[1%]">
-              Designed by Vivacity. All rights reserved.
+            <span className="font-medium">Designed by</span> Vivacity. All rights reserved.
             </p>
           </div>
 

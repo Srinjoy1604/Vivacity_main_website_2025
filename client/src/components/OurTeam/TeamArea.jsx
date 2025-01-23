@@ -48,7 +48,7 @@ function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne,
         w = "100";
         mt = "-2.75rem";
         mt1 = "-1.5rem";
-      } else if (SectionTitle === "Hospitality & Logistics Team") {
+      } else if (SectionTitle === "Artist and Operations Team") {
         asset = CurvyLine2;
         rotang = "-2.25°";
         w = "69";
