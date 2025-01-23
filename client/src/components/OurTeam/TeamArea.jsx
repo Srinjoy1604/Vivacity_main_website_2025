@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import TeamCard from "./TeamCard";
 import CurvyLine from "../../assets/images/MentorLine.webp";
-import CurvyLine2 from "../../assets/images/line2.png"
-import CurveLine from "../../assets/images/line.png";
+import CurvyLine2 from "../../assets/images/line2.webp"
+import CurveLine from "../../assets/images/line.webp";
 function TeamArea({ SectionTitle, BgColor, Pattern, RightOne, RightTwo, LeftOne, LeftTwo, CardTeam, Members, PositionArr = ["0", "0", "0", "0"] }) {
     let asset;
     let rotang;

@@ -133,7 +133,7 @@ function Portal({ onAnimationComplete }) {
       >
         <img
           ref={ring1Ref}
-          className="absolute sm:w-[70%] sm:h-[55%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] lg:w-[43%] lg:h-[43%]"
+          className="absolute sm:w-[70%] sm:h-[55%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] lg:w-[43%] lg:h-[43%]"
           src={ring1}
           alt="Ring 1"
         />
@@ -145,7 +145,7 @@ function Portal({ onAnimationComplete }) {
         />
         <img
           ref={ring3Ref}
-          className="absolute sm:w-[100%] sm:h-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] lg:w-[70%] lg:h-[70%]"
+          className="absolute sm:w-[100%] sm:h-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] lg:w-[70%] lg:h-[70%]"
           src={ring3}
           alt="Ring 3"
         />

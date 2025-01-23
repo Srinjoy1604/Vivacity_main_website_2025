@@ -9,7 +9,7 @@ import Backbg from "../assets/images/Team.webp";
 import Backbg1 from "../assets/images/ExcitingBg.webp";
 import Backbg2 from "../assets/images/VioletBg.webp";
 import { Link, NavLink } from "react-router-dom";
-import GDG from "../assets/images/gdglogo.png";
+import GDG from "../assets/images/gdglogo.webp";
 import "../App.css";
 
 function Footer() {
