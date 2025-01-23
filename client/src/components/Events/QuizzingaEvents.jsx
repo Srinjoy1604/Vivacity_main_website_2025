@@ -10,7 +10,7 @@ import Quizzinga from '../../assets/pdf/Quzzinga.pdf'
 function QuizzingaEvents() {
   return (
     <div
-      className={`${Styles.QuizzingaBg} w-full h-[100%] p-[2%] pb-[3.5%] flex flex-col`}
+      className={`${Styles.QuizzingaBg} w-full h-[100%] p-[3%] pb-[3.5%] flex flex-col`}
     >
       <div
         className={`grid place-items-center pt-[3.5%]`}
@@ -18,8 +18,8 @@ function QuizzingaEvents() {
         <img src={QuizzingaTitle} className="w-[80%] sm:w-[70%] md:w-[50%] lg:w-[50%]" alt="" />
       </div>
 
-      <div className="space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[8%] md:pt-[6%] ">
-        <div className="flex flex-col items-center  md:flex-row   justify-center  h-[100%] w-[100%] space-y-[5%] md:space-y-[0%] space-x-[2%] ">
+      <div className="space-y-[2%] flex flex-col justify-center   mx-auto w-full h-full px-[0.5%] pt-[6.33%] ">
+        <div className="flex flex-col items-center  md:flex-row   justify-center  h-[100%] w-[100%] space-y-[3%] md:space-y-[0%] space-x-[2%] ">
           <div className="relative  w-[98.11%] h-[29%]  md:w-[59.2%] md:h-[42.5%] ">
             <img className="w-[100%] h-[100%]" src={BamboozledBg} alt="" />
             <div className="">
@@ -62,7 +62,7 @@ function QuizzingaEvents() {
           </div>
           
         </div>
-        <div className="w-[100%] pb-4">
+        <div className="w-[100%] pb-2 pt-4 md:pt-2">
             <Button_Component section={Quizzinga} showRegister={true} showRulebook={true} />
         </div>
       </div>

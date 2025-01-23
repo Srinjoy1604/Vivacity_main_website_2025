@@ -16,6 +16,8 @@ function Footer() {
   const aspectRatio = 415 / 1480;
   const navigate = useNavigate();
   const location = useLocation();
+  const is404 = !["/NormalRegistration","/","/events","/OurTeam"].includes(location.pathname);
+
   return (
     <div
       className="relative w-full "
@@ -33,7 +35,7 @@ function Footer() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        display: location.pathname === "/NormalRegistration" ? "none" : "block",
+        display: is404 ? "none" : "block",
       }}
     >
       <div
