@@ -3,18 +3,18 @@
         "TitleName": "Fest Heads",
         "CardTeam": [
             {
-                "Name": "Ayush Dhanesha",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
-            },
-            {
                 "Name": "Shubhanshu Singhal",
                 "Position": "FEST HEAD",
-                "Image": "/Subhanshu.jpg",
+                "Image": "/Subhanshu.webp",
                 "EmailLink": "shubhanshusinghal77@gmail.com",
                 "InstagramLink": "https://www.instagram.com/shubhanshu_singhal_?igsh=MWs0OGJ0Mm5yNTJmMA=="
+            },
+            {
+                "Name": "Ayush Dhanesha",
+                "Position": "FEST HEAD",
+                "Image": "/Dhanesha.webp",
+                "EmailLink": "22ucs065@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/a_n_dhanesha0808?igsh=aGt0Y203N2FjZ2gx"
             }
         ]
     },
@@ -24,14 +24,14 @@
             {
                 "Name": "Prateek Lakhotia",
                 "Position": "General Secretary",
-                "Image": "/Prateek.jpg",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Image": "/Prateek.webp",
+                "EmailLink": "22ucc076@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/prateek_lakhotia._?igsh=MWpoZmFvMXQ3bHhicw=="
             },
             {
                 "Name": "Manasvi Sharma",
                 "Position": "Associate G.sec.",
-                "Image": "/Manasvi.jpg",
+                "Image": "/Manasvi.webp",
                 "EmailLink": "manasvisharma0908@gmail.com",
                 "InstagramLink": "https://www.instagram.com/manasvii_09/"
             },
@@ -39,8 +39,8 @@
                 "Name": "Samkit Soni",
                 "Position": "Finance convenor",
                 "Image": "/Samkit.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "EmailLink": "22ucs177@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/sarca.sam.kit?igsh=cmdtNWk2aTY5bmtl"
             }
         ]
     },
@@ -50,21 +50,21 @@
             {
                 "Name": "Harshit Daga",
                 "Position": "Head of Development",
-                "Image": "/Harshit.png",
+                "Image": "/Harshit.webp",
                 "EmailLink": "harshitdaga2003@gmail.com",
                 "InstagramLink": "https://www.instagram.com/harshitdaga03/"
             },
             {
                 "Name": "Srinjoy Roy",
                 "Position": "Head of Development",
-                "Image": "/Srinjoy.jpg",
+                "Image": "/Srinjoy.webp",
                 "EmailLink": "srinjoy12345@gmail.com",
                 "InstagramLink": "https://www.instagram.com/srinjoy1604/"
             },
             {
-                "Name": "Krishna Khatri",
+                "Name": "Krishna Khattri",
                 "Position": "Head of Development",
-                "Image": "/Khatri.jpg",
+                "Image": "/Khatri3.webp",
                 "EmailLink": "krishnakhattri24@gmail.com",
                 "InstagramLink": "https://www.instagram.com/krishnakhattri_27?igsh=MnlmN3pqaGF6cmln"
             }
@@ -83,7 +83,7 @@
             {
                 "Name": "Divya Dashotar",
                 "Position": "Creative Head",
-                "Image": "/Dashotar.png",
+                "Image": "/Dashotar.webp",
                 "EmailLink": "divyauptown@gmail.com",
                 "InstagramLink": "https://www.instagram.com/divya.dashotar?igsh=MWVnejdmY2YwN2JrcA%3D%3D&utm_source=qr"
             },
@@ -97,7 +97,7 @@
             {
                 "Name": "Karan Singh",
                 "Position": "Creative Head",
-                "Image": "/karan.png",
+                "Image": "/karan.webp",
                 "EmailLink": "mailtoksingh08@gmail.com",
                 "InstagramLink": "https://www.instagram.com/_singh_08__?igsh=NTQ4Yml0MnJmaWM1"
             }
@@ -122,44 +122,44 @@
             {
                 "Name": "Vineet Dhuria",
                 "Position": "Sponosorship  head",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Image": "/Vineet.webp",
+                "EmailLink": "22ucc115@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/vineet.dhuria?igsh=N2o3eXk5bzhwang5"
             },
             {
                 "Name": "Divyansh Arora",
                 "Position": "Sponosorship  head",
                 "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "EmailLink": "22ucc037@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/divyaansh.arora?igsh=Njg3anc0dDIzczA2"
             },
             {
                 "Name": "Harsh Jindal",
                 "Position": "Sponosorship  head",
-                "Image": "/Harsh.JPG",
+                "Image": "/Harsh.webp",
                 "EmailLink": "harshjindal458@gmail.com",
                 "InstagramLink": "https://www.instagram.com/jindal_ji_07?igsh=bTZqMnpqamJsNWIx"
             },
             {
                 "Name": "Utsav Singh",
                 "Position": "Sponosorship  head",
-                "Image": "/Utsav.JPG",
+                "Image": "/Utsav.webp",
                 "EmailLink": "utsavayush7@gmail.com",
                 "InstagramLink": "https://www.instagram.com/ootsavv?igsh=MmxnOXl3MzN4Ynlp&utm_source=qr"
             },
             {
                 "Name": "Sanidhya Baldawa",
                 "Position": "Sponosorship  head",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Image": "/Sanidhya.webp",
+                "EmailLink": "22uec117@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/sanidhyabaldwa?igsh=ZGtwMHdjcWRueDJq"
             },
             {
                 "Name": "Siddharth Chaudhary",
                 "Position": "Sponosorship  head",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Image": "/Siddharth.jpeg",
+                "EmailLink": "22ucs210@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/sidd.chy?igsh=MzZ0M2lncTZ2eDQ4"
             }
         ],
         "Members": [
@@ -181,157 +181,128 @@
         "TitleName": "PR & Events Team",
         "CardTeam": [
             {
-                "Name": "Ayush Dhanesha",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Bhavyam Madhrani",
+                "Position": "Events head",
+                "Image": "/BhavyamMadhrani.webp",
+                "EmailLink": "22ucs049@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/bhav.yumm?igsh=cDZrdTF2ZnJieTFz"
             },
             {
-                "Name": "Ayush Dhanesha",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Chirag Jain",
+                "Position": "Events head",
+                "Image": "/ChiragJain.webp",
+                "EmailLink": "chiragcj27.work@gmail.com",
+                "InstagramLink": "https://www.instagram.com/chiragcj27/"
             },
             {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Ankur Arora",
+                "Position": "Events head",
+                "Image": "/AnkurArora.webp",
+                "EmailLink": "22ucs018@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/ankur_22_13?igsh=aGNmYm01c3RtYXc1"
             },
             {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Parini Mishra",
+                "Position": "Events head",
+                "Image": "/PariniMishra.webp",
+                "EmailLink": "22dec006@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/parinimishra?igsh=MTY2dmptNGJ4dmk3cQ=="
             },
             {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Somya kedia",
+                "Position": "Events head",
+                "Image": "/somyakedia.webp",
+                "EmailLink": "kediasomya04@gmail.com",
+                "InstagramLink": "https://www.instagram.com/_arsphene_?igsh=MTByOG03b2VrdDkwdA=="
             },
             {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Aayush Shukla",
+                "Position": "Events head",
+                "Image": "/AayushShukla.webp",
+                "EmailLink": "22ucc003@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/aayushshukla1803?igsh=dGYxNjE0aDh1cjJu"
             }
         ],
         "Members": [
-            "Priyal Maheshwari",
-            "Priyal Maheshwari",
-            "Priyal Maheshwari",
-            "Rishabh Srivastava",
-            "Navya Jain",
-            "Kriti Jindal",
-            "Prasoon Agrawal",
-            "Aniket Aslaliya"
+            "Vedang Dixit",
+            "Parth Goyal",
+            "Kanishq Singhal",
+            "Ishita Khandelwal",
+            "Manasvi Methi",
+            "Hemang Bansal",
+            "Shivam Agarwal",
+            "Avani Kotai",
+            "Anika Vishnoi",
+            "Vanita Khathuria",
+            "Suhana Agrawal",
+            "Himanshu Goyal",
+            "Suyash Vijay",
+            "Kshitij Sharma",
+            "Tavishi Verma"
         ]
     },
     {
-        "TitleName": "Hospitality & Logistics Team",
+        "TitleName": "Artist and Operations Team",
         "CardTeam": [
             {
-                "Name": "Ayush Dhanesha",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Bhupesh Jha",
+                "Position": "Operational head",
+                "Image": "/Bhupesh.webp",
+                "EmailLink": "shrutijha0803@gmail.com",
+                "InstagramLink": "https://www.instagram.com/bhupesh.jhaa?igsh=ZWQ5dTcxdm5mNHdz"
             },
             {
-                "Name": "Ayush Dhanesha",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Guneet Garg",
+                "Position": "Operational head",
+                "Image": "/Guneet.jpg",
+                "EmailLink": "22uec044@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/__guneet16?igsh=MXhmYWgyenUyOGZrYg=="
             },
             {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Abde Kuvazar",
+                "Position": "Operational head",
+                "Image": "/Abde.webp",
+                "EmailLink": "22ucc004@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/abdekuvazar?igsh=MWZkeWN1MWRydGlvcA=="
             },
             {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
+                "Name": "Aman Aggarwal",
+                "Position": "Operational head",
                 "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
-            },
-            {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
-            },
-            {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "EmailLink": "22uec012@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/aman_aggarwal.2711?igsh=bWNhNTRuMG52NWxu"
             }
         ],
         "Members": [
-            "Priyal Maheshwari",
-            "Priyal Maheshwari",
-            "Priyal Maheshwari",
-            "Rishabh Srivastava",
-            "Navya Jain",
-            "Kriti Jindal",
-            "Prasoon Agrawal",
-            "Aniket Aslaliya"
+            "Hitesh Shee",
+            "Pranjali Manek",
+            "Hitesh Rawat"
         ]
     },
     {
         "TitleName": "Curation Team",
         "CardTeam": [
             {
-                "Name": "Ayush Dhanesha",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Devansh Mehra",
+                "Position": "Esports head",
+                "Image": "/DevanshMehra.webp",
+                "EmailLink": "22uec040@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/devansh_mehra_11?igsh=NXA0MzZzdzZ5c3hx"
             },
             {
-                "Name": "Ayush Dhanesha",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Sahil Gaur",
+                "Position": "copywriting head",
+                "Image": "/SahilGaur.webp",
+                "EmailLink": "22ucs172@lnmiit.ac.in",
+                "InstagramLink": "https://www.instagram.com/saaahil_g?igsh=OW52Nnd1cWFta3Ro"
             },
             {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
-            },
-            {
-                "Name": "Shubhanshu Singhal",
-                "Position": "FEST HEAD",
-                "Image": "/Skeleton.webp",
-                "EmailLink": "",
-                "InstagramLink": ""
+                "Name": "Krishna Manchanda",
+                "Position": "Coverage head",
+                "Image": "/KrishnaManchanda.webp",
+                "EmailLink": "krishhh.webp@gmail.com",
+                "InstagramLink": "https://www.instagram.com/krishhh.webp?igsh=MXRpaXNrajdrZXgy&utm_source=qr"
             }
-        ],
-        "Members": [
-            "Priyal Maheshwari",
-            "Priyal Maheshwari",
-            "Priyal Maheshwari",
-            "Rishabh Srivastava",
-            "Navya Jain",
-            "Kriti Jindal",
-            "Prasoon Agrawal",
-            "Aniket Aslaliya"
         ]
     }
 ]

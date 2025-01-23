@@ -8,24 +8,24 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Amit from "../../../assets/images/AmitTrivedi.webp";
 import AmitName from "../../../assets/images/Amit.webp";
-import Jublin from "../../../assets/images/Jubin.png";
-import JublinName from "../../../assets/images/JublinName.png";
-import Harrdy from "../../../assets/images/Hardy.png";
-import HarrdyName from "../../../assets/images/HardyName.png";
-import Darshan from "../../../assets/images/Darshan.png";
-import DarshanName from "../../../assets/images/DarshanName.png";
-import Mohit from "../../../assets/images/MohitChauhan.png";
-import MohitName from "../../../assets/images/MohitName.png";
-import Asees from "../../../assets/images/Asees.png";
-import AseesName from "../../../assets/images/AssesName.png";
-import Kullu from "../../../assets/images/Kullu.png";
-import KulluName from "../../../assets/images/KulluName.png";
-import Ritviz from "../../../assets/images/Ritviz.png";
-import RitvizName from "../../../assets/images/RitvizName.png";
-import ManyMore from "../../../assets/images/ManyMore.png";
-import ManyMoreName from "../../../assets/images/ManyMoreName.png";
-// import Neha from "../../../assets/images/Neha.png";  // Example new artist image
-// import Arijit from "../../../assets/images/Arijit.png";  // Example new artist image
+import Jublin from "../../../assets/images/Jubin.webp";
+import JublinName from "../../../assets/images/JublinName.webp";
+import Harrdy from "../../../assets/images/Hardy.webp";
+import HarrdyName from "../../../assets/images/HardyName.webp";
+import Darshan from "../../../assets/images/Darshan.webp";
+import DarshanName from "../../../assets/images/DarshanName.webp";
+import Mohit from "../../../assets/images/MohitChauhan.webp";
+import MohitName from "../../../assets/images/MohitName.webp";
+import Asees from "../../../assets/images/Asees.webp";
+import AseesName from "../../../assets/images/AssesName.webp";
+import Kullu from "../../../assets/images/Kullu.webp";
+import KulluName from "../../../assets/images/KulluName.webp";
+import Ritviz from "../../../assets/images/Ritviz.webp";
+import RitvizName from "../../../assets/images/RitvizName.webp";
+import ManyMore from "../../../assets/images/ManyMore.webp";
+import ManyMoreName from "../../../assets/images/ManyMoreName.webp";
+// import Neha from "../../../assets/images/Neha.webp";  // Example new artist image
+// import Arijit from "../../../assets/images/Arijit.webp";  // Example new artist image
 import {
   FaRegArrowAltCircleRight,
   FaRegArrowAltCircleLeft,

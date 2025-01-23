@@ -35,8 +35,8 @@ import Doghnut from "../assets/images/Donut.webp";
 import OurMentors from "../assets/images/OurMentors.webp";
 import OurTeamIndex from "../components/OurTeam/OurTeamIndex";
 import OurTeamTitle from "../assets/images/OurTeam.webp";
-import MentorMobile from "../assets/images/OurTeamsMentorMobile.png";
-import MentorMobileText from "../assets/images/OurTeamsMentorTextMobile.png";
+import MentorMobile from "../assets/images/OurTeamsMentorMobile.webp";
+import MentorMobileText from "../assets/images/OurTeamsMentorTextMobile.webp";
 import asset from "../assets/images/MentorLine.webp";
 
 function OurTeams() {
@@ -233,3 +233,27 @@ function OurTeams() {
 }
 
 export default OurTeams;
+
+
+// const x= {
+//     "TitleName": "Coverage Team",
+//     "CardTeam": [
+//         {
+//             "Name": "Krishna Manchanda",
+//             "Position": "Coverage head",
+//             "Image": "/Skeleton.webp",
+//             "EmailLink": "krishhh.jpg@gmail.com",
+//             "InstagramLink": "https://www.instagram.com/krishhh.jpg?igsh=MXRpaXNrajdrZXgy&utm_source=qr"
+//         },
+//         {
+//             "Name": "Imagination Club",
+//             "Position": "Coverage Partner",
+//             "Image": "/Skeleton.webp",
+//             "EmailLink": "imagination@lnmiit.ac.in",
+//             "InstagramLink": "https://www.instagram.com/imagination.lnmiit?igshid=YmMyMTA2M2Y%3D"
+//         }
+//     ],
+//     "Members": [
+//         "Imagination Team"
+//     ]
+// },
