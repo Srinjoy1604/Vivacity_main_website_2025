@@ -100,7 +100,7 @@ function Sahyog() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             width: "100%",
-            aspectRatio: "393/407",
+            aspectRatio: "393/350",
             position: "relative",
           }}
         >
@@ -120,9 +120,9 @@ function Sahyog() {
           <div
             style={{
               position: "absolute",
-              width: "91.46%",
+              width: "91%",
               aspectRatio: "358/204",
-              top: "37.89%",
+              top: "33%",
               left: "4.39%",
               backgroundImage: `url(${Image1})`,
               backgroundSize: "cover",

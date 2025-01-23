@@ -33,13 +33,13 @@ function Exciting() {
   return (
     <div>
       <div
-        className="w-full bg-center px-4 pt-4 md:pb-16  bg-cover "
+        className="w-full bg-center px-3.5   pt-4 md:pb-16  bg-cover "
         style={{
           backgroundImage: `url(${Background})`,
         }}
       >
         {/* Title Section */}
-        <div className="w-full pt-[4.7%] pb-[4%] flex justify-center mb-6">
+        <div className="w-full pt-[4.7%] pb-[4%] flex justify-center mb-1">
           <img
             src={title}
             alt="Exciting Pursuits"
@@ -175,9 +175,9 @@ function Exciting() {
         </div>
 
         {/* Mobile Layout */}
-        <div className="md:hidden pb-7 w-full">
+        <div className="md:hidden pb-6 w-full">
           {/* Prom Night Mobile */}
-          <div className="w-full mb-4">
+          <div className="w-full mb-2">
             <div className="relative" style={{ aspectRatio: "358/204" }}>
               <img
                 src={PromNight_mobile}
@@ -206,7 +206,7 @@ function Exciting() {
           </div>
 
           {/* Silent Disco Mobile */}
-          <div className="w-full mb-4">
+          <div className="w-full mb-2">
             <div className="relative" style={{ aspectRatio: "358/204" }}>
               <img
                 src={SilentDisco_mobile}
@@ -235,7 +235,7 @@ function Exciting() {
           </div>
 
           {/* Stage Spectrum Mobile */}
-          <div className="w-full mb-4">
+          <div className="w-full mb-2">
             <div className="relative" style={{ aspectRatio: "358/204" }}>
               <img
                 src={StageSpectrum_mobile}

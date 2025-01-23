@@ -25,7 +25,7 @@ function TeamCard({ CardData }) {
                 }}
             >
                 <div className="grid grid-flow-row place-items-center  w-[100%] pt-[1%] mt-[10%]">
-                    <h2 className="w-[100%] text-center font-vetosans font-[900] text-[1.6rem] xl:text-[1.75rem] lg:text-[1.5rem] min-sm:text-[1.4rem] ">{CardData.Name}</h2>
+                    <h2 className="w-[100%] text-center font-vetosansbold font-[900] text-[1.6rem] xl:text-[1.75rem] lg:text-[1.5rem] min-sm:text-[1.4rem] ">{CardData.Name}</h2>
                     <h3 className="w-[100%] text-center font-rfabb font-[400] text-[1.2rem] xl:text-[1.2rem] lg:text-[1.2rem] min-sm:text-[1rem] ">{CardData.Position}</h3>
                 </div>
             </div>

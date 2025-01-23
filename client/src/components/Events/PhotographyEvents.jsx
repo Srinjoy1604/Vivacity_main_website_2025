@@ -44,7 +44,7 @@ function PhotographyEvents() {
       }}
     >
       {/* Title Section */}
-      <div className="w-full pt-[4.8%] flex justify-center pb-[3%]">
+      <div className="w-full pt-[4.8%] flex justify-center pb-[6%]">
         <img
           src={title}
           alt="Photography Events"
@@ -238,7 +238,7 @@ function PhotographyEvents() {
       {/* Mobile design */}
       <div className="md:hidden    w-full">
         {/* Image Hunt */}
-        <div className="w-[92%]  ml-[4%] mb-4">
+        <div className="w-[91%]  ml-[4.5%] mb-2">
           <div className="relative aspect-[358/204] ">
             <img
               src={image7}
@@ -267,7 +267,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Photobooth */}
-        <div className="w-[92%]  ml-[4%] mb-4">
+        <div className="w-[91%]  ml-[4.5%] mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image8}
@@ -296,7 +296,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Film Making Competition */}
-        <div className="w-[92%]  ml-[4%] mb-4">
+        <div className="w-[91%]  ml-[4.5%] mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image9}
@@ -325,7 +325,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Perspective */}
-        <div className="w-[92%]  ml-[4%] mb-4">
+        <div className="w-[91%]  ml-[4.5%] mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image10}
@@ -355,7 +355,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Kalakriti */}
-        <div className="w-[92%]  ml-[4%] mb-4">
+        <div className="w-[91%]  ml-[4.5%] mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image11}
@@ -384,7 +384,7 @@ function PhotographyEvents() {
         </div>
 
         {/* Pixels */}
-        <div className="w-[92%]  ml-[4%] mb-4">
+        <div className="w-[91%]  ml-[4.5%]">
           <div className="relative aspect-[358/204]">
             <img
               src={image12}
@@ -413,7 +413,7 @@ function PhotographyEvents() {
           </div>
         </div>
       </div>
-      <div className="lg:pt-8 md:pt-8 lg:pb-[6.3%] md:pb-[6.3%] pb-[5%]">
+      <div className="pt-4 pb-[5%]">
         <Button_component showRulebook={true} showRegister={true} />
       </div>
     </div>

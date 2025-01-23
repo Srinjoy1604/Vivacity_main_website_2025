@@ -38,14 +38,14 @@ function ArtEvents() {
 
   return (
     <div
-      className="min-h-[70vh] w-full bg-center bg-cover p-4"
+      className="min-h-[70vh] w-full bg-center bg-cover p-3.5"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundColor: "#9333EA",
       }}
     >
       {/* Title Section */}
-      <div className="w-full pt-[5.3%] pb-[2.3%] flex justify-center mb-6">
+      <div className="w-full pt-[5.3%] pb-[2.3%] flex justify-center mb-3.5">
         <img
           src={title}
           alt="Art Events"
@@ -215,7 +215,7 @@ function ArtEvents() {
       {/* Mobile Layout */}
       <div className="md:hidden w-full">
         {/* Tattoo Tales */}
-        <div className="w-full mb-4">
+        <div className="w-full mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image7}
@@ -244,7 +244,7 @@ function ArtEvents() {
         </div>
 
         {/* Mystic */}
-        <div className="w-full mb-4">
+        <div className="w-full mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image8}
@@ -274,7 +274,7 @@ function ArtEvents() {
         </div>
 
         {/* Splash */}
-        <div className="w-full mb-4">
+        <div className="w-full mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image9}
@@ -303,7 +303,7 @@ function ArtEvents() {
         </div>
 
         {/* Contrasto */}
-        <div className="w-full mb-4">
+        <div className="w-full mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image10}
@@ -333,7 +333,7 @@ function ArtEvents() {
         </div>
 
         {/* The Universe */}
-        <div className="w-full mb-4">
+        <div className="w-full mb-2">
           <div className="relative aspect-[358/204]">
             <img
               src={image11}
@@ -363,7 +363,7 @@ function ArtEvents() {
       </div>
 
       {/* Buttons Section */}
-      <div className="w-[100%] p-[2%] mb-[3%]">
+      <div className="w-[100%] pb-[2%] pt-4">
         <Button_Component showRegister={true} showRulebook={false} />
       </div>
     </div>
