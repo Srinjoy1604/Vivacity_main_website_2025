@@ -616,7 +616,7 @@ function Speaking(){
               </div>
                  </div>
                 
-                 <div className="w-[100%] relative bottom-0 p-[5%]">
+                 <div className="pt-4 pb-[5%]">
             <Button_Component section={MediaCell}  showRegister={true} showRulebook={true} />
           </div>
             </div>

@@ -105,7 +105,7 @@ function MusicEvents() {
             </div>
           </div>
         </div>
-        <div className="space-y-[1%]  md:space-y-[0%]  flex md:flex-row flex-col items-center justify-center  h-[100%] md:w-[100%] w-[98%]  ">
+        <div className="space-y-[1%]  md:space-y-[0%] md:space-x-[2%]  flex md:flex-row flex-col items-center justify-center  h-[100%] md:w-[100%] w-[98%]  ">
           <div className="relative w-[100%] h-[14.61%] md:w-[35.9%] md:h-[36.9%] ">
             <img
               className="hidden md:block w-[100%] h-[100%]"
@@ -209,7 +209,7 @@ function MusicEvents() {
           </div>
         </div>
         <div>
-          <div className="pt-4 lg:pb-[6.3%] md:pb-[6.3%] pb-[2%]">
+          <div className="pt-4 lg:pb-[5%] md:pb-[5%] pb-[2%]">
             <Button_Component section={Capriccio} showRegister={true} showRulebook={true} />
           </div>
         </div>

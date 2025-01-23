@@ -62,7 +62,7 @@ function QuizzingaEvents() {
           </div>
           
         </div>
-        <div className="w-[100%] pb-2 pt-4">
+        <div className="w-[100%] pb-2 pt-4 md:pt-2">
             <Button_Component section={Quizzinga} showRegister={true} showRulebook={true} />
         </div>
       </div>
