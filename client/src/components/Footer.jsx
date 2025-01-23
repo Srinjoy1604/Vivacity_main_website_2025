@@ -73,21 +73,21 @@ function Footer() {
 
           <div className="flex flex-col items-end">
             <div className="flex space-x-[2vw] mb-[1vw]">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/Vivacity.LNMIIT" target="_blank" rel="noopener noreferrer">
                 <img
                   src={FacebookIcon}
                   alt="Facebook"
                   className="w-[2vw] h-[2vw] object-contain"
                 />
               </a>
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <img
                   src={TwitterIcon}
                   alt="Twitter"
                   className="w-[2vw] h-[2vw] object-contain"
                 />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/vivacity_lnmiit/?hl=en" target="_blank" rel="noopener noreferrer">
                 <img
                   src={InstagramIcon}
                   alt="Instagram"
