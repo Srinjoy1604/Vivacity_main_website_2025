@@ -33,7 +33,7 @@ function DramaEvents() {
         />
       </div>
 
-      <div className="space-y-[2%] flex flex-col justify-center  items-center w-full h-full md:px-[0.5%] pt-[5%] md:pt-[3.5%] ">
+      <div className="space-y-[2%] flex flex-col justify-center  items-center w-full h-full md:px-[0.5%] pt-[6.33%] md:pt-[3.5%] ">
         <div className="flex flex-col items-center md:flex-row  justify-center  h-[100%] md:w-[100%] w-[95%] space-y-[2%]  md:space-y-[0%] md:space-x-[2%]">
           <div className="relative w-[100%] md:w-[57.1%] h-[76.9%] ">
             <img
@@ -192,7 +192,7 @@ function DramaEvents() {
           </div>
         </div>
       </div>
-      <div className=" pt-[0.7%] lg:pt-8 md:pt-8 lg:pb-[6.3%] md:pb-[6.3%] pb-[4%]">
+      <div className="pt-4 lg:pb-[6.3%] md:pb-[6.3%] pb-[4%]">
         <Button_Component section={Rendition} showRegister={true} showRulebook={true} />
       </div>
     </div>
