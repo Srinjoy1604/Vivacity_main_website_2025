@@ -32,7 +32,7 @@ function Pagess(){
         <div>
             <div className="bg-cover bg-center flex flex-col items-center pt-[8%] "
           style={{
-            backgroundImage: `url(${Background1})`,
+            backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/iPhone 14 & 15 Pro - 2.webp")`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             width: "100%",
