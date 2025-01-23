@@ -8,6 +8,7 @@ export default {
         ttr: ["TT Ricks", "sans-serif"],
         ralltez: ["Ralltez", "sans-serif"],
         vetosans: ["Veto Sans", "sans-serif"],
+        vetosansbold: ["Veto Sans Bold", "sans-serif"],
       },
       screens: {
         1280: "1280px",
