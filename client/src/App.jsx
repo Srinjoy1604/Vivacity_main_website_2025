@@ -15,7 +15,6 @@ import EventsPage from "./pages/EventsPage";
 import OurTeams from "./pages/OurTeams";
 import Sponsors from "./pages/Sponsors";
 import Page404 from "./pages/404";
-import ModalBg from "../src/assets/videos/ModalBg.webp";
 const aws = import.meta.env.VITE_AWS;
 
 const StartLoader = `${aws}/StartLoader.gif`;
