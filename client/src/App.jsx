@@ -15,8 +15,8 @@ import EventsPage from "./pages/EventsPage";
 import OurTeams from "./pages/OurTeams";
 import Sponsors from "./pages/Sponsors";
 import Page404 from "./pages/404";
-const aws = import.meta.env.VITE_AWS;
 
+const aws = import.meta.env.VITE_AWS;
 const StartLoader = `${aws}/StartLoader.gif`;
 const Preloader = `${aws}/PreLoader.gif`;
 const MobileStartLoader = `${aws}/MobileStartLoader.gif`;
@@ -41,26 +41,29 @@ function DialogBox({ text, onClose }) {
         alignItems: "center",
         zIndex: 1000,
       }}
-      
     >
-      <div className="flex items-center justify-center flex-col border-[2px] border-black"
+      <div
         style={{
-          // backgroundImage: `url('${ModalBg}')`, // Add your background image URL here
-          // backgroundSize: "cover",
-          // backgroundPosition: "center",
-          backgroundColor:"#DF9F23",
-          // borderRadius: "10px",
+          backgroundColor: "#DF9F23",
           padding: "2%",
           width: "70%",
-          height:"50%",
+          height: "50%",
           textAlign: "center",
-          // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
-          
-
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
         }}
-        
+        className="border-[2px] border-black"
       >
-        <p style={{ marginBottom: "16px", fontSize: "2rem", fontWeight: "bold" }} className="font-rfabb p-[2%]">
+        <p
+          style={{
+            marginBottom: "16px",
+            fontSize: "2rem",
+            fontWeight: "bold",
+          }}
+          className="font-rfabb p-[2%]"
+        >
           {text}
         </p>
         <button
@@ -72,7 +75,7 @@ function DialogBox({ text, onClose }) {
             cursor: "pointer",
             fontWeight: "bold",
           }}
-          className="border-2  border-black"
+          className="border-2 border-black"
         >
           OK
         </button>
@@ -84,20 +87,18 @@ function DialogBox({ text, onClose }) {
 function AppContent() {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
-  const [showDialog, setShowDialog] = useState(false); // Dialog state
+  const [showDialog, setShowDialog] = useState(false);
   const location = useLocation();
 
-  // Check screen size for `md` breakpoint
+  // Check screen size and session storage for dialog box
   useEffect(() => {
-    const handleResize = () => {
-      const isSmallScreen = window.innerWidth < 768; // `md` breakpoint for TailwindCSS (768px)
-      setShowDialog(isSmallScreen);
-    };
+    const hasDialogBeenShown = sessionStorage.getItem("hasDialogBeenShown");
 
-    handleResize(); // Check on initial load
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
+    // Show dialog only if it hasn't been shown before and screen size is small
+    if (!hasDialogBeenShown && window.innerWidth < 768) {
+      setShowDialog(true);
+      sessionStorage.setItem("hasDialogBeenShown", "true");
+    }
   }, []);
 
   // Durations for the loaders
