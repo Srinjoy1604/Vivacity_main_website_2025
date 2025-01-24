@@ -12,10 +12,14 @@ const promNight = `${aws}/Prom Night.webp`;
 const silentDisco = `${aws}/Silent Disco.webp`;
 const jammingNight = `${aws}/Jamming Night.webp`;
 const stageSpectrum = `${aws}/Stage Spectrum.webp`;
-const promNight_text = `${aws}/TopLeft.webp`;
-const silentDisco_text = `${aws}/TopRightText.webp`;
-const stageSpectrum_text = `${aws}/BottomLeftt.webp`;
-const jammingNight_text = `${aws}/BottomRightt.webp`;
+// const promNight_text = `${aws}/TopLeft.webp`;
+// const silentDisco_text = `${aws}/TopRightText.webp`;
+// const stageSpectrum_text = `${aws}/BottomLeftt.webp`;
+// const jammingNight_text = `${aws}/BottomRightt.webp`;
+import promNight_text from "../../assets/videos/TopLeft.svg";
+import silentDisco_text from "../../assets/videos/TopRightText.svg";
+import stageSpectrum_text from "../../assets/videos/BottomLeftt.svg";
+import jammingNight_text from "../../assets/videos/BottomRightt.svg";
 const text1 = `${aws}/textbox1.webp`;
 const bigtextbox = `${aws}/bigtextbox.webp`;
 const EventsB = `${aws}/EventBrochure.pdf`;
@@ -23,10 +27,15 @@ const PromNight_mobile = `${aws}/Prom Night-2.webp`;
 const SilentDisco_mobile = `${aws}/Silent Disco-2.webp`;
 const JammingNight_mobile = `${aws}/Image Box.webp`;
 const StageSpectrum_mobile = `${aws}/Stage Spectrum-2.webp`;
-const PromNight_text_mobile = `${aws}/Event Name-4.webp`;
-const SilentDisco_text_mobile = `${aws}/Text-2.webp`;
-const StageSpectrum_text_mobile = `${aws}/Text-3.webp`;
-const JammingNight_text_mobile = `${aws}/Text-4.webp`;
+// const PromNight_text_mobile = `${aws}/Event Name-4.webp`;
+// const SilentDisco_text_mobile = `${aws}/Text-2.webp`;
+// const StageSpectrum_text_mobile = `${aws}/Text-3.webp`;
+// const JammingNight_text_mobile = `${aws}/Text-4.webp`;
+import PromNight_text_mobile from "../../assets/videos/Event Name-4.svg";
+import SilentDisco_text_mobile from "../../assets/videos/Text-2.svg";
+import StageSpectrum_text_mobile from "../../assets/videos/Text-3.svg";
+import JammingNight_text_mobile from "../../assets/videos/Text-4.svg";
+
 
 
 function Exciting() {
