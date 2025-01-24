@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -5,7 +6,6 @@ import {
   Routes,
   useLocation,
 } from "react-router-dom";
-import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer1 from "./components/Mobile_footer";
 import Footer from "./components/Footer";
@@ -13,59 +13,124 @@ import Home from "./pages/Home";
 import NormalRegistration from "./pages/NormalRegistration";
 import EventsPage from "./pages/EventsPage";
 import OurTeams from "./pages/OurTeams";
-
 import Sponsors from "./pages/Sponsors";
 import Page404 from "./pages/404";
-
 const aws = import.meta.env.VITE_AWS;
 
 const StartLoader = `${aws}/StartLoader.gif`;
 const Preloader = `${aws}/PreLoader.gif`;
 const MobileStartLoader = `${aws}/MobileStartLoader.gif`;
 
+function DialogBox({ text, onClose }) {
+  useEffect(() => {
+    const timer = setTimeout(onClose, 4000); // Automatically close after 4 seconds
+    return () => clearTimeout(timer);
+  }, [onClose]);
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        background: "rgba(0, 0, 0, 0.5)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        zIndex: 1000,
+      }}
+      
+    >
+      <div className="flex items-center justify-center flex-col border-[2px] border-black"
+        style={{
+          // backgroundImage: `url('${ModalBg}')`, // Add your background image URL here
+          // backgroundSize: "cover",
+          // backgroundPosition: "center",
+          backgroundColor:"#DF9F23",
+          // borderRadius: "10px",
+          padding: "2%",
+          width: "70%",
+          height:"50%",
+          textAlign: "center",
+          // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.2)",
+          
+
+        }}
+        
+      >
+        <p style={{ marginBottom: "16px", fontSize: "2rem", fontWeight: "bold" }} className="font-rfabb p-[2%]">
+          {text}
+        </p>
+        <button
+          onClick={onClose}
+          style={{
+            padding: "10px 20px",
+            backgroundColor: "#DF9F23",
+            borderRadius: "12px",
+            cursor: "pointer",
+            fontWeight: "bold",
+          }}
+          className="border-2  border-black"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function AppContent() {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+  const [showDialog, setShowDialog] = useState(false); // Dialog state
   const location = useLocation();
 
-  // Durations for the loaders
-  const startLoaderDuration = 6000; // 4 seconds for StartLoader
-  const preloaderDuration = 4100; // ~4.1 seconds for Preloader
+  // Check screen size for `md` breakpoint
+  useEffect(() => {
+    const handleResize = () => {
+      const isSmallScreen = window.innerWidth < 768; // `md` breakpoint for TailwindCSS (768px)
+      setShowDialog(isSmallScreen);
+    };
 
-  // Initialize `sessionStorage` count
+    handleResize(); // Check on initial load
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Durations for the loaders
+  const startLoaderDuration = 6000;
+  const preloaderDuration = 4100;
+
   useEffect(() => {
     const count = sessionStorage.getItem("loadCount") || 0;
     if (parseInt(count, 10) === 0) {
-      // First load
       setIsFirstLoad(true);
-      sessionStorage.setItem("loadCount", 1); // Increment the count to 1
+      sessionStorage.setItem("loadCount", 1);
     }
   }, []);
 
-  // Handle the first load (StartLoader)
   useEffect(() => {
     if (isFirstLoad) {
       const timer = setTimeout(() => {
-        setIsFirstLoad(false); // Hide StartLoader after 4 seconds
-        sessionStorage.setItem("loadCount", 2); // Increment the count to 2
+        setIsFirstLoad(false);
+        sessionStorage.setItem("loadCount", 2);
       }, startLoaderDuration);
       return () => clearTimeout(timer);
     }
   }, [isFirstLoad]);
 
-  // Handle page transitions (Preloader)
   useEffect(() => {
     const count = sessionStorage.getItem("loadCount");
     if (parseInt(count, 10) >= 2) {
-      // Show Preloader only after the first load is complete
       setIsLoading(true);
       const timer = setTimeout(() => setIsLoading(false), preloaderDuration);
       return () => clearTimeout(timer);
     }
   }, [location.pathname]);
 
-  // Only show StartLoader for the first load
   if (isFirstLoad) {
     return (
       <div className="loader-container">
@@ -87,7 +152,6 @@ function AppContent() {
     );
   }
 
-  // Show Preloader on subsequent page transitions
   if (isLoading) {
     return (
       <div className="loader-container full-screen">
@@ -98,7 +162,17 @@ function AppContent() {
 
   return (
     <div>
-      {location.pathname === "/" || location.pathname === "/events" ? <div className="hidden"></div> : <Navbar />}
+      {showDialog && (
+        <DialogBox
+          text="For better experience, visit website on desktop."
+          onClose={() => setShowDialog(false)}
+        />
+      )}
+      {location.pathname === "/" || location.pathname === "/events" ? (
+        <div className="hidden"></div>
+      ) : (
+        <Navbar />
+      )}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<EventsPage />} />
@@ -108,11 +182,9 @@ function AppContent() {
         <Route path="/Netra" element={<Sponsors />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-      {/* Mobile footer */}
       <div className="block sm:hidden">
         <Footer1 />
       </div>
-      {/* Desktop footer */}
       <div className="hidden sm:block">
         {location.pathname === "/events" ? null : <Footer />}
       </div>
