@@ -181,6 +181,8 @@ function AppContent() {
         <Route path="/OurTeam" element={<OurTeams />} />
         <Route path="/Sponsors" element={<Sponsors />} />
         <Route path="/Netra" element={<Sponsors />} />
+        <Route path="/Spotify" element={<Sponsors />} />
+        <Route path="/AppleMusic" element={<Sponsors />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
       <div className="block sm:hidden">

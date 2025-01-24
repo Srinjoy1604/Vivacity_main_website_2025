@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const aws = import.meta.env.VITE_AWS;
 
 const BackGround = `${aws}/Section6Background2.webp`;
@@ -10,6 +11,7 @@ const PastArtistGIFBorder = `${aws}/PastArtistGIFBorder.webp`;
 
 const Concert = () => {
   const [backgroundSize, setBackgroundSize] = useState("cover");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const updateStyles = () => {
@@ -70,17 +72,17 @@ const Concert = () => {
 
                   {/* Buttons container*/}
                   <div className="flex gap-2 xxs:gap-3 xs:gap-4 sm:gap-5 justify-start mt-[7%] xs:mb-[5%]">
-                    <button className="px-[2%] py-[1.2%] xxs:px-3 xxs:py-2 xs:px-3  xs:py-2 sm:px-5 sm:py-3 border border-green-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3">
+                    <button className="px-[2%] py-[1.2%] xxs:px-3 xxs:py-2 xs:px-3  xs:py-2 sm:px-5 sm:py-3 border border-green-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3" onClick={() => navigate("/Spotify")}>
                       <img
                         src={Spotify}
                         alt="Spotify logo"
                         className="h-4 xxs:h-5 xs:h-6 sm:h-7 md:h-8"
                       />
-                      <span className="font-vetosans-500 text-[3.6vw]   xs:text-[3.5vw] sm:text-xl md:text-2xl">
+                      <span className="font-vetosans-500 text-[3.6vw] xs:text-[3.5vw] sm:text-xl md:text-2xl">
                         Spotify
                       </span>
                     </button>
-                    <button className="px-[2%] py-[1%] xxs:px-3 xxs:py-2 xs:px-3 xs:py-2 sm:px-5 sm:py-3 border border-red-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3">
+                    <button className="px-[2%] py-[1%] xxs:px-3 xxs:py-2 xs:px-3 xs:py-2 sm:px-5 sm:py-3 border border-red-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3" onClick={() => navigate("/AppleMusic")}>
                       <img
                         src={AppleMusic}
                         alt="Apple Music logo"
@@ -135,7 +137,7 @@ const Concert = () => {
                   So grab your squad, hit play, and let the good times roll.
                 </p>
                 <div className="flex gap-[3%] justify-start">
-                  <button className="pl-[1%] pr-[1.5%] py-[1%] border border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
+                  <button className="pl-[1%] pr-[1.5%] py-[1%] border border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]" onClick={() => navigate("/Spotify")}>
                     <img
                       src={Spotify}
                       alt="Spotify logo"
@@ -143,7 +145,7 @@ const Concert = () => {
                     />
                     <span className="font-vetosans-500">Spotify</span>
                   </button>
-                  <button className="pl-[1%] pr-[1.5%] py-[1%] border border-red-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]">
+                  <button className="pl-[1%] pr-[1.5%] py-[1%] border border-red-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]" onClick={() => navigate("/AppleMusic")}>
                     <img
                       src={AppleMusic}
                       alt="Apple Music logo"
