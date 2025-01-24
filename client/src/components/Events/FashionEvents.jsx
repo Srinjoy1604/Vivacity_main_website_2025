@@ -5,7 +5,8 @@ import Button_Component from "./Button_component";
 const aws = import.meta.env.VITE_AWS;
 
 const FashionTitle = `${aws}/FashionTitle.webp`;
-const VivaText = `${aws}/vivaText.webp`;
+// const VivaText = `${aws}/vivaText.webp`;
+import VivaText from "../../assets/videos/vivaText.svg";
 const VougeText = `${aws}/VougeText.webp`;
 const VivaBg = `${aws}/VivaBg.webp`;
 const VogueBg = `${aws}/VogueBg.webp`;

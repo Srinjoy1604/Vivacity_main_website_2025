@@ -164,15 +164,18 @@
     ],
     "Members": [
       "Vikrant Singh Rathore",
-      "Vanshika Garg",
+      "Vedant Wadhwa",
+      "Raghav Pathak",
+      "Vasu Sharma",
       "Ayush Modi",
+      "Tanmay Jain",
+      "Manye Gupta",
       "Sajal Jaggi",
       "Anurag Yadav",
       "Akarsh Sharma",
       "Vidit Sharma",
       "Jayesh Jhamnani",
       "Rudra Banerjee",
-      "Vaibhav Kapoor",
       "Kartikeya Singh",
       "Arnav Kumar"
     ]
@@ -264,13 +267,6 @@
         "Image": "https://d2tfnz5m7k1weq.cloudfront.net/Abde.webp",
         "EmailLink": "22ucc004@lnmiit.ac.in",
         "InstagramLink": "https://www.instagram.com/abdekuvazar?igsh=MWZkeWN1MWRydGlvcA=="
-      },
-      {
-        "Name": "Aman Aggarwal",
-        "Position": "Operational head",
-        "Image": "https://d2tfnz5m7k1weq.cloudfront.net/Skeleton.webp",
-        "EmailLink": "22uec012@lnmiit.ac.in",
-        "InstagramLink": "https://www.instagram.com/aman_aggarwal.2711?igsh=bWNhNTRuMG52NWxu"
       }
     ],
     "Members": ["Hitesh Shee", "Pranjali Manek", "Hitesh Rawat"]
@@ -298,7 +294,15 @@
         "Image": "https://d2tfnz5m7k1weq.cloudfront.net/KrishnaManchanda.webp",
         "EmailLink": "krishhh.webp@gmail.com",
         "InstagramLink": "https://www.instagram.com/krishhh.png?igsh=MXRpaXNrajdrZXgy&utm_source=qr"
+      },
+      {
+        "Name": "Keshav Varshney",
+        "Position": "Creator Summit Head",
+        "Image": "/KeshavVarshney.webp",
+        "EmailLink": "22ucs107@lnmiit.ac.in",
+        "InstagramLink": "https://www.instagram.com/kzshav?igsh=MXkxd3ZvZnJqaDh5ZQ=="
       }
-    ]
+    ],
+    "Members": ["Imagination Club (Coverage Team)"]
   }
 ]
