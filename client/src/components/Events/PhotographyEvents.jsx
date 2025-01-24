@@ -35,6 +35,8 @@ const hunt = `${aws}/Event Name_4.webp`;
 const kala = `${aws}/Event Name_5.webp`;
 const perspective = `${aws}/Event Name_6.webp`;
 
+import Imagination from "../../assets/videos/IMAGINATIONRULEBOOK.pdf";
+
 function PhotographyEvents() {
   return (
     <div
@@ -414,7 +416,7 @@ function PhotographyEvents() {
         </div>
       </div>
       <div className="pt-4 pb-[5%]">
-        <Button_component showRulebook={false} showRegister={true} />
+        <Button_component showRulebook={true} showRegister={true} section={Imagination}/>
       </div>
     </div>
   );

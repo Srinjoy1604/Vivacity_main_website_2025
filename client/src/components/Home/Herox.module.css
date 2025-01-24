@@ -1,6 +1,7 @@
 .HeroMobile
 {
-    background-image: url("https://d2tfnz5m7k1weq.cloudfront.net/HeroSectionGif.gif");
+    /* background-image: url("https://d2tfnz5m7k1weq.cloudfront.net/HeroSectionGif.gif"); */
+    background-image: url("../../assets/videos/HeroSectionGif.gif");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-top: 4rem;
@@ -20,7 +21,8 @@
 }
 .MainBackgroundHero
 {
-    background-image: url("https://d2tfnz5m7k1weq.cloudfront.net/HeroSectionGif.gif");
+    /* background-image: url("https://d2tfnz5m7k1weq.cloudfront.net/HeroSectionGif.gif"); */
+    background-image: url("../../assets/videos/HeroSectionGif.gif");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
