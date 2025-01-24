@@ -13,17 +13,23 @@ const BottomLeft = `${aws}/BottomLeftimg.webp`;
 const BottomRight = `${aws}/BottomRightimg.webp`;
 const Topleftdiv = `${aws}/Topleftdiv.webp`;
 const TopRightdiv = `${aws}/TopRight.webp`;
-const Streetdance = `${aws}/Streetdance.webp`;
+//const Streetdance = `${aws}/Streetdance.webp`;
 // const TalNarang = `${aws}/TalTarang.webp`;
-import TalNarang from "../../assets/videos/TalTarang.svg"
-const Razzmataaz = `${aws}/Razzmaatazz.webp`;
+//const Razzmataaz = `${aws}/Razzmaatazz.webp`;
 const Middleleftdiv = `${aws}/MiddleLeftdiv.webp`;
 const Middlerightdiv = `${aws}/MiddleRightDiv.webp`;
 const Bottomleftdiv = `${aws}/BottomleftDiv.webp`;
 const BottomRightdiv = `${aws}/Bottomrightdiv.webp`;
-const PumpItUp = `${aws}/PumpItUp.webp`;
-const Letstangle = `${aws}/LetsTangle.webp`;
-const mudra = `${aws}/Mudra.webp`;
+//const PumpItUp = `${aws}/PumpItUp.webp`;
+//const Letstangle = `${aws}/LetsTangle.webp`;
+//const mudra = `${aws}/Mudra.webp`;
+
+import Streetdance from "../../assets/videos/StreetDance.svg"
+import TalNarang from "../../assets/videos/TalTarang.svg"
+import Razzmataaz from "../../assets/videos/Razzmatazz.svg"
+import PumpItUp from "../../assets/videos/PumpItUp.svg"
+import Letstangle from "../../assets/videos/LetsTangle.svg"
+import mudra from "../../assets/videos/Mudra.svg"
 
 const Background1 = `${aws}/iPhone 14 & 15 Pro - 2.webp`;
 
@@ -39,12 +45,20 @@ const Middleleftdiv1 = `${aws}/Subtext-21.webp`;
 const Middlerightdiv1 = `${aws}/Cash Prize-2.webp`;
 const Bottomleftdiv1 = `${aws}/Subtext-22.webp`;
 const BottomRightdiv1 = `${aws}/Subtext-23.webp`;
-const PumpItUp1 = `${aws}/Text-7.webp`;
-const Letstangle1 = `${aws}/Event Name-2.webp`;
-const mudra1 = `${aws}/Event Name-6.webp`;
-const Streetdance1 = `${aws}/Event Name.webp`;
-const TalNarang1 = `${aws}/Event Name-3.webp`;
-const Razzmataaz1 = `${aws}/Event Name-5.webp`;
+//const PumpItUp1 = `${aws}/Text-7.webp`;
+// const Letstangle1 = `${aws}/Event Name-2.webp`;
+// const mudra1 = `${aws}/Event Name-6.webp`;
+// const Streetdance1 = `${aws}/Event Name.webp`;
+// const TalNarang1 = `${aws}/Event Name-3.webp`;
+// const Razzmataaz1 = `${aws}/Event Name-5.webp`;
+
+import Streetdance1 from "../../assets/videos/StreetDance1.svg"
+import TalNarang1 from "../../assets/videos/TalTarang1.svg"
+import Razzmataaz1 from "../../assets/videos/Razzmatazz1.svg"
+import PumpItUp1 from "../../assets/videos/PumpItUp1.svg"
+import Letstangle1 from "../../assets/videos/LetsTangle1.svg"
+import mudra1 from "../../assets/videos/Mudra1.svg"
+
 import Button_Component from "./Button_component";
 
 function DancePage() {
@@ -416,7 +430,7 @@ function DancePage() {
                       aspectRatio: "146/33.52",
                       top: "64.12%",
                       left: "2%",
-                      backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name.webp")`,
+                      backgroundImage: `url(${Streetdance1})`,
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                       zIndex: "1",
@@ -454,7 +468,7 @@ function DancePage() {
                       aspectRatio: "146/33.52",
                       top: "64.12%",
                       left: "2%",
-                      backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-2.webp")`,
+                      backgroundImage: `url(${Letstangle1})`,
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                       zIndex: "1",
@@ -476,9 +490,8 @@ function DancePage() {
                     }}
                   >
                     <p className="font-rfabb leading-tight text-[2.1vw] px-[2%] font-bold ">
-                      The classic Steve Harvey show! Come and be a witness to
-                      the recreation of one of the most popular reality shows of
-                      all time, at Family Feud: the game show!
+                    Duet with a partner as your symphonies collide against
+                    <br /> each other in this competition of melodies.
                     </p>
                   </div>
                 </div>
@@ -493,7 +506,7 @@ function DancePage() {
                       top: "64.12%",
                       left: "2%",
                       // backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-3.webp")`,
-                      backgroundImage:`url(${TalNarang})`,
+                      backgroundImage:`url(${TalNarang1})`,
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                       zIndex: "1",
@@ -571,7 +584,7 @@ function DancePage() {
                       aspectRatio: "146/33.56",
                       top: "64.12%",
                       left: "2%",
-                      backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-5.webp")`,
+                      backgroundImage: `url(${Razzmataaz1})`,
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                       zIndex: "1",
@@ -612,7 +625,7 @@ function DancePage() {
                       aspectRatio: "105/33.53",
                       top: "50.12%",
                       left: "2%",
-                      backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-6.webp")`,
+                      backgroundImage: `url(${mudra1})`,
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                       zIndex: "1",

@@ -5,16 +5,16 @@ import Button_Component from "./Button_component";
 const aws = import.meta.env.VITE_AWS;
 
 const MusicTitle = `${aws}/MusicTitle.webp`;
-const BattleOfBandsText = `${aws}/BattleOfBandsText.webp`;
-const BobTextMobile = `${aws}/BobTextMobile.webp`;
-const BandishText = `${aws}/BandishText.webp`;
-const BandishTextMobile = `${aws}/BandishTextMobile.webp`;
-const AarohText = `${aws}/AArohText.webp`;
-const AarohTextMobile = `${aws}/AarohTextMobile.webp`;
-const MalhaarText = `${aws}/MalhaarText.webp`;
-const MalhaarTextMobile = `${aws}/MalhaarTextMobile.webp`;
-const GullyWarText = `${aws}/GullyWarText.webp`;
-const GullyWarTextMobile = `${aws}/GullyWarTextMobile.webp`;
+// const BattleOfBandsText = `${aws}/BattleOfBandsText.webp`;
+// const BobTextMobile = `${aws}/BobTextMobile.webp`;
+// const BandishText = `${aws}/BandishText.webp`;
+// const BandishTextMobile = `${aws}/BandishTextMobile.webp`;
+// const AarohText = `${aws}/AArohText.webp`;
+// const AarohTextMobile = `${aws}/AarohTextMobile.webp`;
+// const MalhaarText = `${aws}/MalhaarText.webp`;
+// const MalhaarTextMobile = `${aws}/MalhaarTextMobile.webp`;
+// const GullyWarText = `${aws}/GullyWarText.webp`;
+// const GullyWarTextMobile = `${aws}/GullyWarTextMobile.webp`;
 const BattleOfBandsBg = `${aws}/BattleOfBandsBg.webp`;
 const BandishBg = `${aws}/BandishBg.webp`;
 const GullyWarBg = `${aws}/GullyWarBg.webp`;
@@ -26,6 +26,17 @@ const GullyWarBgMobile = `${aws}/GullyWarBgMobile.webp`;
 const MalhaarBgMobile = `${aws}/MalhaarBgMobile.webp`;
 const AarohBgMobile = `${aws}/AarohBgMobile.webp`;
 const Capriccio = `${aws}/Capriccio.pdf`;
+
+import BattleOfBandsText from "../../assets/videos/BattleOfBands.svg";
+import BobTextMobile from "../../assets/videos/BattleOfBands1.svg";
+import BandishText from "../../assets/videos/Bandish.svg";
+import BandishTextMobile from "../../assets/videos/Bandish1.svg";
+import AarohText from "../../assets/videos/Aaroh.svg";
+import AarohTextMobile from "../../assets/videos/Aaroh1.svg";
+import MalhaarText from "../../assets/videos/Malhaar.svg";
+import MalhaarTextMobile from "../../assets/videos/Malhaar1.svg";
+import GullyWarText from "../../assets/videos/GullyWar.svg";
+import GullyWarTextMobile from "../../assets/videos/GullyWar1.svg";
 
 function MusicEvents() {
   return (
