@@ -88,10 +88,10 @@ function OurTeams() {
                     style={{ top: "40%", right: 0 }}
                     className="absolute hidden lg:block"
                 />
-                <div className="w-[100%] text-center font-ttr lg:text-[6.25rem] font-[600] text-[4.5rem] lg:mt-[0%] mt-[15%] flex justify-center items-center">
-                        <div className="w-fit">
+                <div className="w-[100%] text-center font-ttr lg:text-[6.25rem] font-[600] text-[17.5vw] lg:mt-[0%] mt-[15%] flex justify-center items-center">
+                        <div className="w-fit leading-none md:leading-normal">
                             Our Mentors
-                            <div className="w-[100%] flex justify-center items-center mt-[-2.25rem] lg:mt-[-3.25rem]"><img src={asset} className="rotate-[-4.75°] w-[100%] lg:w-[85%]"></img></div>
+                            <div className="w-[100%] flex justify-center items-center mt-[-1.25rem] sm:mt-[-2.25rem] lg:mt-[-3.25rem]"><img src={asset} className="rotate-[-4.75°] w-[100%] lg:w-[85%]"></img></div>
                         </div>
                     </div>
 
@@ -101,7 +101,7 @@ function OurTeams() {
                     <img src={MentorMobileText} className="block md:hidden px-[5%] w-[100%] h-[100%]"/>
                 </div>
                 <div className="w-[100%] flex items-center text-center flex-wrap justify-center p-[2%]">
-                    <h3 className="font-vetosans font-[600] text-[1.375rem] w-[64%]">
+                    <h3 className="font-vetosans font-[600] text-[1.375rem] w-[64%] mb-5 sm:mb-0">
                         Our Mentors:{" "}
                         {[
                             "Ajay Raj",

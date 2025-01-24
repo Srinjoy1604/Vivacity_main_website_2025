@@ -104,7 +104,7 @@ const IndexEvents = ({ scrollToSection }) => {
       </div>
 
       <div
-        className="relative min-[768px]:hidden mt-8"
+        className="relative min-[768px]:hidden"
         style={{
           backgroundImage: `url(${Background})`,
           width: "100%",

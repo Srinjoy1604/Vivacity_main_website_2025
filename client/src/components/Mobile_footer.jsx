@@ -49,10 +49,10 @@ function Footer1() {
               className="h-[71.80%]   "
             />
             <div style={{ height: "1.43%" }} />
-            <p className="flex justify-center items-center text-center xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw] font-semibold  font-vetosans text-[1rem] text-black">
+            <p className="flex justify-center items-center text-center xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw] font-semibold  font-vetosans text-[0.5rem] text-black">
             <span className="font-medium">Developed by</span><a href="https://gdg.community.dev/gdg-on-campus-the-lnm-institute-of-information-technology-jaipur-india/"><span className="xtext-gradient font-black flex items-center justify-center"><img src={GDG} className="w-8 h-auto ml-1.5 mr-0.5"></img> GDG on Campus, LNMIIT</span></a>
             </p>
-            <p className="text-center  xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw]  font-semibold font-vetosans text-[1rem] text-black mt-[1%]">
+            <p className="text-center  xxxs:text-[3.3vw]  270:text-[0.65rem] xs:text-[3.3vw] xxs:text-[3.3vw]  font-semibold font-vetosans text-[0.5rem] text-black mt-[1%]">
             <span className="font-medium">Designed by</span> Vivacity. All rights reserved.
             </p>
           </div>
