@@ -1,19 +1,21 @@
 import React, { useRef, useEffect } from "react";
 const aws = import.meta.env.VITE_AWS;
 
-const YellowLower = `${aws}/CardYellowBellowPattern.webp`;
+// const YellowLower = `${aws}/CardYellowBellowPattern.webp`;
+import YellowLower from "../../assets/videos/CardYellowBellowPattern.webp";
 const YellowTop = `${aws}/CardYellowTopPattern.webp`;
 const mail = `${aws}/mail_heart_svgrepo.webp`;
 const Insta = `${aws}/vimeo_social_logo.webp`;
 
 function TeamCard({ CardData }) {
     return (
-        <div className="relative aspect-[100/133] lg:w-[21.6vw] sm:w-[60vw] w-[85vw] max-w-[400px]"
+        <div className="relative aspect-[100/133] lg:w-[21.6vw] sm:w-[60vw] w-[85vw] max-w-[400px] "
             style={{
                 backgroundImage: `url(${CardData.Image})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                
             }}
         >
             <div className="w-[100%] absolute bottom-0 h-[30%] text-center "
@@ -21,7 +23,8 @@ function TeamCard({ CardData }) {
                     backgroundImage: `url(${YellowLower})`,
                     backgroundSize: "100% 100%",
                     backgroundRepeat: "no-repeat",
-                    backgroundPosition: "center"
+                    backgroundPosition: "center",
+                    
                 }}
             >
                 <div className="grid grid-flow-row place-items-center  w-[100%] pt-[1%] mt-[10%]">

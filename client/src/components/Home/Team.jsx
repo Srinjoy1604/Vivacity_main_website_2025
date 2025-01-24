@@ -416,7 +416,7 @@ function Team() {
 
         {/*  Yellow Div */}
         <div
-          className="absolute border flex flex-col justify-center items-center box-border"
+          className="absolute  flex flex-col justify-center items-center box-border"
           style={{
             width: `${(387 / 1280) * 100}%`,
             height: `${(505 / 780) * 100}%`,
@@ -861,7 +861,7 @@ function Team() {
 
         {/* Yellow Div */}
         <div
-          className="absolute border flex flex-col justify-center items-center box-border"
+          className="absolute  flex flex-col justify-center items-center box-border"
           style={{
             width: `${(300.78 / 393) * 100}%`,
             height: `${(344.85 / 924) * 100}%`,

@@ -14,7 +14,8 @@ const BottomRight = `${aws}/BottomRightimg.webp`;
 const Topleftdiv = `${aws}/Topleftdiv.webp`;
 const TopRightdiv = `${aws}/TopRight.webp`;
 const Streetdance = `${aws}/Streetdance.webp`;
-const TalNarang = `${aws}/TalTarang.webp`;
+// const TalNarang = `${aws}/TalTarang.webp`;
+import TalNarang from "../../assets/videos/TalTarang.svg"
 const Razzmataaz = `${aws}/Razzmaatazz.webp`;
 const Middleleftdiv = `${aws}/MiddleLeftdiv.webp`;
 const Middlerightdiv = `${aws}/MiddleRightDiv.webp`;
@@ -145,7 +146,7 @@ function DancePage() {
                       style={{
                         position: "absolute",
                         width: "37.43%",
-                        aspectRatio: "209/ 54.74",
+                        aspectRatio: "565/131",
                         left: "60%",
                         top: "68.36%",
                         backgroundImage: `url(${TalNarang})`,
@@ -491,7 +492,8 @@ function DancePage() {
                       aspectRatio: "146/33.52",
                       top: "64.12%",
                       left: "2%",
-                      backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-3.webp")`,
+                      // backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-3.webp")`,
+                      backgroundImage:`url(${TalNarang})`,
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                       zIndex: "1",

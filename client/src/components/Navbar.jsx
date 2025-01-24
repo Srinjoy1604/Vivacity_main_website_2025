@@ -57,7 +57,7 @@ const Navbar = () => {
             style={{ opacity: scrolledOpacity }}
           >
             <div className="sm:hidden block smallNav">
-              <img src={SmallNavImg} alt="" />
+              <Link to="/"><img src={SmallNavImg} alt="" /></Link>
             </div>
             <div className="flex-shrink-0 hidden sm:block">
               <Link to="/" onClick={handleLinkClick}>
