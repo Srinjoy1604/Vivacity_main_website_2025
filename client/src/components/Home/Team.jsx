@@ -246,6 +246,8 @@ function Team() {
                 transform: showImg ? "translateY(0)" : "translateY(-100%)",
                 opacity: showImg ? 1 : 0,
                 transition: "all 0.2s ease-out",
+                border:"3px solid black",
+                transform: "rotate(4.79deg)",
               }}
             />
 
@@ -290,6 +292,8 @@ function Team() {
                 transform: showImg ? "translateY(0)" : "translateY(-100%)",
                 opacity: showImg ? 1 : 0,
                 transition: "all 0.2s ease-out",
+                border:"3px solid black",
+                transform: "rotate(-6.57deg)",
               }}
             />
             <span
@@ -336,10 +340,12 @@ function Team() {
                 transform: showImg ? "translateY(0)" : "translateY(-100%)",
                 opacity: showImg ? 1 : 0,
                 transition: "all 0.2s ease-out",
+                border:"3px solid black",
+                transform: "rotate(5.46deg)",
               }}
             />
             <span
-              className="font-rfabb text-[1.05rem] 2xl-text-[1.73rem] sm-text-[1rem]  1980:text-[1.85rem] 1600:text-[1.35rem] 2100:text-[2rem] md:text-[0.8rem]  lg:text-[1.02rem] top-[70%] right-[30%] 1500:right-[35%] "
+              className="font-rfabb text-[1.05rem] 2xl-text-[1.73rem] sm-text-[1rem] 1980:text-[1.85rem] 1600:text-[1.35rem] 2100:text-[2rem] md:text-[0.8rem]  lg:text-[1.02rem] top-[70%] text-center"
               style={{
                 position: "absolute",
                 color: "green",
@@ -382,6 +388,8 @@ function Team() {
                 transform: showImg ? "translateY(0)" : "translateY(-100%)",
                 opacity: showImg ? 1 : 0,
                 transition: "all 0.2s ease-out",
+                border:"3px solid black",
+                transform: "rotate(-10.77deg)"
               }}
             />
             <span
@@ -678,11 +686,13 @@ function Team() {
                     width: "70%",
                     height: "60%",
                     position: "absolute",
-                    top: "10%",
+                    top: "8%",
                     left: "15%",
                     transform: showImg ? "translateY(0)" : "translateY(-100%)",
                     opacity: showImg ? 1 : 0,
                     transition: "all 0.2s ease-out",
+                    border:"2px solid black",
+                    transform: "rotate(4.79deg)",
                   }}
                 />
 
@@ -726,11 +736,14 @@ function Team() {
                   width: "70%",
                   height: "60%",
                   position: "absolute",
-                  top: "10%",
+                  top: "8%",
                   left: "15%",
                   transform: showImg ? "translateY(0)" : "translateY(-100%)",
                   opacity: showImg ? 1 : 0,
                   transition: "all 0.2s ease-out",
+                  border:"2px solid black",
+                  fontWeight: "bold",
+                  transform: "rotate(-6.57deg)",
                 }}
               />
 
@@ -741,6 +754,7 @@ function Team() {
                   color: "green",
                   fontWeight: "bold",
                   transform: "rotate(-6.57deg)",
+                  
                 }}
               >
                 TEAM B
@@ -774,11 +788,13 @@ function Team() {
                   width: "70%",
                   height: "60%",
                   position: "absolute",
-                  top: "10%",
+                  top: "8%",
                   left: "15%",
                   transform: showImg ? "translateY(0)" : "translateY(-100%)",
                   opacity: showImg ? 1 : 0,
                   transition: "all 0.2s ease-out",
+                  border:"2px solid black",
+                  transform: "rotate(5.46deg)",
                 }}
               />
               <span
@@ -821,11 +837,13 @@ function Team() {
                   width: "70%",
                   height: "60%",
                   position: "absolute",
-                  top: "10%",
+                  top: "8%",
                   left: "15%",
                   transform: showImg ? "translateY(0)" : "translateY(-100%)",
                   opacity: showImg ? 1 : 0,
                   transition: "all 0.2s ease-out",
+                  border:"2px solid black",
+                  transform: "rotate(-10.77deg)",
                 }}
               />
 
