@@ -40,7 +40,7 @@ const Concert = () => {
           <div className="flex justify-center items-center pt-48 xxs:pt-48 xs:pt-64 xs:ml-8 pb-24">
             <div className=" flex flex-col justify-center w-[100%] items-center">
               {/* GIF container - made responsive */}
-              <div className="w-[82%] xxs:w-[70%] mb-[2%] relative">
+              <div className="w-[82%] xxs:w-[70%] xs:w-[65%] mb-[2%] relative">
                 <div className="relative w-full">
                   <img
                     src={PastArtistGIFBorder}
@@ -55,13 +55,13 @@ const Concert = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col space-y-[2%] pt-[2%] xxs:w-[70%] w-[82%] xs:w-[65%] ">
-                <h2 className="font-bold font-rfabb text-[6.5vw] 380:text-[7.8vw] xs:text-[6.1vw] leading-tight">
-                  GET CONCERT READY NOW!
+              <div className="flex flex-col space-y-[2%] pt-[2%] xxs:w-[70%] w-[82%] xs:w-[65%] px-[2%]">
+                <h2 className="font-bold font-rfabb text-[7vw] md:text-[6.5vw] leading-tight">
+                  GET CONCERT-<span className="sm:hidden"><br /></span> READY NOW!
                 </h2>
 
                 <div className="relative">
-                  <p className="font-semibold font-vetosans text-[4vw] 380:text-[4vw]  xs:text-[3.2vw] tracking-wide leading-relaxed">
+                  <p className="font-semibold font-vetosans text-[4vw] 380:text-[4vw]  xs:text-[3.2vw] tracking-wide leading-tight">
                     Get a sneak peek into Vivacity's epic lineup with our
                     <span className="italic"> handpicked</span> music
                     collection—crafted to set the vibe just right! So grab your
