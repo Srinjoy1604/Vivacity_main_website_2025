@@ -4,7 +4,7 @@ import "../../pages/normalregistration.css";
 const RegistrationSuccessful = () => {
     const navigate = useNavigate();
     return (
-        <div className='reg_suc m-[2%]  p-[2%] w-[40%] rounded-md mx-auto mb-8 border border-solid border-[#45C7FF]'>
+        <div className='reg_suc m-[2%]  p-[2%] w-[40%] rounded-md mx-auto mb-8'>
             <h1 className="w-full px-[8%] mt-8 mb-4 text-center font-grobold text-white  tracking-wider leading-none  font-rfabb text-[2.25rem] font-[700]">
                 Congratulations !
                 <br />
