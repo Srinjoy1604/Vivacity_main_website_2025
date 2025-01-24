@@ -85,7 +85,6 @@ const Events = () => {
       items: [
         " Spotlight",
         "Family Feud",
-        "Potpourit",
         "Dare to spell",
         "Duologue",
         "Afreen",
