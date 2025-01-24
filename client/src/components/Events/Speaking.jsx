@@ -14,12 +14,12 @@ const Middleleftdiv = `${aws}/Spotlight.webp`;
 const Middlerightdiv = `${aws}/Afreen.webp`;
 const Bottomleftdiv = `${aws}/Potpourii.webp`;
 const BottomRightdiv = `${aws}/Dare to Spell.webp`;
-const Duologue = `${aws}/duologuee.webp`;
-const FamilyFeud = `${aws}/FamilyFeud.webp`;
-const Spotlight = `${aws}/Spotlightt.webp`;
-const Afreen = `${aws}/Afreenn.webp`;
-const Potpouri = `${aws}/Potpouri.webp`;
-const DareToSpell = `${aws}/DareToSpell.webp`;
+// const Duologue = `${aws}/duologuee.webp`;
+// const FamilyFeud = `${aws}/FamilyFeud.webp`;
+// const Spotlight = `${aws}/Spotlightt.webp`;
+// const Afreen = `${aws}/Afreenn.webp`;
+// const Potpouri = `${aws}/Potpouri.webp`;
+// const DareToSpell = `${aws}/DareToSpell.webp`;
 const Background1 = `${aws}/iPhone 14 & 15 Pro - 3.webp`;
 const Topleft1 = `${aws}/Duologue-2.webp`;
 const Topright1 = `${aws}/Family Feud-2.webp`;
@@ -33,14 +33,27 @@ const Middleleftdiv1 = `${aws}/Subtext-21.webp`;
 const Middlerightdiv1 = `${aws}/Cash Prize-2.webp`;
 const Bottomleftdiv1 = `${aws}/Subtext-22.webp`;
 const BottomRightdiv1 = `${aws}/Subtext-23.webp`;
-const Duologue1 = `${aws}/Event Name-7.webp`;
-const FamilyFeud1 = `${aws}/Event Name-8.webp`;
-const Spotlight1 = `${aws}/Event Name-9.webp`;
-const Afreen1 = `${aws}/Event Name-10.webp`;
-const Potpouri1 = `${aws}/Event Name-11.webp`;
-const DareToSpell1 = `${aws}/Event Name-12.webp`;
+// const Duologue1 = `${aws}/Event Name-7.webp`;
+// const FamilyFeud1 = `${aws}/Event Name-8.webp`;
+// const Spotlight1 = `${aws}/Event Name-9.webp`;
+// const Afreen1 = `${aws}/Event Name-10.webp`;
+// const Potpouri1 = `${aws}/Event Name-11.webp`;
+// const DareToSpell1 = `${aws}/Event Name-12.webp`;
 const SpeakingTitle = `${aws}/SpeakingArtsTitle.webp`;
 const MediaCell = `${aws}/MediaCell.pdf`;
+
+import Duologue from '../../assets/videos/Duolouge.svg';
+import Duologue1 from '../../assets/videos/Duolouge1.svg';
+import FamilyFeud from '../../assets/videos/FamilyFeud.svg';
+import FamilyFeud1 from '../../assets/videos/FamilyFeud1.svg';
+import Spotlight from '../../assets/videos/Spotlight.svg';
+import Spotlight1 from '../../assets/videos/Spotlight1.svg';
+import Afreen from '../../assets/videos/Afreen.svg';
+import Afreen1 from '../../assets/videos/Afreen1.svg';
+import Potpouri from '../../assets/videos/Potpourii.svg';
+import Potpouri1 from '../../assets/videos/Potpourii1.svg';
+import DareToSpell from '../../assets/videos/DareToSpell.svg';
+import DareToSpell1 from '../../assets/videos/DareToSpell1.svg';
 
 function Speaking() {
   return (
@@ -405,7 +418,7 @@ function Speaking() {
                     aspectRatio: "123/33.52",
                     top: "64.12%",
                     left: "2%",
-                    backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-7.webp")`,
+                    backgroundImage: `url(${Duologue1})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     zIndex: "1",
@@ -445,7 +458,7 @@ function Speaking() {
                     aspectRatio: "146/33.52",
                     top: "64.12%",
                     left: "2%",
-                    backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-8.webp")`,
+                    backgroundImage: `url(${FamilyFeud1})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     zIndex: "1",
@@ -486,7 +499,7 @@ function Speaking() {
                     aspectRatio: "121/33.52",
                     top: "60.12%",
                     left: "2%",
-                    backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-9.webp")`,
+                    backgroundImage: `url(${Spotlight1})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     zIndex: "1",
@@ -526,7 +539,7 @@ function Speaking() {
                     aspectRatio: "103/33.52",
                     top: "58.12%",
                     left: "2%",
-                    backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-10.webp")`,
+                    backgroundImage: `url(${Afreen1})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     zIndex: "1",
@@ -566,7 +579,7 @@ function Speaking() {
                     aspectRatio: "111/34",
                     top: "59.12%",
                     left: "2%",
-                    backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-11.webp")`,
+                    backgroundImage: `url(${Potpouri1})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     zIndex: "1",
@@ -606,7 +619,7 @@ function Speaking() {
                     aspectRatio: "146/33.53",
                     top: "62.12%",
                     left: "2%",
-                    backgroundImage: `url("https://d2tfnz5m7k1weq.cloudfront.net/Event Name-12.webp")`,
+                    backgroundImage: `url(${DareToSpell1})`,
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                     zIndex: "1",

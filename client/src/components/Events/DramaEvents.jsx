@@ -5,24 +5,32 @@ import Button_Component from "./Button_component";
 const aws = import.meta.env.VITE_AWS;
 
 const DramaTitle = `${aws}/DramaTitle.webp`;
-const RangshalaText = `${aws}/RangshalaText.webp`;
-const PadhatiText = `${aws}/PadhatiText.webp`;
-const MukhautaText = `${aws}/MukhautaText.webp`;
-const HunkaarText = `${aws}/HunkaarText.webp`;
+// const RangshalaText = `${aws}/RangshalaText.webp`;
+// const PadhatiText = `${aws}/PadhatiText.webp`;
+// const MukhautaText = `${aws}/MukhautaText.webp`;
+// const HunkaarText = `${aws}/HunkaarText.webp`;
 const PaddhatiBg = `${aws}/PaddhatiBg.webp`;
 const MukhautaBg = `${aws}/MukhautaBg.webp`;
 const RangshalaBg = `${aws}/RangshalaBg.webp`;
 const HunkaarBg = `${aws}/HunkaarBg.webp`;
-const RangshalaTextMobile = `${aws}/RangshalaTextMobile.webp`;
-const PaddhatiTextMobile = `${aws}/PaddhatiTextMobile.webp`;
-const MukhautaTextMobile = `${aws}/MukhautaTextMobile.webp`;
-const HunkaarTextMobile = `${aws}/HunkaarTextMobile.webp`;
+// const RangshalaTextMobile = `${aws}/RangshalaTextMobile.webp`;
+// const PaddhatiTextMobile = `${aws}/PaddhatiTextMobile.webp`;
+// const MukhautaTextMobile = `${aws}/MukhautaTextMobile.webp`;
+// const HunkaarTextMobile = `${aws}/HunkaarTextMobile.webp`;
 const PaddhatiBgMobile = `${aws}/PaddhatiBgMobile.webp`;
 const MukhautaBgMobile = `${aws}/MukhautaBgMobile.webp`;
 const RangshalaBgMobile = `${aws}/RangshalaBgMobile.webp`;
 const HunkaarBgMobile = `${aws}/HunkaarBgMobile.webp`;
 const Rendition = `${aws}/Rendition.pdf`;
 
+import RangshalaText from '../../assets/videos/Rangshala.svg';
+import RangshalaTextMobile from '../../assets/videos/Rangshala1.svg';
+import PadhatiText from '../../assets/videos/Paddhati.svg';
+import PaddhatiTextMobile from '../../assets/videos/Paddhati1.svg';
+import MukhautaText from '../../assets/videos/Mukhauta.svg';
+import MukhautaTextMobile from '../../assets/videos/Mukhauta1.svg';
+import HunkaarText from '../../assets/videos/Hunkaar.svg';
+import HunkaarTextMobile from '../../assets/videos/Hunkaar1.svg';
 
 function DramaEvents() {
   return (
@@ -121,12 +129,12 @@ function DramaEvents() {
               alt=""
             />
             <img
-              className="hidden md:block absolute w-[27.7%] top-[18%] right-[2%]"
+              className="hidden md:block absolute w-[37.7%] top-[18%] right-[2%]"
               src={RangshalaText}
               alt=""
             />
             <img
-              className="block md:hidden absolute w-[27.7%] bottom-[19%] left-[1%]"
+              className="block md:hidden absolute w-[30.7%] bottom-[19%] left-[1%]"
               src={RangshalaTextMobile}
               alt=""
             />
