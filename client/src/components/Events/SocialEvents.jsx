@@ -2,12 +2,14 @@ const aws = import.meta.env.VITE_AWS;
 
 const Background = `${aws}/Sahyog_bg.webp`;
 const Title = `${aws}/Title4.webp`;
-const Text = `${aws}/Sahyog.webp`;
+// const Text = `${aws}/Sahyog.webp`;
+import Text from "../../assets/videos/Sahyog.svg";
 const Image = `${aws}/SahyogImg.webp`;
 const bg = `${aws}/SahyogDiv.webp`;
 const Background1 = `${aws}/iPhone 14 & 15 Pro - 10.webp`;
 const Title1 = `${aws}/Name-2.webp`;
-const Text1 = `${aws}/Text.webp`;
+// const Text1 = `${aws}/Text.webp`;
+import Text1 from "../../assets/videos/Text.svg";
 const Image1 = `${aws}/Sahyog-2.webp`;
 const bg1 = `${aws}/bigtextbox.webp`;
 

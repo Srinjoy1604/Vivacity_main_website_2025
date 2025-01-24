@@ -15,16 +15,27 @@ const image9 = `${aws}/Artevent_mobile_3.webp`;
 const image10 = `${aws}/Artevent_mobile_4.webp`;
 const image11 = `${aws}/Artevent_mobile_5.webp`;
 const bigtextbox = `${aws}/bigtextbox.webp`;
-const tatoo = `${aws}/tatoo.webp`;
-const splash = `${aws}/splash.webp`;
-const contrasto = `${aws}/contrasto.webp`;
-const universe = `${aws}/universe.webp`;
-const eclitc = `${aws}/eclitc.webp`;
-const Universe = `${aws}/art_mobile_1.webp`;
-const Tatoo = `${aws}/art_mobile_2.webp`;
-const Eclitc = `${aws}/art_mobile_3.webp`;
-const Contrasto = `${aws}/art_mobile_4.webp`;
-const Splash = `${aws}/art_mobile_5.webp`;
+// const tatoo = `${aws}/tatoo.webp`;
+// const splash = `${aws}/splash.webp`;
+// const contrasto = `${aws}/contrasto.webp`;
+// const universe = `${aws}/universe.webp`;
+// const eclitc = `${aws}/eclitc.webp`;
+// const Universe = `${aws}/art_mobile_1.webp`;
+// const Tatoo = `${aws}/art_mobile_2.webp`;
+// const Eclitc = `${aws}/art_mobile_3.webp`;
+// const Contrasto = `${aws}/art_mobile_4.webp`;
+// const Splash = `${aws}/art_mobile_5.webp`;
+import tatoo from "../../assets/videos/tatoo.svg";
+import splash from "../../assets/videos/splash.svg";
+import contrasto from "../../assets/videos/contrasto.svg";
+import universe from "../../assets/videos/universe.svg";
+import eclitc from "../../assets/videos/eclitc.svg";
+import Universe from "../../assets/videos/art_mobile_1.svg";
+import Tatoo from "../../assets/videos/art_mobile_2.svg";
+import Eclitc from "../../assets/videos/art_mobile_3.svg";
+import Contrasto from "../../assets/videos/art_mobile_4.svg";
+import Splash from "../../assets/videos/art_mobile_5.svg";
+
 
 
 

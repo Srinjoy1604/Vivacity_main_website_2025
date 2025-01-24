@@ -5,8 +5,10 @@ import Button_Component from "./Button_component";
 const aws = import.meta.env.VITE_AWS;
 
 const QuizzingaTitle = `${aws}/QuizzingaTitle.webp`;
-const BamboozledText = `${aws}/BamboozledText.webp`;
-const MovieAuctionText = `${aws}/MovieAuctionText.webp`;
+// const BamboozledText = `${aws}/BamboozledText.webp`;
+// const MovieAuctionText = `${aws}/MovieAuctionText.webp`;
+import BamboozledText from "../../assets/videos/BamboozledText.svg";
+import MovieAuctionText from "../../assets/videos/MovieAuctionText.svg";
 const BamboozledBg = `${aws}/BamboozledBg.webp`;
 const MovieAuctionBg = `${aws}/MovieAuctionBg.webp`;
 const Quizzinga = `${aws}/Quzzinga.pdf`;
