@@ -24,12 +24,13 @@ const BottomRightdiv = `${aws}/Bottomrightdiv.webp`;
 //const Letstangle = `${aws}/LetsTangle.webp`;
 //const mudra = `${aws}/Mudra.webp`;
 
-import Streetdance from "../../assets/videos/StreetDance.svg"
-import TalNarang from "../../assets/videos/TalTarang.svg"
-import Razzmataaz from "../../assets/videos/Razzmatazz.svg"
-import PumpItUp from "../../assets/videos/PumpItUp.svg"
-import Letstangle from "../../assets/videos/LetsTangle.svg"
-import mudra from "../../assets/videos/Mudra.svg"
+const Streetdance = `${aws}/StreetDance.svg`;
+const TalNarang = `${aws}/TalTarang.svg`;
+const Razzmataaz = `${aws}/Razzmatazz.svg`;
+const PumpItUp = `${aws}/PumpItUp.svg`;
+const Letstangle = `${aws}/LetsTangle.svg`;
+const mudra = `${aws}/Mudra.svg`;
+
 
 const Background1 = `${aws}/iPhone 14 & 15 Pro - 2.webp`;
 
@@ -52,12 +53,13 @@ const BottomRightdiv1 = `${aws}/Subtext-23.webp`;
 // const TalNarang1 = `${aws}/Event Name-3.webp`;
 // const Razzmataaz1 = `${aws}/Event Name-5.webp`;
 
-import Streetdance1 from "../../assets/videos/StreetDance1.svg"
-import TalNarang1 from "../../assets/videos/TalTarang1.svg"
-import Razzmataaz1 from "../../assets/videos/Razzmatazz1.svg"
-import PumpItUp1 from "../../assets/videos/PumpItUp1.svg"
-import Letstangle1 from "../../assets/videos/LetsTangle1.svg"
-import mudra1 from "../../assets/videos/Mudra1.svg"
+const Streetdance1 = `${aws}/StreetDance1.svg`;
+const TalNarang1 = `${aws}/TalTarang1.svg`;
+const Razzmataaz1 = `${aws}/Razzmatazz1.svg`;
+const PumpItUp1 = `${aws}/PumpItUp1.svg`;
+const Letstangle1 = `${aws}/LetsTangle1.svg`;
+const mudra1 = `${aws}/Mudra1.svg`;
+
 
 import Button_Component from "./Button_component";
 

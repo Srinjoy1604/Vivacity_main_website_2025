@@ -6,12 +6,13 @@ const aws = import.meta.env.VITE_AWS;
 
 const FashionTitle = `${aws}/FashionTitle.webp`;
 // const VivaText = `${aws}/vivaText.webp`;
-import VivaText from "../../assets/videos/vivaText.svg";
 // const VougeText = `${aws}/VougeText.webp`;
-import VougeText from "../../assets/videos/VougeText.svg";
 const VivaBg = `${aws}/VivaBg.webp`;
 const VogueBg = `${aws}/VogueBg.webp`;
 const Eminence = `${aws}/Eminence.pdf`;
+
+const VougeText = `${aws}/VougeText.svg`;
+const VivaText = `${aws}/vivaText.svg`;
 
 
 function FashionEvents() {
