@@ -2,10 +2,10 @@ import React, { useRef, useEffect } from "react";
 const aws = import.meta.env.VITE_AWS;
 
 // const YellowLower = `${aws}/CardYellowBellowPattern.webp`;
-import YellowLower from "../../assets/videos/CardYellowBellowPattern.webp";
 const YellowTop = `${aws}/CardYellowTopPattern.webp`;
 const mail = `${aws}/mail_heart_svgrepo.webp`;
 const Insta = `${aws}/vimeo_social_logo.webp`;
+const YellowLower = `${aws}/CardYellowBellowPattern.webp`;
 
 function TeamCard({ CardData }) {
     return (

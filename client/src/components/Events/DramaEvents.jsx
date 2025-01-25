@@ -23,14 +23,15 @@ const RangshalaBgMobile = `${aws}/RangshalaBgMobile.webp`;
 const HunkaarBgMobile = `${aws}/HunkaarBgMobile.webp`;
 const Rendition = `${aws}/Rendition.pdf`;
 
-import RangshalaText from '../../assets/videos/Rangshala.svg';
-import RangshalaTextMobile from '../../assets/videos/Rangshala1.svg';
-import PadhatiText from '../../assets/videos/Paddhati.svg';
-import PaddhatiTextMobile from '../../assets/videos/Paddhati1.svg';
-import MukhautaText from '../../assets/videos/Mukhauta.svg';
-import MukhautaTextMobile from '../../assets/videos/Mukhauta1.svg';
-import HunkaarText from '../../assets/videos/Hunkaar.svg';
-import HunkaarTextMobile from '../../assets/videos/Hunkaar1.svg';
+const RangshalaText = `${aws}/Rangshala.svg`;
+const RangshalaTextMobile = `${aws}/Rangshala1.svg`;
+const PadhatiText = `${aws}/Paddhati.svg`;
+const PaddhatiTextMobile = `${aws}/Paddhati1.svg`;
+const MukhautaText = `${aws}/Mukhauta.svg`;
+const MukhautaTextMobile = `${aws}/Mukhauta1.svg`;
+const HunkaarText = `${aws}/Hunkaar.svg`;
+const HunkaarTextMobile = `${aws}/Hunkaar1.svg`;
+
 
 function DramaEvents() {
   return (

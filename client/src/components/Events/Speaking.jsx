@@ -41,19 +41,19 @@ const BottomRightdiv1 = `${aws}/Subtext-23.webp`;
 // const DareToSpell1 = `${aws}/Event Name-12.webp`;
 const SpeakingTitle = `${aws}/SpeakingArtsTitle.webp`;
 const MediaCell = `${aws}/MediaCell.pdf`;
+const Duologue = `${aws}/Duolouge.svg`;
+const Duologue1 = `${aws}/Duolouge1.svg`;
+const FamilyFeud = `${aws}/FamilyFeud.svg`;
+const FamilyFeud1 = `${aws}/FamilyFeud1.svg`;
+const Spotlight = `${aws}/Spotlight.svg`;
+const Spotlight1 = `${aws}/Spotlight1.svg`;
+const Afreen = `${aws}/Afreen.svg`;
+const Afreen1 = `${aws}/Afreen1.svg`;
+const Potpouri = `${aws}/Potpourii.svg`;
+const Potpouri1 = `${aws}/Potpourii1.svg`;
+const DareToSpell = `${aws}/DareToSpell.svg`;
+const DareToSpell1 = `${aws}/DareToSpell1.svg`;
 
-import Duologue from '../../assets/videos/Duolouge.svg';
-import Duologue1 from '../../assets/videos/Duolouge1.svg';
-import FamilyFeud from '../../assets/videos/FamilyFeud.svg';
-import FamilyFeud1 from '../../assets/videos/FamilyFeud1.svg';
-import Spotlight from '../../assets/videos/Spotlight.svg';
-import Spotlight1 from '../../assets/videos/Spotlight1.svg';
-import Afreen from '../../assets/videos/Afreen.svg';
-import Afreen1 from '../../assets/videos/Afreen1.svg';
-import Potpouri from '../../assets/videos/Potpourii.svg';
-import Potpouri1 from '../../assets/videos/Potpourii1.svg';
-import DareToSpell from '../../assets/videos/DareToSpell.svg';
-import DareToSpell1 from '../../assets/videos/DareToSpell1.svg';
 
 function Speaking() {
   return (

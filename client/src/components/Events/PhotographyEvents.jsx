@@ -19,12 +19,7 @@ const text1 = `${aws}/textbox1.webp`;
 // const pixels = `${aws}/pixels.webp`;
 // const photoBooth = `${aws}/photoBooth.webp`;
 // const Perspective = `${aws}/Perspective.webp`;
-import imageHunt from "../../assets/videos/imageHunt.svg";
-import kalakriti from "../../assets/videos/kalakriti.svg";
-import flimmakingcompetiton from "../../assets/videos/flimmakingcompetiton.svg";
-import pixels from "../../assets/videos/pixels.svg";
-import photoBooth from "../../assets/videos/photoBooth.svg";
-import Perspective from "../../assets/videos/Perspective.svg";
+
 const bigtextbox = `${aws}/bigtextbox.webp`;
 
 const image7 = `${aws}/photographyevent_mobile_1.webp`;
@@ -40,15 +35,22 @@ const image12 = `${aws}/photographyevent_mobile_6.webp`;
 // const hunt = `${aws}/Event Name_4.webp`;
 // const kala = `${aws}/Event Name_5.webp`;
 // const perspective = `${aws}/Event Name_6.webp`;
-import pixel from "../../assets/videos/Event Name_1.svg";
-import photo from "../../assets/videos/Event Name_2.svg";
-import flimmaking from "../../assets/videos/Event Name_3.svg";
-import hunt from "../../assets/videos/Event Name_4.svg";
-import kala from "../../assets/videos/Event Name_5.svg";
-import perspective from "../../assets/videos/Event Name_6.svg";
 
+const imageHunt = `${aws}/imageHunt.svg`;
+const kalakriti = `${aws}/kalakriti.svg`;
+const flimmakingcompetiton = `${aws}/flimmakingcompetiton.svg`;
+const pixels = `${aws}/pixels.svg`;
+const photoBooth = `${aws}/photoBooth.svg`;
+const Perspective = `${aws}/Perspective.svg`;
+const pixel = `${aws}/Event Name_1.svg`;
+const photo = `${aws}/Event Name_2.svg`;
+const flimmaking = `${aws}/Event Name_3.svg`;
+const hunt = `${aws}/Event Name_4.svg`;
+const kala = `${aws}/Event Name_5.svg`;
+const perspective = `${aws}/Event Name_6.svg`;
 
-import Imagination from "../../assets/videos/IMAGINATIONRULEBOOK.pdf";
+const Imagination = `${aws}/IMAGINATIONRULEBOOK.pdf`;
+
 
 function PhotographyEvents() {
   return (

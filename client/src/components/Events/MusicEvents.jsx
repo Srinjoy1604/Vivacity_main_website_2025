@@ -26,17 +26,17 @@ const GullyWarBgMobile = `${aws}/GullyWarBgMobile.webp`;
 const MalhaarBgMobile = `${aws}/MalhaarBgMobile.webp`;
 const AarohBgMobile = `${aws}/AarohBgMobile.webp`;
 const Capriccio = `${aws}/Capriccio.pdf`;
+const BattleOfBandsText = `${aws}/BattleOfBands.svg`;
+const BobTextMobile = `${aws}/BattleOfBands1.svg`;
+const BandishText = `${aws}/Bandish.svg`;
+const BandishTextMobile = `${aws}/Bandish1.svg`;
+const AarohText = `${aws}/Aaroh.svg`;
+const AarohTextMobile = `${aws}/Aaroh1.svg`;
+const MalhaarText = `${aws}/Malhaar.svg`;
+const MalhaarTextMobile = `${aws}/Malhaar1.svg`;
+const GullyWarText = `${aws}/GullyWar.svg`;
+const GullyWarTextMobile = `${aws}/GullyWar1.svg`;
 
-import BattleOfBandsText from "../../assets/videos/BattleOfBands.svg";
-import BobTextMobile from "../../assets/videos/BattleOfBands1.svg";
-import BandishText from "../../assets/videos/Bandish.svg";
-import BandishTextMobile from "../../assets/videos/Bandish1.svg";
-import AarohText from "../../assets/videos/Aaroh.svg";
-import AarohTextMobile from "../../assets/videos/Aaroh1.svg";
-import MalhaarText from "../../assets/videos/Malhaar.svg";
-import MalhaarTextMobile from "../../assets/videos/Malhaar1.svg";
-import GullyWarText from "../../assets/videos/GullyWar.svg";
-import GullyWarTextMobile from "../../assets/videos/GullyWar1.svg";
 
 function MusicEvents() {
   return (
