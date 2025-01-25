@@ -68,7 +68,7 @@ function Footer1() {
                   className="h-[100%] w-auto "
                 />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/VivacityLNMIIT" target="_blank" rel="noopener noreferrer">
                 <img
                   src={TwitterIcon}
                   alt="Twitter"
