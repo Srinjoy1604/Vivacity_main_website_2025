@@ -89,7 +89,7 @@ function Footer() {
                   className="w-[2vw] h-[2vw] object-contain"
                 />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/VivacityLNMIIT" target="_blank" rel="noopener noreferrer">
                 <img
                   src={TwitterIcon}
                   alt="Twitter"
