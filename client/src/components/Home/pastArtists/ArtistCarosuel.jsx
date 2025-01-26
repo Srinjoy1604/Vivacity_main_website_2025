@@ -16,7 +16,7 @@ const Harrdy = `${aws}/Hardy.webp`;
 const HarrdyName = `${aws}/HardyName.webp`;
 const Darshan = `${aws}/Darshan.webp`;
 //const DarshanName = `${aws}/DarshanName.webp`;
-import DarshanName from "../../../assets/videos/darshanrawal.svg";
+import DarshanName from "../../../assets/videos/darshanraval.svg";
 const Mohit = `${aws}/MohitChauhan.webp`;
 const MohitName = `${aws}/MohitName.webp`;
 const Asees = `${aws}/Asees.webp`;
