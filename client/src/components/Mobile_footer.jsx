@@ -61,7 +61,7 @@ function Footer1() {
 
           <div className="flex flex-col gap-[18%] items-center bottom-[0%] h-[35.87%] ">
             <div className="flex justify-center gap-[25%]  h-[17.34%] w-[66.27%]">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/Vivacity.LNMIIT" target="_blank" rel="noopener noreferrer">
                 <img
                   src={FacebookIcon}
                   alt="Facebook"
@@ -75,7 +75,7 @@ function Footer1() {
                   className="h-[100%] w-auto "
                 />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/vivacity_lnmiit/?hl=en" target="_blank" rel="noopener noreferrer">
                 <img
                   src={InstagramIcon}
                   alt="Instagram"
