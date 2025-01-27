@@ -25,16 +25,17 @@ const bigtextbox = `${aws}/bigtextbox.webp`;
 // const Eclitc = `${aws}/art_mobile_3.webp`;
 // const Contrasto = `${aws}/art_mobile_4.webp`;
 // const Splash = `${aws}/art_mobile_5.webp`;
-import tatoo from "../../assets/videos/tatoo.svg";
-import splash from "../../assets/videos/splash.svg";
-import contrasto from "../../assets/videos/contrasto.svg";
-import universe from "../../assets/videos/universe.svg";
-import eclitc from "../../assets/videos/eclitc.svg";
-import Universe from "../../assets/videos/art_mobile_1.svg";
-import Tatoo from "../../assets/videos/art_mobile_2.svg";
-import Eclitc from "../../assets/videos/art_mobile_3.svg";
-import Contrasto from "../../assets/videos/art_mobile_4.svg";
-import Splash from "../../assets/videos/art_mobile_5.svg";
+const tatoo = `${aws}/tatoo.svg`;
+const splash = `${aws}/splash.svg`;
+const contrasto = `${aws}/contrasto.svg`;
+const universe = `${aws}/universe.svg`;
+const eclitc = `${aws}/eclitc.svg`;
+const Universe = `${aws}/art_mobile_1.svg`;
+const Tatoo = `${aws}/art_mobile_2.svg`;
+const Eclitc = `${aws}/art_mobile_3.svg`;
+const Contrasto = `${aws}/art_mobile_4.svg`;
+const Splash = `${aws}/art_mobile_5.svg`;
+
 
 
 
